@@ -48,7 +48,7 @@
 </style></head><body>
 <h1>Schriften zum bürgerlichen Recht</h1>
 <div class="sub0">Duncker &amp; Humblot · 民法丛书 · 共 614 册</div>
-<div class="note">字段：卷号 / 作者 / 书名（德文原文，可点击跳转出版社商品页） / 中文译名 / 出版年。中文译名由德→中法律术语词典自动生成，供快速浏览参考；德文原名并列便于核对。<br>🏷️ <b>标签</b>：点右上角「🔒 加标签已锁定」输入口令解锁后，在每行末尾输入框按回车即可加标签（先存到你本机浏览器）。想让标签对所有人可见，点右上「发布待定标签」复制后，发到 <b>WorkBuddy 项目对话</b>，我就会重新推送到仓库。未解锁时访客看不到也加不了标签。<br>✏️ <b>译文</b>：解锁后，每行「中文译名」旁会出现 ✎，点它即可修改自动生成的德→中译文（先存到你本机浏览器）；想让修订对所有人可见，点右上「发布待定译文」复制后，发到 <b>WorkBuddy 项目对话</b>，我就会重新推送到仓库。每次保存后会弹出提示，照着做即可。</div>
+<div class="note">字段：卷号 / 作者 / 书名（德文原文，可点击跳转出版社商品页） / 中文译名 / 出版年。中文译名由德→中法律术语词典自动生成，供快速浏览参考；德文原名并列便于核对。<br>🏷️ <b>标签</b>：点右上角「🔒 加标签已锁定」输入口令解锁后，在每行末尾输入框按回车即可加标签（先存到你本机浏览器）。<br>✏️ <b>译文</b>：解锁后，每行「中文译名」旁会出现 ✎，点它即可修改自动生成的德→中译文（先存到你本机浏览器）。<br>🔑 <b>一键同步</b>：在右上（解锁后可见）填入你的 GitHub 令牌并保存，之后点「发布待定标签 / 译文」即<b>直接同步到网站</b>，刷新任意页面即可见，无需复制粘贴、也无需找站长代推。未填令牌时，发布按钮会退回“复制 JSON 发到 WorkBuddy 项目对话”的兜底模式。未解锁时访客看不到也加不了标签、改不了译文。</div>
 <div class="bar">
   <a class="back" href="index.html">← 返回首页</a>
   <input id="q" type="search" placeholder="搜索书名 / 作者 / 标签…">
@@ -56,6 +56,7 @@
   <button class="lockbtn" id="lockbtn">🔒 加标签已锁定</button>
   <button class="pendbtn owner-only" id="publish">发布待定标签 (<b id="pend">0</b>)</button>
   <button class="pendbtn owner-only" id="publishtrans">发布待定译文 (<b id="pendtrans">0</b>)</button>
+  <span class="owner-only" id="tokenWrap" style="margin-left:10px;font-size:12.5px;color:#57606a"></span>
 </div>
 <div class="pendbox owner-only" id="pendbox" style="display:none">
   <b>待发布标签（发给我即可上线）：</b>
@@ -682,8 +683,9 @@
 <tr data-id="c:64320"><td class="vol">616</td><td class="au">Christiansen, Rasmus</td><td class="de"><a href="https://elibrary.duncker-humblot.com/book/64320/die-geltung-des-anfechtungsmodells-fuumlr-vereinsbeschluumlsse" target="_blank" rel="noopener">Die Geltung des Anfechtungsmodells für Vereinsbeschlüsse</a></td><td class="zh"><span class="zhtext">效力 撤销之模式 为 社团裁定</span><button class="editzh owner-only" title="修改译文" aria-label="修改译文"></button></td><td class="yr">2026</td><td class="tags"></td></tr>
 <tr data-id="c:64327"><td class="vol">617</td><td class="au">Meckfessel, Annika</td><td class="de"><a href="https://elibrary.duncker-humblot.com/book/64327/die-beteiligung-des-rechtsanwalts-am-mandantenunternehmen" target="_blank" rel="noopener">Die Beteiligung des Rechtsanwalts am Mandantenunternehmen</a></td><td class="zh"><span class="zhtext">参与 法律师 在 mandantenunternehmen</span><button class="editzh owner-only" title="修改译文" aria-label="修改译文"></button></td><td class="yr">2026</td><td class="tags"></td></tr>
 </tbody></table>
-<script src="config.js?v=1783852067"></script>
-<script src="gate.js?v=1783852067"></script>
+<script src="config.js?v=1783852481"></script>
+<script src="gate.js?v=1783852481"></script>
+<script src="publish.js?v=1783852481"></script>
 
 <script>
 const LS_LOCAL="shumu_local_v1";
@@ -855,15 +857,9 @@ function updatePend(){
 window.addEventListener('DOMContentLoaded',()=>{
   document.getElementById('q').addEventListener('input',doSearch);
   const pb=document.getElementById('publish');
-  if(pb)pb.onclick=()=>{const Pn=loadJSON(LS_PEND);const ta=document.getElementById('pendjson');
-    ta.value=JSON.stringify(Pn,null,1);ta.select();
-    if(navigator.clipboard)navigator.clipboard.writeText(ta.value);
-    alert('已复制待发布标签到剪贴板 ✅\n\n把它发到「WorkBuddy 项目」对话里，我就会写入仓库 tags.json 并重新推送（部署），让所有访客都能看到。');};
+  if(pb)pb.onclick=()=>{ if(window.doPublishTags) doPublishTags(); };
   const ptb=document.getElementById('publishtrans');
-  if(ptb)ptb.onclick=()=>{const Pn=loadJSON(LS_TRANS_PEND);const ta=document.getElementById('pendtransjson');
-    ta.value=JSON.stringify(Pn,null,1);ta.select();
-    if(navigator.clipboard)navigator.clipboard.writeText(ta.value);
-    alert('已复制待发布译文到剪贴板 ✅\n\n把它发到「WorkBuddy 项目」对话里，我就会写入仓库 trans_overrides.json 并重新推送（部署），让所有访客都能看到你的修订。');};
+  if(ptb)ptb.onclick=()=>{ if(window.doPublishTrans) doPublishTrans(); };
   updatePendTrans();
 });
 </script>
