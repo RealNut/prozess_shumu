@@ -348,11 +348,14 @@ function dispZh(tr){ const id=tr.getAttribute('data-id'); const m=window.BibPub.
 function dispYear(tr){ const id=tr.getAttribute('data-id'); const m=window.BibPub.mergedYear(id); return m!==null?m:tr.getAttribute('data-baseyear'); }
 function dispTags(tr){ const id=tr.getAttribute('data-id'); const m=window.BibPub.mergedTags(id); return m!==null?m:baseTags(tr); }
 function renderRow(tr){
-  tr.querySelector('.zhtext').textContent=dispZh(tr);
-  tr.querySelector('.yrtext').textContent=dispYear(tr);
-  const tc=tr.querySelector('.tags'); const ed=tc.querySelector('.edittags');
+  /* 防御：编辑中的行（editText 已把 .zhtext/.yrtext 替换为 input）跳过，
+     等 cancel/save 回调自行 renderRow(tr) 即可。 */
+  var zh=tr.querySelector('.zhtext'); if(zh) zh.textContent=dispZh(tr);
+  var yr=tr.querySelector('.yrtext'); if(yr) yr.textContent=dispYear(tr);
+  const tc=tr.querySelector('.tags'); if(!tc)return;
+  const ed=tc.querySelector('.edittags');
   tc.innerHTML=dispTags(tr).map(t=>'<span class="tag" data-t="'+esc(t)+'">'+esc(t)+'</span>').join('')+' ';
-  tc.appendChild(ed);
+  if(ed)tc.appendChild(ed);
 }
 function renderAll(){ document.querySelectorAll('tr[data-id]').forEach(renderRow); }
 
