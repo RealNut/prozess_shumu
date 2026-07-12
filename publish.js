@@ -118,6 +118,52 @@
     showHintFn("✅ 已复制待发布" + (kind === "tags" ? "标签" : "译文") + "到剪贴板。把它发到 <b>WorkBuddy 项目对话</b>，我就会写入仓库并重新推送，让所有人看到。");
   }
 
+  // ---- 标签全局重命名 / 删除（首页标签云用，作用到所有书） ----
+  function applyGlobalTag(mergeFn, okMsg) {
+    if (hasToken()) {
+      syncFile("tags.json", mergeFn).then(function (merged) {
+        if (typeof window.applyPublishedTags === "function") window.applyPublishedTags(merged);
+        else { setPubStore(merged); if (typeof window.renderCloud === "function") window.renderCloud(); }
+        showHintFn(okMsg + " 已直接同步到网站，刷新任意页面即见。");
+      }).catch(function (e) {
+        showHintFn("❌ 直发失败：" + (e.message || e) + "。可改用复制模式发到 WorkBuddy 项目让我代推。");
+      });
+    } else {
+      fetch("tags.json?_=" + Date.now()).then(function (r) { return r.json(); }).then(function (cur) {
+        var newObj = mergeFn(cur || {});
+        var text = JSON.stringify(newObj, null, 1);
+        if (navigator.clipboard) navigator.clipboard.writeText(text);
+        var ta = document.getElementById("pendjson");
+        if (ta) { ta.value = text; ta.select(); }
+        showHintFn("⚠️ 未填 GitHub 令牌，无法直接改仓库。已复制<b>完整 tags.json</b>到剪贴板，请发到 <b>WorkBuddy 项目对话</b>，我替换后重新推送。" + okMsg);
+      }).catch(function (e) { showHintFn("❌ 读取 tags.json 失败：" + (e.message || e)); });
+    }
+  }
+  function publishTagRename(oldT, newT) {
+    oldT = (oldT || "").trim(); newT = (newT || "").trim();
+    if (!oldT || !newT || oldT === newT) return;
+    applyGlobalTag(function (pub) {
+      Object.keys(pub).forEach(function (id) {
+        var arr = pub[id] || [], out = [];
+        arr.forEach(function (t) { var nt = (t === oldT) ? newT : t; if (out.indexOf(nt) < 0) out.push(nt); });
+        if (out.length) pub[id] = out; else delete pub[id];
+      });
+      return pub;
+    }, "✅ 标签「" + oldT + "」已全局重命名为「" + newT + "」。");
+  }
+  function publishTagRemove(t) {
+    t = (t || "").trim(); if (!t) return;
+    applyGlobalTag(function (pub) {
+      Object.keys(pub).forEach(function (id) {
+        var arr = (pub[id] || []).filter(function (x) { return x !== t; });
+        if (arr.length) pub[id] = arr; else delete pub[id];
+      });
+      return pub;
+    }, "🗑 标签「" + t + "」已全局删除。");
+  }
+  window.publishTagRename = publishTagRename;
+  window.publishTagRemove = publishTagRemove;
+
   // ---- 令牌 UI（仅 owner 区可见） ----
   function renderTokenUI() {
     var wrap = document.getElementById("tokenWrap");
