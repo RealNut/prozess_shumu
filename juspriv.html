@@ -427,11 +427,14 @@ function editText(tr, sel, getter, setter){
   if(!window.BibGate.require())return;
   const cell=tr.querySelector(sel); const span=cell.querySelector('span');
   const cur=getter(tr);
-  const inp=document.createElement('input'); inp.type='text'; inp.value=cur; inp.className='cellinput';
+  // 窄列（如年份 66px）编辑时临时加宽并禁止换行，确保 ✓/✕ 按钮可见
+  cell.style.width='auto'; cell.style.whiteSpace='nowrap';
+  const inp=document.createElement('input'); inp.type='text'; inp.value=cur; inp.className='cellinput'; inp.style.width='120px';
   const save=document.createElement('button'); save.textContent='✓'; save.className='cellsave';
   const cancel=document.createElement('button'); cancel.textContent='✕'; cancel.className='cellcancel';
   cell.innerHTML=''; cell.append(inp,save,cancel); inp.focus();
-  function done(ok){ if(ok){setter(tr.getAttribute('data-id'), inp.value);} renderRow(tr); renderAll(); }
+  function restore(){ cell.style.width=''; cell.style.whiteSpace=''; }
+  function done(ok){ if(ok){setter(tr.getAttribute('data-id'), inp.value);} restore(); renderRow(tr); renderAll(); }
   save.onclick=()=>done(true); cancel.onclick=()=>done(false);
   inp.onkeydown=e=>{ if(e.key==='Enter')done(true); if(e.key==='Escape')done(false); };
 }
