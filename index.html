@@ -76,9 +76,9 @@
 
 <footer>Generated bibliography · GitHub Pages · 书名参考译名由术语词典自动生成并优化</footer>
 
-<script src="config.js?v=1783869997"></script>
-<script src="gate.js?v=1783869997"></script>
-<script src="publish.js?v=1783869997"></script>
+<script src="config.js?v=1783870178"></script>
+<script src="gate.js?v=1783870178"></script>
+<script src="publish.js?v=1783870178"></script>
 <script>
 const META={"p": {"name": "Schriften zum Prozessrecht", "pub": "dh", "html": "prozessrecht.html", "short": "D&H·ProzR"}, "s": {"name": "Studien zum vergleichenden Privatrecht", "pub": "dh", "html": "studien.html", "short": "D&H·Stud"}, "c": {"name": "Schriften zum bürgerlichen Recht", "pub": "dh", "html": "buergerlichen.html", "short": "D&H·BürgR"}, "v": {"name": "Veröffentlichungen zum Verfahrensrecht", "pub": "mohr", "html": "vverfr.html", "short": "Mohr·VVerfR"}, "j": {"name": "Jus Privatum", "pub": "mohr", "html": "juspriv.html", "short": "Mohr·JusPriv"}, "i": {"name": "Beiträge zum ausländischen und internationalen Privatrecht", "pub": "mohr", "html": "btripr.html", "short": "Mohr·BtrIPR"}};
 const FILES={"p": "prozessrecht.json", "s": "studien.json", "c": "buergerlichen.json", "v": "vverfr.json", "j": "juspriv.json", "i": "btripr.json"};
@@ -141,7 +141,7 @@ function showTag(tag){
   box.innerHTML='<div class="sec-title">含标签「'+esc(tag)+'」的书（'+ids.length+'）</div>'+
     ids.map(id=>{const b=BOOKS[id]||{};const meta=META[b.series]||{};const pc=PUBCOLOR[meta.pub]||{bg:'#eee',c:'#333',label:''};
       return '<div class="ritem"><span class="badge" style="background:'+pc.bg+';color:'+pc.c+'">'+esc(meta.short||b.series)+'</span>'+
-        '<a href="'+esc(meta.html||'#')+'">'+esc(b.de||id)+'</a>'+
+        '<a href="'+esc(b.link||meta.html||'#')+'" target="_blank" rel="noopener">'+esc(b.de||id)+'</a>'+
         '<span class="zh">'+esc(b.zh||'')+'</span>'+
         '<span class="au">'+esc(b.author||'')+'</span></div>';}).join('');
   box.scrollIntoView({behavior:'smooth'});
