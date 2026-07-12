@@ -201,8 +201,8 @@
 <tr data-id="i:9783162005380"><td class="vol">152</td><td class="au">（编）Holger Fleischer；Marco Speranzin</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783162005380" target="_blank" rel="noopener">Great Debates in German and Italian Company Law</a></td><td class="zh"><span class="zhtext">great debates 在 德国的 and italian company 法</span><button class="editzh owner-only" title="修改译文" aria-label="修改译文"></button></td><td class="yr">2026</td><td class="tags"></td></tr>
 <tr data-id="i:9783161645839"><td class="vol">153</td><td class="au">Imen Gallala-Arndt</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783161645839" target="_blank" rel="noopener">Interreligiöse Ehen zwischen staatlichem Recht und religiösem Recht</a> <span class="sub">Eine Untersuchung am Beispiel von Israel, dem Libanon und Tunesien</span></td><td class="zh"><span class="zhtext">interreligiose 婚姻 之间 国家 法 与 religiosem 法：一 研究 在 示例 论 israel libanon 与 tunesien</span><button class="editzh owner-only" title="修改译文" aria-label="修改译文"></button></td><td class="yr">2026</td><td class="tags"></td></tr>
 </tbody></table>
-<script src="config.js?v=1783849946"></script>
-<script src="gate.js?v=1783849946"></script>
+<script src="config.js?v=1783850217"></script>
+<script src="gate.js?v=1783850217"></script>
 
 <script>
 const LS_LOCAL="shumu_local_v1";
@@ -214,9 +214,9 @@ function loadJSON(k){try{return JSON.parse(localStorage.getItem(k)||"{}")}catch(
 function saveJSON(k,o){localStorage.setItem(k,JSON.stringify(o))}
 let PUBLISHED={};
 let PUB_TRANS={};
-fetch('tags.json').then(r=>r.json()).then(j=>{PUBLISHED=j||{};renderAll();updatePend();})
+fetch('tags.json').then(r=>r.json()).then(j=>{PUBLISHED=j||{};reconcileTags();renderAll();updatePend();})
   .catch(e=>{console.warn('tags.json 加载失败(本地打开时正常):',e);renderAll();updatePend();});
-fetch('trans_overrides.json').then(r=>r.json()).then(j=>{PUB_TRANS=j||{};applyTrans();})
+fetch('trans_overrides.json').then(r=>r.json()).then(j=>{PUB_TRANS=j||{};reconcileTrans();applyTrans();})
   .catch(e=>{PUB_TRANS={};applyTrans();console.warn('trans_overrides.json 加载失败(本地打开时正常):',e);});
 
 function renderAll(){
@@ -224,10 +224,11 @@ function renderAll(){
     const id=tr.getAttribute('data-id');
     const cell=tr.querySelector('.tags');
     const pub=(PUBLISHED[id]||[]);
+    const pubSet=new Set(pub);
     const loc=(loadJSON(LS_LOCAL)[id]||[]);
     let html='';
     pub.forEach(t=>{html+='<span class="tag pub" data-t="'+esc(t)+'">'+esc(t)+'</span>';});
-    loc.forEach(t=>{html+='<span class="tag local" data-t="'+esc(t)+'"><button class="x" title="删除(仅本地)">×</button>'+esc(t)+'</span>';});
+    loc.forEach(t=>{ if(pubSet.has(t))return; html+='<span class="tag local" data-t="'+esc(t)+'"><button class="x" title="删除(仅本地)">×</button>'+esc(t)+'</span>';});
     html+='<input class="addtag owner-only" placeholder="加标签…" size="8">';
     cell.innerHTML=html;
   });
@@ -269,7 +270,13 @@ function bindTagEvents(){
       if(!exists||!(Pn[id]||[]).includes(t)){Pn[id]=(Pn[id]||[]).concat(t);saveJSON(LS_PEND,Pn);}
       renderAll();updatePend();
       if(!exists){
-        showHint('✅ 标签「'+esc(t)+'」已保存到<b>本机</b>。想让所有访客看到，点右上「<span class="em">发布待定标签</span>」复制，再发到 <b>WorkBuddy 项目对话</b>里，我就会重新推送上线。');
+        reconcileTags();
+        const Pn2=loadJSON(LS_PEND);
+        if((Pn2[id]||[]).length>0){
+          showHint('✅ 标签「'+esc(t)+'」已保存到<b>本机</b>。想让所有访客看到，点右上「<span class="em">发布待定标签</span>」复制，再发到 <b>WorkBuddy 项目对话</b>里，我就会重新推送上线。');
+        } else {
+          showHint('✅ 标签「'+esc(t)+'」已与已发布内容一致，无需重复发送。');
+        }
       }
     };
   });
@@ -313,7 +320,14 @@ document.addEventListener('click',function(e){
     const L=loadJSON(LS_TRANS_LOCAL);L[id]=v;saveJSON(LS_TRANS_LOCAL,L);
     const Pn=loadJSON(LS_TRANS_PEND);Pn[id]=v;saveJSON(LS_TRANS_PEND,Pn);
     updatePendTrans();
-    showHint('✅ 译文已保存到<b>本机</b>。想让所有访客看到你的修订，点右上「<span class="em">发布待定译文</span>」复制，再发到 <b>WorkBuddy 项目对话</b>里，我就会重新推送上线。');
+    reconcileTrans();
+    const Pn2=loadJSON(LS_TRANS_PEND);
+    const stillPending=Object.keys(Pn2).some(k=>Pn2[k]!=null&&Pn2[k]!=="");
+    if(stillPending){
+      showHint('✅ 译文已保存到<b>本机</b>。想让所有访客看到你的修订，点右上「<span class="em">发布待定译文</span>」复制，再发到 <b>WorkBuddy 项目对话</b>里，我就会重新推送上线。');
+    } else {
+      showHint('✅ 该译文已与已发布内容一致，无需重复发送。');
+    }
   };
   cancel.onclick=function(){restore(cur);};
 });
@@ -327,6 +341,26 @@ function doSearch(){
     tr.style.display=ok?'':'none';if(ok)n++;
   });
   const c=document.getElementById('cnt');if(c)c.textContent=n;
+}
+/* 已发布内容对账：把本地“待发布”列表里、已经在仓库 tags.json / trans_overrides.json
+   中出现过的条目清掉，避免反复提示用户“复制再发”。下次刷新页面即生效。 */
+function reconcileTags(){
+  const Pn=loadJSON(LS_PEND);let changed=false;
+  Object.keys(Pn).forEach(id=>{
+    const pend=(Pn[id]||[]).filter(t=>(PUBLISHED[id]||[]).indexOf(t)<0);
+    if(pend.length!==(Pn[id]||[]).length)changed=true;
+    if(pend.length)Pn[id]=pend;else delete Pn[id];
+  });
+  if(changed)saveJSON(LS_PEND,Pn);
+  return changed;
+}
+function reconcileTrans(){
+  const Pn=loadJSON(LS_TRANS_PEND);let changed=false;
+  Object.keys(Pn).forEach(id=>{
+    if(PUB_TRANS[id]!=null && Pn[id]===PUB_TRANS[id]){delete Pn[id];changed=true;}
+  });
+  if(changed)saveJSON(LS_TRANS_PEND,Pn);
+  return changed;
 }
 function updatePend(){
   const Pn=loadJSON(LS_PEND);const ids=Object.keys(Pn).filter(k=>Pn[k].length);
