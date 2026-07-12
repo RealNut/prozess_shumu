@@ -1,40 +1,106 @@
-<!DOCTYPE html>
-<html lang="zh"><head><meta charset="utf-8">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>我的法学书目库</title>
 <style>
-*{box-sizing:border-box;}
-body{font-family:-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;margin:0;background:#f5f6f8;color:#1f2329;}
-header{background:#6b1f2a;color:#fff;padding:30px 28px;}
-header h1{margin:0;font-size:22px;}
-header p{margin:8px 0 0;opacity:.85;font-size:13px;}
-.wrap{max-width:900px;margin:26px auto;padding:0 16px;}
-.intro{background:#fff;border:1px solid #e6e8eb;border-radius:8px;padding:14px 18px;font-size:13px;line-height:1.7;margin-bottom:20px;color:#444;}
-.cards{display:grid;grid-template-columns:1fr;gap:16px;}
-.card{display:block;background:#fff;border:1px solid #e6e8eb;border-radius:10px;padding:20px 22px;text-decoration:none;color:inherit;transition:.15s;box-shadow:0 1px 3px rgba(0,0,0,.05);}
-.card:hover{border-color:#6b1f2a;box-shadow:0 4px 14px rgba(107,31,42,.15);transform:translateY(-2px);}
-.card-title{font-size:16px;font-weight:600;color:#6b1f2a;}
-.card-desc{font-size:13px;color:#555;margin:6px 0 10px;line-height:1.5;}
-.card-meta{font-size:12px;color:#999;}
-footer{text-align:center;color:#999;font-size:12px;padding:24px;}
-</style></head>
-<body>
-<header><h1>我的法学书目库</h1>
-<p>两个德语法学丛书系列的德中 / 德英对照书目，可在线查阅与分享</p></header>
-<div class="wrap">
-<div class="intro">本页汇总两套期系化整理的学术书目：Duncker &amp; Humblot 的《Schriften zum Prozessrecht》（诉讼法，315 卷）与 Mohr Siebeck 的《Veröffentlichungen zum Verfahrensrecht / VVerfR》（程序法，234 卷）。每本均含卷号、作者、原书名与参考译名。书目内容可随时修订，修订后重新部署即可更新。</div>
+ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;max-width:1100px;margin:0 auto;padding:28px 18px;color:#1f2328;background:#fafbfc}
+ h1{font-size:24px;margin:0 0 2px}
+ .sub0{color:#656d76;font-size:13px;margin-bottom:20px}
+ .cards{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:26px}
+ .card{flex:1;min-width:260px;border:1px solid #e1e4e8;border-radius:12px;padding:18px 20px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:.15s;text-decoration:none;color:inherit}
+ .card:hover{box-shadow:0 4px 14px rgba(0,0,0,.10);transform:translateY(-2px)}
+ .card .n{font-size:30px;font-weight:700;color:#0969da}
+ .card .t{font-size:15px;font-weight:600;margin:6px 0 2px}
+ .card .d{font-size:12.5px;color:#656d76}
+ .sec-title{font-size:16px;font-weight:600;margin:6px 0 10px;border-left:4px solid #0969da;padding-left:8px}
+ .cloud{line-height:2.2;margin-bottom:14px}
+ .tag{display:inline-block;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:999px;padding:3px 12px;margin:3px 4px;font-size:13px;cursor:pointer}
+ .tag:hover{background:#e0e7ff}
+ .tag .c{color:#6b7280;font-size:11px;margin-left:4px}
+ .empty{color:#8a8f98;font-size:13px}
+ .results{margin-top:10px}
+ .ritem{border-bottom:1px solid #eaecef;padding:9px 4px;display:flex;gap:10px;align-items:baseline}
+ .ritem .badge{font-size:11px;font-weight:700;padding:1px 7px;border-radius:5px;white-space:nowrap}
+ .badge.p{background:#dbeafe;color:#1e40af}
+ .badge.v{background:#dcfce7;color:#166534}
+ .ritem a{color:#0969da;text-decoration:none;font-weight:600}
+ .ritem .zh{color:#1a7f37;font-size:12.5px}
+ .ritem .au{color:#656d76;font-size:12px}
+ .pendbar{margin-top:26px;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 16px;font-size:13px}
+ .pendbar button{font-size:13px;padding:5px 12px;border:1px solid #d0d7de;border-radius:7px;background:#fff;cursor:pointer;margin-left:8px}
+ .pendbar textarea{width:100%;height:90px;font-family:monospace;font-size:11.5px;margin-top:8px}
+ footer{text-align:center;color:#8a8f98;font-size:12px;margin-top:30px}
+</style></head><body>
+<h1>我的法学书目库</h1>
+<div class="sub0">Duncker &amp; Humblot《Schriften zum Prozessrecht》315 册 · Mohr Siebeck《VVerfR》234 册 · 德中对照</div>
+
 <div class="cards">
-      <a class="card" href="prozessrecht.html">
-        <div class="card-title">Duncker & Humblot · Schriften zum Prozessrecht</div>
-        <div class="card-desc">德语诉讼法丛书（德英对照书目，315 卷）</div>
-        <div class="card-meta">条目 315 · 点击打开对照表</div>
-      </a>
-      <a class="card" href="vverfr.html">
-        <div class="card-title">Mohr Siebeck · Veröffentlichungen zum Verfahrensrecht (VVerfR)</div>
-        <div class="card-desc">德语程序法丛书（德中对照书目，234 卷）</div>
-        <div class="card-meta">条目 234 · 点击打开对照表</div>
-      </a>
+  <a class="card" href="prozessrecht.html">
+    <div class="n">315</div><div class="t">Schriften zum Prozessrecht</div>
+    <div class="d">Duncker &amp; Humblot · 诉讼法丛书（德英对照）</div></a>
+  <a class="card" href="vverfr.html">
+    <div class="n">234</div><div class="t">VVerfR</div>
+    <div class="d">Mohr Siebeck · Veröffentlichungen zum Verfahrensrecht（德中对照）</div></a>
 </div>
+
+<div class="sec-title">🏷️ 标签云（点击查看含该标签的书）</div>
+<div class="cloud" id="cloud"><span class="empty">加载中…</span></div>
+<div class="results" id="results"></div>
+
+<div class="pendbar">
+  <div>🔄 你在本机加的标签会先存在浏览器本地。点下面按钮可复制「待发布标签」，发给我即可发布到仓库、让所有人看到。</div>
+  <button id="copyPend">复制待发布标签</button>
+  <textarea id="pendjson" readonly placeholder="（暂无待发布标签）"></textarea>
 </div>
-<footer>Generated bibliographies · 可分享静态站点</footer>
+
+<footer>Generated bibliography · GitHub Pages · 书名参考译名由术语词典自动生成</footer>
+
+<script>
+const P_FILE="prozessrecht.json", V_FILE="vverfr.json", T_FILE="tags.json";
+const LS_LOCAL="shumu_local_v1", LS_PEND="shumu_pending_v1";
+function LJ(k){try{return JSON.parse(localStorage.getItem(k)||"{}")}catch(e){return{}}}
+let BOOKS={}; // id -> {de,zh,author,link,series}
+let PUB={};  // id -> [tags]
+function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
+
+Promise.all([fetch(P_FILE).then(r=>r.json()),fetch(V_FILE).then(r=>r.json()),fetch(T_FILE).then(r=>r.json())])
+ .then(([p,v,t])=>{
+   p.forEach(b=>BOOKS[b.id]={de:b.de,zh:b.zh,author:b.author,link:b.de_link,series:'p'});
+   v.forEach(b=>BOOKS[b.id]={de:b.de,zh:b.zh,author:b.author,link:b.de_link,series:'v'});
+   PUB=t||{};
+   renderCloud();renderPend();
+ })
+ .catch(e=>{document.getElementById('cloud').innerHTML='<span class="empty">数据加载失败（请用 https 链接打开，或本地起服务器）。</span>';console.warn(e);});
+
+function renderCloud(){
+  const counts={};
+  Object.values(PUB).forEach(arr=>arr.forEach(t=>counts[t]=(counts[t]||0)+1));
+  const ks=Object.keys(counts).sort((a,b)=>counts[b]-counts[a]);
+  const cloud=document.getElementById('cloud');
+  if(!ks.length){cloud.innerHTML='<span class="empty">还没有已发布的标签。去书目页给书加标签，再发给我发布即可。</span>';return;}
+  cloud.innerHTML=ks.map(t=>'<span class="tag" data-t="'+esc(t)+'">'+esc(t)+'<span class="c">'+counts[t]+'</span></span>').join('');
+  cloud.querySelectorAll('.tag').forEach(el=>el.onclick=()=>showTag(el.getAttribute('data-t')));
+}
+function showTag(tag){
+  const ids=Object.keys(PUB).filter(id=>(PUB[id]||[]).includes(tag));
+  const box=document.getElementById('results');
+  if(!ids.length){box.innerHTML='';return;}
+  box.innerHTML='<div class="sec-title">含标签「'+esc(tag)+'」的书（'+ids.length+'）</div>'+
+    ids.map(id=>{const b=BOOKS[id]||{};const s=b.series==='p'?'p':'v';
+      const sn=b.series==='p'?'D&H':'VVerfR';
+      return '<div class="ritem"><span class="badge '+s+'">'+sn+'</span>'+
+        '<a href="'+esc(b.link||'#')+'" target="_blank" rel="noopener">'+esc(b.de||id)+'</a>'+
+        '<span class="zh">'+esc(b.zh||'')+'</span>'+
+        '<span class="au">'+esc(b.author||'')+'</span></div>';}).join('');
+  box.scrollIntoView({behavior:'smooth'});
+}
+function renderPend(){
+  const Pn=LJ(LS_PEND);const ids=Object.keys(Pn).filter(k=>Pn[k]&&Pn[k].length);
+  const total=ids.reduce((a,k)=>a+Pn[k].length,0);
+  document.getElementById('pendjson').value=total?JSON.stringify(Pn,null,1):'';
+  const btn=document.getElementById('copyPend');
+  btn.onclick=()=>{const ta=document.getElementById('pendjson');if(!ta.value){alert('暂无待发布标签');return;}
+    ta.select();if(navigator.clipboard)navigator.clipboard.writeText(ta.value);
+    alert('已复制待发布标签。把这段发给我，我就会发布到仓库。');};
+}
+</script>
 </body></html>
