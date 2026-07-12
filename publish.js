@@ -133,11 +133,14 @@
     } else {
       fetch("tags.json?_=" + Date.now()).then(function (r) { return r.json(); }).then(function (cur) {
         var newObj = mergeFn(cur || {});
+        // 无令牌：先在本地刷新标签云，让用户立刻看到改动（网站尚未真正变更）
+        if (typeof window.applyPublishedTags === "function") window.applyPublishedTags(newObj);
+        else if (typeof window.renderCloud === "function") window.renderCloud();
         var text = JSON.stringify(newObj, null, 1);
         if (navigator.clipboard) navigator.clipboard.writeText(text);
         var ta = document.getElementById("pendjson");
         if (ta) { ta.value = text; ta.select(); }
-        showHintFn("⚠️ 未填 GitHub 令牌，无法直接改仓库。已复制<b>完整 tags.json</b>到剪贴板，请发到 <b>WorkBuddy 项目对话</b>，我替换后重新推送。" + okMsg);
+        showHintFn("⚠️ 未填 GitHub 令牌，<b>本地标签云已更新但不代表网站已改</b>。已复制<b>完整 tags.json</b>到剪贴板，请发到 <b>WorkBuddy 项目对话</b>，我替换后重新推送，所有访客才看得到。" + okMsg);
       }).catch(function (e) { showHintFn("❌ 读取 tags.json 失败：" + (e.message || e)); });
     }
   }
