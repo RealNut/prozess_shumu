@@ -54,15 +54,15 @@
 <div class="results" id="results"></div>
 
 <div class="pendbar owner-only">
-  <div>🔄 你在本机加的标签会先存在浏览器本地。点下面按钮可复制「待发布标签」，发给我即可发布到仓库、让所有人看到。</div>
+  <div>🔄 你在本机加的标签会先存在浏览器本地。点下面按钮可复制「待发布标签」，把它发到 <b>WorkBuddy 项目对话</b>里，我就会写入仓库并重新推送（部署），让所有访客都能看到。</div>
   <button id="copyPend">复制待发布标签</button>
   <textarea id="pendjson" readonly placeholder="（暂无待发布标签）"></textarea>
 </div>
 
 <footer>Generated bibliography · GitHub Pages · 书名参考译名由术语词典自动生成</footer>
 
-<script src="config.js?v=1783849308"></script>
-<script src="gate.js?v=1783849308"></script>
+<script src="config.js?v=1783849946"></script>
+<script src="gate.js?v=1783849946"></script>
 <script>
 const META={"p": {"name": "Schriften zum Prozessrecht", "pub": "dh", "html": "prozessrecht.html", "short": "D&H·ProzR"}, "s": {"name": "Studien zum vergleichenden Privatrecht", "pub": "dh", "html": "studien.html", "short": "D&H·Stud"}, "c": {"name": "Schriften zum bürgerlichen Recht", "pub": "dh", "html": "buergerlichen.html", "short": "D&H·BürgR"}, "v": {"name": "Veröffentlichungen zum Verfahrensrecht (VVerfR)", "pub": "mohr", "html": "vverfr.html", "short": "Mohr·VVerfR"}, "j": {"name": "Jus Privatum", "pub": "mohr", "html": "juspriv.html", "short": "Mohr·JusPriv"}, "i": {"name": "Beiträge zum ausländischen und internationalen Privatrecht", "pub": "mohr", "html": "btripr.html", "short": "Mohr·BtrIPR"}};
 const FILES={"p": "prozessrecht.json", "s": "studien.json", "c": "buergerlichen.json", "v": "vverfr.json", "j": "juspriv.json", "i": "btripr.json"};
@@ -114,7 +114,7 @@ function renderPend(){
   const btn=document.getElementById('copyPend');
   btn.onclick=()=>{const ta=document.getElementById('pendjson');if(!ta.value){alert('暂无待发布标签');return;}
     ta.select();if(navigator.clipboard)navigator.clipboard.writeText(ta.value);
-    alert('已复制待发布标签。把这段发给我，我就会发布到仓库。');};
+    alert('已复制待发布标签 ✅\n\n把它发到「WorkBuddy 项目」对话里，我就会写入仓库并重新推送（部署），让所有访客都能看到。');};
 }
 </script>
 </body></html>
