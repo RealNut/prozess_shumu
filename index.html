@@ -18,10 +18,6 @@
  .tag{display:inline-block;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:999px;padding:3px 12px;margin:3px 4px;font-size:13px;cursor:pointer}
  .tag:hover{background:#e0e7ff}
  .tag .c{color:#6b7280;font-size:11px;margin-left:4px}
- .tag .tedit,.tag .tdel{border:none;background:none;cursor:pointer;font-size:12px;margin-left:4px;padding:0 1px;line-height:1;vertical-align:baseline}
- .tag .tedit{color:#0969da}
- .tag .tdel{color:#b91c1c;font-weight:700}
- .cloudhint{color:#8a8f98;font-size:12px;margin:-6px 0 10px}
  .empty{color:#8a8f98;font-size:13px}
  .results{margin-top:10px}
  .ritem{border-bottom:1px solid #eaecef;padding:9px 4px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
@@ -29,17 +25,10 @@
  .ritem a{color:#0969da;text-decoration:none;font-weight:600}
  .ritem .zh{color:#1a7f37;font-size:12.5px}
  .ritem .au{color:#656d76;font-size:12px}
- .pendbar{margin-top:26px;background:#fffbeb;border:1px solid #fde68a;border-radius:10px;padding:12px 16px;font-size:13px}
- .pendbar button{font-size:13px;padding:5px 12px;border:1px solid #d0d7de;border-radius:7px;background:#fff;cursor:pointer;margin-left:8px}
- .pendbar textarea{width:100%;height:90px;font-family:monospace;font-size:11.5px;margin-top:8px}
  footer{text-align:center;color:#8a8f98;font-size:12px;margin-top:30px}
- .lockbtn{font-size:13px;padding:5px 12px;border:1px solid #d0d7de;border-radius:7px;background:#fff;cursor:pointer;margin:0 0 8px 2px}
- .lockbtn.on{background:#e6ffed;border-color:#9be9a8;color:#1a7f37}
- body:not(.unlocked) .owner-only{display:none!important}
 </style></head><body>
 <h1>德语法律丛书书目</h1>
 <div class="sub0">共 1628 册 · 本站收录 Mohr Siebeck 和 Duncker &amp; Humblot 两个著名学术出版社的部分丛书书目。（根据站长兴趣挑选）</div>
-<button class="lockbtn" id="lockbtn">🔒 加标签已锁定</button>
 
 <div class="pub-h" style="border-left:5px solid #1a7f37;color:#1a7f37">Mohr Siebeck</div>
 <div class="cards">
@@ -55,22 +44,11 @@
 </div>
 
 <div class="sec-title">🏷️ 标签云（点击查看含该标签的书）</div>
-<div class="cloudhint owner-only">🔧 已解锁：点标签上的 <b style="color:#0969da">✎</b> 可<b>全局重命名</b>、<b style="color:#b91c1c">×</b> 可<b>全局删除</b>（作用到所有含该标签的书）。填了 GitHub 令牌即直接同步。</div>
 <div class="cloud" id="cloud"><span class="empty">加载中…</span></div>
 <div class="results" id="results"></div>
 
-<div class="pendbar owner-only">
-  <div>🔄 你在本机加的标签会先存在浏览器本地。<b>已填 GitHub 令牌</b>时，点下面按钮会<b>直接同步到网站</b>（刷新即见）；<b>未填令牌</b>时则复制「待发布标签」，把它发到 <b>WorkBuddy 项目对话</b>里，我就会写入仓库并重新推送（部署），让所有访客都能看到。</div>
-  <button id="copyPend">发布待定标签 (<b id="pend">0</b>)</button>
-  <span id="tokenWrap" style="margin-left:10px;font-size:12.5px;color:#57606a"></span>
-  <textarea id="pendjson" readonly placeholder="（暂无待发布标签）"></textarea>
-</div>
-
 <footer>Generated bibliography · GitHub Pages · 书名参考译名由术语词典自动生成并优化</footer>
 
-<script src="config.js?v=1783855374"></script>
-<script src="gate.js?v=1783855374"></script>
-<script src="publish.js?v=1783855374"></script>
 <script>
 const META={"p": {"name": "Schriften zum Prozessrecht", "pub": "dh", "html": "prozessrecht.html", "short": "D&H·ProzR"}, "s": {"name": "Studien zum vergleichenden Privatrecht", "pub": "dh", "html": "studien.html", "short": "D&H·Stud"}, "c": {"name": "Schriften zum bürgerlichen Recht", "pub": "dh", "html": "buergerlichen.html", "short": "D&H·BürgR"}, "v": {"name": "Veröffentlichungen zum Verfahrensrecht", "pub": "mohr", "html": "vverfr.html", "short": "Mohr·VVerfR"}, "j": {"name": "Jus Privatum", "pub": "mohr", "html": "juspriv.html", "short": "Mohr·JusPriv"}, "i": {"name": "Beiträge zum ausländischen und internationalen Privatrecht", "pub": "mohr", "html": "btripr.html", "short": "Mohr·BtrIPR"}};
 const FILES={"p": "prozessrecht.json", "s": "studien.json", "c": "buergerlichen.json", "v": "vverfr.json", "j": "juspriv.json", "i": "btripr.json"};
@@ -78,67 +56,32 @@ const PUBCOLOR={
   dh:{bg:'#dbeafe',c:'#1e40af',label:'D&H'},
   mohr:{bg:'#dcfce7',c:'#166534',label:'Mohr'}
 };
-const LS_LOCAL="shumu_local_v1", LS_PEND="shumu_pending_v1";
-function LJ(k){try{return JSON.parse(localStorage.getItem(k)||"{}")}catch(e){return{}}}
-let BOOKS={};
-let PUB={};
 function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
-
+let BOOKS={};      // id -> {de,zh,author,link,series,tags[]}
+let TAGCOUNT={};   // 标签 -> 出现次数
 const loads=Object.keys(FILES).map(k=>
   fetch(FILES[k]).then(r=>r.json()).then(arr=>arr.forEach(b=>{
     const s=(b.id||'').split(':')[0];
-    BOOKS[b.id]={de:b.de,zh:b.zh,author:b.author,link:b.de_link,series:s};
+    const tags=(b.tags||[]);
+    BOOKS[b.id]={de:b.de,zh:b.zh,author:b.author,link:b.de_link,series:s,tags:tags};
+    tags.forEach(t=>{TAGCOUNT[t]=(TAGCOUNT[t]||0)+1;});
   }))
 );
-function reconcilePending(){
-  const Pn=LJ(LS_PEND);let changed=false;
-  Object.keys(Pn).forEach(id=>{
-    const pend=(Pn[id]||[]).filter(t=>(PUB[id]||[]).indexOf(t)<0);
-    if(pend.length!==(Pn[id]||[]).length)changed=true;
-    if(pend.length)Pn[id]=pend;else delete Pn[id];
-  });
-  if(changed)localStorage.setItem(LS_PEND,JSON.stringify(Pn));
-}
 Promise.all(loads)
- .then(()=>fetch('tags.json').then(r=>r.json()).then(t=>{PUB=t||{};reconcilePending();renderCloud();renderPend();}))
+ .then(()=>{renderCloud();})
  .catch(e=>{document.getElementById('cloud').innerHTML='<span class="empty">数据加载失败（请用 https 链接打开，或本地起服务器）。</span>';console.warn(e);});
 
 function renderCloud(){
-  const counts={};
-  Object.values(PUB).forEach(arr=>arr.forEach(t=>counts[t]=(counts[t]||0)+1));
-  const ks=Object.keys(counts).sort((a,b)=>counts[b]-counts[a]);
+  const ks=Object.keys(TAGCOUNT).sort((a,b)=>TAGCOUNT[b]-TAGCOUNT[a]);
   const cloud=document.getElementById('cloud');
-  if(!ks.length){cloud.innerHTML='<span class="empty">还没有已发布的标签。去书目页给书加标签，再发给我发布即可。</span>';return;}
-  cloud.innerHTML=ks.map(t=>'<span class="tag" data-t="'+esc(t)+'">'+esc(t)+'<span class="c">'+counts[t]+'</span>'
-    +'<button class="tedit owner-only" title="全局重命名">✎</button>'
-    +'<button class="tdel owner-only" title="全局删除">×</button>'
-    +'</span>').join('');
+  if(!ks.length){cloud.innerHTML='<span class="empty">还没有标签。</span>';return;}
+  cloud.innerHTML=ks.map(t=>'<span class="tag" data-t="'+esc(t)+'">'+esc(t)+'<span class="c">'+TAGCOUNT[t]+'</span></span>').join('');
   cloud.querySelectorAll('.tag').forEach(el=>{
-    el.onclick=(e)=>{ if(e.target.classList.contains('tedit')||e.target.classList.contains('tdel'))return;
-      showTag(el.getAttribute('data-t')); };
-  });
-  cloud.querySelectorAll('.tedit').forEach(b=>{
-    b.onclick=(e)=>{ e.stopPropagation();
-      const old=b.closest('.tag').getAttribute('data-t');
-      const nv=prompt('把标签「'+old+'」全局重命名为（作用到所有含该标签的书）：',old);
-      if(nv==null)return; const t=nv.trim(); if(!t||t===old)return;
-      if(window.publishTagRename)window.publishTagRename(old,t); };
-  });
-  cloud.querySelectorAll('.tdel').forEach(b=>{
-    b.onclick=(e)=>{ e.stopPropagation();
-      const t=b.closest('.tag').getAttribute('data-t');
-      if(!confirm('确定全局删除标签「'+t+'」吗？所有书上的该标签都会被移除，且不可撤销。'))return;
-      if(window.publishTagRemove)window.publishTagRemove(t); };
+    el.onclick=()=>showTag(el.getAttribute('data-t'));
   });
 }
-// 供 publish.js 在全局重命名/删除成功后回调刷新
-window.renderCloud=renderCloud;
-window.applyPublishedTags=function(obj){
-  PUB=obj||{}; reconcilePending(); renderCloud(); renderPend();
-  const r=document.getElementById('results'); if(r)r.innerHTML='';
-};
 function showTag(tag){
-  const ids=Object.keys(PUB).filter(id=>(PUB[id]||[]).includes(tag));
+  const ids=Object.keys(BOOKS).filter(id=>(BOOKS[id].tags||[]).includes(tag));
   const box=document.getElementById('results');
   if(!ids.length){box.innerHTML='';return;}
   box.innerHTML='<div class="sec-title">含标签「'+esc(tag)+'」的书（'+ids.length+'）</div>'+
@@ -148,14 +91,6 @@ function showTag(tag){
         '<span class="zh">'+esc(b.zh||'')+'</span>'+
         '<span class="au">'+esc(b.author||'')+'</span></div>';}).join('');
   box.scrollIntoView({behavior:'smooth'});
-}
-function renderPend(){
-  const Pn=LJ(LS_PEND);const ids=Object.keys(Pn).filter(k=>Pn[k]&&Pn[k].length);
-  const total=ids.reduce((a,k)=>a+Pn[k].length,0);
-  const pe=document.getElementById('pend'); if(pe)pe.textContent=total;
-  document.getElementById('pendjson').value=total?JSON.stringify(Pn,null,1):'';
-  const btn=document.getElementById('copyPend');
-  if(btn)btn.onclick=()=>{ if(window.doPublishTags) doPublishTags(); };
 }
 </script>
 </body></html>
