@@ -61,8 +61,8 @@
 
 <footer>Generated bibliography · GitHub Pages · 书名参考译名由术语词典自动生成</footer>
 
-<script src="config.js?v=1783849946"></script>
-<script src="gate.js?v=1783849946"></script>
+<script src="config.js?v=1783850217"></script>
+<script src="gate.js?v=1783850217"></script>
 <script>
 const META={"p": {"name": "Schriften zum Prozessrecht", "pub": "dh", "html": "prozessrecht.html", "short": "D&H·ProzR"}, "s": {"name": "Studien zum vergleichenden Privatrecht", "pub": "dh", "html": "studien.html", "short": "D&H·Stud"}, "c": {"name": "Schriften zum bürgerlichen Recht", "pub": "dh", "html": "buergerlichen.html", "short": "D&H·BürgR"}, "v": {"name": "Veröffentlichungen zum Verfahrensrecht (VVerfR)", "pub": "mohr", "html": "vverfr.html", "short": "Mohr·VVerfR"}, "j": {"name": "Jus Privatum", "pub": "mohr", "html": "juspriv.html", "short": "Mohr·JusPriv"}, "i": {"name": "Beiträge zum ausländischen und internationalen Privatrecht", "pub": "mohr", "html": "btripr.html", "short": "Mohr·BtrIPR"}};
 const FILES={"p": "prozessrecht.json", "s": "studien.json", "c": "buergerlichen.json", "v": "vverfr.json", "j": "juspriv.json", "i": "btripr.json"};
@@ -82,8 +82,17 @@ const loads=Object.keys(FILES).map(k=>
     BOOKS[b.id]={de:b.de,zh:b.zh,author:b.author,link:b.de_link,series:s};
   }))
 );
+function reconcilePending(){
+  const Pn=LJ(LS_PEND);let changed=false;
+  Object.keys(Pn).forEach(id=>{
+    const pend=(Pn[id]||[]).filter(t=>(PUB[id]||[]).indexOf(t)<0);
+    if(pend.length!==(Pn[id]||[]).length)changed=true;
+    if(pend.length)Pn[id]=pend;else delete Pn[id];
+  });
+  if(changed)localStorage.setItem(LS_PEND,JSON.stringify(Pn));
+}
 Promise.all(loads)
- .then(()=>fetch('tags.json').then(r=>r.json()).then(t=>{PUB=t||{};renderCloud();renderPend();}))
+ .then(()=>fetch('tags.json').then(r=>r.json()).then(t=>{PUB=t||{};reconcilePending();renderCloud();renderPend();}))
  .catch(e=>{document.getElementById('cloud').innerHTML='<span class="empty">数据加载失败（请用 https 链接打开，或本地起服务器）。</span>';console.warn(e);});
 
 function renderCloud(){
