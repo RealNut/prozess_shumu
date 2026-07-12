@@ -33,6 +33,10 @@
  .cellsave{color:#1a7f37;border-color:#1a7f37}
  .editzh,.edityr,.edittags{cursor:pointer;border:1px solid #d0d7de;background:#f6f8fa;border-radius:6px;padding:1px 6px;font-size:12px;margin-left:4px}
  .editzh:hover,.edityr:hover,.edittags:hover{background:#e0e7ff}
+.pending-badge{display:inline-block;background:#1a7f37;color:#fff;border-radius:999px;padding:2px 10px;font-size:11.5px;margin-left:6px;vertical-align:middle;opacity:0;transition:opacity .3s}
+.pending-badge.show{opacity:1}
+.cell-saved{animation:cellFlash .8s ease-out}
+@keyframes cellFlash{0%{background:#dcfce7}100%{background:transparent}}
  .tageditor{position:fixed;right:16px;top:60px;width:280px;background:#fff;border:1px solid #d0d7de;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,.15);padding:12px 14px;z-index:50;font-size:13px}
  .te-title{font-weight:600;margin-bottom:8px}
  .te-chip{display:inline-flex;align-items:center;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:999px;padding:2px 8px;margin:3px 4px 3px 0;font-size:12px}
@@ -72,6 +76,7 @@
 <div id="tokenbar">
   <button id="tokenbtn" type="button">🔑 令牌</button>
   <button id="pubbtn" type="button">🚀 发布修改</button>
+  <span id="pending-badge" class="pending-badge owner-only"></span>
 </div>
 <h1>Jus Privatum</h1>
 <div class="sub0">Mohr Siebeck · 私法丛书 · 共 297 册</div>
@@ -434,7 +439,11 @@ function editText(tr, sel, getter, setter){
   const cancel=document.createElement('button'); cancel.textContent='✕'; cancel.className='cellcancel';
   cell.innerHTML=''; cell.append(inp,save,cancel); inp.focus();
   function restore(){ cell.style.width=''; cell.style.whiteSpace=''; }
-  function done(ok){ if(ok){setter(tr.getAttribute('data-id'), inp.value);} restore(); renderRow(tr); renderAll(); }
+  function done(ok){
+    if(ok){setter(tr.getAttribute('data-id'), inp.value); cell.classList.add('cell-saved'); flash('✓ 已保存（待发布）'); }
+    restore(); renderRow(tr); renderAll(); updatePending();
+    if(ok) setTimeout(function(){ cell.classList.remove('cell-saved'); }, 800);
+  }
   save.onclick=()=>done(true); cancel.onclick=()=>done(false);
   inp.onkeydown=e=>{ if(e.key==='Enter')done(true); if(e.key==='Escape')done(false); };
 }
@@ -456,8 +465,8 @@ function openTagEditor(tr){
     box.innerHTML='<div class="te-title">标签（'+arr.length+'）</div>'+
       arr.map((t,i)=>'<span class="te-chip" data-i="'+i+'">'+esc(t)+'<button type="button" class="te-x">×</button></span>').join('')+
       '<div class="te-add"><input id="te-in" placeholder="输入标签后回车添加"><button type="button" id="te-addbtn">添加</button></div>';
-    box.querySelectorAll('.te-x').forEach(b=>b.onclick=()=>{ const i=+b.parentElement.getAttribute('data-i'); arr.splice(i,1); window.BibPub.setTagPending(id,arr); draw(); renderRow(tr); });
-    const add=()=>{ const v=box.querySelector('#te-in').value.trim(); if(!v)return; if(arr.indexOf(v)<0)arr.push(v); window.BibPub.setTagPending(id,arr); box.querySelector('#te-in').value=''; draw(); renderRow(tr); };
+    box.querySelectorAll('.te-x').forEach(b=>b.onclick=()=>{ const i=+b.parentElement.getAttribute('data-i'); arr.splice(i,1); window.BibPub.setTagPending(id,arr); draw(); renderRow(tr); updatePending(); });
+    const add=()=>{ const v=box.querySelector('#te-in').value.trim(); if(!v)return; if(arr.indexOf(v)<0)arr.push(v); window.BibPub.setTagPending(id,arr); box.querySelector('#te-in').value=''; draw(); renderRow(tr); flash('✓ 标签已保存（待发布）'); updatePending(); };
     box.querySelector('#te-addbtn').onclick=add;
     box.querySelector('#te-in').onkeydown=e=>{ if(e.key==='Enter')add(); };
   }
@@ -468,13 +477,30 @@ function openTagEditor(tr){
 function closeTagEditor(){ if(tagEditor){ tagEditor.remove(); tagEditor=null; } }
 document.addEventListener('click',function(e){ if(tagEditor && !e.target.closest('.tageditor') && !e.target.closest('.edittags')) closeTagEditor(); });
 
+/* ---------- 待发布计数 ---------- */
+function updatePending(){
+  var n=0;
+  if(window.BibPub){
+    var t=window.BibPub.getLocal(window.BibPub.LS.tags);
+    var r=window.BibPub.getLocal(window.BibPub.LS.trans);
+    var y=window.BibPub.getLocal(window.BibPub.LS.year);
+    for(var k in t) if(t[k]&&t[k].length)n++;
+    for(var k in r) if(r[k])n++;
+    for(var k in y) if(y[k])n++;
+  }
+  var b=document.getElementById('pending-badge');
+  if(!b)return;
+  if(n>0){ b.textContent='待发布 '+n; b.className='pending-badge owner-only show'; }
+  else{ b.textContent=''; b.className='pending-badge owner-only'; }
+}
+
 /* ---------- 发布 ---------- */
 function doPublish(){
   if(!window.BibGate.require())return;
   window.BibPub.publishAll().then(r=>{
     if(r.mode==='published'){ flash('✅ 已发布到仓库（所有人可见）'); }
     else { flash('已复制修改 JSON，请发到 WorkBuddy 项目对话让我代推上线'); }
-    renderAll();
+    renderAll(); updatePending();
   }).catch(e=>{ flash('发布失败：'+(e.message||e)+'（需填 GitHub 令牌，或复制发我代推）'); });
 }
 function flash(msg){
@@ -493,8 +519,9 @@ document.addEventListener('DOMContentLoaded',function(){
     if(v!==null){ window.BibPub.setToken(v.trim()); flash(v.trim()?'✅ 已保存令牌':'已清除令牌'); }
   };
   // 拉取已发布覆盖层并合并渲染
-  if(window.BibPub){ window.BibPub.fetchPub().then(()=>renderAll()).catch(()=>renderAll()); }
+  if(window.BibPub){ window.BibPub.fetchPub().then(function(){ renderAll(); updatePending(); }).catch(function(){ renderAll(); updatePending(); }); }
   doSearch();
+  updatePending();
 });
 window.onBibUnlock=function(){ renderAll(); };
 </script>
