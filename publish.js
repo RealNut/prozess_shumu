@@ -50,7 +50,7 @@
     if (!tok) return Promise.reject(new Error("no-token"));
     var base = "https://api.github.com/repos/" + GH_REPO + "/contents/" + path;
     var h = { "Authorization": "Bearer " + tok, "Accept": "application/vnd.github+json" };
-    return fetch(base, { method: "GET", headers: h }).then(function (g) {
+    return fetch(base + "?_=" + Date.now(), { method: "GET", headers: h, cache: "no-store" }).then(function (g) {
       if (!g.ok) return g.json().catch(function () { return {}; }).then(function (e) { throw new Error("读取 " + path + " 失败：" + (e.message || g.status)); });
       return g.json();
     }).then(function (cur) {
