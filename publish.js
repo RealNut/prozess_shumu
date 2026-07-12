@@ -30,6 +30,8 @@
   function locTagsKey() { return window.LS_LOCAL || "shumu_local_v1"; }
   function pendTransKey() { return window.LS_TRANS_PEND || "shumu_trans_pending_v1"; }
   function locTransKey() { return window.LS_TRANS_LOCAL || "shumu_trans_local_v1"; }
+  function pendYearKey() { return window.LS_YEAR_PEND || "shumu_year_pending_v1"; }
+  function locYearKey() { return window.LS_YEAR_LOCAL || "shumu_year_local_v1"; }
   function pubStore() { return window.PUBLISHED || window.PUB || {}; }
   function setPubStore(o) { if ("PUBLISHED" in window) window.PUBLISHED = o; if ("PUB" in window) window.PUB = o; }
   function renderPub() { if (typeof window.updatePend === "function") window.updatePend(); else if (typeof window.renderPend === "function") window.renderPend(); }
@@ -110,14 +112,40 @@
     });
   }
 
+  // ---- 出版年份直发 / 兜底 ----
+  function doPublishYears() {
+    var Pn = loadJSON(pendYearKey());
+    if (!Pn || !Object.keys(Pn).length) { showHintFn("没有待发布年份，无需同步。"); return; }
+    if (!hasToken()) { return fallbackCopy("years"); }
+    syncFile("year_overrides.json", function (pub) {
+      for (var k in Pn) pub[k] = Pn[k];
+      return pub;
+    }).then(function (merged) {
+      try { localStorage.removeItem(pendYearKey()); localStorage.removeItem(locYearKey()); } catch (e) {}
+      if ("PUB_YEAR" in window) window.PUB_YEAR = merged;
+      if (typeof window.applyYear === "function") window.applyYear();
+      if (typeof window.updatePendYear === "function") window.updatePendYear();
+      if (typeof window.renderAll === "function") window.renderAll();
+      showHintFn("✅ 出版年份已直接同步到网站！刷新任意页面即可见，无需手动推送。");
+    }).catch(function (e) {
+      showHintFn("❌ 直发失败：" + (e.message || e) + "。可改用下方“复制”发到 WorkBuddy 项目让我代推。");
+    });
+  }
+
   function fallbackCopy(kind) {
-    var ta = document.getElementById(kind === "tags" ? "pendjson" : "pendtransjson");
+    var ta;
+    if (kind === "tags") ta = document.getElementById("pendjson");
+    else if (kind === "trans") ta = document.getElementById("pendtransjson");
+    else ta = document.getElementById("pendyearjson");
     if (!ta) return;
-    var obj = loadJSON(kind === "tags" ? pendTagsKey() : pendTransKey());
+    var obj;
+    if (kind === "tags") obj = loadJSON(pendTagsKey());
+    else if (kind === "trans") obj = loadJSON(pendTransKey());
+    else obj = loadJSON(pendYearKey());
     ta.value = JSON.stringify(obj, null, 1);
     ta.select();
     if (navigator.clipboard) navigator.clipboard.writeText(ta.value);
-    showHintFn("✅ 已复制待发布" + (kind === "tags" ? "标签" : "译文") + "到剪贴板。把它发到 <b>WorkBuddy 项目对话</b>，我就会写入仓库并重新推送，让所有人看到。");
+    showHintFn("✅ 已复制待发布" + (kind === "tags" ? "标签" : kind === "trans" ? "译文" : "年份") + "到剪贴板。把它发到 <b>WorkBuddy 项目对话</b>，我就会写入仓库并重新推送，让所有人看到。");
   }
 
   // ---- 标签全局重命名 / 删除（首页标签云用，作用到所有书） ----
@@ -191,6 +219,7 @@
 
   window.doPublishTags = doPublishTags;
   window.doPublishTrans = doPublishTrans;
+  window.doPublishYears = doPublishYears;
   window.renderTokenUI = renderTokenUI;
 
   if (document.readyState === "loading") {
