@@ -4,24 +4,23 @@
 <style>
  body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;max-width:1100px;margin:0 auto;padding:28px 18px;color:#1f2328;background:#fafbfc}
  h1{font-size:24px;margin:0 0 2px}
- .sub0{color:#656d76;font-size:13px;margin-bottom:20px}
- .cards{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:26px}
- .card{flex:1;min-width:260px;border:1px solid #e1e4e8;border-radius:12px;padding:18px 20px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:.15s;text-decoration:none;color:inherit}
+ .sub0{color:#656d76;font-size:13px;margin-bottom:8px}
+ .pub-h{font-size:17px;font-weight:700;margin:22px 0 10px;padding-left:10px}
+ .cards{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:6px}
+ .card{flex:1;min-width:260px;border:1px solid #e1e4e8;border-radius:12px;padding:16px 20px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:.15s;text-decoration:none;color:inherit}
  .card:hover{box-shadow:0 4px 14px rgba(0,0,0,.10);transform:translateY(-2px)}
- .card .n{font-size:30px;font-weight:700;color:#0969da}
- .card .t{font-size:15px;font-weight:600;margin:6px 0 2px}
+ .card .n{font-size:28px;font-weight:700}
+ .card .t{font-size:14.5px;font-weight:600;margin:6px 0 2px}
  .card .d{font-size:12.5px;color:#656d76}
- .sec-title{font-size:16px;font-weight:600;margin:6px 0 10px;border-left:4px solid #0969da;padding-left:8px}
+ .sec-title{font-size:16px;font-weight:600;margin:26px 0 10px;border-left:4px solid #0969da;padding-left:8px}
  .cloud{line-height:2.2;margin-bottom:14px}
  .tag{display:inline-block;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:999px;padding:3px 12px;margin:3px 4px;font-size:13px;cursor:pointer}
  .tag:hover{background:#e0e7ff}
  .tag .c{color:#6b7280;font-size:11px;margin-left:4px}
  .empty{color:#8a8f98;font-size:13px}
  .results{margin-top:10px}
- .ritem{border-bottom:1px solid #eaecef;padding:9px 4px;display:flex;gap:10px;align-items:baseline}
+ .ritem{border-bottom:1px solid #eaecef;padding:9px 4px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
  .ritem .badge{font-size:11px;font-weight:700;padding:1px 7px;border-radius:5px;white-space:nowrap}
- .badge.p{background:#dbeafe;color:#1e40af}
- .badge.v{background:#dcfce7;color:#166534}
  .ritem a{color:#0969da;text-decoration:none;font-weight:600}
  .ritem .zh{color:#1a7f37;font-size:12.5px}
  .ritem .au{color:#656d76;font-size:12px}
@@ -29,21 +28,25 @@
  .pendbar button{font-size:13px;padding:5px 12px;border:1px solid #d0d7de;border-radius:7px;background:#fff;cursor:pointer;margin-left:8px}
  .pendbar textarea{width:100%;height:90px;font-family:monospace;font-size:11.5px;margin-top:8px}
  footer{text-align:center;color:#8a8f98;font-size:12px;margin-top:30px}
- .lockbtn{font-size:13px;padding:5px 12px;border:1px solid #d0d7de;border-radius:7px;background:#fff;cursor:pointer;margin:0 0 16px 2px}
+ .lockbtn{font-size:13px;padding:5px 12px;border:1px solid #d0d7de;border-radius:7px;background:#fff;cursor:pointer;margin:0 0 8px 2px}
  .lockbtn.on{background:#e6ffed;border-color:#9be9a8;color:#1a7f37}
  body:not(.unlocked) .owner-only{display:none!important}
 </style></head><body>
 <h1>我的法学书目库</h1>
-<div class="sub0">Duncker &amp; Humblot《Schriften zum Prozessrecht》315 册 · Mohr Siebeck《VVerfR》234 册 · 德中对照</div>
+<div class="sub0">共 1628 册 · 涵盖 Mohr Siebeck 与 Duncker &amp; Humblot 两套德国法学丛书 · 德中对照</div>
 <button class="lockbtn" id="lockbtn">🔒 加标签已锁定</button>
 
+<div class="pub-h" style="border-left:5px solid #1a7f37;color:#1a7f37">Mohr Siebeck</div>
 <div class="cards">
-  <a class="card" href="prozessrecht.html">
-    <div class="n">315</div><div class="t">Schriften zum Prozessrecht</div>
-    <div class="d">Duncker &amp; Humblot · 诉讼法丛书（德英对照）</div></a>
-  <a class="card" href="vverfr.html">
-    <div class="n">234</div><div class="t">VVerfR</div>
-    <div class="d">Mohr Siebeck · Veröffentlichungen zum Verfahrensrecht（德中对照）</div></a>
+<a class="card" style="border-top:3px solid #1a7f37" href="vverfr.html"><div class="n" style="color:#1a7f37">234</div><div class="t">Veröffentlichungen zum Verfahrensrecht (VVerfR)</div><div class="d">Mohr Siebeck · 程序法出版物（德中对照）</div></a>
+<a class="card" style="border-top:3px solid #1a7f37" href="juspriv.html"><div class="n" style="color:#1a7f37">297</div><div class="t">Jus Privatum</div><div class="d">Mohr Siebeck · 私法丛书（德中对照）</div></a>
+<a class="card" style="border-top:3px solid #1a7f37" href="btripr.html"><div class="n" style="color:#1a7f37">133</div><div class="t">Beiträge zum ausländischen und internationalen Privatrecht</div><div class="d">Mohr Siebeck · 外国与国际私法论丛（德中对照）</div></a>
+</div>
+<div class="pub-h" style="border-left:5px solid #0969da;color:#0969da">Duncker &amp; Humblot</div>
+<div class="cards">
+<a class="card" style="border-top:3px solid #0969da" href="prozessrecht.html"><div class="n" style="color:#0969da">315</div><div class="t">Schriften zum Prozessrecht</div><div class="d">Duncker &amp; Humblot · 诉讼法丛书（德英对照）</div></a>
+<a class="card" style="border-top:3px solid #0969da" href="studien.html"><div class="n" style="color:#0969da">35</div><div class="t">Studien zum vergleichenden Privatrecht</div><div class="d">Duncker &amp; Humblot · 比较私法研究（英德对照）</div></a>
+<a class="card" style="border-top:3px solid #0969da" href="buergerlichen.html"><div class="n" style="color:#0969da">614</div><div class="t">Schriften zum bürgerlichen Recht</div><div class="d">Duncker &amp; Humblot · 民法丛书（德英对照）</div></a>
 </div>
 
 <div class="sec-title">🏷️ 标签云（点击查看含该标签的书）</div>
@@ -61,20 +64,26 @@
 <script src="config.js"></script>
 <script src="gate.js"></script>
 <script>
-const P_FILE="prozessrecht.json", V_FILE="vverfr.json", T_FILE="tags.json";
+const META={"p": {"name": "Schriften zum Prozessrecht", "pub": "dh", "html": "prozessrecht.html", "short": "D&H·ProzR"}, "s": {"name": "Studien zum vergleichenden Privatrecht", "pub": "dh", "html": "studien.html", "short": "D&H·Stud"}, "c": {"name": "Schriften zum bürgerlichen Recht", "pub": "dh", "html": "buergerlichen.html", "short": "D&H·BürgR"}, "v": {"name": "Veröffentlichungen zum Verfahrensrecht (VVerfR)", "pub": "mohr", "html": "vverfr.html", "short": "Mohr·VVerfR"}, "j": {"name": "Jus Privatum", "pub": "mohr", "html": "juspriv.html", "short": "Mohr·JusPriv"}, "i": {"name": "Beiträge zum ausländischen und internationalen Privatrecht", "pub": "mohr", "html": "btripr.html", "short": "Mohr·BtrIPR"}};
+const FILES={"p": "prozessrecht.json", "s": "studien.json", "c": "buergerlichen.json", "v": "vverfr.json", "j": "juspriv.json", "i": "btripr.json"};
+const PUBCOLOR={
+  dh:{bg:'#dbeafe',c:'#1e40af',label:'D&H'},
+  mohr:{bg:'#dcfce7',c:'#166534',label:'Mohr'}
+};
 const LS_LOCAL="shumu_local_v1", LS_PEND="shumu_pending_v1";
 function LJ(k){try{return JSON.parse(localStorage.getItem(k)||"{}")}catch(e){return{}}}
-let BOOKS={}; // id -> {de,zh,author,link,series}
-let PUB={};  // id -> [tags]
+let BOOKS={};
+let PUB={};
 function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
 
-Promise.all([fetch(P_FILE).then(r=>r.json()),fetch(V_FILE).then(r=>r.json()),fetch(T_FILE).then(r=>r.json())])
- .then(([p,v,t])=>{
-   p.forEach(b=>BOOKS[b.id]={de:b.de,zh:b.zh,author:b.author,link:b.de_link,series:'p'});
-   v.forEach(b=>BOOKS[b.id]={de:b.de,zh:b.zh,author:b.author,link:b.de_link,series:'v'});
-   PUB=t||{};
-   renderCloud();renderPend();
- })
+const loads=Object.keys(FILES).map(k=>
+  fetch(FILES[k]).then(r=>r.json()).then(arr=>arr.forEach(b=>{
+    const s=(b.id||'').split(':')[0];
+    BOOKS[b.id]={de:b.de,zh:b.zh,author:b.author,link:b.de_link,series:s};
+  }))
+);
+Promise.all(loads)
+ .then(()=>fetch('tags.json').then(r=>r.json()).then(t=>{PUB=t||{};renderCloud();renderPend();}))
  .catch(e=>{document.getElementById('cloud').innerHTML='<span class="empty">数据加载失败（请用 https 链接打开，或本地起服务器）。</span>';console.warn(e);});
 
 function renderCloud(){
@@ -91,10 +100,9 @@ function showTag(tag){
   const box=document.getElementById('results');
   if(!ids.length){box.innerHTML='';return;}
   box.innerHTML='<div class="sec-title">含标签「'+esc(tag)+'」的书（'+ids.length+'）</div>'+
-    ids.map(id=>{const b=BOOKS[id]||{};const s=b.series==='p'?'p':'v';
-      const sn=b.series==='p'?'D&H':'VVerfR';
-      return '<div class="ritem"><span class="badge '+s+'">'+sn+'</span>'+
-        '<a href="'+esc(b.link||'#')+'" target="_blank" rel="noopener">'+esc(b.de||id)+'</a>'+
+    ids.map(id=>{const b=BOOKS[id]||{};const meta=META[b.series]||{};const pc=PUBCOLOR[meta.pub]||{bg:'#eee',c:'#333',label:''};
+      return '<div class="ritem"><span class="badge" style="background:'+pc.bg+';color:'+pc.c+'">'+esc(meta.short||b.series)+'</span>'+
+        '<a href="'+esc(meta.html||'#')+'">'+esc(b.de||id)+'</a>'+
         '<span class="zh">'+esc(b.zh||'')+'</span>'+
         '<span class="au">'+esc(b.author||'')+'</span></div>';}).join('');
   box.scrollIntoView({behavior:'smooth'});
