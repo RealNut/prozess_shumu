@@ -7,7 +7,10 @@
   "de_sub": "insbesondere bei Verweisungen zwischen verschiedenen Rechtsgebieten",
   "de_link": "https://elibrary.duncker-humblot.com/book/45104/beweislastregeln-und-gesetzliche-vermutungen",
   "zh": "举证责任规则 与 法定的 推定  尤其 于 援引 之间 不同的 法律领域",
-  "year": "1966"
+  "year": "1966",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:47510",
@@ -17,7 +20,10 @@
   "de_sub": "Zugleich Gedanken zur Verfahrensnatur der Erinnerung und zur Rechtskraft der Erinnerungsentscheidung",
   "de_link": "https://elibrary.duncker-humblot.com/book/47510/die-erinnerungsbefugnis-dritter-in-der-mobiliarzwangsvollstreckung",
   "zh": "第三人异议权 第三人 在 动产强制执行  亦 思想 论 程序性质 异议 与 论 既判力 异议裁判",
-  "year": "1966"
+  "year": "1966",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:47412",
@@ -37,7 +43,10 @@
   "de_sub": "und ihre Konsequenzen für die einstweilige Anordnung in Ermessens- und Beurteilungsangelegenheiten",
   "de_link": "https://elibrary.duncker-humblot.com/book/47274/geschichte-und-rechtsnatur-der-einstweiligen-anordnung-im-verwaltungsprozess",
   "zh": "历史 与 法律性质 临时的 命令 于 行政诉讼  与 其 后果 为 临时的 命令 在 裁量 与 评价事项",
-  "year": "1967"
+  "year": "1967",
+  "tags": [
+   "保全/假处分"
+  ]
  },
  {
   "id": "p:47784",
@@ -67,7 +76,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/47984/das-verhaumlltnis-zwischen-der-gerichtsbarkeit-des-gerichtshofes-der-europaumlischen-gemeinschaften-und-der-deutschen-zivilgerichtsbarkeit",
   "zh": "关系 之间 司法 之 法院 欧洲的 共同体 与 德国的 民事司法",
-  "year": "1967"
+  "year": "1967",
+  "tags": [
+   "欧盟法"
+  ]
  },
  {
   "id": "p:48896",
@@ -77,7 +89,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/48896/die-schranken-der-parteivereinbarungen-in-der-privaten-internationalen-schiedsgerichtsbarkeit",
   "zh": "界限 当事人约定 在 私 国际的 仲裁管辖",
-  "year": "1970"
+  "year": "1970",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "p:47481",
@@ -187,7 +202,10 @@
   "de_sub": "unter besonderer Berücksichtigung der Rechtslage bezüglich der Bundesrepublik Deutschland",
   "de_link": "https://elibrary.duncker-humblot.com/book/50738/die-schiedsgerichtsbarkeit-nach-dem-weltbankuumlbereinkommen-fuumlr-investitionsstreitigkeiten",
   "zh": "仲裁管辖 依 世界银行公约 为 投资争议  论 特别 考量 法律状况 关于 联邦共和国 德国",
-  "year": "1972"
+  "year": "1972",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "p:47859",
