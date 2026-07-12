@@ -83,6 +83,7 @@
     }).then(function (merged) {
       try { localStorage.removeItem(pendTagsKey()); localStorage.removeItem(locTagsKey()); } catch (e) {}
       setPubStore(merged); renderPub();
+      if (typeof window.renderAll === "function") window.renderAll();
       showHintFn("✅ 标签已直接同步到网站！刷新任意页面即可见，无需手动推送。");
     }).catch(function (e) {
       showHintFn("❌ 直发失败：" + (e.message || e) + "。可改用下方“复制”发到 WorkBuddy 项目让我代推。");
@@ -102,6 +103,7 @@
       if ("PUB_TRANS" in window) window.PUB_TRANS = merged;
       if (typeof window.applyTrans === "function") window.applyTrans();
       if (typeof window.updatePendTrans === "function") window.updatePendTrans();
+      if (typeof window.renderAll === "function") window.renderAll();
       showHintFn("✅ 译文已直接同步到网站！刷新任意页面即可见，无需手动推送。");
     }).catch(function (e) {
       showHintFn("❌ 直发失败：" + (e.message || e) + "。可改用下方“复制”发到 WorkBuddy 项目让我代推。");
