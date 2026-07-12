@@ -87,7 +87,7 @@
     lockNow: function () {
       sessionStorage.removeItem(SS_UNLOCK);
       document.body.classList.remove("unlocked");
-      showGate();
+      if (window.onBibLock) window.onBibLock();
     },
     open: showGate
   };
