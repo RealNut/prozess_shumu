@@ -14,10 +14,14 @@
  .card .t .ab{color:#8a8f98;font-weight:400;font-size:12.5px;margin-left:2px}
  .card .d{font-size:12.5px;color:#656d76}
  .sec-title{font-size:16px;font-weight:600;margin:26px 0 10px;border-left:4px solid #0969da;padding-left:8px}
- .cloud{line-height:2.2;margin-bottom:14px}
- .tag{display:inline-block;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:999px;padding:3px 12px;margin:3px 4px;font-size:13px;cursor:pointer}
+ .cloud{line-height:2.4;margin-bottom:14px}
+ .tag{display:inline-block;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:999px;padding:3px 12px;margin:3px 4px;font-size:13px;cursor:pointer;position:relative}
  .tag:hover{background:#e0e7ff}
  .tag .c{color:#6b7280;font-size:11px;margin-left:4px}
+ .tag .tedit,.tag .tdel{display:none;border:none;background:#fff;border-radius:6px;cursor:pointer;font-size:11px;margin-left:5px;padding:0 5px;line-height:1.6}
+ .tag .tedit{color:#0969da}
+ .tag .tdel{color:#cf222e}
+ body.unlocked .tag .tedit,body.unlocked .tag .tdel{display:inline-block}
  .empty{color:#8a8f98;font-size:13px}
  .results{margin-top:10px}
  .ritem{border-bottom:1px solid #eaecef;padding:9px 4px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
@@ -26,7 +30,28 @@
  .ritem .zh{color:#1a7f37;font-size:12.5px}
  .ritem .au{color:#656d76;font-size:12px}
  footer{text-align:center;color:#8a8f98;font-size:12px;margin-top:30px}
+ /* owner 工具条 */
+ #lockbtn{position:fixed;right:16px;top:14px;z-index:40;display:none;border:1px solid #d0d7de;background:#fff;border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+ #tokenbar{position:fixed;right:16px;top:54px;z-index:40;display:none;gap:6px;align-items:center;background:#fff;border:1px solid #d0d7de;border-radius:10px;padding:6px 8px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+ body.unlocked #tokenbar{display:flex}
+ #tokenbtn,#pubbtn{border:1px solid #0969da;background:#0969da;color:#fff;border-radius:6px;padding:5px 10px;font-size:12.5px;cursor:pointer}
+ .bib-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#1f2328;color:#fff;padding:10px 16px;border-radius:10px;font-size:13px;opacity:0;transition:opacity .3s;z-index:60;max-width:90vw}
+ /* 解锁弹窗 */
+ .bib-gate{position:fixed;inset:0;background:rgba(15,23,42,.55);display:flex;align-items:center;justify-content:center;z-index:100}
+ .bib-gate-box{background:#fff;border-radius:14px;padding:22px 24px;width:320px;max-width:90vw;box-shadow:0 12px 40px rgba(0,0,0,.25)}
+ .bib-gate-title{font-size:16px;font-weight:700;margin-bottom:4px}
+ .bib-gate-sub{color:#656d76;font-size:12.5px;margin-bottom:12px}
+ .bib-gate input{width:100%;padding:9px 12px;font-size:14px;border:1px solid #d0d7de;border-radius:8px;margin-bottom:10px;box-sizing:border-box}
+ .bib-gate button{width:100%;padding:9px;border:none;background:#0969da;color:#fff;border-radius:8px;font-size:14px;cursor:pointer}
+ .bib-gate-msg{color:#cf222e;font-size:12px;margin-top:8px;min-height:14px}
+ @media(max-width:760px){ body{padding:18px 10px} .card{min-width:100%} #lockbtn{top:10px;right:10px} #tokenbar{top:48px;right:10px} }
+ @media(max-width:480px){ .card .n{font-size:22px} }
 </style></head><body>
+<button id="lockbtn" type="button">🔒 解锁编辑</button>
+<div id="tokenbar">
+  <button id="tokenbtn" type="button">🔑 令牌</button>
+  <button id="pubbtn" type="button">🚀 发布修改</button>
+</div>
 <h1>德语法律丛书书目</h1>
 <div class="sub0">共 1628 册 · 本站收录 Mohr Siebeck 和 Duncker &amp; Humblot 两个著名学术出版社的部分丛书书目。（根据站长兴趣挑选）</div>
 
@@ -49,6 +74,9 @@
 
 <footer>Generated bibliography · GitHub Pages · 书名参考译名由术语词典自动生成并优化</footer>
 
+<script src="config.js?v=1783869232"></script>
+<script src="gate.js?v=1783869232"></script>
+<script src="publish.js?v=1783869232"></script>
 <script>
 const META={"p": {"name": "Schriften zum Prozessrecht", "pub": "dh", "html": "prozessrecht.html", "short": "D&H·ProzR"}, "s": {"name": "Studien zum vergleichenden Privatrecht", "pub": "dh", "html": "studien.html", "short": "D&H·Stud"}, "c": {"name": "Schriften zum bürgerlichen Recht", "pub": "dh", "html": "buergerlichen.html", "short": "D&H·BürgR"}, "v": {"name": "Veröffentlichungen zum Verfahrensrecht", "pub": "mohr", "html": "vverfr.html", "short": "Mohr·VVerfR"}, "j": {"name": "Jus Privatum", "pub": "mohr", "html": "juspriv.html", "short": "Mohr·JusPriv"}, "i": {"name": "Beiträge zum ausländischen und internationalen Privatrecht", "pub": "mohr", "html": "btripr.html", "short": "Mohr·BtrIPR"}};
 const FILES={"p": "prozessrecht.json", "s": "studien.json", "c": "buergerlichen.json", "v": "vverfr.json", "j": "juspriv.json", "i": "btripr.json"};
@@ -59,6 +87,17 @@ const PUBCOLOR={
 function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
 let BOOKS={};      // id -> {de,zh,author,link,series,tags[]}
 let TAGCOUNT={};   // 标签 -> 出现次数
+
+// 当前"显示值"标签图：覆盖层(pending+PUB) 优先，其次基础 tags
+function buildDisplayedTagMap(){
+  const map={};
+  for(const id in BOOKS){
+    const m=(window.BibPub?window.BibPub.mergedTags(id):null);
+    map[id]=(m!==null)?m:(BOOKS[id].tags||[]);
+  }
+  return map;
+}
+
 const loads=Object.keys(FILES).map(k=>
   fetch(FILES[k]).then(r=>r.json()).then(arr=>arr.forEach(b=>{
     const s=(b.id||'').split(':')[0];
@@ -67,19 +106,32 @@ const loads=Object.keys(FILES).map(k=>
     tags.forEach(t=>{TAGCOUNT[t]=(TAGCOUNT[t]||0)+1;});
   }))
 );
-Promise.all(loads)
- .then(()=>{renderCloud();})
- .catch(e=>{document.getElementById('cloud').innerHTML='<span class="empty">数据加载失败（请用 https 链接打开，或本地起服务器）。</span>';console.warn(e);});
+
+function flash(msg){
+  let t=document.getElementById('bib-toast'); if(!t){ t=document.createElement('div'); t.id='bib-toast'; t.className='bib-toast'; document.body.appendChild(t); }
+  t.textContent=msg; t.style.opacity='1'; clearTimeout(t._h); t._h=setTimeout(()=>t.style.opacity='0',5000);
+}
 
 function renderCloud(){
-  const ks=Object.keys(TAGCOUNT).sort((a,b)=>TAGCOUNT[b]-TAGCOUNT[a]);
+  const map=buildDisplayedTagMap();
+  const cnt={};
+  for(const id in map) map[id].forEach(t=>{cnt[t]=(cnt[t]||0)+1;});
+  const ks=Object.keys(cnt).sort((a,b)=>cnt[b]-cnt[a]);
   const cloud=document.getElementById('cloud');
   if(!ks.length){cloud.innerHTML='<span class="empty">还没有标签。</span>';return;}
-  cloud.innerHTML=ks.map(t=>'<span class="tag" data-t="'+esc(t)+'">'+esc(t)+'<span class="c">'+TAGCOUNT[t]+'</span></span>').join('');
+  cloud.innerHTML=ks.map(t=>
+    '<span class="tag" data-t="'+esc(t)+'">'+esc(t)+'<span class="c">'+cnt[t]+'</span>'+
+    '<button class="tedit owner-only" type="button" title="重命名">✎</button>'+
+    '<button class="tdel owner-only" type="button" title="删除">×</button></span>'
+  ).join('');
   cloud.querySelectorAll('.tag').forEach(el=>{
-    el.onclick=()=>showTag(el.getAttribute('data-t'));
+    const t=el.getAttribute('data-t');
+    el.querySelector('.tedit').onclick=(e)=>{e.stopPropagation();renameTag(t);};
+    el.querySelector('.tdel').onclick=(e)=>{e.stopPropagation();deleteTag(t);};
+    el.onclick=()=>showTag(t);
   });
 }
+
 function showTag(tag){
   const ids=Object.keys(BOOKS).filter(id=>(BOOKS[id].tags||[]).includes(tag));
   const box=document.getElementById('results');
@@ -92,5 +144,54 @@ function showTag(tag){
         '<span class="au">'+esc(b.author||'')+'</span></div>';}).join('');
   box.scrollIntoView({behavior:'smooth'});
 }
+
+// 全局标签操作
+function deleteTag(tag){
+  if(!window.BibGate.require())return;
+  if(!confirm('确定删除标签「'+tag+'」？\n将同步从所有 '+countTag(tag)+' 本书中移除。此操作不可撤销。'))return;
+  window.BibPub.globalTagOp('delete',tag,null,buildDisplayedTagMap()).then(r=>{
+    if(r.mode==='published')flash('✅ 已删除标签「'+tag+'」并发布');
+    else flash('已复制更新后的 tags.json，请发到 WorkBuddy 项目对话让我代推');
+    renderCloud();
+  }).catch(e=>flash('操作失败：'+(e.message||e)));
+}
+function renameTag(tag){
+  if(!window.BibGate.require())return;
+  const nv=prompt('将标签「'+tag+'」重命名为：',tag);
+  if(nv===null)return; const nn=nv.trim();
+  if(!nn||nn===tag)return;
+  window.BibPub.globalTagOp('rename',tag,nn,buildDisplayedTagMap()).then(r=>{
+    if(r.mode==='published')flash('✅ 已重命名为「'+nn+'」并发布');
+    else flash('已复制更新后的 tags.json，请发到 WorkBuddy 项目对话让我代推');
+    renderCloud();
+  }).catch(e=>flash('操作失败：'+(e.message||e)));
+}
+function countTag(tag){let n=0;const m=buildDisplayedTagMap();for(const id in m)if(m[id].includes(tag))n++;return n;}
+
+// 发布 + 令牌
+function doPublish(){
+  if(!window.BibGate.require())return;
+  window.BibPub.publishAll().then(r=>{
+    if(r.mode==='published')flash('✅ 已发布到仓库（所有人可见）');
+    else flash('已复制修改 JSON，请发到 WorkBuddy 项目对话让我代推上线');
+    renderCloud();
+  }).catch(e=>flash('发布失败：'+(e.message||e)+'（需填 GitHub 令牌，或复制发我代推）'));
+}
+
+Promise.all(loads)
+ .then(()=>{ if(window.BibPub) return window.BibPub.fetchPub().then(()=>{}).catch(()=>{}); })
+ .then(()=>{ renderCloud(); })
+ .catch(e=>{document.getElementById('cloud').innerHTML='<span class="empty">数据加载失败（请用 https 链接打开，或本地起服务器）。</span>';console.warn(e);});
+
+document.addEventListener('DOMContentLoaded',function(){
+  const lb=document.getElementById('lockbtn'); if(lb)lb.onclick=()=>window.BibGate.open();
+  const pb=document.getElementById('pubbtn'); if(pb)pb.onclick=doPublish;
+  const tb=document.getElementById('tokenbtn'); if(tb)tb.onclick=function(){
+    if(!window.BibGate.require())return;
+    const v=prompt('GitHub fine-grained 令牌（仅本仓库 contents:write，存本机浏览器，不上传）：', window.BibPub.getToken());
+    if(v!==null){ window.BibPub.setToken(v.trim()); flash(v.trim()?'✅ 已保存令牌':'已清除令牌'); }
+  };
+});
+window.onBibUnlock=function(){ renderCloud(); };
 </script>
 </body></html>
