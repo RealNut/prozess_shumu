@@ -33,6 +33,7 @@
  footer{text-align:center;color:#8a8f98;font-size:12px;margin-top:30px}
  /* owner 工具条 */
  #lockbtn{position:fixed;right:16px;top:14px;z-index:40;display:none;border:1px solid #d0d7de;background:#fff;border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+ #lockbtn.unlocked-btn{background:#fff5f5;border-color:#cf222e;color:#cf222e}
  #tokenbar{position:fixed;right:16px;top:54px;z-index:40;display:none;gap:6px;align-items:center;background:#fff;border:1px solid #d0d7de;border-radius:10px;padding:6px 8px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
  body.unlocked #tokenbar{display:flex}
  #tokenbtn,#pubbtn{border:1px solid #0969da;background:#0969da;color:#fff;border-radius:6px;padding:5px 10px;font-size:12.5px;cursor:pointer}
@@ -76,9 +77,9 @@
 
 <footer>Generated bibliography · GitHub Pages · 书名参考译名由术语词典自动生成并优化</footer>
 
-<script src="config.js?v=1783870602"></script>
-<script src="gate.js?v=1783870602"></script>
-<script src="publish.js?v=1783870602"></script>
+<script src="config.js?v=1783871461"></script>
+<script src="gate.js?v=1783871461"></script>
+<script src="publish.js?v=1783871461"></script>
 <script>
 const META={"p": {"name": "Schriften zum Prozessrecht", "pub": "dh", "html": "prozessrecht.html", "short": "D&H·ProzR"}, "s": {"name": "Studien zum vergleichenden Privatrecht", "pub": "dh", "html": "studien.html", "short": "D&H·Stud"}, "c": {"name": "Schriften zum bürgerlichen Recht", "pub": "dh", "html": "buergerlichen.html", "short": "D&H·BürgR"}, "v": {"name": "Veröffentlichungen zum Verfahrensrecht", "pub": "mohr", "html": "vverfr.html", "short": "Mohr·VVerfR"}, "j": {"name": "Jus Privatum", "pub": "mohr", "html": "juspriv.html", "short": "Mohr·JusPriv"}, "i": {"name": "Beiträge zum ausländischen und internationalen Privatrecht", "pub": "mohr", "html": "btripr.html", "short": "Mohr·BtrIPR"}};
 const FILES={"p": "prozessrecht.json", "s": "studien.json", "c": "buergerlichen.json", "v": "vverfr.json", "j": "juspriv.json", "i": "btripr.json"};
@@ -186,7 +187,10 @@ Promise.all(loads)
  .catch(e=>{document.getElementById('cloud').innerHTML='<span class="empty">数据加载失败（请用 https 链接打开，或本地起服务器）。</span>';console.warn(e);});
 
 document.addEventListener('DOMContentLoaded',function(){
-  const lb=document.getElementById('lockbtn'); if(lb)lb.onclick=()=>window.BibGate.open();
+  const lb=document.getElementById('lockbtn');
+  if(lb) lb.onclick=function(){ if(window.BibGate.isUnlocked()){ window.BibGate.lockNow(); } else { window.BibGate.open(); } };
+  function syncLockBtn(){ if(!lb)return; if(window.BibGate.isUnlocked()){ lb.textContent='🔓 退出编辑'; lb.classList.add('unlocked-btn'); } else { lb.textContent='🔒 解锁编辑'; lb.classList.remove('unlocked-btn'); } }
+  syncLockBtn();
   const pb=document.getElementById('pubbtn'); if(pb)pb.onclick=doPublish;
   const tb=document.getElementById('tokenbtn'); if(tb)tb.onclick=function(){
     if(!window.BibGate.require())return;
@@ -194,6 +198,7 @@ document.addEventListener('DOMContentLoaded',function(){
     if(v!==null){ window.BibPub.setToken(v.trim()); flash(v.trim()?'✅ 已保存令牌':'已清除令牌'); }
   };
 });
-window.onBibUnlock=function(){ renderCloud(); };
+window.onBibUnlock=function(){ renderCloud(); var lb=document.getElementById('lockbtn'); if(lb){ lb.textContent='🔓 退出编辑'; lb.classList.add('unlocked-btn'); } };
+window.onBibLock=function(){ renderCloud(); var lb=document.getElementById('lockbtn'); if(lb){ lb.textContent='🔒 解锁编辑'; lb.classList.remove('unlocked-btn'); } flash('已退出编辑模式'); };
 </script>
 </body></html>
