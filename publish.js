@@ -91,7 +91,6 @@
 
   // ---- 译文直发 / 兜底 ----
   function doPublishTrans() {
-    if (!("LS_TRANS_PEND" in window) && typeof window.LS_TRANS_PEND === "undefined") return;
     var Pn = loadJSON(pendTransKey());
     if (!Pn || !Object.keys(Pn).length) { showHintFn("没有待发布译文，无需同步。"); return; }
     if (!hasToken()) { return fallbackCopy("trans"); }
