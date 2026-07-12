@@ -29,9 +29,13 @@
  .pendbar button{font-size:13px;padding:5px 12px;border:1px solid #d0d7de;border-radius:7px;background:#fff;cursor:pointer;margin-left:8px}
  .pendbar textarea{width:100%;height:90px;font-family:monospace;font-size:11.5px;margin-top:8px}
  footer{text-align:center;color:#8a8f98;font-size:12px;margin-top:30px}
+ .lockbtn{font-size:13px;padding:5px 12px;border:1px solid #d0d7de;border-radius:7px;background:#fff;cursor:pointer;margin:0 0 16px 2px}
+ .lockbtn.on{background:#e6ffed;border-color:#9be9a8;color:#1a7f37}
+ body:not(.unlocked) .owner-only{display:none!important}
 </style></head><body>
 <h1>我的法学书目库</h1>
 <div class="sub0">Duncker &amp; Humblot《Schriften zum Prozessrecht》315 册 · Mohr Siebeck《VVerfR》234 册 · 德中对照</div>
+<button class="lockbtn" id="lockbtn">🔒 加标签已锁定</button>
 
 <div class="cards">
   <a class="card" href="prozessrecht.html">
@@ -46,7 +50,7 @@
 <div class="cloud" id="cloud"><span class="empty">加载中…</span></div>
 <div class="results" id="results"></div>
 
-<div class="pendbar">
+<div class="pendbar owner-only">
   <div>🔄 你在本机加的标签会先存在浏览器本地。点下面按钮可复制「待发布标签」，发给我即可发布到仓库、让所有人看到。</div>
   <button id="copyPend">复制待发布标签</button>
   <textarea id="pendjson" readonly placeholder="（暂无待发布标签）"></textarea>
@@ -54,6 +58,8 @@
 
 <footer>Generated bibliography · GitHub Pages · 书名参考译名由术语词典自动生成</footer>
 
+<script src="config.js"></script>
+<script src="gate.js"></script>
 <script>
 const P_FILE="prozessrecht.json", V_FILE="vverfr.json", T_FILE="tags.json";
 const LS_LOCAL="shumu_local_v1", LS_PEND="shumu_pending_v1";
