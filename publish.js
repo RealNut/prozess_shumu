@@ -50,7 +50,7 @@
   function mergedYear(id) { var lt = getLocal(LS_YEAR); if (id in lt) return lt[id]; if (id in PUB.year) return PUB.year[id]; return null; }
 
   // ---------- 待发布（本地）----------
-  function setTagPending(id, arr) { var lt = getLocal(LS_TAGS); if (arr && arr.length) lt[id] = arr; else delete lt[id]; setLocal(LS_TAGS, lt); }
+  function setTagPending(id, arr) { var lt = getLocal(LS_TAGS); if (arr !== undefined && arr !== null) lt[id] = arr; else delete lt[id]; setLocal(LS_TAGS, lt); }
   function setTransPending(id, zh) { var lt = getLocal(LS_TRANS); zh = (zh || "").trim(); if (zh) lt[id] = zh; else delete lt[id]; setLocal(LS_TRANS, lt); }
   function setYearPending(id, y) { var lt = getLocal(LS_YEAR); y = String(y || "").trim(); if (y) lt[id] = y; else delete lt[id]; setLocal(LS_YEAR, lt); }
 
