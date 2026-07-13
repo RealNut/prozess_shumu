@@ -47,7 +47,10 @@
   "de_sub": "Eine rechtsvergleichende Gesamtschau zur identitätswahrenden Unternehmensmobilität in Deutschland und Frankreich mit Blick auf die Rechtsprechung des EuGH bis Polbud",
   "de_link": "https://elibrary.duncker-humblot.com/book/51508/der-grenzuumlberschreitende-formwechsel-von-kapitalgesellschaften",
   "zh": "资合公司的跨境形式变更",
-  "year": "2019"
+  "year": "2019",
+  "tags": [
+   "欧盟法"
+  ]
  },
  {
   "id": "s:51657",
@@ -87,7 +90,10 @@
   "de_sub": "Zugleich eine rechtsvergleichende Untersuchung des deutschen und US-amerikanischen Rechts zu den Themen Zweitmarkt gebrauchter Dateien und Zugang Dritter zu Plattformkonten",
   "de_link": "https://elibrary.duncker-humblot.com/book/53777/rechtliche-aspekte-des-digitalen-privatvermoumlgens-in-bezug-auf-dateien-und-plattformkonten",
   "zh": "数字私人财产（关于文件与平台账户）的法律层面",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "s:53866",
@@ -347,6 +353,9 @@
   "de_sub": "Zum Verhältnis von Verbraucherschiedsgerichtsbarkeit und kollektivem Rechtsschutz im deutschen und U.S.-Recht",
   "de_link": "https://elibrary.duncker-humblot.com/book/64207/verbraucherschiedsgerichtsbarkeit-und-kollektiver-rechtsschutz",
   "zh": "消费者仲裁与集体权利保护",
-  "year": "2026"
+  "year": "2026",
+  "tags": [
+   "仲裁"
+  ]
  }
 ]
