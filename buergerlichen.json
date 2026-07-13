@@ -247,7 +247,10 @@
   "de_sub": "Ein Beitrag zum Recht der Leistungsstörung mit rechtsvergleichenden Bezügen",
   "de_link": "https://elibrary.duncker-humblot.com/book/46627/der-entlastungsbeweis-des-schuldners-sect-1298-abgb",
   "zh": "债务人的免责证明（《奥地利民法典》第1298条）",
-  "year": "1975"
+  "year": "1975",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "c:50637",
@@ -277,7 +280,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/48293/die-beweislastverteilung-im-buumlrgerlichen-recht-und-im-arbeitsrecht-als-rechtspolitische-regelungsaufgabe",
   "zh": "作为法律政策规制任务的民法与劳动法中的证明责任分配",
-  "year": "1976"
+  "year": "1976",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "c:50466",
@@ -367,7 +373,10 @@
   "de_sub": "Ein Beitrag zu der Dogmatik des Vertrages zugunsten Dritter",
   "de_link": "https://elibrary.duncker-humblot.com/book/49522/schlechterfuumlllung-beim-vertrag-zugunsten-dritter",
   "zh": "为第三人利益合同的瑕疵履行",
-  "year": "1977"
+  "year": "1977",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:48312",
@@ -407,7 +416,10 @@
   "de_sub": "Zugleich ein Beitrag zum Recht der Verfügungen",
   "de_link": "https://elibrary.duncker-humblot.com/book/49062/das-anwartschaftsrecht-ein-beispiel-sinnvoller-rechtsfortbildung",
   "zh": "期待权——合理法律续造的范例？",
-  "year": "1977"
+  "year": "1977",
+  "tags": [
+   "法官造法"
+  ]
  },
  {
   "id": "c:47159",
@@ -567,7 +579,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/49602/dritthaftung-aus-culpa-in-contrahendo",
   "zh": "缔约过失中的第三人责任",
-  "year": "1980"
+  "year": "1980",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:43623",
@@ -657,7 +672,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/48309/haftung-fuumlr-energieleiterstoumlrungen-durch-dritte",
   "zh": "因第三人造成能源管线中断的责任",
-  "year": "1981"
+  "year": "1981",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:50891",
@@ -667,7 +685,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/50891/grundfragen-zur-leistungskondiktion-bei-drittbeziehungen",
   "zh": "第三人关系中的给付型不当得利的基问题",
-  "year": "1981"
+  "year": "1981",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:51411",
@@ -747,7 +768,10 @@
   "de_sub": "Fragwürdigkeit und Grenzen",
   "de_link": "https://elibrary.duncker-humblot.com/book/51465/das-freie-nachforderungsrecht-der-konkursglaumlubiger",
   "zh": "破产债权人的自由补充申报权",
-  "year": "1982"
+  "year": "1982",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "c:51358",
@@ -757,7 +781,10 @@
   "de_sub": "Betrachtungen zur Rechtssprechung des BGH unter vergleichender Berücksichtigung des griechischen Rechts",
   "de_link": "https://elibrary.duncker-humblot.com/book/51358/culpa-in-contrahendo-und-schutz-dritter",
   "zh": "缔约过失与第三人保护",
-  "year": "1982"
+  "year": "1982",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:51323",
@@ -807,7 +834,10 @@
   "de_sub": "Zur Problematik von Haftungsbeschränkungen und Verjährungsbestimmungen mit Wirkung für Dritte",
   "de_link": "https://elibrary.duncker-humblot.com/book/51130/raquovertrags-und-gesetzesprivilegienlaquo-mit-wirkung-fuumlr-erfuumlllungsgehilfen",
   "zh": "对履行辅助人有效的“合同与法定特权”",
-  "year": "1983"
+  "year": "1983",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:47318",
@@ -857,7 +887,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/51398/schiedsinstanzen-im-bereich-der-arzthaftung-soll-und-haben",
   "zh": "医疗责任领域的仲裁机关：利弊",
-  "year": "1984"
+  "year": "1984",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "c:51247",
@@ -1117,7 +1150,10 @@
   "de_sub": "Anwendbarkeit konkursrechtlicher Grundsätze des Sicherungseigentums auf den Eigentumsvorbehalt?",
   "de_link": "https://elibrary.duncker-humblot.com/book/50987/das-vorbehaltsgut-als-vermoumlgen-in-sect-1-ko",
   "zh": "作为《破产法》第1条中财产的保留财产",
-  "year": "1988"
+  "year": "1988",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "c:48043",
@@ -1327,7 +1363,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/47000/das-anwartschaftsrecht-aus-eigentumsvorbehalt-in-der-einzelzwangsvollstreckung",
   "zh": "个别强制执行中保留所有权产生的期待权",
-  "year": "1991"
+  "year": "1991",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "c:47124",
@@ -1437,7 +1476,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/45935/insolvenzanfechtung-gegen-insider",
   "zh": "针对内部人的破产撤销",
-  "year": "1991"
+  "year": "1991",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "c:44024",
@@ -1447,7 +1489,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/44024/die-entwicklung-der-rechtsprechung-zum-vertrag-mit-schutzwirkung-zugunsten-dritter-in-ihrer-bedeutung-fuumlr-den-ausgleich-von-drittschaumlden-im-zahlungsverkehr",
   "zh": "具保护第三人效力的合同判决的发展及其对支付往来中第三人损害补偿的意义",
-  "year": "1991"
+  "year": "1991",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:44641",
@@ -1487,7 +1532,10 @@
   "de_sub": "Eine Untersuchung zu den Schranken der Privatautonomie unter besonderer Berücksichtigung der Fälle typischerweise gestörter Vertragsparität",
   "de_link": "https://elibrary.duncker-humblot.com/book/43448/vertragsfreiheit-und-drittinteressen",
   "zh": "合同自由与第三人利益",
-  "year": "1992"
+  "year": "1992",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:46963",
@@ -1667,7 +1715,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/43168/die-testamentsvollstreckung-im-recht-der-personenhandelsgesellschaften-und-der-gmbh",
   "zh": "人合公司与有限责任公司法中的遗嘱执行",
-  "year": "1994"
+  "year": "1994",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "c:46837",
@@ -1737,7 +1788,10 @@
   "de_sub": "Eine rechtsvergleichende Untersuchung der dogmatischen Grundlagen der Haftung gegenüber Dritten für fahrlässig verursachte primäre Vermögensschäden",
   "de_link": "https://elibrary.duncker-humblot.com/book/45983/auskunftshaftung-nach-deutschem-und-englischem-recht",
   "zh": "依德英法的说明（咨询）责任",
-  "year": "1995"
+  "year": "1995",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:43220",
@@ -1767,7 +1821,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/45468/drittleistung-und-leistungsmittlung",
   "zh": "第三人给付与给付中介",
-  "year": "1995"
+  "year": "1995",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:45419",
@@ -1917,7 +1974,10 @@
   "de_sub": "Zugleich eine Lanze für die Liquidation im Drittinteresse",
   "de_link": "https://elibrary.duncker-humblot.com/book/45409/das-verhaumlltnis-von-drittschadensliquidation-und-vertraglichem-drittschutz",
   "zh": "第三人损害清算与合同第三人保护的关系",
-  "year": "1997"
+  "year": "1997",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:45699",
@@ -2167,7 +2227,10 @@
   "de_sub": "Der Grundsatz des Güterindividualismus in § 1363 Abs. 2, Satz 1 BGB und seine Entwertung durch güterrechtliche, vermögensrechtliche und vollstreckungsrechtliche Normen. Eine Analyse unter Berücksichtigung der Rechtslage bei der nichtehelichen Lebensgemein",
   "de_link": "https://elibrary.duncker-humblot.com/book/46855/die-ehe-als-schuldnergemeinschaft",
   "zh": "作为债务人共同体的婚姻",
-  "year": "1999"
+  "year": "1999",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "c:46604",
@@ -2237,7 +2300,10 @@
   "de_sub": "Unter Berücksichtigung der Pflichtenlehre des Kommissionsentwurfs",
   "de_link": "https://elibrary.duncker-humblot.com/book/46721/der-schutzanspruch-zugunsten-dritter",
   "zh": "有利于第三人的保护请求权",
-  "year": "1999"
+  "year": "1999",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:46193",
@@ -2477,7 +2543,10 @@
   "de_sub": "Möglichkeiten einer Einordnung in die Zivilrechtsdogmatik, dargestellt am Beispiel drittfinanzierter Erwerbsgeschäfte",
   "de_link": "https://elibrary.duncker-humblot.com/book/43424/verbundene-geschaumlfte",
   "zh": "关联行为（联立行为）",
-  "year": "2001"
+  "year": "2001",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:46619",
@@ -2657,7 +2726,10 @@
   "de_sub": "Ein Beitrag zur culpa in contrahendo und zur positiven Forderungsverletzung unter Berücksichtigung der Schuldrechtsreform",
   "de_link": "https://elibrary.duncker-humblot.com/book/43726/die-haftung-wegen-verletzung-von-aufklaumlrungspflichten",
   "zh": "因违反说明义务的责任",
-  "year": "2002"
+  "year": "2002",
+  "tags": [
+   "释明"
+  ]
  },
  {
   "id": "c:45439",
@@ -2677,7 +2749,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/45477/die-gerichtliche-entscheidung-nach-sectsect-21-ff-inso-und-ihre-auswirkungen-auf-die-vermoumlgensrechtliche-stellung-des-insolvenzschuldners",
   "zh": "依《破产法》第21条以下的法院裁定及其对破产债务人财产地位的影响",
-  "year": "2002"
+  "year": "2002",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "c:46219",
@@ -2737,7 +2812,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/46940/die-rechtsfigur-des-vertrags-mit-schutzwirkung-fuumlr-dritte-und-die-sogenannte-expertenhaftung",
   "zh": "具保护第三人效力的合同的法律形态与所谓专家责任",
-  "year": "2003"
+  "year": "2003",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:45558",
@@ -2907,7 +2985,10 @@
   "de_sub": "Zugleich ein Beitrag zur Systematik des Schadenshaftungsrechts",
   "de_link": "https://elibrary.duncker-humblot.com/book/32251/haftungsbeschraumlnkungen-zugunsten-und-zulasten-dritter",
   "zh": "有利于和不利于第三人的责任限制",
-  "year": "2004"
+  "year": "2004",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:32674",
@@ -2977,7 +3058,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/32481/schiedsklauseln-in-vereinssatzungen",
   "zh": "社团章程中的仲裁条款",
-  "year": "2004"
+  "year": "2004",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "c:43329",
@@ -3347,7 +3431,10 @@
   "de_sub": "Wirkweise und Funktion für den Regress bei drittseitiger Schuldsicherung",
   "de_link": "https://elibrary.duncker-humblot.com/book/32804/der-gesetzliche-forderungsuumlbergang",
   "zh": "法定的债权移转",
-  "year": "2006"
+  "year": "2006",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:32477",
@@ -3357,7 +3444,10 @@
   "de_sub": "Untersuchungen zur Beweislastverteilung in § 280 I BGB",
   "de_link": "https://elibrary.duncker-humblot.com/book/32477/dem-gefaumllligen-zur-last",
   "zh": "对施惠者不利",
-  "year": "2006"
+  "year": "2006",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "c:32392",
@@ -3367,7 +3457,10 @@
   "de_sub": "Zum Gleichlauf von materiellem Recht und Zwangsvollstreckungsrecht",
   "de_link": "https://elibrary.duncker-humblot.com/book/32392/verfuumlgungen-im-wege-der-zwangsvollstreckung",
   "zh": "通过强制执行进行的处分",
-  "year": "2006"
+  "year": "2006",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "c:32756",
@@ -3427,7 +3520,10 @@
   "de_sub": "Satzungsrechte Dritter zwischen Vereinigungsfreiheit und Vereinsautonomie",
   "de_link": "https://elibrary.duncker-humblot.com/book/43399/der-drittbestimmte-verein",
   "zh": "第三人确定的社团",
-  "year": "2006"
+  "year": "2006",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:32457",
@@ -3517,7 +3613,10 @@
   "de_sub": "Ein Erklärungsmodell für die Entstehung von Schutzpflichten gegenüber Dritten",
   "de_link": "https://elibrary.duncker-humblot.com/book/31871/schuldverhaumlltnisse-mit-schutzwirkung-zu-gunsten-dritter",
   "zh": "具保护第三人效力的债关系",
-  "year": "2007"
+  "year": "2007",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:31747",
@@ -3597,7 +3696,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/31914/entgeltumwandlung-in-der-insolvenz",
   "zh": "破产中的报酬转换",
-  "year": "2007"
+  "year": "2007",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "c:31951",
@@ -3637,7 +3739,10 @@
   "de_sub": "Die Besonderheiten der Zulässigkeit und der Durchführung eines privaten Schiedsverfahrens bei der Erbauseinandersetzung aufgrund letztwilliger Schiedsklausel oder Schiedsvereinbarung",
   "de_link": "https://elibrary.duncker-humblot.com/book/31779/das-schiedsverfahren-im-erbrecht",
   "zh": "继承法中的仲裁",
-  "year": "2007"
+  "year": "2007",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "c:31959",
@@ -3857,7 +3962,10 @@
   "de_sub": "Eine Untersuchung der Auswirkungen des Insolvenzplanverfahrens auf die Rechtsstellung der Grundpfandgläubiger",
   "de_link": "https://elibrary.duncker-humblot.com/book/31231/grundpfandrechte-im-insolvenzverfahren",
   "zh": "破产程序中的土地担保物权",
-  "year": "2009"
+  "year": "2009",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "c:31228",
@@ -3947,7 +4055,10 @@
   "de_sub": "Zur Notwendigkeit einer Balance zwischen richterlicher Rechtsfortbildung und geschriebenem Recht",
   "de_link": "https://elibrary.duncker-humblot.com/book/31339/raquoteilrechtsfaumlhigkeitlaquo-von-personenvereinigungen",
   "zh": "人合组织体的“部分权利能力”",
-  "year": "2009"
+  "year": "2009",
+  "tags": [
+   "法官造法"
+  ]
  },
  {
   "id": "c:31376",
@@ -4087,7 +4198,10 @@
   "de_sub": "Die Behandlung des strukturellen Informationsdefizits des Rechtsinhabers im Falle einer vermuteten Schutzrechtsverletzung: Von der Entscheidung »Druckbalken« bis zur Umsetzung der »Enforcement«-Richtlinie",
   "de_link": "https://elibrary.duncker-humblot.com/book/32137/die-beweisermittlung-im-gewerblichen-rechtsschutz-und-urheberrecht",
   "zh": "工业产权保护与著作权中的证据获取",
-  "year": "2011"
+  "year": "2011",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "c:32346",
@@ -4097,7 +4211,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/32346/zur-daseinsberechtigung-der-so-genannten-raquodrittschadensliquidationlaquo",
   "zh": "论所谓“第三人损害清算”的存在理由",
-  "year": "2011"
+  "year": "2011",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:32385",
@@ -4207,7 +4324,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/32918/haftung-zurechnung-und-beweisfuumlhrung-bei-anfaumlnglicher-und-nachtraumlglicher-unmoumlglichkeit",
   "zh": "初始与事后不能中的责任、归责与举证",
-  "year": "2012"
+  "year": "2012",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "c:32937",
@@ -4307,7 +4427,10 @@
   "de_sub": "Gestaltung, Zulässigkeit und Formbedürftigkeit gesellschaftsvertraglicher Güterstands- und Pflichtteilsklauseln",
   "de_link": "https://elibrary.duncker-humblot.com/book/34102/drittkontrahierungsklauseln-in-gesellschaftsvertraumlgen",
   "zh": "公司章程中的第三人缔约条款",
-  "year": "2013"
+  "year": "2013",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:34500",
@@ -4517,7 +4640,10 @@
   "de_sub": "Gesetzgebungstechnik europarechtlich veranlasster Änderungsgesetze",
   "de_link": "https://elibrary.duncker-humblot.com/book/36082/der-einfluss-europas-auf-das-bgb",
   "zh": "欧洲对《德国民法典》的影响",
-  "year": "2016"
+  "year": "2016",
+  "tags": [
+   "欧盟法"
+  ]
  },
  {
   "id": "c:36325",
@@ -4537,7 +4663,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/36170/sicherheiten-fuumlr-kuumlnftige-forderungen-in-der-insolvenz",
   "zh": "破产中针对未来债权的担保",
-  "year": "2016"
+  "year": "2016",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "c:36199",
@@ -4667,7 +4796,10 @@
   "de_sub": "Retrospektive auf die Suhrkamp-Insolvenz",
   "de_link": "https://elibrary.duncker-humblot.com/book/36888/die-bedeutung-der-gesellschaftsrechtlichen-treuepflicht-im-insolvenzplanverfahren",
   "zh": "破产计划程序中公司法忠实义务的意义",
-  "year": "2017"
+  "year": "2017",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "c:36887",
@@ -4817,7 +4949,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/37957/umwandlungen-im-insolvenzplanverfahren",
   "zh": "破产计划程序中的变更（转化）",
-  "year": "2018"
+  "year": "2018",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "c:37965",
@@ -4947,7 +5082,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/51638/die-haftung-dritter-im-rahmen-der-vorvertraglichen-aufklaumlrung-des-franchisenehmers",
   "zh": "特许经营受许人先合同说明中的第三人责任",
-  "year": "2019"
+  "year": "2019",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:51712",
@@ -4977,7 +5115,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/52323/die-haftung-der-gewerkschaft-gegenuumlber-ihren-tarifpartnern-und-dritten-fuumlr-schaumlden-bei-rechtswidrigen-streiks",
   "zh": "工会对违法罢工中对其集体谈判伙伴与第三人的损害的责任",
-  "year": "2019"
+  "year": "2019",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:52742",
@@ -5027,7 +5168,10 @@
   "de_sub": "Eine vergleichende Untersuchung des Gläubigerschutzes",
   "de_link": "https://elibrary.duncker-humblot.com/book/53196/unternehmensfortfuumlhrung-durch-testamentsvollstrecker-und-insolvenzverwalter",
   "zh": "通过遗嘱执行人与破产管理人的企业延续",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "c:53328",
@@ -5137,7 +5281,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/54469/verpfaumlndung-und-sicherungsuumlbertragung-von-optionsrechten",
   "zh": "选择权的出质与担保让与",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "c:54628",
@@ -5167,7 +5314,10 @@
   "de_sub": "Eine Betrachtung zur Drittschadensliquidation",
   "de_link": "https://elibrary.duncker-humblot.com/book/54633/rechtsethische-auslegung-im-schadensrecht",
   "zh": "损害赔偿法中的法律伦理解释",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:54650",
@@ -5317,7 +5467,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/55430/das-schiedsgutachten-im-allgemeinen-buumlrgerlichen-recht",
   "zh": "一般民法中的鉴定仲裁（仲裁鉴定）",
-  "year": "2021"
+  "year": "2021",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "c:55434",
@@ -5417,7 +5570,10 @@
   "de_sub": "Fangprämien, Vertrags- und Verbandsstrafen: Regressfähige Schadensposten oder unzulässige Rechtsgeschäfte zu Lasten Dritter?",
   "de_link": "https://elibrary.duncker-humblot.com/book/56246/private-schadensgestaltung-als-drittbelastung",
   "zh": "作为第三人负担的私人损害设计",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:56183",
@@ -5447,7 +5603,10 @@
   "de_sub": "Zugleich eine Neuausrichtung der Willenserklärung und eine Neubewertung des Handelns unter fremdem Namen, insbesondere im elektronischen Geschäftsverkehr",
   "de_link": "https://elibrary.duncker-humblot.com/book/56378/zurechnung-von-dritthandeln-im-rechtsgeschaumlftlichen-bereich",
   "zh": "法律行为领域中对第三人行为的归责",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:57476",
@@ -5457,7 +5616,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/57476/houmlchstpersoumlnlichkeit-und-delegationsbefugnis-des-insolvenzverwalteramtes",
   "zh": "破产管理人职务的高度人身性与授权权限",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "c:57456",
@@ -5997,7 +6159,10 @@
   "de_sub": "Die (Un-)Anwendbarkeit des Schadensersatzanspruches statt der Leistung (§§ 280 Abs. 1, Abs. 3, 281 BGB) auf den Zustimmungsanspruch des Vormerkungsberechtigten gegen den Dritterwerber (§ 888 Abs. 1 BGB)",
   "de_link": "https://elibrary.duncker-humblot.com/book/63913/schadensersatz-statt-der-eigentumsvormerkung",
   "zh": "代替所有权预告登记的损害赔偿？",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:63950",
@@ -6117,7 +6282,10 @@
   "de_sub": "Zugleich ein Beitrag zu der sogenannten Verdinglichung obligatorischer Rechte",
   "de_link": "https://elibrary.duncker-humblot.com/book/64266/schuldrechtliche-herausgabeanspruumlche-gegen-dritte",
   "zh": "针对第三人的债法返还请求权",
-  "year": "2026"
+  "year": "2026",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "c:64320",
