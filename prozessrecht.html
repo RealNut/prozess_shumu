@@ -26,6 +26,17 @@
  a:hover{text-decoration:underline}
  .tag{display:inline-block;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:999px;padding:1px 8px;margin:2px 3px 2px 0;font-size:11.5px;cursor:pointer}
  .tag:hover{background:#e0e7ff}
+ .tagdel{border:none;background:#fff;color:#cf222e;cursor:pointer;font-size:11px;margin-left:3px;padding:0 3px;line-height:1.5;border-radius:5px}
+ .tagdel:hover{background:#fee2e2}
+ .tagedit{border:none;background:#fff;color:#0969da;cursor:pointer;font-size:11px;margin-left:3px;padding:0 3px;line-height:1.5;border-radius:5px}
+ .tagedit:hover{background:#ddf4ff}
+ .tname{cursor:default}
+ .tag-edit-inp{padding:1px 5px;font-size:11.5px;border:1px solid #0969da;border-radius:4px;background:#fff;vertical-align:middle}
+ .tag-edit-save,.tag-edit-cancel{border:1px solid #d0d7de;background:#fff;cursor:pointer;font-size:11px;margin-left:2px;padding:0 4px;line-height:1.4;border-radius:5px;vertical-align:middle}
+ .tag-edit-save{color:#1a7f37;border-color:#1a7f37}
+ .tag-edit-save:hover{background:#dcfce7}
+ .tag-edit-cancel{color:#cf222e;border-color:#cf222e}
+ .tag-edit-cancel:hover{background:#fee2e2}
  .owner-only{display:none}
  body.unlocked .owner-only{display:inline-block}
  .cellinput{width:95%;padding:4px 6px;font-size:13px;border:1px solid #0969da;border-radius:5px}
@@ -42,6 +53,12 @@
  .te-title{font-weight:600;margin-bottom:8px}
  .te-chip{display:inline-flex;align-items:center;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:999px;padding:2px 8px;margin:3px 4px 3px 0;font-size:12px}
  .te-x{cursor:pointer;border:none;background:none;color:#6b7280;margin-left:4px;font-size:13px}
+ .te-name{cursor:pointer;border-bottom:1px dashed transparent}
+ .te-name:hover{border-bottom-color:#0969da;color:#0969da}
+ .te-edit-inp{padding:2px 6px;font-size:12px;border:1px solid #0969da;border-radius:5px;width:100px}
+ .te-edit-save,.te-edit-cancel{cursor:pointer;border:1px solid #d0d7de;background:#fff;border-radius:5px;padding:1px 5px;font-size:12px;margin-left:3px}
+ .te-edit-save{color:#1a7f37;border-color:#1a7f37}
+ .te-edit-cancel{color:#cf222e;border-color:#cf222e}
  .te-add{margin-top:8px;display:flex;gap:6px}
  .te-add input{flex:1;padding:5px 8px;border:1px solid #d0d7de;border-radius:6px}
  .te-add button{border:1px solid #0969da;background:#0969da;color:#fff;border-radius:6px;padding:5px 10px;cursor:pointer}
@@ -405,151 +422,9 @@
 <tr data-id="p:64046" data-basezh="法庭上的数据保护" data-baseyear="2026" data-basetags="[]"><td class="vol">326</td><td class="au">Arne Conen</td><td class="de"><a href="https://elibrary.duncker-humblot.com/book/64046/datenschutz-vor-gericht" target="_blank" rel="noopener">Datenschutz vor Gericht</a><br><span class="sub">Die Anforderungen der DSGVO an gerichtliche Datenverarbeitungen am Beispiel des Umgangs mit Prozessakten</span></td><td class="zh"><span class="zhtext">法庭上的数据保护</span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2026</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
 <tr data-id="p:64090" data-basezh="刑事诉讼中的错误后果" data-baseyear="2026" data-basetags="[]"><td class="vol">327</td><td class="au">Tobias Gafus</td><td class="de"><a href="https://elibrary.duncker-humblot.com/book/64090/fehlerfolgen-im-strafprozess" target="_blank" rel="noopener">Fehlerfolgen im Strafprozess</a></td><td class="zh"><span class="zhtext">刑事诉讼中的错误后果</span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2026</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
 </tbody></table>
-
-<script src="config.js?v=__AV__"></script>
-<script src="gate.js?v=__AV__"></script>
-<script src="publish.js?v=__AV__"></script>
-<script>
-function esc(s){const d=document.createElement('div');d.textContent=s;return d.innerHTML;}
-const AV='__AV__';
-
-/* ---------- 搜索 ---------- */
-function doSearch(){
-  const q=document.getElementById('q').value.trim().toLowerCase();
-  let n=0;
-  document.querySelectorAll('tr[data-id]').forEach(tr=>{
-    const ok=!q||tr.innerText.toLowerCase().includes(q);
-    tr.style.display=ok?'':'none'; if(ok)n++;
-  });
-  const c=document.getElementById('cnt'); if(c)c.textContent=n;
-}
-document.addEventListener('click',function(e){
-  const tg=e.target.closest('.tag'); if(!tg)return;
-  document.getElementById('q').value=tg.getAttribute('data-t');
-  doSearch(); window.scrollTo({top:0,behavior:'smooth'});
-});
-
-/* ---------- 合并渲染 ---------- */
-function baseTags(tr){ try{return JSON.parse(tr.getAttribute('data-basetags')||'[]');}catch(e){return [];} }
-function dispZh(tr){ const id=tr.getAttribute('data-id'); const m=window.BibPub.mergedTrans(id); return m!==null?m:tr.getAttribute('data-basezh'); }
-function dispYear(tr){ const id=tr.getAttribute('data-id'); const m=window.BibPub.mergedYear(id); return m!==null?m:tr.getAttribute('data-baseyear'); }
-function dispTags(tr){ const id=tr.getAttribute('data-id'); const m=window.BibPub.mergedTags(id); return m!==null?m:baseTags(tr); }
-function renderRow(tr){
-  /* 防御：编辑中的行（editText 已把 .zhtext/.yrtext 替换为 input）跳过，
-     等 cancel/save 回调自行 renderRow(tr) 即可。 */
-  var zh=tr.querySelector('.zhtext'); if(zh) zh.textContent=dispZh(tr);
-  var yr=tr.querySelector('.yrtext'); if(yr) yr.textContent=dispYear(tr);
-  const tc=tr.querySelector('.tags'); if(!tc)return;
-  const ed=tc.querySelector('.edittags');
-  tc.innerHTML=dispTags(tr).map(t=>'<span class="tag" data-t="'+esc(t)+'">'+esc(t)+'</span>').join('')+' ';
-  if(ed)tc.appendChild(ed);
-}
-function renderAll(){ document.querySelectorAll('tr[data-id]').forEach(renderRow); }
-
-/* ---------- 编辑：译名 / 年份 ---------- */
-function editText(tr, sel, getter, setter){
-  if(!window.BibGate.require())return;
-  const cell=tr.querySelector(sel); const span=cell.querySelector('span');
-  const cur=getter(tr);
-  // 窄列（如年份 66px）编辑时临时加宽并禁止换行，确保 ✓/✕ 按钮可见
-  cell.style.width='auto'; cell.style.whiteSpace='nowrap';
-  const inp=document.createElement('input'); inp.type='text'; inp.value=cur; inp.className='cellinput'; inp.style.width='120px';
-  const save=document.createElement('button'); save.textContent='✓'; save.className='cellsave';
-  const cancel=document.createElement('button'); cancel.textContent='✕'; cancel.className='cellcancel';
-  cell.innerHTML=''; cell.append(inp,save,cancel); inp.focus();
-  function restore(){ cell.style.width=''; cell.style.whiteSpace=''; }
-  function done(ok){
-    if(ok){setter(tr.getAttribute('data-id'), inp.value); cell.classList.add('cell-saved'); flash('✓ 已保存（待发布）'); }
-    restore(); renderRow(tr); renderAll(); updatePending();
-    if(ok) setTimeout(function(){ cell.classList.remove('cell-saved'); }, 800);
-  }
-  save.onclick=()=>done(true); cancel.onclick=()=>done(false);
-  inp.onkeydown=e=>{ if(e.key==='Enter')done(true); if(e.key==='Escape')done(false); };
-}
-document.addEventListener('click',function(e){
-  const z=e.target.closest('.editzh'); if(z){ editText(z.closest('tr'),'.zh',dispZh,(id,v)=>window.BibPub.setTransPending(id,v)); return; }
-  const y=e.target.closest('.edityr'); if(y){ editText(y.closest('tr'),'.yr',dispYear,(id,v)=>window.BibPub.setYearPending(id,v)); return; }
-  const t=e.target.closest('.edittags'); if(t){ openTagEditor(t.closest('tr')); return; }
-});
-
-/* ---------- 编辑：标签 ---------- */
-let tagEditor=null;
-function openTagEditor(tr){
-  if(!window.BibGate.require())return;
-  closeTagEditor();
-  const id=tr.getAttribute('data-id');
-  const box=document.createElement('div'); box.className='tageditor';
-  function draw(){
-    const arr=dispTags(tr);
-    box.innerHTML='<div class="te-title">标签（'+arr.length+'）</div>'+
-      arr.map((t,i)=>'<span class="te-chip" data-i="'+i+'">'+esc(t)+'<button type="button" class="te-x">×</button></span>').join('')+
-      '<div class="te-add"><input id="te-in" placeholder="输入标签后回车添加"><button type="button" id="te-addbtn">添加</button></div>';
-    box.querySelectorAll('.te-x').forEach(b=>b.onclick=()=>{ const i=+b.parentElement.getAttribute('data-i'); arr.splice(i,1); window.BibPub.setTagPending(id,arr); draw(); renderRow(tr); updatePending(); });
-    const add=()=>{ const v=box.querySelector('#te-in').value.trim(); if(!v)return; if(arr.indexOf(v)<0)arr.push(v); window.BibPub.setTagPending(id,arr); box.querySelector('#te-in').value=''; draw(); renderRow(tr); flash('✓ 标签已保存（待发布）'); updatePending(); };
-    box.querySelector('#te-addbtn').onclick=add;
-    box.querySelector('#te-in').onkeydown=e=>{ if(e.key==='Enter')add(); };
-  }
-  draw();
-  document.body.appendChild(box);
-  tagEditor=box;
-}
-function closeTagEditor(){ if(tagEditor){ tagEditor.remove(); tagEditor=null; } }
-document.addEventListener('click',function(e){ if(tagEditor && !e.target.closest('.tageditor') && !e.target.closest('.edittags')) closeTagEditor(); });
-
-/* ---------- 待发布计数 ---------- */
-function updatePending(){
-  var n=0;
-  if(window.BibPub){
-    var t=window.BibPub.getLocal(window.BibPub.LS.tags);
-    var r=window.BibPub.getLocal(window.BibPub.LS.trans);
-    var y=window.BibPub.getLocal(window.BibPub.LS.year);
-    for(var k in t) if(t[k]&&t[k].length)n++;
-    for(var k in r) if(r[k])n++;
-    for(var k in y) if(y[k])n++;
-  }
-  var b=document.getElementById('pending-badge');
-  if(!b)return;
-  if(n>0){ b.textContent='待发布 '+n; b.className='pending-badge owner-only show'; }
-  else{ b.textContent=''; b.className='pending-badge owner-only'; }
-}
-
-/* ---------- 发布 ---------- */
-function doPublish(){
-  if(!window.BibGate.require())return;
-  window.BibPub.publishAll().then(r=>{
-    if(r.mode==='published'){ flash('✅ 已发布到仓库（所有人可见）'); }
-    else { flash('已复制修改 JSON，请发到 WorkBuddy 项目对话让我代推上线'); }
-    renderAll(); updatePending();
-  }).catch(e=>{ flash('发布失败：'+(e.message||e)+'（需填 GitHub 令牌，或复制发我代推）'); });
-}
-function flash(msg){
-  let t=document.getElementById('bib-toast'); if(!t){ t=document.createElement('div'); t.id='bib-toast'; t.className='bib-toast'; document.body.appendChild(t); }
-  t.textContent=msg; t.style.opacity='1'; clearTimeout(t._h); t._h=setTimeout(()=>t.style.opacity='0',5000);
-}
-document.addEventListener('DOMContentLoaded',function(){
-  document.getElementById('q').addEventListener('input',doSearch);
-  // 解锁/退出按钮（动态切换）
-  const lb=document.getElementById('lockbtn');
-  function syncLockBtn(){
-    if(!lb)return;
-    if(window.BibGate.isUnlocked()){ lb.textContent='🔓 退出编辑'; lb.classList.add('unlocked-btn'); }
-    else{ lb.textContent='🔒 解锁编辑'; lb.classList.remove('unlocked-btn'); }
-  }
-  if(lb) lb.onclick=function(){ if(window.BibGate.isUnlocked()){ window.BibGate.lockNow(); } else { window.BibGate.open(); } };
-  syncLockBtn();
-  const pb=document.getElementById('pubbtn'); if(pb) pb.onclick=doPublish;
-  const tb=document.getElementById('tokenbtn'); if(tb) tb.onclick=function(){
-    if(!window.BibGate.require())return;
-    const v=prompt('GitHub fine-grained 令牌（仅本仓库 contents:write，存本机浏览器，不上传）：', window.BibPub.getToken());
-    if(v!==null){ window.BibPub.setToken(v.trim()); flash(v.trim()?'✅ 已保存令牌':'已清除令牌'); }
-  };
-  // 拉取已发布覆盖层并合并渲染
-  if(window.BibPub){ window.BibPub.fetchPub().then(function(){ renderAll(); updatePending(); }).catch(function(){ renderAll(); updatePending(); }); }
-  doSearch();
-  updatePending();
-});
-window.onBibUnlock=function(){ renderAll(); updatePending(); var lb=document.getElementById('lockbtn'); if(lb){ lb.textContent='🔓 退出编辑'; lb.classList.add('unlocked-btn'); } };
-window.onBibLock=function(){ renderAll(); var lb=document.getElementById('lockbtn'); if(lb){ lb.textContent='🔒 解锁编辑'; lb.classList.remove('unlocked-btn'); } flash('已退出编辑模式'); };
-</script>
-
+<script src="config.js?v=1783904321"></script>
+<script src="gate.js?v=1783904321"></script>
+<script src="publish.js?v=1783904321"></script>
+<script src="common.js?v=1783904321"></script>
+<script src="page.js?v=1783904321"></script>
 </body></html>
