@@ -1,0 +1,38 @@
+name: Verify Bibliography Site
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate JSON & HTML integrity
+        run: |
+          python3 - <<'PY'
+          import json, glob, sys, os
+          SKIP = {"tags.json", "trans_overrides.json", "year_overrides.json"}
+          for f in glob.glob("*.json"):
+              if f in SKIP:
+                  continue
+              try:
+                  json.load(open(f, encoding="utf-8"))
+              except Exception as e:
+                  print("❌ JSON 解析错误:", f, e); sys.exit(1)
+          for f in glob.glob("*.html"):
+              c = open(f, encoding="utf-8").read()
+              for s in ("config.js", "gate.js", "publish.js"):
+                  if s not in c:
+                      print(f"❌ {f} 缺少脚本引用: {s}"); sys.exit(1)
+          print("✅ 校验通过：基础 JSON 可解析、页面均引用 3 个脚本")
+          PY
+
+      - name: Smoke health check (live site)
+        run: |
+          sleep 45  # 等待 Pages 重建
+          curl -fsS "https://realnut.github.io/prozess_shumu/" >/dev/null && echo "✅ 首页可访问"
+          curl -fsS "https://realnut.github.io/prozess_shumu/buergerlichen.html" >/dev/null && echo "✅ 书目页可访问"
