@@ -65,20 +65,75 @@
     });
   }
 
+  var currentTag = null; // 记录当前选中的标签，删标签后重渲染用
+
   function showTag(tag) {
-    var ids = Object.keys(BOOKS).filter(function (id) { return (BOOKS[id].tags || []).includes(tag); });
+    currentTag = tag;
+    var map = buildDisplayedTagMap();
+    var ids = Object.keys(BOOKS).filter(function (id) { return map[id].includes(tag); });
     var box = document.getElementById("results");
-    if (!ids.length) { box.innerHTML = ""; return; }
+    if (!ids.length) {
+      box.innerHTML = '<div class="sec-title">含标签「' + esc(tag) + '」的书（0）</div><span class="empty">没有匹配的书。</span>';
+      return;
+    }
     box.innerHTML = '<div class="sec-title">含标签「' + esc(tag) + '」的书（' + ids.length + '）</div>' +
+      '<div class="results-hint owner-only">觉得某本不该有此标签？点右侧 × 移除</div>' +
       ids.map(function (id) {
         var b = BOOKS[id] || {}; var meta = (typeof META !== "undefined" && META[b.series]) || {};
         var pc = PUBCOLOR[meta.pub] || { bg: "#eee", c: "#333", label: "" };
-        return '<div class="ritem"><span class="badge" style="background:' + pc.bg + ";color:" + pc.c + '">' + esc(meta.short || b.series) + '</span>' +
+        var pend = hasBookPending(id);
+        return '<div class="ritem' + (pend ? " ritem-pending" : "") + '" data-id="' + esc(id) + '">' +
+          '<span class="badge" style="background:' + pc.bg + ";color:" + pc.c + '">' + esc(meta.short || b.series) + '</span>' +
           '<a href="' + esc(b.link || meta.html || "#") + '" target="_blank" rel="noopener">' + esc(b.de || id) + '</a>' +
           '<span class="zh">' + esc(b.zh || "") + '</span>' +
-          '<span class="au">' + esc(b.author || "") + '</span></div>';
+          '<span class="au">' + esc(b.author || "") + '</span>' +
+          '<button class="rtag-del owner-only" type="button" title="从该书移除标签「' + esc(tag) + '」" data-id="' + esc(id) + '">×</button>' +
+          '</div>';
       }).join("");
+    // 绑定删除按钮
+    box.querySelectorAll(".rtag-del").forEach(function (btn) {
+      btn.onclick = function (e) {
+        e.stopPropagation();
+        removeTagFromBook(btn.getAttribute("data-id"), tag);
+      };
+    });
     box.scrollIntoView({ behavior: "smooth" });
+  }
+
+  /** 从首页检索结果中移除某书的某标签（写入 pending，不立即发布）。 */
+  function removeTagFromBook(id, tag) {
+    var map = buildDisplayedTagMap();
+    var cur = map[id] || [];
+    var na = cur.filter(function (t) { return t !== tag; });
+    global.BibPub.setTagPending(id, na);
+    flash("已从该书移除标签「" + tag + "」（待发布）");
+    renderCloud();
+    if (currentTag) showTag(currentTag); // 重渲染结果列表（该书会消失）
+    updatePending();
+  }
+
+  /** 检测某书是否有 pending 修改（标签/译名/年份）。 */
+  function hasBookPending(id) {
+    var lt = global.BibPub.getLocal(global.BibPub.LS.tags);
+    var ltr = global.BibPub.getLocal(global.BibPub.LS.trans);
+    var ly = global.BibPub.getLocal(global.BibPub.LS.year);
+    return (id in lt) || (id in ltr) || (id in ly);
+  }
+
+  /** 更新待发布计数徽章。 */
+  function updatePending() {
+    var lt = global.BibPub.getLocal(global.BibPub.LS.tags);
+    var ltr = global.BibPub.getLocal(global.BibPub.LS.trans);
+    var ly = global.BibPub.getLocal(global.BibPub.LS.year);
+    var ids = {};
+    for (var k in lt) ids[k] = 1;
+    for (var k in ltr) ids[k] = 1;
+    for (var k in ly) ids[k] = 1;
+    var n = Object.keys(ids).length;
+    var b = document.getElementById("pending-badge");
+    if (!b) return;
+    if (n > 0) { b.textContent = "待发布 " + n; b.className = "pending-badge owner-only show"; }
+    else { b.textContent = ""; b.className = "pending-badge owner-only"; }
   }
 
   // 全局标签操作
@@ -88,7 +143,7 @@
     global.BibPub.globalTagOp("delete", tag, null, buildDisplayedTagMap()).then(function (r) {
       if (r.mode === "published") flash("✅ 已删除标签「" + tag + "」并发布");
       else flash("已复制更新后的 tags.json，请发到 WorkBuddy 项目对话让我代推");
-      renderCloud();
+      renderCloud(); updatePending();
     }).catch(function (e) { flash("操作失败：" + (e.message || e)); });
   }
   function renameTag(tag) {
@@ -99,7 +154,7 @@
     global.BibPub.globalTagOp("rename", tag, nn, buildDisplayedTagMap()).then(function (r) {
       if (r.mode === "published") flash("✅ 已重命名为「" + nn + "」并发布");
       else flash("已复制更新后的 tags.json，请发到 WorkBuddy 项目对话让我代推");
-      renderCloud();
+      renderCloud(); updatePending();
     }).catch(function (e) { flash("操作失败：" + (e.message || e)); });
   }
   function countTag(tag) { var n = 0; var m = buildDisplayedTagMap(); for (var id in m) if (m[id].includes(tag)) n++; return n; }
@@ -116,6 +171,8 @@
           if (global.BibPub) {
             global.BibPub.fetchPub().then(function () {
               renderCloud();
+              if (currentTag) showTag(currentTag);
+              updatePending();
               flash("\u2705 页面已刷新，显示最新发布状态");
             }).catch(function () {
               flash("\u26A0\uFE0F 拉取最新数据失败，请手动刷新页面");
@@ -125,6 +182,7 @@
       } else {
         flash("已复制修改 JSON，请发到 WorkBuddy 项目对话让我代推上线");
         renderCloud();
+        updatePending();
       }
     }).catch(function (e) {
       if (pubbtn) { pubbtn.disabled = false; pubbtn.textContent = "\uD83D\uDE80 发布修改"; }
@@ -142,7 +200,7 @@
     });
 
   document.addEventListener("DOMContentLoaded", function () {
-    global.BibCommon.setupLockButton(renderCloud, renderCloud);
+    global.BibCommon.setupLockButton(function () { renderCloud(); updatePending(); }, function () { renderCloud(); updatePending(); });
     global.BibCommon.setupTokenButton();
     global.BibCommon.setupPublishButton(doPublish);
   });
