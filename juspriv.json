@@ -47,7 +47,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161461521",
   "zh": "遗嘱执行的责任秩序",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "j:9783161580222",
@@ -107,7 +110,10 @@
   "de_sub": "Neuere Dogmengeschichte - Anwendungsbereich - Dogmatische Strukturen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161580239",
   "zh": "为第三人利益合同（第三人利益合同）",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "j:9783161580246",
@@ -117,7 +123,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161580246",
   "zh": "法官法律续造的民事诉讼基础",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "法官造法"
+  ]
  },
  {
   "id": "j:9783161578908",
@@ -177,7 +186,10 @@
   "de_sub": "Präventive Verkehrspflichten und Beweiserleichterungen in Risikolagen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161465628",
   "zh": "环境与责任法中的法益保护",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "j:9783161578786",
@@ -237,7 +249,10 @@
   "de_sub": "Entwicklung der Rechtsfigur des trilateralen Synallagmas auf der Grundlage deutscher und U.S.-amerikanischer Rechtsentwicklungen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161468827",
   "zh": "第三方融资的购置交易",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "j:9783161468810",
@@ -267,7 +282,10 @@
   "de_sub": "Möglichkeiten der kurzfristigen Verwirklichung von Ansprüchen auf Vornahme vertretbarer Handlungen - zugleich ein Beitrag zum Spannungsverhältnis von Prozeßrecht und materiellem Recht",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161578731",
   "zh": "临时权利保护与实体法上的自行履行",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "保全/假处分"
+  ]
  },
  {
   "id": "j:9783161578755",
@@ -277,7 +295,10 @@
   "de_sub": "Systematische Darstellung des deutschen Rechts mit rechtsvergleichenden Bezügen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161578755",
   "zh": "国际破产法",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "j:9783161469817",
@@ -357,7 +378,10 @@
   "de_sub": "Eine Untersuchung der Rückrufpflichten und Rückrufansprüche nach dem Recht Deutschlands, der Europäischen Union und der USA",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161578960",
   "zh": "缺陷产品的召回",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "欧盟法"
+  ]
  },
  {
   "id": "j:9783161471438",
@@ -407,7 +431,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161471698",
   "zh": "有第三人参与的交换合同",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "j:9783161581502",
@@ -1047,7 +1074,10 @@
   "de_sub": "Zugleich ein Beitrag zur Theorie der Verbandsklage",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161490484",
   "zh": "私法中的民众诉讼（公益诉权）",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "集体诉讼"
+  ]
  },
  {
   "id": "j:9783161489891",
@@ -1227,7 +1257,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161512001",
   "zh": "民法中隐蔽法律续造的论题",
-  "year": "2007"
+  "year": "2007",
+  "tags": [
+   "法官造法"
+  ]
  },
  {
   "id": "j:9783161512018",
@@ -1257,7 +1290,10 @@
   "de_sub": "Ein Beitrag zur Rechtsvereinheitlichung auf europäischer Ebene",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161512032",
   "zh": "强制执行法的原则与基本结构",
-  "year": "2007"
+  "year": "2007",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "j:9783161512049",
@@ -1307,7 +1343,11 @@
   "de_sub": "Haftung wegen unbegründeter Geltendmachung von Drittrechten in der Zwangsvollstreckung",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161512087",
   "zh": "执行介入与责任",
-  "year": "2008"
+  "year": "2008",
+  "tags": [
+   "第三人",
+   "强制执行"
+  ]
  },
  {
   "id": "j:9783161512094",
@@ -1557,7 +1597,10 @@
   "de_sub": "Eine materiell-, insolvenz- und kollisionsrechtliche Studie des Rechts der Mobiliarsicherheiten vor dem Hintergrund internationaler und europäischer Entwicklungen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161512339",
   "zh": "动产与债权上的信用担保",
-  "year": "2011"
+  "year": "2011",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "j:9783161512346",
@@ -1567,7 +1610,10 @@
   "de_sub": "Von seiner dogmatischen Deutung als Vertrag und seiner Fortentwicklung in eine Bestätigungsinsolvenz",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161512346",
   "zh": "破产计划",
-  "year": "2011"
+  "year": "2011",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "j:9783161517587",
@@ -1627,7 +1673,10 @@
   "de_sub": "Verantwortlichkeit für das Fehlverhalten Dritter in Vertragsbeziehungen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161520860",
   "zh": "分工与合同",
-  "year": "2012"
+  "year": "2012",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "j:9783161520167",
@@ -1687,7 +1736,10 @@
   "de_sub": "Eine insolvenzrechtsdogmatische Abhandlung zum Insolvenzanfechtungsrisiko bei Überweisungen und Lastschriften in der Insolvenz des Girokontoinhabers",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161521287",
   "zh": "非现金支付往来中的破产撤销",
-  "year": "2012"
+  "year": "2012",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "j:9783161520976",
@@ -1797,7 +1849,10 @@
   "de_sub": "Eine rechtsvergleichende Untersuchung",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161532832",
   "zh": "评级——金融市场法、公司法与合同法体系中的第三人信用评价",
-  "year": "2014"
+  "year": "2014",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "j:9783161524783",
@@ -1857,7 +1912,10 @@
   "de_sub": "Zulässigkeit, Verfahren und Kontrolle von Inhaltsbestimmungen und Feststellungen Dritter im Schuld- und Erbrecht",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161526077",
   "zh": "私法自治向第三人的委托",
-  "year": "2014"
+  "year": "2014",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "j:9783161531521",
@@ -1887,7 +1945,10 @@
   "de_sub": "Rationalität und Intuition",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161537592",
   "zh": "证据评价与证明尺度（证明标准）",
-  "year": "2015"
+  "year": "2015",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "j:9783161533822",
@@ -2017,7 +2078,10 @@
   "de_sub": "Die Verbandsklage im Verbraucher- und Arbeitsrecht",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161542640",
   "zh": "集体结构中的权利保护",
-  "year": "2018"
+  "year": "2018",
+  "tags": [
+   "集体诉讼"
+  ]
  },
  {
   "id": "j:9783161541308",
@@ -2567,7 +2631,10 @@
   "de_sub": "Zur Genese und teleologischen Strukturierung des Vollstreckungsschutzes",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161612077",
   "zh": "强制执行中的人的尊严",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "j:9783161613432",
@@ -2577,7 +2644,11 @@
   "de_sub": "Eine Neubestimmung der subjektiven Rechtskraftwirkungen und sonstiger Drittbindungen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161613432",
   "zh": "第三人对诉讼结果的受约束",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "既判力",
+   "第三人"
+  ]
  },
  {
   "id": "j:9783161609800",
@@ -2637,7 +2708,10 @@
   "de_sub": "Eine Rechtfertigung unter besonderer Berücksichtigung der Passivität der nicht beweisbelasteten Partei",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161612473",
   "zh": "主张（提出）原则",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "j:9783161619069",
@@ -2747,7 +2821,10 @@
   "de_sub": "Letztinstanzliche Zivilverfahren zwischen Individualrechtsschutz und Rechtsfortbildung",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161627774",
   "zh": "上诉、撤销、终局上诉",
-  "year": "2024"
+  "year": "2024",
+  "tags": [
+   "法官造法"
+  ]
  },
  {
   "id": "j:9783161636363",
