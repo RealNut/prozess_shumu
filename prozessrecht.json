@@ -22,7 +22,9 @@
   "zh": "动产强制执行中第三人的异议权",
   "year": "1966",
   "tags": [
-   "强制执行"
+   "强制执行",
+   "既判力",
+   "第三人"
   ]
  },
  {
@@ -56,7 +58,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/47784/die-schadensersatzanspruumlche-aus-ungerechtfertigter-vollstreckung",
   "zh": "不当强制执行的损害赔偿请求权",
-  "year": "1967"
+  "year": "1967",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:48034",
@@ -112,7 +117,11 @@
   "de_sub": "Eine Studie über die konkurrierende Prozeßführung mehrerer materiell Beteiligter",
   "de_link": "https://elibrary.duncker-humblot.com/book/47783/die-voraussetzungen-der-besonderen-streitgenossenschaft",
   "zh": "必要共同诉讼（特别共同诉讼）的前提",
-  "year": "1970"
+  "year": "1970",
+  "tags": [
+   "第三人",
+   "诉讼担当"
+  ]
  },
  {
   "id": "p:47469",
@@ -152,7 +161,11 @@
   "de_sub": "Eine Untersuchung der Funktion von Aussetzung, Rechtshängigkeit und Rechtskraft bei Verfahrenskonkurrenzen",
   "de_link": "https://elibrary.duncker-humblot.com/book/49443/die-aussetzung-des-prozesses-zur-klaumlrung-von-vorfragen",
   "zh": "为澄清先决问题而中止诉讼",
-  "year": "1971"
+  "year": "1971",
+  "tags": [
+   "既判力",
+   "诉讼系属"
+  ]
  },
  {
   "id": "p:49908",
@@ -225,7 +238,10 @@
   "de_sub": "Eine organisations- und aufsichtsrechtliche Studie",
   "de_link": "https://elibrary.duncker-humblot.com/book/43594/der-gerichtsvollzieher-als-selbstaumlndiges-organ-der-zwangsvollstreckung",
   "zh": "作为强制执行独立机关的执达员",
-  "year": "1973"
+  "year": "1973",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:45418",
@@ -265,7 +281,10 @@
   "de_sub": "Eine Darstellung mit rechtsvergleichenden Anmerkungen",
   "de_link": "https://elibrary.duncker-humblot.com/book/47901/die-grenzen-der-rechtskraft-des-zivilurteils-im-recht-der-vereinigten-staaten",
   "zh": "美国法中美民事判决既判力的界限",
-  "year": "1974"
+  "year": "1974",
+  "tags": [
+   "既判力"
+  ]
  },
  {
   "id": "p:44307",
@@ -275,7 +294,11 @@
   "de_sub": "Unter besonderer Berücksichtigung des Gedankens der Rechtsfortbildung",
   "de_link": "https://elibrary.duncker-humblot.com/book/44307/die-spruchpraxis-der-hanseatischen-schiedsgerichte",
   "zh": "汉萨仲裁法院的裁决实践",
-  "year": "1974"
+  "year": "1974",
+  "tags": [
+   "仲裁",
+   "法官造法"
+  ]
  },
  {
   "id": "p:47353",
@@ -335,7 +358,10 @@
   "de_sub": "Zulässigkeit und Stellung im System des einstweiligen Rechtsschutzes",
   "de_link": "https://elibrary.duncker-humblot.com/book/48472/die-befriedigungsverfuumlgung",
   "zh": "清偿裁定（满足裁定）",
-  "year": "1976"
+  "year": "1976",
+  "tags": [
+   "保全/假处分"
+  ]
  },
  {
   "id": "p:45812",
@@ -355,7 +381,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/50499/das-verfuumlgungsverbot-nach-sectsect-135-136-bgb-in-der-zwangsvollstreckung-und-seine-beziehung-zu-den-anderen-pfaumlndungsfolgen",
   "zh": "强制执行中依《德国民法典》第135、136条的处分禁止及其与其他扣押效力的关系",
-  "year": "1976"
+  "year": "1976",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:48427",
@@ -385,7 +414,10 @@
   "de_sub": "Materielle und methodische Probleme der Zwangsvollstreckung nach §§ 883–898 ZPO",
   "de_link": "https://elibrary.duncker-humblot.com/book/50154/die-individualvollstreckung",
   "zh": "个别强制执行",
-  "year": "1976"
+  "year": "1976",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:43244",
@@ -395,7 +427,10 @@
   "de_sub": "Ein Beitrag zur Geltung des Satzes 'Nemo tenetur seipsum prodere' im Strafprozeß",
   "de_link": "https://elibrary.duncker-humblot.com/book/43244/der-beschuldigte-als-beweismittel-gegen-sich-selbst",
   "zh": "作为反对自己的证据的嫌疑人",
-  "year": "1977"
+  "year": "1977",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:50868",
@@ -445,7 +480,11 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/49543/schiedsgerichtsbarkeit-und-maszlignahmen-des-einstweiligen-rechtsschutzes",
   "zh": "仲裁与临时权利保护措施",
-  "year": "1977"
+  "year": "1977",
+  "tags": [
+   "仲裁",
+   "保全/假处分"
+  ]
  },
  {
   "id": "p:50533",
@@ -455,7 +494,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/50533/auslandskonkurs-und-disposition-uumlber-das-inlandsvermoumlgen",
   "zh": "外国破产与对本国财产的处理",
-  "year": "1977"
+  "year": "1977",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "p:50405",
@@ -485,7 +527,10 @@
   "de_sub": "Eine systematische Darstellung mit einem Grundriß des englischen internationalen Zivilprozeßrechts und einer Auswahlbibliographie",
   "de_link": "https://elibrary.duncker-humblot.com/book/50779/das-englische-zwangsvollstreckungsrecht",
   "zh": "英国强制执行法",
-  "year": "1979"
+  "year": "1979",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:49465",
@@ -505,7 +550,10 @@
   "de_sub": "1.Teil: Der Rechtsbehelf gem. § 826 BGB gegen rechtskräftige Urteile",
   "de_link": "https://elibrary.duncker-humblot.com/book/46953/rechtskraft-und-restitution",
   "zh": "既判力与返还（恢复原状）",
-  "year": "1979"
+  "year": "1979",
+  "tags": [
+   "既判力"
+  ]
  },
  {
   "id": "p:50397",
@@ -575,7 +623,10 @@
   "de_sub": "Ein Beitrag zur Systematik der Vorzugsrechte",
   "de_link": "https://elibrary.duncker-humblot.com/book/48986/richterliches-verfuumlgungsverbot-und-vormerkung-im-konkurs",
   "zh": "破产中法官的处分禁止与预告登记",
-  "year": "1981"
+  "year": "1981",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "p:49146",
@@ -595,7 +646,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/50089/vollstreckungserinnerung-vollstreckungsbeschwerde-und-rechtspflegererinnerung",
   "zh": "执行异议、执行抗告与司法监督异议",
-  "year": "1981"
+  "year": "1981",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:51273",
@@ -605,7 +659,11 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/51273/das-schottische-zivilprozeszlig-zwangsvollstreckungs-und-konkursrecht",
   "zh": "苏格兰的民事诉讼、强制执行与破产法",
-  "year": "1982"
+  "year": "1982",
+  "tags": [
+   "破产程序",
+   "强制执行"
+  ]
  },
  {
   "id": "p:51217",
@@ -625,7 +683,10 @@
   "de_sub": "Eine prozeßrechtliche Studie unter Berücksichtigung des amerikanischen Rechts",
   "de_link": "https://elibrary.duncker-humblot.com/book/51135/die-beweisregeln-im-arzthaftungsprozeszlig",
   "zh": "医疗责任诉讼中的证明规则",
-  "year": "1982"
+  "year": "1982",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:51408",
@@ -675,7 +736,10 @@
   "de_sub": "Die Handhabung der zivilprozessualen Vollstreckungsnormen bei der Zwangsvollstreckung aus allgemeinen Leistungsurteilen gegen Verwaltungsträger",
   "de_link": "https://elibrary.duncker-humblot.com/book/51440/zwangsvollstreckung-gegen-behoumlrden",
   "zh": "针对机关的强制执行",
-  "year": "1982"
+  "year": "1982",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:43725",
@@ -695,7 +759,10 @@
   "de_sub": "Zur Entscheidung von Zivilsachen nach Wahrscheinlichkeit unter besonderer Berücksichtigtung der Abstammungsfeststellung",
   "de_link": "https://elibrary.duncker-humblot.com/book/51351/vom-rechtsgenuumlgenden-beweis",
   "zh": "论充分的证明",
-  "year": "1983"
+  "year": "1983",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:43640",
@@ -715,7 +782,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/51361/funktion-und-dogmatische-einordnung-der-vollstreckungsabwehrklage-in-das-system-der-zivilprozeszligordnung",
   "zh": "执行异议之诉在民事诉讼法体系中的功能与教义定位",
-  "year": "1984"
+  "year": "1984",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:45090",
@@ -725,7 +795,10 @@
   "de_sub": "2. Teil: Die Grundlagen des geltenden Restitutionsrechts",
   "de_link": "https://elibrary.duncker-humblot.com/book/45090/rechtskraft-und-restitution",
   "zh": "既判力与返还（恢复原状）",
-  "year": "1985"
+  "year": "1985",
+  "tags": [
+   "既判力"
+  ]
  },
  {
   "id": "p:50128",
@@ -735,7 +808,11 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/50128/schiedsverfahren-und-konkurs",
   "zh": "仲裁与破产",
-  "year": "1985"
+  "year": "1985",
+  "tags": [
+   "仲裁",
+   "破产程序"
+  ]
  },
  {
   "id": "p:51152",
@@ -745,7 +822,10 @@
   "de_sub": "unter besonderer Berücksichtigung des Europäischen Gerichtsstands- und Vollstreckungsübereinkommens",
   "de_link": "https://elibrary.duncker-humblot.com/book/51152/inlaumlndische-gerichtsbarkeit-und-internationale-zustaumlndigkeit-fuumlr-aufrechnung-und-widerklage",
   "zh": "抵销与反诉的本国管辖权与国际管辖权",
-  "year": "1985"
+  "year": "1985",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:51221",
@@ -765,7 +845,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/51161/ungerechtfertigte-zwangsvollstreckung-und-ungerechtfertigte-bereicherung",
   "zh": "不当强制执行与不当得利",
-  "year": "1986"
+  "year": "1986",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:51116",
@@ -775,7 +858,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/51116/einstweiliger-rechtsschutz-im-europaumlischen-zivilrechtsverkehr-art-24-eugvuuml",
   "zh": "欧洲民事法律交往中的临时权利保护（《欧共体民商事管辖权与判决执行公约》第24条）",
-  "year": "1987"
+  "year": "1987",
+  "tags": [
+   "保全/假处分"
+  ]
  },
  {
   "id": "p:41828",
@@ -785,7 +871,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/41828/der-verhaumlltnismaumlszligigkeitsgrundsatz-in-der-zwangsvollstreckung",
   "zh": "强制执行中的比例原则",
-  "year": "1987"
+  "year": "1987",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:51127",
@@ -835,7 +924,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/44003/die-vollstreckung-aus-verwaltungs-sozial-und-finanzgerichtlichen-titeln-zugunsten-der-oumlffentlichen-hand",
   "zh": "依行政、社会与财政法院执行名义为公共手进行的强制执行",
-  "year": "1989"
+  "year": "1989",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:46189",
@@ -845,7 +937,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/46189/die-einstweilige-anordnung-im-bayerischen-verfassungsprozeszligrecht",
   "zh": "巴伐利亚宪法程序法中的临时命令",
-  "year": "1990"
+  "year": "1990",
+  "tags": [
+   "保全/假处分"
+  ]
  },
  {
   "id": "p:43608",
@@ -875,7 +970,11 @@
   "de_sub": "Dogmatische Grundlagen individualrechtlicher Beweisverbote",
   "de_link": "https://elibrary.duncker-humblot.com/book/45424/informationsbeherrschungsrechte-im-strafprozeszlig",
   "zh": "刑事诉讼中的信息控制权",
-  "year": "1990"
+  "year": "1990",
+  "tags": [
+   "证据法",
+   "非法证据排除"
+  ]
  },
  {
   "id": "p:44697",
@@ -895,7 +994,11 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/45733/die-anerkennung-und-vollstreckung-auslaumlndischer-und-internationaler-schiedsspruumlche",
   "zh": "外国与国际仲裁裁决的承认与执行",
-  "year": "1991"
+  "year": "1991",
+  "tags": [
+   "仲裁",
+   "强制执行"
+  ]
  },
  {
   "id": "p:44587",
@@ -905,7 +1008,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/44587/das-verhaumlltnis-der-abaumlnderungsklage-gemaumlszlig-sect-323-zpo-zur-vollstreckungsgegenklage-gemaumlszlig-sect-767-zpo",
   "zh": "依《民事诉讼法》第323条的变更之诉与第767条的执行反对之诉的关系",
-  "year": "1991"
+  "year": "1991",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:45046",
@@ -915,7 +1021,11 @@
   "de_sub": "Gemeinsamkeiten und Wertungswidersprüche",
   "de_link": "https://elibrary.duncker-humblot.com/book/45046/einstweiliger-rechtsschutz-und-vorlaumlufige-vollstreckbarkeit",
   "zh": "临时权利保护与临时可执行性",
-  "year": "1991"
+  "year": "1991",
+  "tags": [
+   "强制执行",
+   "保全/假处分"
+  ]
  },
  {
   "id": "p:47138",
@@ -925,7 +1035,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/47138/beweisverwertungsverbote-und-die-hypothese-rechtmaumlszligiger-beweiserlangung-im-strafprozeszlig",
   "zh": "刑事诉讼中的证据使用禁止与合法取证假设",
-  "year": "1992"
+  "year": "1992",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:45265",
@@ -995,7 +1108,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/44253/der-urkundenprozeszlig-unter-besonderer-beruumlcksichtigung-von-verfassung-rechtliches-gehoumlr-und-vollstreckungsschutz",
   "zh": "特别考量宪法（法律听审）与执行保护的文书诉讼",
-  "year": "1992"
+  "year": "1992",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:46669",
@@ -1005,7 +1121,11 @@
   "de_sub": "Grundlagen, Einzelprobleme und Auswirkungen auf das materielle Recht",
   "de_link": "https://elibrary.duncker-humblot.com/book/46669/die-stellung-der-gesellschaft-des-buumlrgerlichen-rechts-im-erkenntnis-vollstreckungs-und-konkursverfahren",
   "zh": "民事合伙在认知、强制执行与破产程序中的地位",
-  "year": "1992"
+  "year": "1992",
+  "tags": [
+   "破产程序",
+   "强制执行"
+  ]
  },
  {
   "id": "p:45578",
@@ -1055,7 +1175,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/45389/der-ausforschende-beweisantrag",
   "zh": "探究性证据申请",
-  "year": "1993"
+  "year": "1993",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:46461",
@@ -1075,7 +1198,10 @@
   "de_sub": "Eine Untersuchung zur Rechts- und Verfahrenssubjektivität der echten und unechten Vorgesellschaft",
   "de_link": "https://elibrary.duncker-humblot.com/book/46093/die-vorgesellschaft-im-prozeszlig-und-in-der-zwangsvollstreckung",
   "zh": "筹备公司在诉讼与强制执行中",
-  "year": "1994"
+  "year": "1994",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:46372",
@@ -1085,7 +1211,11 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/46372/beweiswuumlrdigung-und-beweislast-bei-aufklaumlrungspflichtverletzungen-im-bankrecht",
   "zh": "银行法中违反说明义务时的证据评价与证明责任",
-  "year": "1994"
+  "year": "1994",
+  "tags": [
+   "证据法",
+   "释明"
+  ]
  },
  {
   "id": "p:46469",
@@ -1125,7 +1255,10 @@
   "de_sub": "Eine vergleichende Untersuchung zur öffentlich-rechtlichen Klagebefugnis am Beispiel des Umweltschutzes",
   "de_link": "https://elibrary.duncker-humblot.com/book/45696/die-drittschutzdogmatik-im-spiegel-des-franzoumlsischen-und-britischen-verwaltungsgerichtsverfahrens",
   "zh": "从法英行政法院程序看第三人保护教义",
-  "year": "1995"
+  "year": "1995",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "p:45679",
@@ -1165,7 +1298,10 @@
   "de_sub": "Zugleich eine kritische Analyse der Lehre der \"allgemeinen Aufklärungspflicht\"",
   "de_link": "https://elibrary.duncker-humblot.com/book/45375/die-erklaumlrung-mit-nichtwissen-sect-138-iv-zpo",
   "zh": "以不知情作出的陈述（《民事诉讼法》第138条第4款）",
-  "year": "1995"
+  "year": "1995",
+  "tags": [
+   "释明"
+  ]
  },
  {
   "id": "p:43290",
@@ -1245,7 +1381,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/45466/geschichte-und-gegenwart-auszligergerichtlicher-erledigung-von-strafsachen-durch-ehrenamtliche-schiedsinstanzen-in-den-neuen-bundeslaumlndern",
   "zh": "新联邦州中通过名誉仲裁机关庭外了结刑事案件的历史与现状",
-  "year": "1997"
+  "year": "1997",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "p:43808",
@@ -1275,7 +1414,11 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/43264/die-vollstreckbarkeit-und-ihr-beweis-gem-art-31-und-47-nr-1-eugvuuml",
   "zh": "依《欧共体民商事管辖权与判决执行公约》第31条及第47条第1款的可执行性及其证明",
-  "year": "1998"
+  "year": "1998",
+  "tags": [
+   "证据法",
+   "强制执行"
+  ]
  },
  {
   "id": "p:43412",
@@ -1345,7 +1488,10 @@
   "de_sub": "am Beispiel der Feststellung von Kausalität und von Dispositionsprädikaten",
   "de_link": "https://elibrary.duncker-humblot.com/book/44770/anscheinsbeweis-im-strafprozeszlig",
   "zh": "刑事诉讼中的表见证明",
-  "year": "1998"
+  "year": "1998",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:44896",
@@ -1405,7 +1551,10 @@
   "de_sub": "Eine rechtsdogmatische und rechtspolitische Analyse",
   "de_link": "https://elibrary.duncker-humblot.com/book/45130/das-beweisantragsrecht-in-der-hauptverhandlung-reformgeschichte-und-reformproblematik",
   "zh": "主要期日中的证据申请权：改革史与改革难题",
-  "year": "1999"
+  "year": "1999",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:44303",
@@ -1495,7 +1644,10 @@
   "de_sub": "Möglichkeiten und Grenzen der Beweisbeschaffung außerhalb des internationalen Rechtshilfeweges",
   "de_link": "https://elibrary.duncker-humblot.com/book/46960/extraterritoriale-beweisbeschaffung-im-deutschen-zivilprozeszlig",
   "zh": "德国民事诉讼中的域外取证",
-  "year": "2000"
+  "year": "2000",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:43993",
@@ -1525,7 +1677,10 @@
   "de_sub": "Zur Zulässigkeit einer »Vollstreckungsstandschaft«",
   "de_link": "https://elibrary.duncker-humblot.com/book/44262/vollstreckung-im-eigenen-namen-durch-rechtsfremde",
   "zh": "他人以自己名义进行的强制执行",
-  "year": "2001"
+  "year": "2001",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:44674",
@@ -1535,7 +1690,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/44674/zur-wirkung-der-insolvenzanfechtung-nach-der-insolvenzrechtsreform",
   "zh": "论破产法改革后破产撤销的效力",
-  "year": "2001"
+  "year": "2001",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "p:43933",
@@ -1605,7 +1763,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/43875/rechte-und-pflichten-auslaumlndischer-insolvenzverwalter-im-internationalen-insolvenzrecht",
   "zh": "国际破产法中外国破产管理人的权利与义务",
-  "year": "2002"
+  "year": "2002",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "p:43710",
@@ -1645,7 +1806,10 @@
   "de_sub": "Eine rechtsvergleichende Untersuchung des deutschen und englischen Schiedsrechts und der IBA-Rules on the Taking of Evidence in International Commercial Arbitration",
   "de_link": "https://elibrary.duncker-humblot.com/book/43415/sachverhaltsermittlung-in-der-internationalen-wirtschaftsschiedsgerichtsbarkeit",
   "zh": "国际商事仲裁中的事实查明",
-  "year": "2003"
+  "year": "2003",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "p:44202",
@@ -1725,7 +1889,10 @@
   "de_sub": "Eine Analyse der neueren Revisionsrechtsprechung unter besonderer Berücksichtigung des Merkmals der Konnexität",
   "de_link": "https://elibrary.duncker-humblot.com/book/32828/zur-strukturellen-korrespondenz-zwischen-den-gesetzlichen-ablehnungsgruumlnden-nach-sect-244-abs-3-satz-2-stpo-und-den-anforderungen-an-einen-zulaumlssigen-beweisantrag",
   "zh": "论《刑事诉讼法》第244条第3款第2句法定回避理由与合法证据申请要求之间的结构对应",
-  "year": "2004"
+  "year": "2004",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:32529",
@@ -1735,7 +1902,10 @@
   "de_sub": "Eine Untersuchung zu den Chancen und Risiken »grenzüberschreitender« Vollstreckungsmaßnahmen in Forderungen und sonstige Vermögensrechte unter besonderer Berücksichtigung der Verordnung (EG) Nr. 1348/2000 und des Zustellungsreformgesetzes",
   "de_link": "https://elibrary.duncker-humblot.com/book/32529/internationale-rechts-und-forderungspfaumlndung",
   "zh": "国际权利与债权扣押",
-  "year": "2004"
+  "year": "2004",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:32829",
@@ -1805,7 +1975,10 @@
   "de_sub": "Eine rechtsvergleichend-historische Untersuchung des Strafverfahrens in Österreich, der NS-Zeit, der DDR und der Bundesrepublik unter besonderer Berücksichtigung der Nichtigkeitsbeschwerde und der Kassation",
   "de_link": "https://elibrary.duncker-humblot.com/book/32706/rechtskraftdurchbrechungen-von-strafentscheidungen-im-wechsel-der-politischen-systeme",
   "zh": "政治制度更迭中刑事裁判既判力的突破",
-  "year": "2005"
+  "year": "2005",
+  "tags": [
+   "既判力"
+  ]
  },
  {
   "id": "p:32656",
@@ -1815,7 +1988,10 @@
   "de_sub": "Eine prozessökonomische Untersuchung",
   "de_link": "https://elibrary.duncker-humblot.com/book/32656/die-drittwiderklage",
   "zh": "第三人反诉",
-  "year": "2005"
+  "year": "2005",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "p:46096",
@@ -1825,7 +2001,10 @@
   "de_sub": "Zur Diskussion um die Zulässigkeit unter besonderer Berücksichtigung des Grundsatzes »nemo tenetur se ipsum accusare«",
   "de_link": "https://elibrary.duncker-humblot.com/book/46096/der-einsatz-von-vomitivmitteln-zur-beweissicherung-im-strafverfahren",
   "zh": "刑事诉讼中为保全证据使用催吐剂",
-  "year": "2005"
+  "year": "2005",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:32248",
@@ -1885,7 +2064,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/43231/verwertbarkeit-im-ausland-gewonnener-beweise-im-deutschen-strafprozess",
   "zh": "德国刑事诉讼中域外取得证据的可采性",
-  "year": "2006"
+  "year": "2006",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:32229",
@@ -1955,7 +2137,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/31911/die-subjektiven-grenzen-der-rechtshaumlngigkeitssperre-im-deutschen-und-europaumlischen-zivilprozessrecht",
   "zh": "德欧民事诉讼法中诉讼系属禁止的主观界限",
-  "year": "2007"
+  "year": "2007",
+  "tags": [
+   "诉讼系属"
+  ]
  },
  {
   "id": "p:31608",
@@ -1985,7 +2170,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/31633/die-us-amerikanische-sammelklage-im-wandel",
   "zh": "变迁中的美国集体诉讼",
-  "year": "2008"
+  "year": "2008",
+  "tags": [
+   "集体诉讼"
+  ]
  },
  {
   "id": "p:31580",
@@ -2005,7 +2193,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/31547/die-raumlumungsvollstreckung-nach-dem-berliner-modell",
   "zh": "依柏林模式的腾退强制执行",
-  "year": "2009"
+  "year": "2009",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:31551",
@@ -2045,7 +2236,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/31385/die-beteiligung-dritter-im-internationalen-zivilverfahrensrecht",
   "zh": "国际民事诉讼程序法中的第三人参与",
-  "year": "2010"
+  "year": "2010",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "p:31416",
@@ -2105,7 +2299,10 @@
   "de_sub": "Grundlagen und Kasuistik – internationale Bezüge – ausgewählte Probleme",
   "de_link": "https://elibrary.duncker-humblot.com/book/31974/beweisverwertungsverbote",
   "zh": "证据使用禁止",
-  "year": "2010"
+  "year": "2010",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:32109",
@@ -2195,7 +2392,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/34620/verschulden-in-der-zwangsvollstreckung",
   "zh": "强制执行中的过错",
-  "year": "2014"
+  "year": "2014",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:34621",
@@ -2215,7 +2415,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/34626/das-letztwillig-angeordnete-schiedsgerichtsverfahren-ndash-gestaltungsmoumlglichkeiten",
   "zh": "依遗嘱指定的仲裁程序——设计可能",
-  "year": "2014"
+  "year": "2014",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "p:34947",
@@ -2335,7 +2538,10 @@
   "de_sub": "Die Rückführung des Pfändungs- und Überweisungsbeschlusses auf das materielle Recht",
   "de_link": "https://elibrary.duncker-humblot.com/book/36968/drittschuldnerschutz-und-glaumlubigerrechte-in-der-forderungsvollstreckung",
   "zh": "债权强制执行中的第三债务人保护与债权人权利",
-  "year": "2017"
+  "year": "2017",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:37876",
@@ -2345,7 +2551,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/37876/buumlrgerlich-rechtliche-generalklauseln-als-schranken-der-rechtsausuumlbung-in-der-zwangsvollstreckung",
   "zh": "作为强制执行中权利行使界限的民法一般条款",
-  "year": "2018"
+  "year": "2018",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:38008",
@@ -2385,7 +2594,11 @@
   "de_sub": "Rolle und Funktion des staatlichen Gerichts bei der Aufhebung, Anerkennung und Vollstreckbarerklärung von Schiedssprüchen",
   "de_link": "https://elibrary.duncker-humblot.com/book/41832/schiedsspruch-und-staatliche-gerichtsbarkeit",
   "zh": "仲裁裁决与国家司法",
-  "year": "2018"
+  "year": "2018",
+  "tags": [
+   "仲裁",
+   "承认判决"
+  ]
  },
  {
   "id": "p:42175",
@@ -2395,7 +2608,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/42175/die-verwertung-gepfaumlndeter-sachen-im-internet",
   "zh": "互联网上扣押物的变价",
-  "year": "2018"
+  "year": "2018",
+  "tags": [
+   "代位权诉讼"
+  ]
  },
  {
   "id": "p:42280",
@@ -2445,7 +2661,10 @@
   "de_sub": "Zu der Rechtsnatur und den Wirkungen der Schiedsvereinbarung",
   "de_link": "https://elibrary.duncker-humblot.com/book/52318/schiedsvereinbarung-und-privatrecht",
   "zh": "仲裁协议与私法",
-  "year": "2019"
+  "year": "2019",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "p:52554",
@@ -2495,7 +2714,10 @@
   "de_sub": "Prozessuale Neuregelung des Gesamtschuldnerausgleichs im Baurecht",
   "de_link": "https://elibrary.duncker-humblot.com/book/53431/die-klage-unter-gesamtschuldnerisch-haftenden-streitgenossen",
   "zh": "共同连带债务人共同诉讼中的诉讼",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "p:53324",
@@ -2525,7 +2747,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/53494/mittelbare-drittwirkungen-und-subjektive-reichweite-der-schiedsvereinbarung",
   "zh": "仲裁协议的间接第三人效力与主观范围",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "p:53768",
@@ -2535,7 +2760,10 @@
   "de_sub": "Streitgegenstand/Rechtshängigkeit/Musterfeststellungsurteil",
   "de_link": "https://elibrary.duncker-humblot.com/book/53768/die-musterfeststellungsklage",
   "zh": "示范确认之诉（示范之诉）",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "诉讼系属"
+  ]
  },
  {
   "id": "p:53970",
@@ -2565,7 +2793,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/54051/schiedsvereinbarungen-und-schiedsanordnungen-im-erbrecht",
   "zh": "继承法中的仲裁协议与仲裁命令",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "p:54400",
@@ -2595,7 +2826,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/54649/der-vorwurf-missbraumluchlichen-verhaltens-im-insolvenzrecht",
   "zh": "破产法中滥用行为的指责",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "p:54821",
@@ -2605,7 +2839,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/54821/missbrauch-des-beweisantragsrechts-im-strafprozess-und-missbrauchsabwehr",
   "zh": "刑事诉讼中证据申请权的滥用与防滥用",
-  "year": "2021"
+  "year": "2021",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:54941",
@@ -2635,7 +2872,10 @@
   "de_sub": "Zugleich ein Beitrag zum Verhältnis des § 1034 Abs. 2 ZPO zur Inhaltskontrolle von Schiedsvereinbarungen",
   "de_link": "https://elibrary.duncker-humblot.com/book/55224/die-struktur-der-wirksamkeitskontrolle-von-schiedsvereinbarungen-im-spannungsfeld-zwischen-schiedsverfahrensrecht-kartellrecht-und-allgemeinem-zivilrecht",
   "zh": "仲裁、竞争法与一般民法张力中仲裁协议效力审查的结构",
-  "year": "2021"
+  "year": "2021",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "p:55233",
@@ -2665,7 +2905,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/55283/strafprozessuale-beweisverwertung-von-privatem-videomaterial-am-aktuellen-beispiel-der-dashcam",
   "zh": "以行车记录仪为例的私人影像材料的刑事诉讼证据使用",
-  "year": "2021"
+  "year": "2021",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:55368",
@@ -2675,7 +2918,10 @@
   "de_sub": "Harmonisierung des Schiedsverfahrensrechts vor dem Hintergrund des Art. 1 (2)(d) EuGVVO?",
   "de_link": "https://elibrary.duncker-humblot.com/book/55368/das-uncitral-modellgesetz-in-der-eu",
   "zh": "欧盟中的《贸易法委员会示范法》",
-  "year": "2021"
+  "year": "2021",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "p:55380",
@@ -2745,7 +2991,11 @@
   "de_sub": "Zugleich ein Ausblick auf die Verbandsklagenrichtlinie (EU) 2020/1828",
   "de_link": "https://elibrary.duncker-humblot.com/book/59578/die-haftung-fuumlr-prozessfuumlhrungsfehler-in-musterverfahren-nach-dem-kapmug-und-in-musterfeststellungsverfahren-nach-den-sectsect-606-ff-zpo",
   "zh": "依《资本投资者示范诉讼法》的示范程序与依《民事诉讼法》第606条以下的示范确认程序中的诉讼实施错误责任",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "集体诉讼",
+   "诉讼担当"
+  ]
  },
  {
   "id": "p:62530",
@@ -2795,7 +3045,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/62823/die-auswirkungen-des-voumllkerrechts-auf-die-grenzuumlberschreitende-ermittlung-digitaler-beweise-nach-der-stpo",
   "zh": "国际法对依《刑事诉讼法》跨境调取数字证据的影响",
-  "year": "2023"
+  "year": "2023",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:62867",
@@ -2825,7 +3078,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/62868/zivilrichterliche-prozessleitung",
   "zh": "民事法官的程序指挥",
-  "year": "2023"
+  "year": "2023",
+  "tags": [
+   "释明"
+  ]
  },
  {
   "id": "p:63126",
@@ -2835,7 +3091,10 @@
   "de_sub": "Die Verschiebung der Parteirollen und ihre Eingliederung in die Zivilprozessordnung im Rahmen der Musterfeststellungsklage und der Richtlinie über Verbandsklagen",
   "de_link": "https://elibrary.duncker-humblot.com/book/63126/verbandsklagen-im-individualinteresse",
   "zh": "为个体利益的团体诉讼",
-  "year": "2023"
+  "year": "2023",
+  "tags": [
+   "集体诉讼"
+  ]
  },
  {
   "id": "p:63149",
@@ -2845,7 +3104,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/63149/die-nebenintervention-im-selbstaumlndigen-beweisverfahren",
   "zh": "独立证据程序中的辅助参加",
-  "year": "2024"
+  "year": "2024",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:63155",
@@ -2995,7 +3257,10 @@
   "de_sub": "Berücksichtigung hypothetischer Rechtmäßigkeit im Rahmen von Verwertungsverboten rechtswidrig erlangter Beweise im Strafprozess",
   "de_link": "https://elibrary.duncker-humblot.com/book/63645/der-hypothetische-ersatzeingriff",
   "zh": "假设的替代干预",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:63644",
@@ -3005,7 +3270,11 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/63644/die-schiedsvereinbarung-in-der-insolvenz",
   "zh": "破产中的仲裁协议",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "仲裁",
+   "破产程序"
+  ]
  },
  {
   "id": "p:63643",
@@ -3055,7 +3324,10 @@
   "de_sub": "und ihre Auswirkungen auf den Beschuldigten",
   "de_link": "https://elibrary.duncker-humblot.com/book/63759/die-reformen-des-beweisantragsrechts-aus-sect-244-stpo-durch-das-raquogesetz-zur-effektiveren-und-praxistauglicheren-ausgestaltung-des-strafverfahrenslaquo-2017-und-das-raquogesetz-zur-modernisierung-des-strafverfahrenslaquo-2019",
   "zh": "通过2017年“更有效且实用的刑事诉讼设计法”与2019年“刑事诉讼法现代化法”对《刑事诉讼法》第244条证据申请权的改革",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "p:63810",
@@ -3065,7 +3337,10 @@
   "de_sub": "",
   "de_link": "https://elibrary.duncker-humblot.com/book/63810/die-vertragliche-absicherung-des-schiedsverfahrens",
   "zh": "仲裁程序的合同保障",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "p:63811",
@@ -3115,7 +3390,10 @@
   "de_sub": "Eine Untersuchung zur Individualvollstreckung gegen prozessunfähige Schuldner",
   "de_link": "https://elibrary.duncker-humblot.com/book/63927/verhaltensvollstreckung-gegen-prozessunfaumlhige",
   "zh": "针对无诉讼能力人的作为强制执行",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "p:63933",
@@ -3125,7 +3403,10 @@
   "de_sub": "Ein Beitrag zur Fortbildung des deutschen Schiedsverfahrensrechts",
   "de_link": "https://elibrary.duncker-humblot.com/book/63933/streitverkuumlndung-und-nebenintervention-im-schiedsverfahren",
   "zh": "仲裁程序中的诉讼告知与辅助参加",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "p:63953",
