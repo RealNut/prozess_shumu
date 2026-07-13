@@ -87,7 +87,10 @@
   "de_sub": "Rechtsvergleichende Studie zur Grenzbereinigung zwischen Schuld- und Treuhandverhältnis",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161602849",
   "zh": "受托人破产中信托财产的处理",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "i:9783161602856",
@@ -277,7 +280,10 @@
   "de_sub": "Insolvenzverfahren und Großunternehmen in rechtsvergleichender und rechtspolitischer Untersuchung",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161603020",
   "zh": "重整与重组",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "i:9783161603037",
@@ -397,7 +403,10 @@
   "de_sub": "Sachenrecht und Insolvenzrecht unter dem EG-Vertrag",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161603143",
   "zh": "欧洲信用担保法",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "i:9783161603150",
@@ -407,7 +416,10 @@
   "de_sub": "Internationales Vertrags-, Sachen- und Insolvenzrecht. Eine rechtsvergleichende Untersuchung",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161603150",
   "zh": "跨境融资租赁",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "i:9783161468278",
@@ -447,7 +459,10 @@
   "de_sub": "Wege zur Vergrößerung der Haftungsmasse abhängiger Konzernunternehmen im Konkurs und Verfahrensfragen. Eine rechtsvergleichende Analyse",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161603198",
   "zh": "破产中的从属康采恩企业",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "i:9783161603204",
@@ -457,7 +472,10 @@
   "de_sub": "Verbandsklage und Gruppenklage",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161603204",
   "zh": "诉讼中同向利益的集结",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "集体诉讼"
+  ]
  },
  {
   "id": "i:9783161471629",
@@ -507,7 +525,10 @@
   "de_sub": "Einwendungen gegen einen titulierten Anspruch im deutschen und europäischen Zivilprozeßrecht",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161575488",
   "zh": "国际法律交往中的请求权、执行名义与强制执行",
-  "year": "2019"
+  "year": "2019",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "i:9783161603259",
@@ -537,7 +558,10 @@
   "de_sub": "Studien zur Privatrechtskoordinierung in der Europäischen Union auf den Gebieten des Gesellschafts- und Vertragsrechts",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161603273",
   "zh": "欧洲内部市场中私法秩序的竞争",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "欧盟法"
+  ]
  },
  {
   "id": "i:9783161603280",
@@ -577,7 +601,10 @@
   "de_sub": "Recht und Reform in der Europäischen Union, der Schweiz und den USA",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161485480",
   "zh": "招股说明书与资本市场信息责任",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "欧盟法"
+  ]
  },
  {
   "id": "i:9783161486685",
@@ -707,7 +734,10 @@
   "de_sub": "Anfechtung und verwandte Regelungsinstrumente in der Unternehmensinsolvenz",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161510854",
   "zh": "通过破产法实现的债权人保护",
-  "year": "2010"
+  "year": "2010",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "i:9783161510861",
@@ -747,7 +777,10 @@
   "de_sub": "Strukturen, Entwicklungen und Reformperspektiven des Justiz- und Verfahrensrechts der Europäischen Union",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161521553",
   "zh": "民事领域的欧洲司法（管辖权）",
-  "year": "2012"
+  "year": "2012",
+  "tags": [
+   "欧盟法"
+  ]
  },
  {
   "id": "i:9783161521546",
@@ -857,7 +890,10 @@
   "de_sub": "Zur sachgerechten Verfahrenskoordination bei grenzüberschreitenden Unternehmensinsolvenzen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161535048",
   "zh": "主要破产程序与次要破产程序",
-  "year": "2014"
+  "year": "2014",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "i:9783161537653",
@@ -897,7 +933,10 @@
   "de_sub": "am Beispiel der Forderungspfändung",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161527333",
   "zh": "国际强制执行与责任实现",
-  "year": "2018"
+  "year": "2018",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "i:9783161542480",
