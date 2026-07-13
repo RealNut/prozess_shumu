@@ -20,7 +20,10 @@
   "de_sub": "Theorie und Empirie zum Beweiswert beim Zusammentreffen von Glaubwürdigkeitskriterien",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161662782",
   "zh": "陈述中的特征组合",
-  "year": "1987"
+  "year": "1987",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161656835",
@@ -130,7 +133,11 @@
   "de_sub": "Zugleich ein Beitrag zu den Beweisverboten, auch im Zusammenhang mit neuen Formen der Telekommunikation",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161658488",
   "zh": "与辩护人通信往来的刑事诉讼监控",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "证据法",
+   "非法证据排除"
+  ]
  },
  {
   "id": "v:9783161657542",
@@ -243,7 +250,10 @@
   "de_sub": "Die Erstreckung von Insolvenzverfahren auf Forderungen von Insolvenz- oder Massegläubigern gegen zusätzliche Schuldner",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161470813",
   "zh": "非属破产财团的财团（异质财团）",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "v:9783161472855",
@@ -266,7 +276,10 @@
   "de_sub": "Möglichkeiten und Grenzen im Kollisions-, Europa-, Sach- und Vollstreckungsrecht unter Berücksichtigung des US-amerikanischen Systems der Kreditsicherheiten",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161666186",
   "zh": "动产担保物权的统一化",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161657337",
@@ -415,7 +428,10 @@
   "de_sub": "Eine rechtsvergleichende Untersuchung des deutschen, europäischen und US-amerikanischen Zuständigkeitsrechts sowie der Anerkennung und Vollstreckung von Gerichtsentscheidungen im deutsch-amerikansichen Rechtsverkehr",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161661259",
   "zh": "网络合同中的国际民事诉讼法",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161628993",
@@ -469,7 +485,10 @@
   "de_sub": "Unter besonderer Berücksichtigung anerkennungs- und vollstreckungsrechtlicher Fragen im grenzüberschreitenden Rechtsverkehr der Schweiz",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161488672",
   "zh": "国际案件中的诉讼和解",
-  "year": "2026"
+  "year": "2026",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161661891",
@@ -519,7 +538,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161631726",
   "zh": "德国与法国民事诉讼中的提交义务与证据妨碍",
-  "year": "2024"
+  "year": "2024",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161493560",
@@ -529,7 +551,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161493560",
   "zh": "国家司法与仲裁司法交界处的恶意抗辩",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161679018",
@@ -539,7 +564,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161679018",
   "zh": "瑞士法的仲裁程序保密",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161494789",
@@ -569,7 +597,10 @@
   "de_sub": "Eine systematische Darstellung unter besonderer Berücksichtigung der Mehrparteienschiedsgerichtsbarkeit",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161495496",
   "zh": "仲裁协议的主观范围",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161496592",
@@ -609,7 +640,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161673511",
   "zh": "替代性取回权与第三人异议之诉",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "v:9783161671609",
@@ -619,7 +653,10 @@
   "de_sub": "Eine vergleichende Untersuchung des U.S.-amerikanischen und deutschen Rechts zur Verbesserung des Gläubigerschutzes im Insolvenzverfahren",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161671609",
   "zh": "破产中的债权人信息",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "v:9783161678561",
@@ -649,7 +686,11 @@
   "de_sub": "Grundlegung und Konkretisierung rechtlicher Grenzen der Beweiserhebung und der Beweisverwertung im Zivil-, Straf- und Verwaltungsverfahren",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161499210",
   "zh": "非法证据排除",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "证据法",
+   "非法证据排除"
+  ]
  },
  {
   "id": "v:9783161668197",
@@ -659,7 +700,10 @@
   "de_sub": "Bestandsaufnahme und Reformempfehlung aus der Perspektive von Recht und Praxis der US-amerikanischen Securities Class Action",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161668197",
   "zh": "资本投资者示范诉讼法（KapMuG）",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "集体诉讼"
+  ]
  },
  {
   "id": "v:9783161678066",
@@ -669,7 +713,10 @@
   "de_sub": "Internationale Zuständigkeit und gegenseitige Anerkennung im Gerichtssystem der Europäischen Union und der USA",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161678066",
   "zh": "欧洲民事诉讼法与民主原则",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "欧盟法"
+  ]
  },
  {
   "id": "v:9783161501241",
@@ -679,7 +726,10 @@
   "de_sub": "Zugleich ein Beitrag zur Erstattungsfähigkeit von Vollstreckungs- und Vollstreckungsabwehrkosten",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161501241",
   "zh": "民事诉讼中以银行保函提供担保",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161631733",
@@ -699,7 +749,10 @@
   "de_sub": "Eine Untersuchung der Vorlageverfahren an den EFTA-Gerichtshof und den EuGH als Bestandteile des norwegischen bzw. des deutschen Zivilprozesses",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161670367",
   "zh": "欧洲先行裁决程序与国内民事诉讼法",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "欧盟法"
+  ]
  },
  {
   "id": "v:9783161676918",
@@ -709,7 +762,10 @@
   "de_sub": "Möglichkeiten zur Kostensenkung de lege lata und verfassungsrechtliche Grenzen der Kostenbelastung unter dem Gesichtspunkt effektiven Rechtsschutzes",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161676918",
   "zh": "腾退强制执行中债权人的费用负担",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161502804",
@@ -719,7 +775,10 @@
   "de_sub": "Nutzen und mögliche prozessuale Ausgestaltung von kollektiven Rechtsschutzverfahren im deutschen Recht zur privaten Durchsetzung des europäischen Kartellrechts",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161502804",
   "zh": "为执行欧洲竞争法的集体诉讼",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "集体诉讼"
+  ]
  },
  {
   "id": "v:9783161629730",
@@ -759,7 +818,10 @@
   "de_sub": "Zugleich ein Beitrag zur Gewährung rechtlichen Gehörs in Schiedsverfahren und zur Aufhebung von Schiedssprüchen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161504822",
   "zh": "仲裁裁决预先法定承认中的形成自由",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161504518",
@@ -769,7 +831,10 @@
   "de_sub": "Europäische Kollektivklagen zwischen Effizienz und Effektivität",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161504518",
   "zh": "通过集体诉讼实现的竞争法个人保护",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "集体诉讼"
+  ]
  },
  {
   "id": "v:9783161631740",
@@ -789,7 +854,10 @@
   "de_sub": "Ein Beitrag zum transnationalen Beweisrecht im deutschen Strafprozess",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161496578",
   "zh": "境外证人的视听讯问",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161673016",
@@ -819,7 +887,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161505379",
   "zh": "依德国法的仲裁程序中的保密与法律听审",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161629747",
@@ -889,7 +960,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161676550",
   "zh": "德、美、英法中的保险事故证明",
-  "year": "2012"
+  "year": "2012",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161517921",
@@ -899,7 +973,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161517921",
   "zh": "腾退强制执行及其有效实施",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161516771",
@@ -909,7 +986,11 @@
   "de_sub": "Zur Rolle strafprozessualer Beweisverbote bei der Durchsetzung zivilrechtlicher Ansprüche",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161516771",
   "zh": "刑事与民事诉讼中的非法证据排除",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "证据法",
+   "非法证据排除"
+  ]
  },
  {
   "id": "v:9783161517860",
@@ -979,7 +1060,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161675096",
   "zh": "多数人之债关系中的破产撤销",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "v:9783161524059",
@@ -1009,7 +1093,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161672507",
   "zh": "《股份公司法》第246a条的释放程序在临时救济体系中的地位",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "保全/假处分"
+  ]
  },
  {
   "id": "v:9783161526688",
@@ -1019,7 +1106,10 @@
   "de_sub": "Ein deutsch-U.S.-amerikanischer Rechtsvergleich mit Schlaglichtern auf weitere Rechtsordnungen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161526688",
   "zh": "结构性失衡情形下的仲裁协议与仲裁程序协议",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161629013",
@@ -1029,7 +1119,10 @@
   "de_sub": "Zur Umgehung der Hauptsachegerichtsstände gem. Art. 2,5 ff. EUGVÜ/EUGVO durch Maßnahmen des nationalen einstweiligen Rechtsschutzes",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161629013",
   "zh": "《欧共体民商事管辖权与判决执行公约》第24条／《布鲁塞尔 Ia 条例》第31条的清偿裁定",
-  "year": "2024"
+  "year": "2024",
+  "tags": [
+   "保全/假处分"
+  ]
  },
  {
   "id": "v:9783161674235",
@@ -1039,7 +1132,10 @@
   "de_sub": "Beitrag zu einem rein prozessualen Verständnis des Rechtsinstituts der notwendigen Streitgenossenschaft",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161674235",
   "zh": "民事诉讼中的必要共同诉讼",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "v:9783161527999",
@@ -1069,7 +1165,10 @@
   "de_sub": "Eine vergleichende und interdisziplinäre Analyse des deutschen und englischen Rechts unter Berücksichtigung der Strafverfolgung in der Europäischen Union und im Völkerstrafrecht",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161671555",
   "zh": "秘密刑事追诉与私人领域保护",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "欧盟法"
+  ]
  },
  {
   "id": "v:9783161674587",
@@ -1089,7 +1188,10 @@
   "de_sub": "Regelungserfordernis und Regelungsbestand im Spannungsfeld von Wahrheit und Wahrscheinlichkeit",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161672095",
   "zh": "欧洲合并控制（反垄断审查）中的举证",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161672224",
@@ -1119,7 +1221,10 @@
   "de_sub": "Zugleich ein Beitrag zur Auslegung der §§ 142ff. und 448 ZPO",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161534447",
   "zh": "民事诉讼中依职权取证的基本问题",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161674761",
@@ -1139,7 +1244,11 @@
   "de_sub": "Zugleich ein Beitrag zur Bedeutung des Parteiwillens für die Bestimmung der Schiedsspruchwirkungen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161674105",
   "zh": "德国和美国法上的仲裁裁决既判力",
-  "year": "2015"
+  "year": "2015",
+  "tags": [
+   "仲裁",
+   "既判力"
+  ]
  },
  {
   "id": "v:9783161531477",
@@ -1149,7 +1258,10 @@
   "de_sub": "Richterliche Informationsbeschaffung durch Beteiligung Dritter",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161531477",
   "zh": "法庭之友",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "第三人"
+  ]
  },
  {
   "id": "v:9783161538018",
@@ -1159,7 +1271,10 @@
   "de_sub": "Eine Analyse der Entscheidungen des EuGH zum EuGVÜ und der EuGVVO",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161538018",
   "zh": "欧洲民事诉讼程序法中的法律安定性",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "欧盟法"
+  ]
  },
  {
   "id": "v:9783161537790",
@@ -1169,7 +1284,10 @@
   "de_sub": "Eine Untersuchung nach deutschem Recht mit internationalen Bezügen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161537790",
   "zh": "仲裁程序中的保密性",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161538117",
@@ -1209,7 +1327,10 @@
   "de_sub": "Eine rechtsvergleichende und kollisionsrechtliche Untersuchung der schuldnerschützenden Vorschriften im Europäischen Zwangsvollstreckungsrecht mit einem Schwerpunkt auf der Kontenpfändung",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161538308",
   "zh": "欧洲强制执行法中的债务人保护",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161539657",
@@ -1229,7 +1350,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161538575",
   "zh": "欧盟及其成员国民事诉讼法中的反诉",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "欧盟法"
+  ]
  },
  {
   "id": "v:9783161537011",
@@ -1239,7 +1363,10 @@
   "de_sub": "Zur Erhebung und Verwertung von Beweisen aus informationstechnischen Systemen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161537011",
   "zh": "信息技术取证",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161540271",
@@ -1249,7 +1376,10 @@
   "de_sub": "Die Gruppenklage zur Durchsetzung von Massenschäden und ihre Auswirkungen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161540271",
   "zh": "民事诉讼中的集体权利保护",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "集体诉讼"
+  ]
  },
  {
   "id": "v:9783161539862",
@@ -1259,7 +1389,10 @@
   "de_sub": "Standort Europa zwischen Stagnation und Fortschritt",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161539862",
   "zh": "仲裁与《布鲁塞尔 Ia 条例》改革",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161541889",
@@ -1299,7 +1432,10 @@
   "de_sub": "Eine Untersuchung zur Zulässigkeit privater Beweisbeschaffung und zur Verwertbarkeit auf diese Weise erlangter Beweismittel im Strafverfahren",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161533716",
   "zh": "刑事诉讼侦查程序“承受”多少私有化？",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161548000",
@@ -1319,7 +1455,10 @@
   "de_sub": "Eine Untersuchung unter rechtsvergleichenden Gesichtspunkten sowie unter besonderer Berücksichtigung des Verfahrens nach 28 U.S.C. § 1782 (a) als Beweisbeschaffungsmöglichkeit für Patentstreitigkeiten vor deutschen Gerichten",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161546860",
   "zh": "德国司法争议框架下的美国证据开示程序",
-  "year": "2016"
+  "year": "2016",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161546402",
@@ -1329,7 +1468,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161546402",
   "zh": "仲裁裁决的公布作为规范形成的贡献",
-  "year": "2016"
+  "year": "2016",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161546242",
@@ -1339,7 +1481,10 @@
   "de_sub": "Schuldbefreiungsansprüche in der Insolvenz des Befreiungsschuldners",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161546242",
   "zh": "免责债权人的追索风险",
-  "year": "2016"
+  "year": "2016",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "v:9783161547829",
@@ -1349,7 +1494,10 @@
   "de_sub": "Bestandsaufnahme, Bewertung, Ausblick",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161547829",
   "zh": "执行令程序的废除与《布鲁塞尔 Ia 条例》",
-  "year": "2016"
+  "year": "2016",
+  "tags": [
+   "承认判决"
+  ]
  },
  {
   "id": "v:9783161546686",
@@ -1369,7 +1517,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161547133",
   "zh": "仲裁程序的不公开性",
-  "year": "2016"
+  "year": "2016",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161546679",
@@ -1409,7 +1560,11 @@
   "de_sub": "Eine Untersuchung zu Gehalt und Wirkung des § 852 Abs. 1 ZPO",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161550928",
   "zh": "强制执行与破产中的特留份请求权",
-  "year": "2018"
+  "year": "2018",
+  "tags": [
+   "破产程序",
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161550690",
@@ -1439,7 +1594,10 @@
   "de_sub": "Eine rechtsvergleichende Untersuchung",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161550560",
   "zh": "法国与西班牙法中既判力学说的发展",
-  "year": "2017"
+  "year": "2017",
+  "tags": [
+   "既判力"
+  ]
  },
  {
   "id": "v:9783161554001",
@@ -1459,7 +1617,10 @@
   "de_sub": "Eine Untersuchung des deutschen Schiedsverfahrensrechts zu den Pflichten der Schiedsparteien und den Rechtsfolgen ihrer Verletzung",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161553837",
   "zh": "仲裁协议的违反",
-  "year": "2017"
+  "year": "2017",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161554834",
@@ -1499,7 +1660,10 @@
   "de_sub": "Zur unzulässigen Verlängerung von Insolvenzeröffnungsverfahren unter besonderer Berücksichtigung der Insolvenzgeldvorfinanzierung",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161559310",
   "zh": "破产程序启动的拖延",
-  "year": "2018"
+  "year": "2018",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "v:9783161555794",
@@ -1529,7 +1693,11 @@
   "de_sub": "Versuch einer Systembildung",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161555701",
   "zh": "投保人破产中对第三人的保护",
-  "year": "2018"
+  "year": "2018",
+  "tags": [
+   "第三人",
+   "破产程序"
+  ]
  },
  {
   "id": "v:9783161558733",
@@ -1549,7 +1717,10 @@
   "de_sub": "Vermögensbezogene Informationsgewinnung in der Zwangsvollstreckung im Spannungsfeld zwischen Gläubigerinteressen und Schuldnerschutz: Eine Untersuchung de lege lata et ferenda",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161561658",
   "zh": "个别强制执行中的事实查明",
-  "year": "2018"
+  "year": "2018",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161564161",
@@ -1559,7 +1730,10 @@
   "de_sub": "Sachlegitimation - \"Klagerecht\" - Prozessführungsbefugnis",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161564161",
   "zh": "民事诉讼认知程序中的正当当事人",
-  "year": "2018"
+  "year": "2018",
+  "tags": [
+   "诉讼担当"
+  ]
  },
  {
   "id": "v:9783161560422",
@@ -1569,7 +1743,10 @@
   "de_sub": "Eine Untersuchung zu den Grundlagen eines europäischen Beweisrechts",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161560422",
   "zh": "比较法中的刑事诉讼近亲属特权",
-  "year": "2018"
+  "year": "2018",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161562204",
@@ -1589,7 +1766,10 @@
   "de_sub": "Eine Grundlagenstudie zum Beweisverfahren im Zivilprozess",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161558368",
   "zh": "禁止预先评价证据",
-  "year": "2019"
+  "year": "2019",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161569395",
@@ -1609,7 +1789,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161562136",
   "zh": "民事诉讼中的证明权",
-  "year": "2019"
+  "year": "2019",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161568428",
@@ -1649,7 +1832,10 @@
   "de_sub": "Zugleich ein Beitrag zur Bewältigung grenzüberschreitender Konzerninsolvenzen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161583100",
   "zh": "依《欧洲破产条例》第36条的保证",
-  "year": "2019"
+  "year": "2019",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "v:9783161582738",
@@ -1659,7 +1845,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161582738",
   "zh": "仲裁中的专家证人会议",
-  "year": "2019"
+  "year": "2019",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161588655",
@@ -1669,7 +1858,11 @@
   "de_sub": "Materiell rechtswidrig erlangte Informationen im Zivilprozess",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161588655",
   "zh": "证据禁止与事实陈述禁止",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "证据法",
+   "非法证据排除"
+  ]
  },
  {
   "id": "v:9783161576225",
@@ -1679,7 +1872,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161576225",
   "zh": "依美国法典第28编第1782(a)条取得的证据在德国民事诉讼中的可采性",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161575440",
@@ -1699,7 +1895,10 @@
   "de_sub": "Ein deutsch-italienischer Rechtsvergleich über Beschlussmängelstreitigkeiten vor Schiedsgerichten",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161590030",
   "zh": "处于私法自治与程序保障之间的公司法仲裁",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161590429",
@@ -1709,7 +1908,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161590429",
   "zh": "已行使的诉讼实施授权的消灭",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "诉讼担当"
+  ]
  },
  {
   "id": "v:9783161590887",
@@ -1719,7 +1921,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161590887",
   "zh": "中央银行的强制执行豁免",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161588891",
@@ -1739,7 +1944,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161591433",
   "zh": "强制执行暂缓（延期）",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161592553",
@@ -1789,7 +1997,10 @@
   "de_sub": "Zugleich ein Beitrag zum \"Doppeltürmodell\" des BVerfG",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161593819",
   "zh": "破产刑事诉讼中的卷宗调取与初步嫌疑",
-  "year": "2020"
+  "year": "2020",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "v:9783161597701",
@@ -1799,7 +2010,10 @@
   "de_sub": "Überlegungen zu Existenz, Reichweite und Erforderlichkeit",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161597701",
   "zh": "欧洲的既判力概念",
-  "year": "2021"
+  "year": "2021",
+  "tags": [
+   "既判力"
+  ]
  },
  {
   "id": "v:9783161598708",
@@ -1819,7 +2033,10 @@
   "de_sub": "Zur Bindung des staatlichen Gerichts an die schiedsgerichtlichen Sachverhaltsfeststellungen und zu den erforderlichen Ausnahmen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161600425",
   "zh": "国际商事仲裁中禁止实质审查",
-  "year": "2021"
+  "year": "2021",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161600876",
@@ -1839,7 +2056,10 @@
   "de_sub": "Eine rechtsvergleichende Untersuchung",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161601477",
   "zh": "仲裁协议的解释",
-  "year": "2021"
+  "year": "2021",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161607745",
@@ -1859,7 +2079,10 @@
   "de_sub": "Reichweitenbestimmung des Art. 6 I EuInsVO",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161601668",
   "zh": "欧洲破产法的关联管辖（吸引管辖）",
-  "year": "2021"
+  "year": "2021",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "v:9783161602306",
@@ -1869,7 +2092,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161602306",
   "zh": "交换交易的破产撤销",
-  "year": "2021"
+  "year": "2021",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "v:9783161602405",
@@ -1879,7 +2105,10 @@
   "de_sub": "Zur Vereinbarkeit des zwangsvollstreckungsrechtlichen Erwerbs schuldnerfremden Eigentums mit Art. 14 und 19 Abs. 4 GG",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161602405",
   "zh": "强制执行中的基本权利保护",
-  "year": "2021"
+  "year": "2021",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161607165",
@@ -1929,7 +2158,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161614538",
   "zh": "欧盟团体诉讼指令向德国法的转化",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "集体诉讼"
+  ]
  },
  {
   "id": "v:9783161612213",
@@ -1949,7 +2181,10 @@
   "de_sub": "Grenzen, Probleme und Lösungen bei der Begutachtung von Aussagen im Strafverfahren",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161619113",
   "zh": "测谎仪作为免责证据",
-  "year": "2022"
+  "year": "2022",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161611193",
@@ -1989,7 +2224,10 @@
   "de_sub": "Rechtshängigkeitssperre durch vorprozessuale Streitbeilegungsverfahren im europäischen Zivilprozessrecht",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161621574",
   "zh": "诉讼前优先权的保全",
-  "year": "2023"
+  "year": "2023",
+  "tags": [
+   "诉讼系属"
+  ]
  },
  {
   "id": "v:9783161619014",
@@ -1999,7 +2237,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161619014",
   "zh": "投资者—国家仲裁的约束（限制）",
-  "year": "2023"
+  "year": "2023",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161626449",
@@ -2029,7 +2270,10 @@
   "de_sub": "Ein Vorschlag auf rechtsvergleichender Basis zur Umsetzung der Verbandsklagerichtlinie in das deutsche Recht",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161625978",
   "zh": "适用近似原则（Cy-Pres 原则）治理分散损害",
-  "year": "2023"
+  "year": "2023",
+  "tags": [
+   "集体诉讼"
+  ]
  },
  {
   "id": "v:9783161625800",
@@ -2049,7 +2293,10 @@
   "de_sub": "Rechtsgrundlagen, Verfahrensgarantien und Konfliktfälle",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161626814",
   "zh": "仲裁组织与仲裁当事人之间的法律关系",
-  "year": "2024"
+  "year": "2024",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161628283",
@@ -2059,7 +2306,10 @@
   "de_sub": "Kriterien für die gerichtliche Anordnungsentscheidung",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161628283",
   "zh": "重整与破产法中的临时措施",
-  "year": "2024"
+  "year": "2024",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "v:9783161634871",
@@ -2069,7 +2319,11 @@
   "de_sub": "Der Freiwilligkeitsgrundsatz bei der Schiedsbindung Dritter",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161634871",
   "zh": "集团企业的仲裁约束",
-  "year": "2024"
+  "year": "2024",
+  "tags": [
+   "仲裁",
+   "第三人"
+  ]
  },
  {
   "id": "v:9783161632754",
@@ -2079,7 +2333,10 @@
   "de_sub": "Zur subjektiven Erweiterung des deutschen Schiedsverfahrensrechts unter Berücksichtigung der verfassungsrechtlichen Dimension",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161632754",
   "zh": "仲裁程序中的多人关系",
-  "year": "2024"
+  "year": "2024",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161633225",
@@ -2099,7 +2356,11 @@
   "de_sub": "Eine Untersuchung zur Abwehr von Gruppenverfahren",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161633218",
   "zh": "集体诉讼与集体仲裁弃权",
-  "year": "2024"
+  "year": "2024",
+  "tags": [
+   "仲裁",
+   "集体诉讼"
+  ]
  },
  {
   "id": "v:9783161632549",
@@ -2119,7 +2380,10 @@
   "de_sub": "Entwurf einer Reform",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161637315",
   "zh": "强制执行中的权利保护",
-  "year": "2024"
+  "year": "2024",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161637452",
@@ -2179,7 +2443,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161640278",
   "zh": "策略性诉讼的合法性",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "诉讼担当"
+  ]
  },
  {
   "id": "v:9783161643149",
@@ -2209,7 +2476,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161641039",
   "zh": "严格证明与司法自由心证",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161640575",
@@ -2229,7 +2499,10 @@
   "de_sub": "Eine vergleichende Analyse der gesetzlichen Sanierungsinstrumente im deutschen und griechischen Recht",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161644603",
   "zh": "破产中的企业重整",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "v:9783161643774",
@@ -2259,7 +2532,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161642562",
   "zh": "仲裁中的商业秘密保护",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "仲裁"
+  ]
  },
  {
   "id": "v:9783161644245",
@@ -2269,7 +2545,10 @@
   "de_sub": "Eine historisch-rechtsvergleichende Untersuchung zum deutschen und französischen Beweisrecht",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161644245",
   "zh": "事实推定",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161647154",
@@ -2279,7 +2558,10 @@
   "de_sub": "Eine rechtsvergleichende Untersuchung zur Weiterentwicklung des Schadens- und Beweisrechts",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161647154",
   "zh": "大规模损害的量化",
-  "year": "2025"
+  "year": "2025",
+  "tags": [
+   "证据法"
+  ]
  },
  {
   "id": "v:9783161646089",
@@ -2289,7 +2571,10 @@
   "de_sub": "Eine rechtsvergleichende Untersuchung auf der Grundlage des UNCITRAL Model Law on Cross-Border Insolvency und seiner nationalen Umsetzungen",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161646089",
   "zh": "破产撤销的域外执行",
-  "year": "2026"
+  "year": "2026",
+  "tags": [
+   "破产程序"
+  ]
  },
  {
   "id": "v:9783161647543",
@@ -2299,7 +2584,10 @@
   "de_sub": "",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161647543",
   "zh": "强制执行中事实查明的国内与跨国模式",
-  "year": "2026"
+  "year": "2026",
+  "tags": [
+   "强制执行"
+  ]
  },
  {
   "id": "v:9783161645846",
@@ -2359,7 +2647,11 @@
   "de_sub": "Reflexion und Innovation",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783162008800",
   "zh": "仲裁程序中的临时救济",
-  "year": "2026"
+  "year": "2026",
+  "tags": [
+   "仲裁",
+   "保全/假处分"
+  ]
  },
  {
   "id": "v:9783162001955",
@@ -2399,6 +2691,9 @@
   "de_sub": "Maßstäbe einer internen Vorabkontrolle",
   "de_link": "https://www.mohrsiebeck.com/en/shop/9783161644153",
   "zh": "仲裁裁决的审查",
-  "year": "2026"
+  "year": "2026",
+  "tags": [
+   "仲裁"
+  ]
  }
 ]
