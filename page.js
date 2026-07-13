@@ -12,6 +12,17 @@
 
   function esc(s) { var d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
 
+  /** 聚合已有标签词表：基础全部标签 + 网页覆盖层（pending）新增标签。 */
+  function buildVocab() {
+    var seen = {};
+    (window.BIB_ALL_TAGS || []).forEach(function (t) { if (t) seen[t] = 1; });
+    if (global.BibPub) {
+      var lt = global.BibPub.getLocal(global.BibPub.LS.tags);
+      for (var k in lt) (lt[k] || []).forEach(function (t) { if (t) seen[t] = 1; });
+    }
+    return Object.keys(seen);
+  }
+
   /* ---------- 搜索 ---------- */
   function doSearch() {
     var q = document.getElementById("q").value.trim().toLowerCase();
@@ -129,39 +140,73 @@
     };
   }
 
-  /* ---------- 标签弹层编辑器（增/删/改） ---------- */
+  /* ---------- 标签弹层编辑器（增/删/改 + 相似标签建议） ---------- */
   var tagEditor = null;
   function openTagEditor(tr) {
     if (!global.BibGate.require()) return;
     closeTagEditor();
     var id = tr.getAttribute("data-id");
+    var VOCAB = buildVocab();
     var box = document.createElement("div"); box.className = "tageditor";
-    function draw() {
-      var arr = dispTags(tr);
-      box.innerHTML = '<div class="te-title">标签（' + arr.length + '）</div>' +
-        arr.map(function (t, i) { return '<span class="te-chip" data-i="' + i + '"><span class="te-name">' + esc(t) + '</span><button type="button" class="te-x">×</button></span>'; }).join("") +
-        '<div class="te-add"><input id="te-in" placeholder="输入标签后回车添加"><button type="button" id="te-addbtn">添加</button></div>';
-      // × 删除按钮
-      box.querySelectorAll(".te-x").forEach(function (b) {
-        b.onclick = function () { var i = +b.parentElement.getAttribute("data-i"); arr.splice(i, 1); global.BibPub.setTagPending(id, arr); draw(); renderRow(tr); updatePending(); };
+    box.innerHTML =
+      '<div class="te-title">标签（<span class="te-count">0</span>）</div>' +
+      '<div class="te-list"></div>' +
+      '<div class="te-add"><input id="te-in" placeholder="输入标签后回车添加"><button type="button" id="te-addbtn">添加</button></div>' +
+      '<div class="te-sug" id="te-sug"></div>';
+    document.body.appendChild(box);
+    tagEditor = box;
+
+    var listEl = box.querySelector(".te-list");
+    var inputEl = box.querySelector("#te-in");
+    var sugEl = box.querySelector("#te-sug");
+    var curArr = [];   // 当前显示标签（供删除/改名闭包引用）
+
+    /** 渲染相似已有标签建议（随输入 / 已有标签变化刷新）。 */
+    function renderSug() {
+      var sug = global.BibCommon.suggestTags(inputEl.value, VOCAB, { limit: 6, exclude: curArr });
+      if (!sug.length) { sugEl.style.display = "none"; sugEl.innerHTML = ""; return; }
+      sugEl.style.display = "block";
+      sugEl.innerHTML = '<div class="te-sug-hint">相似已有标签：</div>' + sug.map(function (s) {
+        return '<button type="button" class="te-sug-item" data-v="' + esc(s.tag) + '">' + esc(s.tag) + '</button>';
+      }).join("");
+      sugEl.querySelectorAll(".te-sug-item").forEach(function (b) {
+        b.onclick = function () { add(b.getAttribute("data-v")); inputEl.focus(); };
       });
-      // 点击标签文字 → 内联编辑
-      box.querySelectorAll(".te-name").forEach(function (nm) {
+    }
+
+    function draw() {
+      curArr = dispTags(tr);
+      listEl.innerHTML = curArr.map(function (t, i) {
+        return '<span class="te-chip" data-i="' + i + '"><span class="te-name">' + esc(t) + '</span><button type="button" class="te-x">×</button></span>';
+      }).join("");
+      box.querySelector(".te-count").textContent = curArr.length;
+      bindChips();
+      renderSug();   // 已有标签变化 → 重新计算建议
+    }
+
+    function bindChips() {
+      listEl.querySelectorAll(".te-x").forEach(function (b) {
+        b.onclick = function () {
+          var i = +b.parentElement.getAttribute("data-i");
+          curArr.splice(i, 1);
+          global.BibPub.setTagPending(id, curArr);
+          draw(); renderRow(tr); updatePending();
+        };
+      });
+      listEl.querySelectorAll(".te-name").forEach(function (nm) {
         nm.onclick = function (e) {
           e.stopPropagation();
           var chip = nm.parentElement;
           if (chip._editing) return;
           chip._editing = true;
           var i = +chip.getAttribute("data-i");
-          var oldVal = arr[i];
+          var oldVal = curArr[i];
           var inp = document.createElement("input");
           inp.type = "text"; inp.value = oldVal;
           inp.className = "te-edit-inp";
           inp.style.width = Math.max(60, Math.min(120, oldVal.length * 14)) + "px";
-          var sv = document.createElement("button");
-          sv.textContent = "✓"; sv.className = "te-edit-save";
-          var cc = document.createElement("button");
-          cc.textContent = "✕"; cc.className = "te-edit-cancel";
+          var sv = document.createElement("button"); sv.textContent = "✓"; sv.className = "te-edit-save";
+          var cc = document.createElement("button"); cc.textContent = "✕"; cc.className = "te-edit-cancel";
           nm.replaceWith(inp);
           chip.insertBefore(sv, chip.querySelector(".te-x"));
           chip.insertBefore(cc, chip.querySelector(".te-x"));
@@ -169,8 +214,8 @@
           function done(ok) {
             var nv = inp.value.trim();
             if (ok && nv && nv !== oldVal) {
-              arr[i] = nv;
-              global.BibPub.setTagPending(id, arr);
+              curArr[i] = nv;
+              global.BibPub.setTagPending(id, curArr);
               flash("✓ 标签「" + oldVal + "」已改为「" + nv + "」（待发布）");
             }
             chip._editing = false;
@@ -178,26 +223,32 @@
           }
           sv.onclick = function () { done(true); };
           cc.onclick = function () { done(false); };
-          inp.onkeydown = function (ev) {
-            if (ev.key === "Enter") done(true);
-            if (ev.key === "Escape") done(false);
-          };
+          inp.onkeydown = function (ev) { if (ev.key === "Enter") done(true); if (ev.key === "Escape") done(false); };
         };
       });
-      var add = function () {
-        var v = box.querySelector("#te-in").value.trim();
-        if (!v) return;
-        if (arr.indexOf(v) < 0) arr.push(v);
-        global.BibPub.setTagPending(id, arr);
-        box.querySelector("#te-in").value = "";
-        draw(); renderRow(tr); flash("✓ 标签已保存（待发布）"); updatePending();
-      };
-      box.querySelector("#te-addbtn").onclick = add;
-      box.querySelector("#te-in").onkeydown = function (e) { if (e.key === "Enter") add(); };
     }
+
+    function add(val) {
+      var v = (val !== undefined ? val : inputEl.value).trim();
+      if (!v) return;
+      var arr = dispTags(tr);
+      if (arr.indexOf(v) < 0) arr.push(v);
+      global.BibPub.setTagPending(id, arr);
+      inputEl.value = "";
+      draw(); renderRow(tr); flash("✓ 标签已保存（待发布）"); updatePending();
+    }
+
+    box.querySelector("#te-addbtn").onclick = function () { add(); };
+    inputEl.onkeydown = function (e) {
+      if (e.key === "Enter") { add(); }
+      else if (e.key === "Escape") {
+        var sug = global.BibCommon.suggestTags(inputEl.value, VOCAB, { limit: 6, exclude: curArr });
+        if (sug.length && sugEl.style.display !== "none") add(sug[0].tag);  // Esc 采纳首项建议
+        else closeTagEditor();
+      }
+    };
+    inputEl.oninput = renderSug;
     draw();
-    document.body.appendChild(box);
-    tagEditor = box;
   }
   function closeTagEditor() { if (tagEditor) { tagEditor.remove(); tagEditor = null; } }
 
