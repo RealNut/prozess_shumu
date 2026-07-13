@@ -94,11 +94,10 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     var btn = document.getElementById("lockbtn");
+    if (btn) btn.style.display = "inline-block";
     if (window.BibGate.isUnlocked()) {
       document.body.classList.add("unlocked");
       if (window.onBibUnlock) window.onBibUnlock();
-    } else if (btn) {
-      btn.style.display = "inline-block";
     }
   });
 })();
