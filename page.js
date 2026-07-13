@@ -277,7 +277,7 @@
       if (pubbtn) { pubbtn.disabled = false; pubbtn.textContent = "\uD83D\uDE80 发布修改"; }
       if (r.mode === "published") {
         // 发布成功 → 倒计时，等 Pages 构建后自动刷新
-        global.BibCommon.startPublishCountdown(60, function () {
+        global.BibCommon.startPublishCountdown(20, function () {
           if (global.BibPub) {
             global.BibPub.fetchPub().then(function () {
               renderAll(); updatePending();

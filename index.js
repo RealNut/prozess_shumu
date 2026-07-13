@@ -167,7 +167,7 @@
     global.BibPub.publishAll().then(function (r) {
       if (pubbtn) { pubbtn.disabled = false; pubbtn.textContent = "\uD83D\uDE80 发布修改"; }
       if (r.mode === "published") {
-        global.BibCommon.startPublishCountdown(60, function () {
+        global.BibCommon.startPublishCountdown(20, function () {
           if (global.BibPub) {
             global.BibPub.fetchPub().then(function () {
               renderCloud();
