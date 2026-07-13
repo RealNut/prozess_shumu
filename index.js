@@ -22,6 +22,41 @@
 
   function esc(s) { var d = document.createElement("div"); d.textContent = s; return d.innerHTML; }
 
+  // ---------- 丛书左右顺序（修订模式可拖拽重排，发布后生效）----------
+  // 已发布顺序来自 series_order.json（PUB.order）；本地草稿来自 LS_ORDER。
+  function getPublishedOrder() {
+    var po = (global.BibPub && global.BibPub.PUB) ? global.BibPub.PUB.order : null;
+    return (po && po.length) ? po : DEFAULT_ORDER;
+  }
+  // 卡片当前应显示的顺序：修订模式下优先用本地草稿（即时预览），否则用已发布顺序。
+  function getCardOrder() {
+    if (document.body.classList.contains("unlocked")) {
+      var pend = global.BibPub.getOrderPending();
+      if (pend && pend.length) return pend;
+    }
+    return getPublishedOrder();
+  }
+  // 按 order 重排每个 .cards 容器内的卡片（仅同组内相对顺序改变）。
+  function applyCardOrder() {
+    var order = getCardOrder();
+    var idx = {};
+    order.forEach(function (p, i) { idx[p] = i; });
+    document.querySelectorAll(".cards").forEach(function (cont) {
+      var cards = Array.prototype.slice.call(cont.querySelectorAll(".card"));
+      cards.sort(function (a, b) {
+        var pa = a.getAttribute("data-prefix"), pb = b.getAttribute("data-prefix");
+        return (idx[pa] == null ? 1e9 : idx[pa]) - (idx[pb] == null ? 1e9 : idx[pb]);
+      });
+      cards.forEach(function (c) { cont.appendChild(c); });
+    });
+  }
+  // 修订模式开关：设置卡片 draggable + 应用当前顺序（锁定态回退到已发布顺序）。
+  function syncEditMode() {
+    var unlocked = document.body.classList.contains("unlocked");
+    document.querySelectorAll(".card").forEach(function (c) { c.draggable = unlocked; });
+    applyCardOrder();
+  }
+
   // 当前"显示值"标签图：覆盖层(pending+PUB) 优先，其次基础 tags
   function buildDisplayedTagMap() {
     var map = {};
@@ -71,6 +106,14 @@
     currentTag = tag;
     var map = buildDisplayedTagMap();
     var ids = Object.keys(BOOKS).filter(function (id) { return map[id].includes(tag); });
+    // 按已发布丛书顺序排序（发布后顺序变更才会反映到这里）
+    var order = getPublishedOrder();
+    var idx = {};
+    order.forEach(function (p, i) { idx[p] = i; });
+    ids.sort(function (a, b) {
+      var sa = (BOOKS[a] || {}).series || "", sb = (BOOKS[b] || {}).series || "";
+      return (idx[sa] == null ? 1e9 : idx[sa]) - (idx[sb] == null ? 1e9 : idx[sb]);
+    });
     var box = document.getElementById("results");
     if (!ids.length) {
       box.innerHTML = '<div class="sec-title">含标签「' + esc(tag) + '」的书（0）</div><span class="empty">没有匹配的书。</span>';
@@ -136,6 +179,65 @@
     else { b.textContent = ""; b.className = "pending-badge"; }
   }
 
+  // ---------- 丛书卡片拖拽重排（仅同出版社组内）----------
+  var dragSrc = null;
+  // 取指针最近的卡片，按左右/上下位置决定插入到其前还是其后
+  function getDragAfterElement(container, x, y) {
+    var els = Array.prototype.slice.call(container.querySelectorAll(".card:not(.dragging)"));
+    var closest = { dist: Infinity, el: null };
+    els.forEach(function (el) {
+      var r = el.getBoundingClientRect();
+      var cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+      var dist = (x - cx) * (x - cx) + (y - cy) * (y - cy);
+      if (dist < closest.dist) { closest.dist = dist; closest.el = el; }
+    });
+    if (!closest.el) return null;
+    var r = closest.el.getBoundingClientRect();
+    return (x < r.left + r.width / 2 || y < r.top + r.height / 2) ? closest.el : closest.el.nextSibling;
+  }
+  // 从 DOM 现有顺序重建完整 prefix 顺序数组并写入 pending（草稿，发布后生效）
+  function saveOrderFromDom() {
+    var order = [];
+    document.querySelectorAll(".cards").forEach(function (cont) {
+      cont.querySelectorAll(".card").forEach(function (c) { order.push(c.getAttribute("data-prefix")); });
+    });
+    global.BibPub.setOrderPending(order);
+  }
+  function setupCardDrag() {
+    document.querySelectorAll(".cards").forEach(function (cont) {
+      cont.addEventListener("dragover", function (e) {
+        if (!dragSrc || cont !== dragSrc.parentElement) return; // 仅同组内重排
+        e.preventDefault();
+        e.dataTransfer.dropEffect = "move";
+      });
+      cont.addEventListener("drop", function (e) {
+        if (!dragSrc || cont !== dragSrc.parentElement) return;
+        e.preventDefault();
+        var after = getDragAfterElement(cont, e.clientX, e.clientY);
+        if (after == null) cont.appendChild(dragSrc);
+        else cont.insertBefore(dragSrc, after);
+        dragSrc.classList.remove("dragging");
+        dragSrc = null;
+        saveOrderFromDom();
+        applyCardOrder();
+        flash("已调整丛书顺序（待发布，发布后生效）");
+      });
+    });
+    document.querySelectorAll(".card").forEach(function (card) {
+      card.addEventListener("dragstart", function (e) {
+        if (!document.body.classList.contains("unlocked")) return; // 仅修订模式可拖
+        dragSrc = card;
+        card.classList.add("dragging");
+        e.dataTransfer.effectAllowed = "move";
+        try { e.dataTransfer.setData("text/plain", card.getAttribute("data-prefix")); } catch (_) {}
+      });
+      card.addEventListener("dragend", function () {
+        card.classList.remove("dragging");
+        dragSrc = null;
+      });
+    });
+  }
+
   // 全局标签操作
   function deleteTag(tag) {
     if (!global.BibGate.require()) return;
@@ -173,6 +275,7 @@
               renderCloud();
               if (currentTag) showTag(currentTag);
               updatePending();
+              syncEditMode(); // 发布后按新顺序重排卡片 + 刷新标签云顺序
               flash("\u2705 页面已刷新，显示最新发布状态");
             }).catch(function () {
               flash("\u26A0\uFE0F 拉取最新数据失败，请手动刷新页面");
@@ -193,14 +296,14 @@
   // 加载基础数据 → 拉取覆盖层 → 渲染标签云
   Promise.all(loads)
     .then(function () { if (global.BibPub) return global.BibPub.fetchPub().then(function () {}).catch(function () {}); })
-    .then(function () { renderCloud(); })
+    .then(function () { renderCloud(); setupCardDrag(); syncEditMode(); })
     .catch(function (e) {
       document.getElementById("cloud").innerHTML = '<span class="empty">数据加载失败（请用 https 链接打开，或本地起服务器）。</span>';
       console.warn(e);
     });
 
   document.addEventListener("DOMContentLoaded", function () {
-    global.BibCommon.setupLockButton(function () { renderCloud(); updatePending(); }, function () { renderCloud(); updatePending(); });
+    global.BibCommon.setupLockButton(function () { renderCloud(); updatePending(); syncEditMode(); }, function () { renderCloud(); updatePending(); syncEditMode(); });
     global.BibCommon.setupTokenButton();
     global.BibCommon.setupPublishButton(doPublish);
   });

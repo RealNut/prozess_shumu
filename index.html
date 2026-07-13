@@ -8,12 +8,18 @@
  .upd{display:inline-block;background:#e8f5e9;color:#1a7f37;border:1px solid #a7d7a7;border-radius:999px;padding:3px 12px;font-size:12.5px;margin-bottom:10px}
  .pub-h{font-size:17px;font-weight:700;margin:22px 0 10px;padding-left:10px}
  .cards{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:6px}
- .card{flex:1;min-width:260px;border:1px solid #e1e4e8;border-radius:12px;padding:16px 20px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:.15s;text-decoration:none;color:inherit}
+ .card{flex:1;min-width:260px;border:1px solid #e1e4e8;border-radius:12px;padding:16px 20px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.04);transition:.15s;text-decoration:none;color:inherit;position:relative}
  .card:hover{box-shadow:0 4px 14px rgba(0,0,0,.10);transform:translateY(-2px)}
  .card .n{font-size:28px;font-weight:700}
  .card .t{font-size:14.5px;font-weight:600;margin:6px 0 2px}
  .card .t .ab{color:#8a8f98;font-weight:400;font-size:12.5px;margin-left:2px}
  .card .d{font-size:12.5px;color:#656d76}
+ /* 拖拽重排（仅修订模式可见/可用） */
+ .card-grip{position:absolute;top:9px;right:12px;color:#9aa0a6;font-size:15px;line-height:1;cursor:grab;user-select:none;letter-spacing:-3px}
+ body.unlocked .card{cursor:grab}
+ .card.dragging{opacity:.4}
+ .card.drop-before{box-shadow:inset 0 4px 0 0 #0969da}
+ .card.drop-after{box-shadow:inset 0 -4px 0 0 #0969da}
  .sec-title{font-size:16px;font-weight:600;margin:26px 0 10px;border-left:4px solid #0969da;padding-left:8px}
  .cloud{line-height:2.4;margin-bottom:14px}
  .tag{display:inline-block;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:999px;padding:3px 12px;margin:3px 4px;font-size:13px;cursor:pointer;position:relative}
@@ -73,15 +79,15 @@
 
 <div class="pub-h" style="border-left:5px solid #1a7f37;color:#1a7f37">Mohr Siebeck</div>
 <div class="cards">
-<a class="card" style="border-top:3px solid #1a7f37" href="vverfr.html"><div class="n" style="color:#1a7f37">234</div><div class="t">Veröffentlichungen zum Verfahrensrecht <span class="ab">(VVerfR)</span></div><div class="d">Mohr Siebeck · 程序法出版物</div></a>
-<a class="card" style="border-top:3px solid #1a7f37" href="juspriv.html"><div class="n" style="color:#1a7f37">297</div><div class="t">Jus Privatum <span class="ab">(JusPriv)</span></div><div class="d">Mohr Siebeck · 私法丛书</div></a>
-<a class="card" style="border-top:3px solid #1a7f37" href="btripr.html"><div class="n" style="color:#1a7f37">133</div><div class="t">Beiträge zum ausländischen und internationalen Privatrecht <span class="ab">(BtrIPR)</span></div><div class="d">Mohr Siebeck · 外国与国际私法论丛</div></a>
+<a class="card" style="border-top:3px solid #1a7f37" href="vverfr.html" data-prefix="v"><span class="card-grip owner-only" title="拖拽调整顺序" aria-hidden="true">&#8942;&#8942;</span><div class="n" style="color:#1a7f37">234</div><div class="t">Veröffentlichungen zum Verfahrensrecht <span class="ab">(VVerfR)</span></div><div class="d">Mohr Siebeck · 程序法出版物</div></a>
+<a class="card" style="border-top:3px solid #1a7f37" href="juspriv.html" data-prefix="j"><span class="card-grip owner-only" title="拖拽调整顺序" aria-hidden="true">&#8942;&#8942;</span><div class="n" style="color:#1a7f37">297</div><div class="t">Jus Privatum <span class="ab">(JusPriv)</span></div><div class="d">Mohr Siebeck · 私法丛书</div></a>
+<a class="card" style="border-top:3px solid #1a7f37" href="btripr.html" data-prefix="i"><span class="card-grip owner-only" title="拖拽调整顺序" aria-hidden="true">&#8942;&#8942;</span><div class="n" style="color:#1a7f37">133</div><div class="t">Beiträge zum ausländischen und internationalen Privatrecht <span class="ab">(BtrIPR)</span></div><div class="d">Mohr Siebeck · 外国与国际私法论丛</div></a>
 </div>
 <div class="pub-h" style="border-left:5px solid #0969da;color:#0969da">Duncker &amp; Humblot</div>
 <div class="cards">
-<a class="card" style="border-top:3px solid #0969da" href="prozessrecht.html"><div class="n" style="color:#0969da">315</div><div class="t">Schriften zum Prozessrecht</div><div class="d">Duncker &amp; Humblot · 诉讼法丛书</div></a>
-<a class="card" style="border-top:3px solid #0969da" href="studien.html"><div class="n" style="color:#0969da">35</div><div class="t">Studien zum vergleichenden Privatrecht</div><div class="d">Duncker &amp; Humblot · 比较私法研究</div></a>
-<a class="card" style="border-top:3px solid #0969da" href="buergerlichen.html"><div class="n" style="color:#0969da">614</div><div class="t">Schriften zum bürgerlichen Recht</div><div class="d">Duncker &amp; Humblot · 民法丛书</div></a>
+<a class="card" style="border-top:3px solid #0969da" href="prozessrecht.html" data-prefix="p"><span class="card-grip owner-only" title="拖拽调整顺序" aria-hidden="true">&#8942;&#8942;</span><div class="n" style="color:#0969da">315</div><div class="t">Schriften zum Prozessrecht <span class="ab">(SP)</span></div><div class="d">Duncker &amp; Humblot · 诉讼法丛书</div></a>
+<a class="card" style="border-top:3px solid #0969da" href="studien.html" data-prefix="s"><span class="card-grip owner-only" title="拖拽调整顺序" aria-hidden="true">&#8942;&#8942;</span><div class="n" style="color:#0969da">35</div><div class="t">Studien zum vergleichenden Privatrecht <span class="ab">(SvP)</span></div><div class="d">Duncker &amp; Humblot · 比较私法研究</div></a>
+<a class="card" style="border-top:3px solid #0969da" href="buergerlichen.html" data-prefix="c"><span class="card-grip owner-only" title="拖拽调整顺序" aria-hidden="true">&#8942;&#8942;</span><div class="n" style="color:#0969da">614</div><div class="t">Schriften zum bürgerlichen Recht <span class="ab">(SbR)</span></div><div class="d">Duncker &amp; Humblot · 民法丛书</div></a>
 </div>
 
 <div class="sec-title">🏷️ 标签云（点击查看含该标签的书）</div>
@@ -90,10 +96,10 @@
 
 <footer>Generated bibliography · GitHub Pages · 书名参考译名由术语词典自动生成并优化</footer>
 
-<script>const META={"p": {"name": "Schriften zum Prozessrecht", "pub": "dh", "html": "prozessrecht.html", "short": "D&H·ProzR"}, "s": {"name": "Studien zum vergleichenden Privatrecht", "pub": "dh", "html": "studien.html", "short": "D&H·Stud"}, "c": {"name": "Schriften zum bürgerlichen Recht", "pub": "dh", "html": "buergerlichen.html", "short": "D&H·BürgR"}, "v": {"name": "Veröffentlichungen zum Verfahrensrecht", "pub": "mohr", "html": "vverfr.html", "short": "Mohr·VVerfR"}, "j": {"name": "Jus Privatum", "pub": "mohr", "html": "juspriv.html", "short": "Mohr·JusPriv"}, "i": {"name": "Beiträge zum ausländischen und internationalen Privatrecht", "pub": "mohr", "html": "btripr.html", "short": "Mohr·BtrIPR"}};const FILES={"p": "prozessrecht.json", "s": "studien.json", "c": "buergerlichen.json", "v": "vverfr.json", "j": "juspriv.json", "i": "btripr.json"};</script>
-<script src="config.js?v=1783941445"></script>
-<script src="gate.js?v=1783941445"></script>
-<script src="publish.js?v=1783941445"></script>
-<script src="common.js?v=1783941445"></script>
-<script src="index.js?v=1783941445"></script>
+<script>const META={"p": {"name": "Schriften zum Prozessrecht", "pub": "dh", "html": "prozessrecht.html", "short": "SP"}, "s": {"name": "Studien zum vergleichenden Privatrecht", "pub": "dh", "html": "studien.html", "short": "SvP"}, "c": {"name": "Schriften zum bürgerlichen Recht", "pub": "dh", "html": "buergerlichen.html", "short": "SbR"}, "v": {"name": "Veröffentlichungen zum Verfahrensrecht", "pub": "mohr", "html": "vverfr.html", "short": "Mohr·VVerfR"}, "j": {"name": "Jus Privatum", "pub": "mohr", "html": "juspriv.html", "short": "Mohr·JusPriv"}, "i": {"name": "Beiträge zum ausländischen und internationalen Privatrecht", "pub": "mohr", "html": "btripr.html", "short": "Mohr·BtrIPR"}};const FILES={"p": "prozessrecht.json", "s": "studien.json", "c": "buergerlichen.json", "v": "vverfr.json", "j": "juspriv.json", "i": "btripr.json"};const DEFAULT_ORDER=["v", "j", "i", "p", "s", "c"];</script>
+<script src="config.js?v=1783944930"></script>
+<script src="gate.js?v=1783944930"></script>
+<script src="publish.js?v=1783944930"></script>
+<script src="common.js?v=1783944930"></script>
+<script src="index.js?v=1783944930"></script>
 </body></html>

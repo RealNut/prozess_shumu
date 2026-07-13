@@ -22,6 +22,7 @@
   };
   var TOKEN_KEY = "gh_token_v2";
   var LS_TAGS = "shumu_tags_v2", LS_TRANS = "shumu_trans_v2", LS_YEAR = "shumu_year_v2";
+  var LS_ORDER = "shumu_order_v2";  // 丛书左右顺序（pending 草稿，发布后写入 series_order.json）
   // 可写白名单：任何写入都只接受这些路径，从根本上杜绝误改代码文件。
   var ALLOWED = (CFG.OVERRIDE_FILES && CFG.OVERRIDE_FILES.slice()) ||
                 ["tags.json", "trans_overrides.json", "year_overrides.json"];
@@ -33,15 +34,18 @@
   function setToken(t) { if (t) localStorage.setItem(TOKEN_KEY, t); else localStorage.removeItem(TOKEN_KEY); }
 
   // 已发布覆盖层（运行期缓存，随 fetchPub 刷新）
-  var PUB = { tags: {}, trans: {}, year: {} };
+  var PUB = { tags: {}, trans: {}, year: {}, order: null };
   function fetchPub() {
     function getJson(path) {
       return fetch(path + "?_=" + Date.now(), { cache: "no-store" })
         .then(function (r) { return r.ok ? r.json() : {}; })
         .catch(function () { return {}; });
     }
-    return Promise.all([getJson("tags.json"), getJson("trans_overrides.json"), getJson("year_overrides.json")])
-      .then(function (a) { PUB.tags = a[0] || {}; PUB.trans = a[1] || {}; PUB.year = a[2] || {}; });
+    return Promise.all([getJson("tags.json"), getJson("trans_overrides.json"), getJson("year_overrides.json"), getJson("series_order.json")])
+      .then(function (a) {
+        PUB.tags = a[0] || {}; PUB.trans = a[1] || {}; PUB.year = a[2] || {};
+        PUB.order = (a[3] && a[3].order && a[3].order.length) ? a[3].order : null;
+      });
   }
 
   // ---------- 显示值合并（pending > PUB > 基础默认）----------
@@ -53,6 +57,12 @@
   function setTagPending(id, arr) { var lt = getLocal(LS_TAGS); if (arr !== undefined && arr !== null) lt[id] = arr; else delete lt[id]; setLocal(LS_TAGS, lt); }
   function setTransPending(id, zh) { var lt = getLocal(LS_TRANS); zh = (zh || "").trim(); if (zh) lt[id] = zh; else delete lt[id]; setLocal(LS_TRANS, lt); }
   function setYearPending(id, y) { var lt = getLocal(LS_YEAR); y = String(y || "").trim(); if (y) lt[id] = y; else delete lt[id]; setLocal(LS_YEAR, lt); }
+  // 丛书左右顺序：传入有序 prefix 数组写入 pending；传 null/空则清除草稿
+  function setOrderPending(arr) {
+    if (arr && arr.length) setLocal(LS_ORDER, arr);
+    else { try { localStorage.removeItem(LS_ORDER); } catch (e) {} }
+  }
+  function getOrderPending() { var v = getLocal(LS_ORDER); return (v && v.length) ? v : null; }
 
   function b64(str) { return btoa(unescape(encodeURIComponent(str))); }
   function copy(t) { if (global.navigator && global.navigator.clipboard) global.navigator.clipboard.writeText(t); }
@@ -130,6 +140,7 @@
   // ---------- 发布全部待发布 ----------
   function publishAll() {
     var lt = getLocal(LS_TAGS), ltr = getLocal(LS_TRANS), ly = getLocal(LS_YEAR);
+    var lo = getLocal(LS_ORDER);
     var tags = Object.assign({}, PUB.tags, lt);
     var trans = Object.assign({}, PUB.trans, ltr);
     var year = Object.assign({}, PUB.year, ly);
@@ -139,9 +150,11 @@
         "trans_overrides.json": JSON.stringify(trans, null, 2),
         "year_overrides.json": JSON.stringify(year, null, 2)
       };
+      if (lo && lo.length) files["series_order.json"] = JSON.stringify({ order: lo }, null, 2);
       return commitFiles(files, "Update overlay data via web editor").then(function () {
         setLocal(LS_TAGS, {}); setLocal(LS_TRANS, {}); setLocal(LS_YEAR, {});
-        PUB = { tags: tags, trans: trans, year: year };
+        if (lo && lo.length) { PUB.order = lo; setOrderPending(null); }
+        PUB.tags = tags; PUB.trans = trans; PUB.year = year;
         return { ok: true, mode: "published" };
       });
       // 失败时向上 reject，由调用方 .catch 统一提示
@@ -177,8 +190,9 @@
     fetchPub: fetchPub,
     mergedTags: mergedTags, mergedTrans: mergedTrans, mergedYear: mergedYear,
     setTagPending: setTagPending, setTransPending: setTransPending, setYearPending: setYearPending,
+    setOrderPending: setOrderPending, getOrderPending: getOrderPending,
     publishAll: publishAll, globalTagOp: globalTagOp,
-    getLocal: getLocal, LS: { tags: LS_TAGS, trans: LS_TRANS, year: LS_YEAR },
+    getLocal: getLocal, LS: { tags: LS_TAGS, trans: LS_TRANS, year: LS_YEAR, order: LS_ORDER },
     PUB: PUB, ALLOWED: ALLOWED
   };
 })(window);
