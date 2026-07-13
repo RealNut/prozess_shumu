@@ -77,11 +77,40 @@
     if (pb) pb.onclick = doPublish;
   }
 
+  /**
+   * 发布成功后倒计时（预估 GitHub Pages 构建时间），倒计时结束后执行回调。
+   * @param {number}   secs   倒计时秒数
+   * @param {function} onDone 倒计时结束后执行的刷新回调
+   */
+  function startPublishCountdown(secs, onDone) {
+    var t = document.getElementById("bib-toast");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "bib-toast";
+      t.className = "bib-toast";
+      document.body.appendChild(t);
+    }
+    var count = secs;
+    t.style.opacity = "1";
+    function tick() {
+      if (count <= 0) {
+        t.textContent = "\u23F3 正在拉取最新数据\u2026";
+        if (typeof onDone === "function") onDone();
+        return;
+      }
+      t.textContent = "\u2705 已发布到仓库，约 " + count + " 秒后自动刷新\u2026";
+      count--;
+      setTimeout(tick, 1000);
+    }
+    tick();
+  }
+
   global.BibCommon = {
     flash: flash,
     syncLockBtn: syncLockBtn,
     setupLockButton: setupLockButton,
     setupTokenButton: setupTokenButton,
-    setupPublishButton: setupPublishButton
+    setupPublishButton: setupPublishButton,
+    startPublishCountdown: startPublishCountdown
   };
 })(window);

@@ -38,15 +38,17 @@
     var yr = tr.querySelector(".yrtext"); if (yr) yr.textContent = dispYear(tr);
     var tc = tr.querySelector(".tags"); if (!tc) return;
     var ed = tc.querySelector(".edittags");
+    var id = tr.getAttribute("data-id");
+    var pendingTags = hasPendingTags(id);
     // 每个标签 chip 内嵌「✎」编辑和「×」删除按钮（仅 owner 解锁后可见）。
     tc.innerHTML = dispTags(tr).map(function (t) {
-      return '<span class="tag" data-t="' + esc(t) + '"><span class="tname">' + esc(t) + '</span>' +
-        '<button class="tagedit owner-only" type="button" title="修改该标签">✎</button>' +
-        '<button class="tagdel owner-only" type="button" title="删除该标签">×</button></span>';
+      return '<span class="tag' + (pendingTags ? ' tag-pending' : '') + '" data-t="' + esc(t) + '"><span class="tname">' + esc(t) + '</span>' +
+        '<button class="tagedit owner-only" type="button" title="修改该标签">\u270E</button>' +
+        '<button class="tagdel owner-only" type="button" title="删除该标签">\u00D7</button></span>';
     }).join("") + " ";
     if (ed) tc.appendChild(ed);
   }
-  function renderAll() { document.querySelectorAll("tr[data-id]").forEach(renderRow); }
+  function renderAll() { document.querySelectorAll("tr[data-id]").forEach(renderRow); highlightPending(); }
 
   /* ---------- 编辑：译名 / 年份 ---------- */
   function editText(tr, sel, getter, setter) {
@@ -223,6 +225,31 @@
     if (tagEditor && !e.target.closest(".tageditor") && !e.target.closest(".edittags")) closeTagEditor();
   });
 
+  /* ---------- 待发布视觉反馈 ---------- */
+  function hasPending(id) {
+    if (!global.BibPub) return false;
+    var lt = global.BibPub.getLocal(global.BibPub.LS.tags);
+    var ltr = global.BibPub.getLocal(global.BibPub.LS.trans);
+    var ly = global.BibPub.getLocal(global.BibPub.LS.year);
+    return (id in lt) || (id in ltr) || (id in ly);
+  }
+  function hasPendingTags(id) {
+    if (!global.BibPub) return false;
+    var lt = global.BibPub.getLocal(global.BibPub.LS.tags);
+    return (id in lt) && lt[id] && lt[id].length;
+  }
+  /** 为所有有待发布修改的行添加高亮样式 */
+  function highlightPending() {
+    document.querySelectorAll("tr[data-id]").forEach(function (tr) {
+      var id = tr.getAttribute("data-id");
+      if (hasPending(id)) {
+        tr.classList.add("row-pending");
+      } else {
+        tr.classList.remove("row-pending");
+      }
+    });
+  }
+
   /* ---------- 待发布计数 ---------- */
   function updatePending() {
     var n = 0;
@@ -236,18 +263,38 @@
     }
     var b = document.getElementById("pending-badge");
     if (!b) return;
-    if (n > 0) { b.textContent = "待发布 " + n; b.className = "pending-badge owner-only show"; }
+    if (n > 0) { b.textContent = "\uD83D\uDFE2 待发布 " + n + " 项"; b.className = "pending-badge owner-only show"; }
     else { b.textContent = ""; b.className = "pending-badge owner-only"; }
+    highlightPending();
   }
 
   /* ---------- 发布 ---------- */
   function doPublish() {
     if (!global.BibGate.require()) return;
+    var pubbtn = document.getElementById("pubbtn");
+    if (pubbtn) { pubbtn.disabled = true; pubbtn.textContent = "\u23F3 发布中\u2026"; }
     global.BibPub.publishAll().then(function (r) {
-      if (r.mode === "published") { flash("✅ 已发布到仓库（所有人可见）"); }
-      else { flash("已复制修改 JSON，请发到 WorkBuddy 项目对话让我代推上线"); }
-      renderAll(); updatePending();
-    }).catch(function (e) { flash("发布失败：" + (e.message || e) + "（需填 GitHub 令牌，或复制发我代推）"); });
+      if (pubbtn) { pubbtn.disabled = false; pubbtn.textContent = "\uD83D\uDE80 发布修改"; }
+      if (r.mode === "published") {
+        // 发布成功 → 倒计时，等 Pages 构建后自动刷新
+        global.BibCommon.startPublishCountdown(60, function () {
+          if (global.BibPub) {
+            global.BibPub.fetchPub().then(function () {
+              renderAll(); updatePending();
+              flash("\u2705 页面已刷新，显示最新发布状态");
+            }).catch(function () {
+              flash("\u26A0\uFE0F 拉取最新数据失败，请手动刷新页面");
+            });
+          }
+        });
+      } else {
+        flash("已复制修改 JSON，请发到 WorkBuddy 项目对话让我代推上线");
+        renderAll(); updatePending();
+      }
+    }).catch(function (e) {
+      if (pubbtn) { pubbtn.disabled = false; pubbtn.textContent = "\uD83D\uDE80 发布修改"; }
+      flash("发布失败：" + (e.message || e) + "（需填 GitHub 令牌，或复制发我代推）");
+    });
   }
 
   /* ---------- 初始化 ---------- */

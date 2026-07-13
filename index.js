@@ -107,11 +107,29 @@
   // 发布
   function doPublish() {
     if (!global.BibGate.require()) return;
+    var pubbtn = document.getElementById("pubbtn");
+    if (pubbtn) { pubbtn.disabled = true; pubbtn.textContent = "\u23F3 发布中\u2026"; }
     global.BibPub.publishAll().then(function (r) {
-      if (r.mode === "published") flash("✅ 已发布到仓库（所有人可见）");
-      else flash("已复制修改 JSON，请发到 WorkBuddy 项目对话让我代推上线");
-      renderCloud();
-    }).catch(function (e) { flash("发布失败：" + (e.message || e) + "（需填 GitHub 令牌，或复制发我代推）"); });
+      if (pubbtn) { pubbtn.disabled = false; pubbtn.textContent = "\uD83D\uDE80 发布修改"; }
+      if (r.mode === "published") {
+        global.BibCommon.startPublishCountdown(60, function () {
+          if (global.BibPub) {
+            global.BibPub.fetchPub().then(function () {
+              renderCloud();
+              flash("\u2705 页面已刷新，显示最新发布状态");
+            }).catch(function () {
+              flash("\u26A0\uFE0F 拉取最新数据失败，请手动刷新页面");
+            });
+          }
+        });
+      } else {
+        flash("已复制修改 JSON，请发到 WorkBuddy 项目对话让我代推上线");
+        renderCloud();
+      }
+    }).catch(function (e) {
+      if (pubbtn) { pubbtn.disabled = false; pubbtn.textContent = "\uD83D\uDE80 发布修改"; }
+      flash("发布失败：" + (e.message || e) + "（需填 GitHub 令牌，或复制发我代推）");
+    });
   }
 
   // 加载基础数据 → 拉取覆盖层 → 渲染标签云
