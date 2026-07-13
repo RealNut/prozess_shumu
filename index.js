@@ -132,8 +132,8 @@
     var n = Object.keys(ids).length;
     var b = document.getElementById("pending-badge");
     if (!b) return;
-    if (n > 0) { b.textContent = "待发布 " + n; b.className = "pending-badge owner-only show"; }
-    else { b.textContent = ""; b.className = "pending-badge owner-only"; }
+    if (n > 0) { b.textContent = "待发布 " + n; b.className = "pending-badge show"; }
+    else { b.textContent = ""; b.className = "pending-badge"; }
   }
 
   // 全局标签操作
