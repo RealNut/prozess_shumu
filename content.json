@@ -2,7 +2,7 @@
   "site": {
     "title": "德语法律丛书书目",
     "subtitle": "共 __TOTAL__ 册 · 本站收录 Mohr Siebeck 和 Duncker & Humblot 两个著名学术出版社的部分丛书书目。（根据站长兴趣挑选）",
-    "footer": "Generated bibliography · GitHub Pages · 书名参考译名由术语词典自动生成并优化",
+    "footer": "Generated bibliography · GitHub Pages",
     "update_note": "📅 书目信息更新至 2026 年 6 月",
     "note_box": "🔒 点右上「解锁编辑」输入口令后：每行「中文译名 / 年」旁的 ✎ 可改译文与出版年，「标签」旁的 🏷️ 可增删标签（改动先存本机）。点「🚀 发布修改」：已填 GitHub 令牌则直写仓库（所有人可见），否则复制修改 JSON 发到 WorkBuddy 项目对话代推。"
   },
