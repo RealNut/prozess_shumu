@@ -64,10 +64,16 @@
     tb.onclick = function () {
       if (!global.BibGate.require()) return;
       var v = prompt("GitHub fine-grained 令牌（仅本仓库 contents:write，存本机浏览器，不上传）：", global.BibPub.getToken());
-      if (v !== null) {
-        global.BibPub.setToken(v.trim());
-        flash(v.trim() ? "✅ 已保存令牌" : "已清除令牌");
-      }
+      if (v === null) return;
+      var tok = v.trim();
+      global.BibPub.setToken(tok);
+      if (!tok) { flash("已清除令牌"); return; }
+      // 保存后立即验证，尽早暴露无效令牌（而非等到发布才失败）
+      global.BibPub.verifyToken().then(function (r) {
+        if (r.ok) flash("✅ 已保存并验证令牌");
+        else if (r.reason === "invalid") flash("⚠️ 令牌无效，请检查权限（需本仓库 contents:write）");
+        else flash("✅ 已保存令牌（验证未连通，发布时将确认）");
+      });
     };
   }
 

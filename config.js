@@ -24,7 +24,7 @@
   var CONFIG = Object.freeze({
     /** 哈希盐值：与 PASS_HASH 配套。改口令时建议一并更换并重新计算哈希。 */
     SALT: "biblio_salt_v3_",
-    /** SHA-256(SALT + 口令) 的十六进制。当前对应口令 "lzh12580"。 */
+    /** SHA-256(SALT + 口令) 的十六进制。口令经 BibGate.hashFor 在本地浏览器派生，明文不存储于此；修改口令见下方「修改口令流程」。 */
     PASS_HASH: "c2f32950e27f886e49fcd121916802bf2d97bebfc3f93c6863fcb25f523ed815",
     /** 覆盖层数据文件所在的 GitHub 仓库（owner/repo）。 */
     REPO: "RealNut/prozess_shumu",

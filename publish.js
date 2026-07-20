@@ -48,6 +48,22 @@
       });
   }
 
+  /**
+   * 主动验证当前令牌是否有效（GET /user）。用于填写令牌后立即反馈，避免发布时才发现无效。
+   * @returns Promise<{ok:boolean, reason?:string}>  reason: "empty" | "invalid" | "status:N" | "network"
+   */
+  function verifyToken() {
+    var token = getToken();
+    if (!token) return Promise.resolve({ ok: false, reason: "empty" });
+    return fetch("https://api.github.com/user", {
+      headers: { Authorization: "Bearer " + token, Accept: "application/vnd.github+json" }
+    }).then(function (r) {
+      if (r.ok) return { ok: true };
+      if (r.status === 401) return { ok: false, reason: "invalid" };
+      return { ok: false, reason: "status:" + r.status };
+    }).catch(function () { return { ok: false, reason: "network" }; });
+  }
+
   // ---------- 显示值合并（pending > PUB > 基础默认）----------
   function mergedTags(id) { var lt = getLocal(LS_TAGS); if (id in lt) return lt[id]; if (id in PUB.tags) return PUB.tags[id]; return null; }
   function mergedTrans(id) { var lt = getLocal(LS_TRANS); if (id in lt) return lt[id]; if (id in PUB.trans) return PUB.trans[id]; return null; }
@@ -187,6 +203,7 @@
 
   global.BibPub = {
     getToken: getToken, setToken: setToken,
+    verifyToken: verifyToken,
     fetchPub: fetchPub,
     mergedTags: mergedTags, mergedTrans: mergedTrans, mergedYear: mergedYear,
     setTagPending: setTagPending, setTransPending: setTransPending, setYearPending: setYearPending,

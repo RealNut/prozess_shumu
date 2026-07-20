@@ -23,17 +23,31 @@
     return Object.keys(seen);
   }
 
-  /* ---------- 搜索 ---------- */
+  /* ---------- 搜索（debounce + 仅扫描关键列，避免 innerText 重排卡顿） ---------- */
+  function rowText(tr) {
+    // 仅取关键单元格文本，避免 innerText 触发布局重排（384 行表尤明显）
+    return [".vol", ".au", ".de", ".zh", ".yr", ".tags"].map(function (sel) {
+      var el = tr.querySelector(sel); return el ? el.textContent : "";
+    }).join(" ").toLowerCase();
+  }
   function doSearch() {
     var q = document.getElementById("q").value.trim().toLowerCase();
     var n = 0;
     document.querySelectorAll("tr[data-id]").forEach(function (tr) {
-      var ok = !q || tr.innerText.toLowerCase().includes(q);
+      var ok = !q || rowText(tr).includes(q);
       tr.style.display = ok ? "" : "none";
       if (ok) n++;
     });
     var c = document.getElementById("cnt");
     if (c) c.textContent = n;
+  }
+  function debounce(fn, ms) {
+    var h;
+    return function () {
+      var ctx = this, a = arguments;
+      clearTimeout(h);
+      h = setTimeout(function () { fn.apply(ctx, a); }, ms);
+    };
   }
 
   /* ---------- 合并渲染 ---------- */
@@ -75,7 +89,7 @@
     function restore() { cell.style.width = ""; cell.style.whiteSpace = ""; }
     function done(ok) {
       if (ok) { setter(tr.getAttribute("data-id"), inp.value); cell.classList.add("cell-saved"); flash("✓ 已保存（待发布）"); }
-      restore(); renderRow(tr); renderAll(); updatePending();
+      restore(); renderRow(tr); highlightPending(); updatePending();
       if (ok) setTimeout(function () { cell.classList.remove("cell-saved"); }, 800);
     }
     save.onclick = function () { done(true); };
@@ -350,7 +364,7 @@
 
   /* ---------- 初始化 ---------- */
   document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("q").addEventListener("input", doSearch);
+    document.getElementById("q").addEventListener("input", debounce(doSearch, 200));
     global.BibCommon.setupLockButton(
       function () { renderAll(); updatePending(); },   // onUnlock
       function () { renderAll(); }                      // onLock

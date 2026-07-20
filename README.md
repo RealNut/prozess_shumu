@@ -1,18 +1,25 @@
 # 法学书目库 / Legal Bibliography
 
-两个德语法学丛书系列的德中 / 德英对照书目，可在线查阅与分享。
+德语法学丛书的德中 / 德英对照书目，可在线查阅、检索与分享。覆盖 **2 家出版社、8 套丛书、共 2040 册**，书名均附中文译名（部分含出版年与标签）。
 
 ## 包含书目
 
-| 文件 | 丛书 | 卷数 | 说明 |
-|---|---|---|---|
-| `prozessrecht.html` | Duncker & Humblot · *Schriften zum Prozessrecht* | 315 | 诉讼法丛书（德英对照书目） |
-| `vverfr.html` | Mohr Siebeck · *Veröffentlichungen zum Verfahrensrecht (VVerfR)* | 234 | 程序法丛书（德中对照书目） |
+| 文件 | 出版社 | 丛书（德文标题） | 卷数 | 中文丛书名 |
+|---|---|---|---|---|
+| `prozessrecht.html` | Duncker & Humblot | *Schriften zum Prozessrecht* | 315 | 诉讼法丛书 |
+| `studien.html` | Duncker & Humblot | *Studien zum vergleichenden Privatrecht* | 35 | 比较私法研究 |
+| `buergerlichen.html` | Duncker & Humblot | *Schriften zum bürgerlichen Recht* | 614 | 民法丛书 |
+| `ssa.html` | Duncker & Humblot | *Schriften zum Sozial- und Arbeitsrecht* | 384 | 社会法与劳动法丛书 |
+| `vverfr.html` | Mohr Siebeck | *Veröffentlichungen zum Verfahrensrecht* | 234 | 程序法出版物 |
+| `juspriv.html` | Mohr Siebeck | *Jus Privatum* | 297 | 私法丛书 |
+| `btripr.html` | Mohr Siebeck | *Beiträge zum ausländischen und internationalen Privatrecht* | 133 | 外国与国际私法论丛 |
+| `barbr.html` | Mohr Siebeck | *Beiträge zum Arbeitsrecht* | 28 | 劳动法论丛 |
 
 ## 站点结构
 
-- `index.html` — 导航首页
-- `prozessrecht.html` / `vverfr.html` — 两套丛书对照表
+- `index.html` — 导航首页（按出版社分区卡片 + 跨全部丛书的标签云）
+- `prozessrecht.html` / `vverfr.html` / … 等 8 个丛书页 — 各套丛书对照表（卷号 / 作者 / 德文书名 / 中文译名 / 出版年 / 标签）
+- `guide-reader.html` — **读者指南**（公开页，介绍如何使用本站）
 - `.nojekyll` — 禁止 GitHub Pages 的 Jekyll 处理，保证 HTML 原样显示
 
 ## 本地预览
@@ -25,5 +32,15 @@ python3 -m http.server 8000
 
 ## 修订说明
 
-书目由脚本抓取出版社数据并自动生成对照译名，原始数据可重新生成后覆盖对应 HTML，
-再 `git commit` / `git push` 即可更新线上站点。
+书目由脚本抓取出版社数据并自动生成对照译名：
+
+- **基础 JSON**（各丛书 `*.json`）是「代码 / 默认值」，由 WorkBuddy 部署。
+- **网页端覆盖层**（`tags.json` / `trans_overrides.json` / `year_overrides.json`）是「用户数据」，由网页经 GitHub 令牌直接读写，部署脚本 `deploy.py` 永不推送它们 → 代码部署不会覆盖网页上的修改。
+- 渲染时合并显示：本地待发布（pending） > 已发布覆盖层（PUB） > 基础 JSON 默认值。
+
+如需改动基础书目数据，更新对应 `*.json` 后运行 `gen_pages.py` / `gen_index.py` 重新生成页面，再 `deploy.py` 部署即可。
+
+## 相关文档
+
+- 读者视角的站点使用说明见 **[`guide-reader.html`](guide-reader.html)**（线上：`/guide-reader.html`）。
+- 修改模式（解锁、译名 / 年份 / 标签编辑、发布流程）的内部指南见 `docs/修订指南.md`。
