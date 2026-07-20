@@ -2,6 +2,17 @@
 
 德语法学丛书的德中 / 德英对照书目，可在线查阅、检索与分享。覆盖 **2 家出版社、8 套丛书、共 2040 册**，书名均附中文译名（部分含出版年与标签）。
 
+## 🌐 书目网页（线上访问入口）
+
+本仓库对应的**可访问书目网页**已部署于 GitHub Pages，开箱即用，无需本地搭建：
+
+| 页面 | 地址 |
+|---|---|
+| **书目主页** | **https://realnut.github.io/prozess_shumu/** |
+| 读者指南 | https://realnut.github.io/prozess_shumu/guide-reader.html |
+
+> 站点为纯静态页面，所有书目数据随仓库更新自动重建发布。
+
 ## 包含书目
 
 | 文件 | 出版社 | 丛书（德文标题） | 卷数 | 中文丛书名 |
@@ -42,5 +53,6 @@ python3 -m http.server 8000
 
 ## 相关文档
 
-- 读者视角的站点使用说明见 **[`guide-reader.html`](guide-reader.html)**（线上：`/guide-reader.html`）。
+- **书目网页**：https://realnut.github.io/prozess_shumu/ （线上主站，含全部丛书与检索）
+- 读者视角的站点使用说明见 **[读者指南](https://realnut.github.io/prozess_shumu/guide-reader.html)**。
 - 修改模式（解锁、译名 / 年份 / 标签编辑、发布流程）的内部指南见 `docs/修订指南.md`。
