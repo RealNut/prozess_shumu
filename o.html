@@ -1,0 +1,153 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schriften zum Ostasiatischen Privatrecht</title>
+<style>
+ body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;margin:0;color:#1f2328;background:#fff} .page{max-width:1180px;margin:0 auto;padding:18px 18px 0;box-sizing:border-box}
+ h1{font-size:22px;margin-bottom:2px}
+ .sub0{color:#656d76;font-size:13px;margin-bottom:10px}
+ .note{background:#f6f8fa;border:1px solid #e1e4e8;border-radius:8px;padding:10px 14px;font-size:12.5px;color:#57606a;margin-bottom:12px}
+ .bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;flex:0 0 auto;background:#fff;padding:8px 0 10px;border-bottom:1px solid #eaecef}
+ .bar input[type=search]{flex:1;min-width:180px;padding:8px 12px;font-size:14px;border:1px solid #d0d7de;border-radius:8px}
+ .bar .cnt{color:#57606a;font-size:13px;white-space:nowrap}
+ .bar a.back{font-size:13px;color:#0969da;text-decoration:none}
+ .results{flex:0 0 auto;max-height:50vh;overflow:auto;margin:0 0 12px;border:1px solid #e1e4e8;border-radius:8px;background:#f6f8fa;padding:4px 6px;font-size:12.5px}
+ .results .rhead{position:sticky;top:0;background:#f6f8fa;font-weight:600;color:#57606a;padding:4px 6px 6px;border-bottom:1px solid #e1e4e8}
+ .results .ritem{padding:5px 6px;border-bottom:1px solid #eaecef;cursor:pointer;line-height:1.5}
+ .results .ritem:last-child{border-bottom:none}
+ .results .ritem:hover{background:#eef2ff}
+ .results .rvol{color:#0969da;font-weight:600;margin-right:6px}
+ .results .rzh{color:#1a7f37}
+ .table-scroll{overflow:auto;margin-bottom:12px;max-height:calc(100vh - 170px)}
+ table{width:100%;border-collapse:collapse;font-size:13px}
+ th,td{text-align:left;padding:7px 9px;border-bottom:1px solid #eaecef;vertical-align:top}
+ th{background:#f6f8fa;position:sticky;top:0;font-weight:600;z-index:1}
+ .vol{width:46px;color:#0969da;font-weight:600;white-space:nowrap}
+ .au{width:150px;color:#555}
+ .de{width:38%;white-space:normal}
+ .zh{width:30%}
+ .zhtext{color:#1a7f37}
+ .yr{width:66px;white-space:nowrap;color:#57606a}
+ .yrtext{color:#57606a}
+ .tags{width:170px}
+ .sub{display:block;color:#8a8f98;font-size:11.5px;margin-top:2px}
+ a{color:#0969da;text-decoration:none}
+ a:hover{text-decoration:underline}
+ .tag{display:inline-block;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:999px;padding:1px 8px;margin:2px 3px 2px 0;font-size:11.5px;cursor:pointer}
+ .tag:hover{background:#e0e7ff}
+ .tagdel{border:none;background:#fff;color:#cf222e;cursor:pointer;font-size:11px;margin-left:3px;padding:0 3px;line-height:1.5;border-radius:5px}
+ .tagdel:hover{background:#fee2e2}
+ .tagedit{border:none;background:#fff;color:#0969da;cursor:pointer;font-size:11px;margin-left:3px;padding:0 3px;line-height:1.5;border-radius:5px}
+ .tagedit:hover{background:#ddf4ff}
+ .tname{cursor:default}
+ .tag-edit-inp{padding:1px 5px;font-size:11.5px;border:1px solid #0969da;border-radius:4px;background:#fff;vertical-align:middle}
+ .tag-edit-save,.tag-edit-cancel{border:1px solid #d0d7de;background:#fff;cursor:pointer;font-size:11px;margin-left:2px;padding:0 4px;line-height:1.4;border-radius:5px;vertical-align:middle}
+ .tag-edit-save{color:#1a7f37;border-color:#1a7f37}
+ .tag-edit-save:hover{background:#dcfce7}
+ .tag-edit-cancel{color:#cf222e;border-color:#cf222e}
+ .tag-edit-cancel:hover{background:#fee2e2}
+ .owner-only{display:none}
+ body.unlocked .owner-only{display:inline-block}
+ .cellinput{width:95%;padding:4px 6px;font-size:13px;border:1px solid #0969da;border-radius:5px}
+ .cellsave,.cellcancel{margin-left:4px;cursor:pointer;border:1px solid #d0d7de;background:#fff;border-radius:5px;padding:2px 6px;font-size:12px}
+ .cellsave{color:#1a7f37;border-color:#1a7f37}
+ .editzh,.edityr,.edittags{cursor:pointer;border:1px solid #d0d7de;background:#f6f8fa;border-radius:6px;padding:1px 6px;font-size:12px;margin-left:4px}
+ .editzh:hover,.edityr:hover,.edittags:hover{background:#e0e7ff}
+.pending-badge{display:inline-block;background:#1a7f37;color:#fff;border-radius:999px;padding:2px 10px;font-size:11.5px;margin-left:6px;vertical-align:middle;opacity:0;transition:opacity .3s}
+#lockbtn.unlocked-btn{background:#fff5f5;border-color:#cf222e;color:#cf222e}
+.pending-badge.show{opacity:1;animation:pendingPulse 2s infinite}
+@keyframes pendingPulse{0%,100%{box-shadow:0 0 0 0 rgba(26,127,55,.4)}70%{box-shadow:0 0 0 6px rgba(26,127,55,0)}}
+.row-pending td:first-child{padding-left:5px}
+.row-pending td:first-child::before{content:"";display:inline-block;width:4px;height:16px;background:#1a7f37;border-radius:2px;margin-right:6px;vertical-align:middle;margin-top:-1px}
+.row-pending{background:#f0fdf4;transition:background .3s}
+.tag-pending{background:#dcfce7!important;border-color:#86efac!important;color:#166534!important}
+.cell-saved{animation:cellFlash .8s ease-out}
+@keyframes cellFlash{0%{background:#dcfce7}100%{background:transparent}}
+ .tageditor{position:fixed;right:16px;top:60px;width:280px;background:#fff;border:1px solid #d0d7de;border-radius:10px;box-shadow:0 8px 30px rgba(0,0,0,.15);padding:12px 14px;z-index:50;font-size:13px}
+ .te-title{font-weight:600;margin-bottom:8px}
+ .te-chip{display:inline-flex;align-items:center;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:999px;padding:2px 8px;margin:3px 4px 3px 0;font-size:12px}
+ .te-x{cursor:pointer;border:none;background:none;color:#6b7280;margin-left:4px;font-size:13px}
+ .te-name{cursor:pointer;border-bottom:1px dashed transparent}
+ .te-name:hover{border-bottom-color:#0969da;color:#0969da}
+ .te-edit-inp{padding:2px 6px;font-size:12px;border:1px solid #0969da;border-radius:5px;width:100px}
+ .te-edit-save,.te-edit-cancel{cursor:pointer;border:1px solid #d0d7de;background:#fff;border-radius:5px;padding:1px 5px;font-size:12px;margin-left:3px}
+ .te-edit-save{color:#1a7f37;border-color:#1a7f37}
+ .te-edit-cancel{color:#cf222e;border-color:#cf222e}
+ .te-add{margin-top:8px;display:flex;gap:6px}
+ .te-add input{flex:1;padding:5px 8px;border:1px solid #d0d7de;border-radius:6px}
+ .te-add button{border:1px solid #0969da;background:#0969da;color:#fff;border-radius:6px;padding:5px 10px;cursor:pointer}
+ .te-list{display:flex;flex-wrap:wrap;max-height:200px;overflow:auto;margin-bottom:4px}
+ .te-sug{margin-top:6px;border-top:1px dashed #e1e4e8;padding-top:6px;display:none}
+ .te-sug-hint{font-size:11px;color:#8a8f98;margin-bottom:4px}
+ .te-sug-item{display:inline-block;margin:2px 4px 2px 0;padding:2px 8px;font-size:12px;background:#fff7ed;border:1px solid #fed7aa;color:#c2410c;border-radius:999px;cursor:pointer}
+ .te-sug-item:hover{background:#ffedd5}
+ #lockbtn{position:fixed;right:16px;top:14px;z-index:40;display:inline-block;border:1px solid #d0d7de;background:#fff;border-radius:999px;padding:6px 12px;font-size:13px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+ #tokenbar{position:fixed;right:16px;top:54px;z-index:40;display:none;gap:6px;align-items:center;background:#fff;border:1px solid #d0d7de;border-radius:10px;padding:6px 8px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+ body.unlocked #tokenbar{display:flex}
+ #tokenbtn,#pubbtn{border:1px solid #0969da;background:#0969da;color:#fff;border-radius:6px;padding:5px 10px;font-size:12.5px;cursor:pointer}
+ .bib-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#1f2328;color:#fff;padding:10px 16px;border-radius:10px;font-size:13px;opacity:0;transition:opacity .3s;z-index:60;max-width:90vw}
+ /* 解锁弹窗 */
+ .bib-gate{position:fixed;inset:0;background:rgba(15,23,42,.55);display:flex;align-items:center;justify-content:center;z-index:100}
+ .bib-gate-box{background:#fff;border-radius:14px;padding:22px 24px;width:320px;max-width:90vw;box-shadow:0 12px 40px rgba(0,0,0,.25)}
+ .bib-gate-title{font-size:16px;font-weight:700;margin-bottom:4px}
+ .bib-gate-sub{color:#656d76;font-size:12.5px;margin-bottom:12px}
+ .bib-gate input{width:100%;padding:9px 12px;font-size:14px;border:1px solid #d0d7de;border-radius:8px;margin-bottom:10px;box-sizing:border-box}
+ .bib-gate button{width:100%;padding:9px;border:none;background:#0969da;color:#fff;border-radius:8px;font-size:14px;cursor:pointer}
+ .bib-gate-msg{color:#cf222e;font-size:12px;margin-top:8px;min-height:14px}
+ /* 响应式 */
+ @media(max-width:760px){
+   .page{max-width:100%;padding:14px 10px 0}
+   table{font-size:12px}
+   th,td{padding:6px 5px}
+   .au{width:90px}.de{width:auto}.zh{width:auto}.yr{width:48px}.tags{width:120px}
+   .bar input[type=search]{min-width:120px}
+   .tageditor{right:8px;left:8px;width:auto;top:auto;bottom:8px}
+ }
+ @media(max-width:480px){
+   .au{display:none}
+   th:nth-child(2){display:none}
+   .vol{width:34px}
+ }
+</style></head><body>
+<button id="lockbtn" type="button">🔒 解锁编辑</button>
+<div id="tokenbar">
+  <button id="tokenbtn" type="button">🔑 令牌</button>
+  <button id="pubbtn" type="button">🚀 发布修改</button>
+  <span id="pending-badge" class="pending-badge owner-only"></span>
+</div>
+<div class="page">
+<h1>Schriften zum Ostasiatischen Privatrecht</h1>
+<div class="sub0">Mohr Siebeck · 东亚私法丛书 · 共 13 册</div>
+<div class="note owner-only">字段：卷号 / 作者(编) / 书名（德文，可点跳转商品页）/ 中文译名 / 出版年。译名由术语词典自动生成，供快速浏览参考。<br>🔒 点右上「解锁编辑」输入口令后：每行「中文译名 / 年」旁的 ✎ 可改译文与出版年，「标签」旁的 🏷️ 可增删标签（改动先存本机）。点「🚀 发布修改」：已填 GitHub 令牌则直写仓库（所有人可见），否则复制修改 JSON 发到 WorkBuddy 项目对话代推。</div>
+<div class="bar">
+  <a class="back" href="index.html">← 返回首页</a>
+  <input id="q" type="search" placeholder="搜索书名 / 作者 / 标签…" aria-label="搜索书名、作者或标签">
+  <span class="cnt" aria-live="polite">找到 <b id="cnt">13</b> 条</span>
+</div>
+<div id="results" class="results" hidden aria-live="polite"></div>
+<div class="table-scroll">
+<table><thead><tr><th>卷</th><th>作者</th><th>书名（德文）</th><th>中文译名</th><th>年</th><th>标签</th></tr></thead>
+<tbody>
+<tr data-id="o:9783161551772" data-basezh="" data-baseyear="2017" data-basetags="[]"><td class="vol">1</td><td class="au">Yohei Nagata</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783161551772" target="_blank" rel="noopener">Die Verjährung im japanischen Zivilrecht und ihre Reform</a><br><span class="sub">Vor dem Hintergrund internationaler Entwicklungen</span></td><td class="zh"><span class="zhtext"></span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2017</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
+<tr data-id="o:9783161555732" data-basezh="" data-baseyear="2017" data-basetags="[]"><td class="vol">2</td><td class="au">Christopher Vogl</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783161555732" target="_blank" rel="noopener">Die Bürgschaft in Japan</a></td><td class="zh"><span class="zhtext"></span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2017</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
+<tr data-id="o:9783161569609" data-basezh="" data-baseyear="2019" data-basetags="[]"><td class="vol">3</td><td class="au">Yuanshi Bu</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783161569609" target="_blank" rel="noopener">Der Besondere Teil der chinesischen Zivilrechtskodifikation</a><br><span class="sub">Berichte zum ersten und zweiten offiziellen Entwurf</span></td><td class="zh"><span class="zhtext"></span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2019</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
+<tr data-id="o:9783161567926" data-basezh="" data-baseyear="2019" data-basetags="[]"><td class="vol">4</td><td class="au">Miyuki Ueda</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783161567926" target="_blank" rel="noopener">Die stille Gesellschaft in Japan</a><br><span class="sub">Eine vergleichende Analyse des Handels- und Steuerrechts aus Sicht des deutschen Rechts</span></td><td class="zh"><span class="zhtext"></span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2019</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
+<tr data-id="o:9783161590504" data-basezh="" data-baseyear="2020" data-basetags="[]"><td class="vol">5</td><td class="au">Nijie Wang</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783161590504" target="_blank" rel="noopener">Vertragliche Nebenpflichten im Kaufrecht</a><br><span class="sub">Eine rechtshistorische Untersuchung vom römischen über das deutsche zum chinesischen Recht</span></td><td class="zh"><span class="zhtext"></span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2020</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
+<tr data-id="o:9783161592003" data-basezh="" data-baseyear="2020" data-basetags="[]"><td class="vol">6</td><td class="au">Tobias Nogami Kamerling</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783161592003" target="_blank" rel="noopener">Der Squeeze-out im Japanischen Gesellschaftsrecht</a><br><span class="sub">Eine rechtsvergleichende Untersuchung</span></td><td class="zh"><span class="zhtext"></span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2020</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
+<tr data-id="o:9783161594960" data-basezh="" data-baseyear="2020" data-basetags="[]"><td class="vol">7</td><td class="au">Simon Dewes</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783161594960" target="_blank" rel="noopener">Das Verhältnis von Eltern und Kindern in der chinesischen Familienrechtsgesetzgebung</a><br><span class="sub">Vom Qing-Kodex zum Zivilgesetzbuch der Republik China</span></td><td class="zh"><span class="zhtext"></span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2020</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
+<tr data-id="o:9783161599743" data-basezh="" data-baseyear="2021" data-basetags="[]"><td class="vol">8</td><td class="au">Vincent Winkler</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783161599743" target="_blank" rel="noopener">Rechte an Daten im Zivilrecht</a><br><span class="sub">Eine vergleichende Betrachtung des Rechts der Bundesrepublik Deutschland und der Volksrepublik China</span></td><td class="zh"><span class="zhtext"></span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2021</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
+<tr data-id="o:9783161615771" data-basezh="" data-baseyear="2022" data-basetags="[]"><td class="vol">9</td><td class="au">Matthias Veicht</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783161615771" target="_blank" rel="noopener">Rezeption und Zivilrechtskodifikation in China seit 1900</a><br><span class="sub">Eine rechtsvergleichende Untersuchung unter besonderer Berücksichtigung der kaufrechtlichen Mängelhaftung in Deutschland, Festlandchina und Taiwan</span></td><td class="zh"><span class="zhtext"></span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2022</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
+<tr data-id="o:9783161617416" data-basezh="" data-baseyear="2022" data-basetags="[]"><td class="vol">10</td><td class="au">Yuanshi Bu</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783161617416" target="_blank" rel="noopener">System des Zivilrechts und Struktur der Kodifikation</a><br><span class="sub">Europäische und ostasiatische Perspektive</span></td><td class="zh"><span class="zhtext"></span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2022</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
+<tr data-id="o:9783161613098" data-basezh="" data-baseyear="2022" data-basetags="[]"><td class="vol">11</td><td class="au">Patrick Oei</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783161613098" target="_blank" rel="noopener">Rechtsmethodik in China</a><br><span class="sub">Darstellung und Analyse des wissenschaftlichen Diskurses unter besonderer Berücksichtigung des Zivilrechts</span></td><td class="zh"><span class="zhtext"></span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2022</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
+<tr data-id="o:9783161644559" data-basezh="" data-baseyear="2026" data-basetags="[]"><td class="vol">12</td><td class="au">Karen Klein, Özden Özkaya-Ferendeci, Henning Rosenau</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783161644559" target="_blank" rel="noopener">Rechtsstaatliche Anforderungen im Zivilprozess</a><br><span class="sub">Tagungsband des Türkisch-Japanisch-Deutschen Rechtssymposiums vom 23. bis 25. November 2023</span></td><td class="zh"><span class="zhtext"></span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2026</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
+<tr data-id="o:9783162006301" data-basezh="" data-baseyear="2026" data-basetags="[]"><td class="vol">13</td><td class="au">Julien Schickling</td><td class="de"><a href="https://www.mohrsiebeck.com/en/shop/9783162006301" target="_blank" rel="noopener">Schadensersatz bei Tötung</a><br><span class="sub">Eine rechtsvergleichende Untersuchung zum deutschen und japanischen Deliktsrecht</span></td><td class="zh"><span class="zhtext"></span><button class="editzh owner-only" type="button" title="修改中文译名">✎</button></td><td class="yr"><span class="yrtext">2026</span><button class="edityr owner-only" type="button" title="修改出版年">✎</button></td><td class="tags"><button class="edittags owner-only" type="button" title="编辑标签">🏷️</button></td></tr>
+</tbody></table>
+</div>
+<footer style="text-align:center;color:#8a8f98;font-size:12px;margin-top:24px;flex:0 0 auto"><a href="guide-reader.html" style="color:#0969da;text-decoration:none">📖 读者指南</a> · <a href="index.html" style="color:#0969da;text-decoration:none">返回首页</a> · <span>代码最后更新：2026-07-20 18:36</span></footer>
+</div>
+<script>window.BIB_ALL_TAGS=["不作为之诉", "代位权诉讼", "仲裁", "保全/假处分", "强制执行", "承认判决", "既判力", "欧盟法", "法官造法", "相反陈述", "破产程序", "第三人", "证据法", "诉讼契约", "诉讼担当", "诉讼目的", "诉讼系属", "释明", "集体诉讼", "非法证据排除"];</script>
+<script src="config.js?v=1784543810"></script>
+<script src="gate.js?v=1784543810"></script>
+<script src="publish.js?v=1784543810"></script>
+<script src="common.js?v=1784543810"></script>
+<script src="page.js?v=1784543810"></script>
+</body></html>

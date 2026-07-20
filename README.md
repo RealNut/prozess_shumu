@@ -1,6 +1,6 @@
 # 法学书目库 / Legal Bibliography
 
-德语法学丛书的德中 / 德英对照书目，可在线查阅、检索与分享。覆盖 **2 家出版社、8 套丛书、共 2040 册**，书名均附中文译名（部分含出版年与标签）。
+德语法学丛书的德中 / 德英对照书目，可在线查阅、检索与分享。覆盖 **2 家出版社、13 套丛书、共 2862 册**，书名均附中文译名（部分含出版年与标签）。
 
 ## 🌐 书目网页（线上访问入口）
 
@@ -16,7 +16,7 @@
 <!--UPDATED-->
 ## 🕒 最后更新
 
-- 代码最后更新：2026-07-20 15:06
+- 代码最后更新：2026-07-20 18:36
 <!--/UPDATED-->
 
 ## 包含书目
@@ -31,11 +31,16 @@
 | `juspriv.html` | Mohr Siebeck | *Jus Privatum* | 297 | 私法丛书 |
 | `btripr.html` | Mohr Siebeck | *Beiträge zum ausländischen und internationalen Privatrecht* | 133 | 外国与国际私法论丛 |
 | `barbr.html` | Mohr Siebeck | *Beiträge zum Arbeitsrecht* | 28 | 劳动法论丛 |
+| `r.html` | Mohr Siebeck | *Schriften zum Recht der Digitalisierung* | 60 | 数字化法丛书 |
+| `m.html` | Mohr Siebeck | *Materialien zum ausländischen und internationalen Privatrecht* | 39 | 外国与国际私法资料丛书 |
+| `o.html` | Mohr Siebeck | *Schriften zum Ostasiatischen Privatrecht* | 13 | 东亚私法丛书 |
+| `u.html` | Mohr Siebeck | *Studien zum Privatrecht* | 147 | 私法研究 |
+| `t.html` | Mohr Siebeck | *Studien zum ausländischen und internationalen Privatrecht* | 563 | 外国与国际私法研究 |
 
 ## 站点结构
 
 - `index.html` — 导航首页（按出版社分区卡片 + 跨全部丛书的标签云）
-- `prozessrecht.html` / `vverfr.html` / … 等 8 个丛书页 — 各套丛书对照表（卷号 / 作者 / 德文书名 / 中文译名 / 出版年 / 标签）
+- `prozessrecht.html` / `vverfr.html` / … 等 13 个丛书页 — 各套丛书对照表（卷号 / 作者 / 德文书名 / 中文译名 / 出版年 / 标签）
 - `guide-reader.html` — **读者指南**（公开页，介绍如何使用本站）
 - `.nojekyll` — 禁止 GitHub Pages 的 Jekyll 处理，保证 HTML 原样显示
 
