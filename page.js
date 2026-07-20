@@ -23,23 +23,49 @@
     return Object.keys(seen);
   }
 
-  /* ---------- 搜索（debounce + 仅扫描关键列，避免 innerText 重排卡顿） ---------- */
+  /* ---------- 搜索（结果面板 + 仅扫描关键列） ---------- */
   function rowText(tr) {
     // 仅取关键单元格文本，避免 innerText 触发布局重排（384 行表尤明显）
     return [".vol", ".au", ".de", ".zh", ".yr", ".tags"].map(function (sel) {
       var el = tr.querySelector(sel); return el ? el.textContent : "";
     }).join(" ").toLowerCase();
   }
+  /** 把表格内某行定位到可视区中央并高亮（供结果面板点击调用）。 */
+  function locateInTable(id) {
+    var tr = null, rows = document.querySelectorAll("tr[data-id]");
+    for (var i = 0; i < rows.length; i++) { if (rows[i].getAttribute("data-id") === id) { tr = rows[i]; break; } }
+    if (!tr) return;
+    tr.scrollIntoView({ block: "center" });
+    tr.classList.add("cell-saved");
+    setTimeout(function () { tr.classList.remove("cell-saved"); }, 800);
+  }
   function doSearch() {
     var q = document.getElementById("q").value.trim().toLowerCase();
-    var n = 0;
-    document.querySelectorAll("tr[data-id]").forEach(function (tr) {
-      var ok = !q || rowText(tr).includes(q);
-      tr.style.display = ok ? "" : "none";
-      if (ok) n++;
-    });
+    var resBox = document.getElementById("results");
     var c = document.getElementById("cnt");
-    if (c) c.textContent = n;
+    var all = document.querySelectorAll("tr[data-id]");
+    if (!q) {                       // 无查询：隐藏结果面板，计数显示全部
+      resBox.hidden = true; resBox.innerHTML = "";
+      if (c) c.textContent = all.length;
+      return;
+    }
+    // 表格始终保持完整（不被过滤），结果面板单独承载命中项，二者独立滚动。
+    var matches = [];
+    all.forEach(function (tr) { if (rowText(tr).indexOf(q) >= 0) matches.push(tr); });
+    var html = '<div class="rhead">🔍 找到 ' + matches.length + ' 条结果（点击定位到表格）</div>' + matches.map(function (tr) {
+      var vol = tr.querySelector(".vol").textContent;
+      var au = tr.querySelector(".au").textContent;
+      var de = tr.querySelector(".de").textContent;
+      var zhEl = tr.querySelector(".zhtext");
+      var zh = zhEl ? zhEl.textContent : "";
+      return '<div class="ritem" data-id="' + esc(tr.getAttribute("data-id")) + '">' +
+        '<span class="rvol">' + esc(vol) + '</span>' + esc(au) + ' · ' + esc(de) +
+        (zh ? ' <span class="rzh">(' + esc(zh) + ')</span>' : '') + '</div>';
+    }).join("");
+    resBox.innerHTML = html;
+    resBox.hidden = false;
+    resBox.scrollTop = 0;
+    if (c) c.textContent = matches.length;
   }
   function debounce(fn, ms) {
     var h;
@@ -278,7 +304,7 @@
     var tg = e.target.closest(".tag");
     if (tg) {
       document.getElementById("q").value = tg.getAttribute("data-t");
-      doSearch(); window.scrollTo({ top: 0, behavior: "smooth" });
+      doSearch();
       return;
     }
     // 编辑按钮
@@ -365,6 +391,10 @@
   /* ---------- 初始化 ---------- */
   document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("q").addEventListener("input", debounce(doSearch, 200));
+    document.getElementById("results").addEventListener("click", function (e) {
+      var item = e.target.closest(".ritem");
+      if (item) locateInTable(item.getAttribute("data-id"));
+    });
     global.BibCommon.setupLockButton(
       function () { renderAll(); updatePending(); },   // onUnlock
       function () { renderAll(); }                      // onLock
