@@ -74,7 +74,7 @@
       arr.forEach(function (b) {
         var s = (b.id || "").split(":")[0];
         var tags = (b.tags || []);
-        BOOKS[b.id] = { de: b.de, zh: b.zh, author: b.author, link: b.de_link, series: s, tags: tags };
+        BOOKS[b.id] = { de: b.de, zh: b.zh, author: b.author, link: b.de_link, series: s, tags: tags, vol: b.vol || "" };
         tags.forEach(function (t) { TAGCOUNT[t] = (TAGCOUNT[t] || 0) + 1; });
       });
     });
@@ -168,11 +168,15 @@
     var lt = global.BibPub.getLocal(global.BibPub.LS.tags);
     var ltr = global.BibPub.getLocal(global.BibPub.LS.trans);
     var ly = global.BibPub.getLocal(global.BibPub.LS.year);
+    var lh = global.BibPub.getLocal(global.BibPub.LS.hl);
+    var lfl = global.BibPub.getLocal(global.BibPub.LS.fl);
     var ids = {};
     for (var k in lt) ids[k] = 1;
     for (var k in ltr) ids[k] = 1;
     for (var k in ly) ids[k] = 1;
+    for (var k in lh) ids[k] = 1;
     var n = Object.keys(ids).length;
+    if (lfl && lfl.length) n += 1; // 书单为整体草稿，计为 1 项待发布
     var b = document.getElementById("pending-badge");
     if (!b) return;
     if (n > 0) { b.textContent = "待发布 " + n; b.className = "pending-badge show"; }
@@ -261,6 +265,195 @@
   }
   function countTag(tag) { var n = 0; var m = buildDisplayedTagMap(); for (var id in m) if (m[id].includes(tag)) n++; return n; }
 
+  // ---------- 站长推荐书单（覆盖层 featured_lists.json）----------
+  /** 某书是否被标记民事诉讼（用于推荐区块同步上色）。 */
+  function isCivil(id) {
+    var hl = global.BibPub ? global.BibPub.mergedHighlights(id) : null;
+    return !!(hl && hl.indexOf("civil") >= 0);
+  }
+  /** 当前应显示的书单数组：pending(整段草稿) > PUB > 空。 */
+  function getFeatured() { return (global.BibPub && global.BibPub.mergedFeatured) ? global.BibPub.mergedFeatured() : []; }
+  /** 写入书单草稿并刷新区块/管理面板/待发布计数。 */
+  function saveFeatured(arr) {
+    global.BibPub.setFeaturedPending(arr);
+    renderFeatured(); renderManage(); updatePending();
+  }
+  /** 生成书单内单本书的 ritem HTML（含系列徽章、外链、民事诉讼上色）。 */
+  function bookRitem(id) {
+    var b = BOOKS[id] || {};
+    var meta = (typeof META !== "undefined" && META[b.series]) || {};
+    var pc = PUBCOLOR[meta.pub] || { bg: "#eee", c: "#333", label: "" };
+    return '<div class="ritem' + (isCivil(id) ? " hl-civil" : "") + '" data-id="' + esc(id) + '">' +
+      '<span class="badge" style="background:' + pc.bg + ";color:" + pc.c + '">' + esc(meta.short || b.series) + '</span>' +
+      '<a href="' + esc(b.link || meta.html || "#") + '" target="_blank" rel="noopener">' + esc(b.de || id) + '</a>' +
+      '<span class="zh">' + esc(b.zh || "") + '</span>' +
+      '<span class="au">' + esc(b.author || "") + '</span>' +
+      '</div>';
+  }
+
+  /** 渲染首页「⭐ 站长推荐」区块：读者仅见 showOnHome 的书单；owner 额外预览隐藏书单。 */
+  function renderFeatured() {
+    var sec = document.getElementById("featured-sec");
+    if (!sec) return;
+    var lists = getFeatured();
+    var unlocked = document.body.classList.contains("unlocked");
+    var visible = lists.filter(function (l) { return unlocked || l.showOnHome; });
+    var html = '<div class="sec-title">⭐ 站长推荐' +
+      (unlocked ? ' <button id="fl-toggle" class="owner-only fl-toggle" type="button">📚 管理书单</button>' : '') +
+      '</div>';
+    if (!visible.length) {
+      html += '<div class="empty">' + (unlocked ? '还没有书单。点「📚 管理书单」新建并检索添加图书。' : '站长暂未推荐书单。') + '</div>';
+    } else {
+      html += visible.map(function (l) {
+        var hiddenTag = (unlocked && !l.showOnHome) ? ' <span class="fl-hidden">🙈 首页隐藏</span>' : '';
+        var books = (l.books || []).map(bookRitem).join("");
+        return '<div class="fl-list"><div class="fl-name">' + esc(l.name || "未命名书单") + hiddenTag + '</div>' +
+          (books || '<div class="empty">该书单还没有书。</div>') + '</div>';
+      }).join("");
+    }
+    sec.innerHTML = html;
+    if (unlocked) {
+      var t = document.getElementById("fl-toggle");
+      if (t) t.onclick = function () { toggleManage(); };
+    }
+  }
+
+  /** 书单管理面板：新建/改名/首页展示开关/检索添加/移除/删除。仅 owner 可打开（按钮 owner-only）。 */
+  function renderManage() {
+    var panel = document.getElementById("fl-manage");
+    if (!panel || panel.style.display === "none") return;
+    var lists = getFeatured();
+    var html = '<div class="flm-head">📚 书单管理' +
+      ' <button id="fl-new" type="button">＋ 新建书单</button>' +
+      ' <button id="fl-close" type="button">关闭</button></div>';
+    if (!lists.length) html += '<div class="empty">还没有书单。点上方「＋ 新建书单」开始。</div>';
+    html += lists.map(function (l) {
+      var books = (l.books || []).map(function (id) {
+        var b = BOOKS[id] || {};
+        return '<span class="flm-book" data-id="' + esc(id) + '">' + esc(b.de || id) +
+          (b.zh ? '（' + esc(b.zh) + '）' : '') +
+          ' <button class="flm-rm" type="button" title="移出书单">×</button></span>';
+      }).join("");
+      return '<div class="flm-list" data-id="' + esc(l.id) + '">' +
+        '<div class="flm-row">' +
+        '<input class="flm-name" value="' + esc(l.name || "") + '" aria-label="书单名称">' +
+        '<label class="flm-show"><input type="checkbox" ' + (l.showOnHome ? "checked" : "") + '> 在首页展示</label>' +
+        '<button class="flm-del" type="button" title="删除书单">🗑</button>' +
+        '</div>' +
+        '<div class="flm-add"><input class="flm-search" placeholder="检索库内图书（书名/译名/作者/卷号）添加…" aria-label="检索添加图书"><div class="flm-results"></div></div>' +
+        '<div class="flm-books">' + (books || '<span class="empty">还没有书。</span>') + '</div>' +
+        '</div>';
+    }).join("");
+    panel.innerHTML = html;
+    var newBtn = document.getElementById("fl-new");
+    if (newBtn) newBtn.onclick = function () {
+      var arr = getFeatured().slice();
+      arr.push({ id: "fl_" + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), name: "新书单", books: [], showOnHome: false });
+      saveFeatured(arr);
+      // 重开面板以显示新条目
+      panel.style.display = "block";
+      renderManage();
+    };
+    var closeBtn = document.getElementById("fl-close");
+    if (closeBtn) closeBtn.onclick = function () { panel.style.display = "none"; };
+  }
+
+  /** 打开/关闭管理面板。 */
+  function toggleManage() {
+    if (!global.BibGate.require()) return;
+    var panel = document.getElementById("fl-manage");
+    if (!panel) return;
+    if (panel.style.display === "block") { panel.style.display = "none"; return; }
+    panel.style.display = "block";
+    renderManage();
+  }
+
+  /** 管理面板内事件委托：改名/开关/删除/移除/检索添加。 */
+  function bindManage() {
+    var panel = document.getElementById("fl-manage");
+    if (!panel) return;
+    panel.addEventListener("click", function (e) {
+      var listEl = e.target.closest(".flm-list");
+      if (!listEl) return;
+      var lid = listEl.getAttribute("data-id");
+      var arr = getFeatured().slice();
+      var li = -1;
+      for (var i = 0; i < arr.length; i++) if (arr[i].id === lid) { li = i; break; }
+      if (li < 0) return;
+      var rm = e.target.closest(".flm-rm");
+      if (rm) {
+        e.stopPropagation();
+        var bid = rm.parentElement.getAttribute("data-id");
+        arr[li].books = (arr[li].books || []).filter(function (x) { return x !== bid; });
+        saveFeatured(arr); panel.style.display = "block"; renderManage();
+        return;
+      }
+      var dl = e.target.closest(".flm-del");
+      if (dl) {
+        e.stopPropagation();
+        if (!confirm("确定删除书单「" + (arr[li].name || "") + "」？此操作不可撤销。")) return;
+        arr.splice(li, 1);
+        saveFeatured(arr); panel.style.display = "block"; renderManage();
+        return;
+      }
+      var rb = e.target.closest(".flm-res-item");
+      if (rb) {
+        e.stopPropagation();
+        var addId = rb.getAttribute("data-id");
+        if (arr[li].books.indexOf(addId) < 0) arr[li].books.push(addId);
+        saveFeatured(arr); panel.style.display = "block"; renderManage();
+        return;
+      }
+    });
+    // 改写（改名/开关）失焦即存；检索仅在结果区局部刷新，不整面板重渲染以保留焦点
+    panel.addEventListener("change", function (e) {
+      var listEl = e.target.closest(".flm-list");
+      if (!listEl) return;
+      var lid = listEl.getAttribute("data-id");
+      var arr = getFeatured().slice();
+      var li = -1;
+      for (var i = 0; i < arr.length; i++) if (arr[i].id === lid) { li = i; break; }
+      if (li < 0) return;
+      if (e.target.classList.contains("flm-name")) {
+        arr[li].name = e.target.value.trim() || "未命名书单";
+        global.BibPub.setFeaturedPending(arr); renderFeatured(); updatePending();
+      } else if (e.target.classList.contains("flm-show")) {
+        arr[li].showOnHome = e.target.checked;
+        global.BibPub.setFeaturedPending(arr); renderFeatured(); updatePending();
+      }
+    });
+    panel.addEventListener("input", function (e) {
+      if (!e.target.classList.contains("flm-search")) return;
+      var listEl = e.target.closest(".flm-list");
+      if (!listEl) return;
+      var lid = listEl.getAttribute("data-id");
+      var arr = getFeatured();
+      var cur = null;
+      for (var i = 0; i < arr.length; i++) if (arr[i].id === lid) { cur = arr[i]; break; }
+      var have = (cur && cur.books) || [];
+      var q = e.target.value.trim().toLowerCase();
+      var box = listEl.querySelector(".flm-results");
+      if (!box) return;
+      if (!q) { box.style.display = "none"; box.innerHTML = ""; return; }
+      var hits = [];
+      for (var id in BOOKS) {
+        if (have.indexOf(id) >= 0) continue;
+        var b = BOOKS[id];
+        var hay = (b.de + " " + (b.zh || "") + " " + (b.author || "") + " " + (b.vol || "")).toLowerCase();
+        if (hay.indexOf(q) >= 0) hits.push(id);
+        if (hits.length >= 20) break;
+      }
+      if (!hits.length) { box.style.display = "block"; box.innerHTML = '<div class="empty">库内无匹配图书。</div>'; return; }
+      box.style.display = "block";
+      box.innerHTML = hits.map(function (id) {
+        var b = BOOKS[id] || {};
+        return '<div class="flm-res-item" data-id="' + esc(id) + '">' + esc(b.de || id) +
+          (b.zh ? ' <span class="zh">(' + esc(b.zh) + ')</span>' : '') +
+          (b.author ? ' · ' + esc(b.author) : '') + '</div>';
+      }).join("");
+    });
+  }
+
   // 发布
   function doPublish() {
     if (!global.BibGate.require()) return;
@@ -276,6 +469,7 @@
               if (currentTag) showTag(currentTag);
               updatePending();
               syncEditMode(); // 发布后按新顺序重排卡片 + 刷新标签云顺序
+              renderFeatured(); // 发布后刷新推荐书单（含读者可见性）
               flash("\u2705 页面已刷新，显示最新发布状态");
             }).catch(function () {
               flash("\u26A0\uFE0F 拉取最新数据失败，请手动刷新页面");
@@ -293,17 +487,19 @@
     });
   }
 
-  // 加载基础数据 → 拉取覆盖层 → 渲染标签云
+  // 加载基础数据 → 拉取覆盖层 → 渲染标签云 + 推荐书单
   Promise.all(loads)
     .then(function () { if (global.BibPub) return global.BibPub.fetchPub().then(function () {}).catch(function () {}); })
-    .then(function () { renderCloud(); setupCardDrag(); syncEditMode(); })
+    .then(function () { renderCloud(); setupCardDrag(); syncEditMode(); renderFeatured(); bindManage(); })
     .catch(function (e) {
       document.getElementById("cloud").innerHTML = '<span class="empty">数据加载失败（请用 https 链接打开，或本地起服务器）。</span>';
       console.warn(e);
     });
 
   document.addEventListener("DOMContentLoaded", function () {
-    global.BibCommon.setupLockButton(function () { renderCloud(); updatePending(); syncEditMode(); }, function () { renderCloud(); updatePending(); syncEditMode(); });
+    global.BibCommon.setupLockButton(
+      function () { renderCloud(); updatePending(); syncEditMode(); renderFeatured(); bindManage(); },
+      function () { renderCloud(); updatePending(); syncEditMode(); renderFeatured(); var p = document.getElementById("fl-manage"); if (p) p.style.display = "none"; });
     global.BibCommon.setupTokenButton();
     global.BibCommon.setupPublishButton(doPublish);
   });

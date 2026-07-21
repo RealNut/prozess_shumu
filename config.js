@@ -31,7 +31,7 @@
     /** 覆盖层数据文件所在分支（站点也由该分支经 Pages 直接提供）。 */
     BRANCH: "main",
     /** 网页端允许直写的覆盖层文件白名单（publish.js 据此限制可写路径）。 */
-    OVERRIDE_FILES: ["tags.json", "trans_overrides.json", "year_overrides.json", "series_order.json"]
+    OVERRIDE_FILES: ["tags.json", "trans_overrides.json", "year_overrides.json", "series_order.json", "highlights.json", "featured_lists.json"]
   });
 
   global.BIB_CONFIG = CONFIG;

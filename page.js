@@ -99,7 +99,7 @@
     }).join("") + " ";
     if (ed) tc.appendChild(ed);
   }
-  function renderAll() { document.querySelectorAll("tr[data-id]").forEach(renderRow); highlightPending(); }
+  function renderAll() { document.querySelectorAll("tr[data-id]").forEach(renderRow); highlightPending(); applyHighlights(); }
 
   /* ---------- 编辑：译名 / 年份 ---------- */
   function editText(tr, sel, getter, setter) {
@@ -294,6 +294,9 @@
 
   /* ---------- 事件委托 ---------- */
   document.addEventListener("click", function (e) {
+    // 行内 🟢 民事诉讼标记开关（优先于其它行内控件）
+    var civ = e.target.closest(".civilbtn");
+    if (civ) { e.stopPropagation(); toggleCivil(civ.closest("tr")); return; }
     // 行内 ✎ 修改标签（优先于删除和搜索）
     var ed = e.target.closest(".tagedit");
     if (ed) { e.stopPropagation(); editRowTag(ed.closest(".tag"), ed.closest("tr")); return; }
@@ -322,7 +325,12 @@
     var lt = global.BibPub.getLocal(global.BibPub.LS.tags);
     var ltr = global.BibPub.getLocal(global.BibPub.LS.trans);
     var ly = global.BibPub.getLocal(global.BibPub.LS.year);
-    return (id in lt) || (id in ltr) || (id in ly);
+    return (id in lt) || (id in ltr) || (id in ly) || hasPendingHL(id);
+  }
+  function hasPendingHL(id) {
+    if (!global.BibPub) return false;
+    var lh = global.BibPub.getLocal(global.BibPub.LS.hl);
+    return (id in lh) && lh[id] && lh[id].length;
   }
   function hasPendingTags(id) {
     if (!global.BibPub) return false;
@@ -341,6 +349,38 @@
     });
   }
 
+  /* ---------- 民事诉讼高亮（独立标记，与标签解耦） ---------- */
+  /** 给带 civil 标记的行/搜索结果项上浅绿底，并同步行内标注按钮的按下态。
+   *  读取覆盖层(mergedHighlights)，故读者模式(已发布)下同样可见。 */
+  function applyHighlights() {
+    if (!global.BibPub) return;
+    document.querySelectorAll("tr[data-id]").forEach(function (tr) {
+      var id = tr.getAttribute("data-id");
+      var hl = global.BibPub.mergedHighlights(id);
+      var on = !!(hl && hl.indexOf("civil") >= 0);
+      tr.classList.toggle("hl-civil", on);
+      var btn = tr.querySelector(".civilbtn");
+      if (btn) btn.classList.toggle("on", on);
+    });
+    document.querySelectorAll("#results .ritem[data-id]").forEach(function (el) {
+      var id = el.getAttribute("data-id");
+      var hl = global.BibPub.mergedHighlights(id);
+      el.classList.toggle("hl-civil", !!(hl && hl.indexOf("civil") >= 0));
+    });
+  }
+
+  /** 切换某书的民事诉讼标记（写入 pending，不立即发布）。 */
+  function toggleCivil(tr) {
+    if (!global.BibGate.require()) return;
+    var id = tr.getAttribute("data-id");
+    var cur = global.BibPub.mergedHighlights(id) || [];
+    var has = cur.indexOf("civil") >= 0;
+    var next = has ? cur.filter(function (x) { return x !== "civil"; }) : cur.concat(["civil"]);
+    global.BibPub.setHighlightPending(id, next);
+    applyHighlights(); updatePending();
+    flash(has ? "已取消民事诉讼相关标记（待发布）" : "✓ 已标记为民事诉讼相关（待发布）");
+  }
+
   /* ---------- 待发布计数 ---------- */
   function updatePending() {
     var n = 0;
@@ -348,9 +388,11 @@
       var t = global.BibPub.getLocal(global.BibPub.LS.tags);
       var r = global.BibPub.getLocal(global.BibPub.LS.trans);
       var y = global.BibPub.getLocal(global.BibPub.LS.year);
+      var h = global.BibPub.getLocal(global.BibPub.LS.hl);
       for (var k in t) if (t[k] && t[k].length) n++;
       for (var k in r) if (r[k]) n++;
       for (var k in y) if (y[k]) n++;
+      for (var k in h) if (h[k] && h[k].length) n++;
     }
     var b = document.getElementById("pending-badge");
     if (!b) return;

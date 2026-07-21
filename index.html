@@ -39,6 +39,41 @@
  .ritem-pending{background:#f0fdf4;border-left:3px solid #1a7f37;padding-left:8px}
  .results-hint{color:#8a8f98;font-size:12px;margin:-4px 0 8px;display:none}
  body.unlocked .results-hint{display:block}
+ /* 站长推荐区块 + 书单管理面板 */
+ .featured-sec{margin-top:4px}
+ .fl-list{margin:10px 0 18px;padding:10px 14px;background:#fff;border:1px solid #e1e4e8;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+ .fl-name{font-size:15px;font-weight:600;margin-bottom:6px}
+ .fl-hidden{font-size:11px;color:#8a8f98;margin-left:6px;font-weight:400}
+ .fl-list .ritem{border-bottom:1px solid #eaecef;padding:7px 4px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+ .fl-list .ritem:last-child{border-bottom:none}
+ .fl-list .ritem .badge{font-size:11px;font-weight:700;padding:1px 7px;border-radius:5px;white-space:nowrap}
+ .fl-list .ritem a{color:#0969da;text-decoration:none;font-weight:600}
+ .fl-list .ritem .zh{color:#1a7f37;font-size:12.5px}
+ .fl-list .ritem .au{color:#656d76;font-size:12px}
+ .fl-toggle{margin-left:10px;border:1px solid #d0d7de;background:#f6f8fa;border-radius:6px;padding:2px 10px;font-size:12.5px;cursor:pointer;vertical-align:middle}
+ .fl-toggle:hover{background:#e0e7ff}
+ .fl-manage{margin:10px 0 20px;padding:14px 16px;background:#f6f8fa;border:1px solid #e1e4e8;border-radius:12px}
+ .flm-head{font-weight:600;margin-bottom:10px;display:flex;gap:8px;align-items:center}
+ .flm-head button{border:1px solid #0969da;background:#0969da;color:#fff;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:12.5px}
+ .flm-head #fl-close{background:#fff;color:#57606a;border-color:#d0d7de}
+ .flm-list{border-top:1px solid #e1e4e8;padding:10px 0}
+ .flm-list:first-of-type{border-top:none}
+ .flm-row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+ .flm-name{flex:1;min-width:160px;padding:5px 8px;font-size:13px;border:1px solid #d0d7de;border-radius:6px}
+ .flm-show{font-size:12.5px;color:#57606a;display:flex;align-items:center;gap:4px;cursor:pointer}
+ .flm-del{border:none;background:#fee2e2;color:#cf222e;border-radius:6px;cursor:pointer;padding:4px 8px;font-size:13px}
+ .flm-del:hover{background:#cf222e;color:#fff}
+ .flm-add{margin-bottom:6px}
+ .flm-search{width:100%;padding:6px 10px;font-size:13px;border:1px solid #d0d7de;border-radius:6px;box-sizing:border-box}
+ .flm-results{margin-top:4px;max-height:180px;overflow:auto}
+ .flm-results[style*="display: none"]{display:none}
+ .flm-res-item{padding:6px 8px;border:1px solid #e1e4e8;border-radius:6px;margin:3px 0;background:#fff;cursor:pointer;font-size:12.5px}
+ .flm-res-item:hover{background:#eef2ff}
+ .flm-res-item .zh{color:#1a7f37;font-size:12px}
+ .flm-books{display:flex;flex-wrap:wrap;gap:6px}
+ .flm-book{display:inline-flex;align-items:center;background:#eef2ff;color:#3730a3;border:1px solid #c7d2fe;border-radius:999px;padding:2px 8px;font-size:12px}
+ .flm-book .flm-rm{border:none;background:none;color:#6b7280;cursor:pointer;margin-left:4px;font-size:13px;line-height:1}
+ .flm-book .flm-rm:hover{color:#cf222e}
  /* owner-only 通用隐藏规则（兜底 — 放在 rtag-del/pending-badge 之前保持特异性正确） */
  .owner-only{display:none}
  body.unlocked .owner-only{display:initial!important}
@@ -97,16 +132,19 @@
 <a class="card" style="border-top:3px solid #0969da" href="ssa.html" data-prefix="a"><span class="card-grip owner-only" title="拖拽调整顺序" aria-hidden="true">&#8942;&#8942;</span><div class="n" style="color:#0969da">384</div><div class="t">Schriften zum Sozial- und Arbeitsrecht <span class="ab">(SSA)</span></div><div class="d">Duncker &amp; Humblot · 社会法与劳动法丛书</div></a>
 </div>
 
+<div id="featured-sec" class="featured-sec"></div>
+<div id="fl-manage" class="fl-manage" style="display:none"></div>
+
 <div class="sec-title">🏷️ 标签云（点击查看含该标签的书）</div>
 <div class="cloud" id="cloud"><span class="empty">加载中…</span></div>
 <div class="results" id="results"></div>
 
-<footer>Generated bibliography · GitHub Pages <span class="sep">·</span> <a href="guide-reader.html" style="color:#0969da;text-decoration:none">📖 读者指南</a> <span class="sep">·</span> <span>代码最后更新：2026-07-20 18:36</span></footer>
+<footer>Generated bibliography · GitHub Pages <span class="sep">·</span> <a href="guide-reader.html" style="color:#0969da;text-decoration:none">📖 读者指南</a> <span class="sep">·</span> <span>代码最后更新：2026-07-21 22:51</span></footer>
 
 <script>const META={"p": {"name": "Schriften zum Prozessrecht", "pub": "dh", "html": "prozessrecht.html", "short": "D&H·SP"}, "s": {"name": "Studien zum vergleichenden Privatrecht", "pub": "dh", "html": "studien.html", "short": "D&H·SvP"}, "c": {"name": "Schriften zum bürgerlichen Recht", "pub": "dh", "html": "buergerlichen.html", "short": "D&H·SbR"}, "v": {"name": "Veröffentlichungen zum Verfahrensrecht", "pub": "mohr", "html": "vverfr.html", "short": "Mohr·VVerfR"}, "j": {"name": "Jus Privatum", "pub": "mohr", "html": "juspriv.html", "short": "Mohr·JusPriv"}, "i": {"name": "Beiträge zum ausländischen und internationalen Privatrecht", "pub": "mohr", "html": "btripr.html", "short": "Mohr·BtrIPR"}, "b": {"name": "Beiträge zum Arbeitsrecht", "pub": "mohr", "html": "barbr.html", "short": "Mohr·BArbR"}, "r": {"name": "Schriften zum Recht der Digitalisierung", "pub": "mohr", "html": "r.html", "short": "Mohr·SRDi"}, "m": {"name": "Materialien zum ausländischen und internationalen Privatrecht", "pub": "mohr", "html": "m.html", "short": "Mohr·MatIPR"}, "o": {"name": "Schriften zum Ostasiatischen Privatrecht", "pub": "mohr", "html": "o.html", "short": "Mohr·OstAPrivR"}, "u": {"name": "Studien zum Privatrecht", "pub": "mohr", "html": "u.html", "short": "Mohr·StudPriv"}, "t": {"name": "Studien zum ausländischen und internationalen Privatrecht", "pub": "mohr", "html": "t.html", "short": "Mohr·StudIPR"}, "a": {"name": "Schriften zum Sozial- und Arbeitsrecht", "pub": "dh", "html": "ssa.html", "short": "D&H·SSA"}};const FILES={"p": "prozessrecht.json", "s": "studien.json", "c": "buergerlichen.json", "v": "vverfr.json", "j": "juspriv.json", "i": "btripr.json", "b": "barbr.json", "r": "r.json", "m": "m.json", "o": "o.json", "u": "u.json", "t": "t.json", "a": "ssa.json"};const DEFAULT_ORDER=["v", "j", "i", "b", "r", "m", "o", "u", "t", "p", "s", "c", "a"];</script>
-<script src="config.js?v=1784546737"></script>
-<script src="gate.js?v=1784546737"></script>
-<script src="publish.js?v=1784546737"></script>
-<script src="common.js?v=1784546737"></script>
-<script src="index.js?v=1784546737"></script>
+<script src="config.js?v=1784645492"></script>
+<script src="gate.js?v=1784645492"></script>
+<script src="publish.js?v=1784645492"></script>
+<script src="common.js?v=1784645492"></script>
+<script src="index.js?v=1784645492"></script>
 </body></html>
