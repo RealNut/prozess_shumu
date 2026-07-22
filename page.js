@@ -89,6 +89,7 @@
     var yr = tr.querySelector(".yrtext"); if (yr) yr.textContent = dispYear(tr);
     var tc = tr.querySelector(".tags"); if (!tc) return;
     var ed = tc.querySelector(".edittags");
+    var civ = tc.querySelector(".civilbtn");   // 保留民事诉讼标注按钮，避免被 innerHTML 重建冲掉
     var id = tr.getAttribute("data-id");
     var pendingTags = hasPendingTags(id);
     // 每个标签 chip 内嵌「✎」编辑和「×」删除按钮（仅 owner 解锁后可见）。
@@ -98,6 +99,7 @@
         '<button class="tagdel owner-only" type="button" title="删除该标签">\u00D7</button></span>';
     }).join("") + " ";
     if (ed) tc.appendChild(ed);
+    if (civ) tc.appendChild(civ);       // 重建后把 🟢 标注按钮加回（保持其 owner-only / .on 状态）
   }
   function renderAll() { document.querySelectorAll("tr[data-id]").forEach(renderRow); highlightPending(); applyHighlights(); }
 
