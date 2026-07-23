@@ -22,7 +22,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0102/html",
           "pages": "3-24",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "民事司法的未来"
         },
         {
           "title": "Zum Verzicht auf die Streitgegenstandslehre im Sinne einer Rückbesinnung auf die materiellrechtlichen und prozessualen Ausgangsfragen",
@@ -30,7 +31,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0103/html",
           "pages": "25-56",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "论放弃诉讼标的理论——回归实体法与程序法的基本问题"
         },
         {
           "title": "Das Vortragsverwertungsverbot im Zivilprozess und im FamFG-Verfahren",
@@ -38,7 +40,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0104/html",
           "pages": "57-88",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "民事诉讼与家事非讼程序中的陈述利用禁止"
         },
         {
           "title": "Das Prinzip der Rechtskraft und seine Mythen",
@@ -46,7 +49,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0105/html",
           "pages": "89-108",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "既判力原则及其迷思"
         },
         {
           "title": "Mauro Cappelletti (Chief Editor): International Encyclopedia of Comparative Law, Volume XVI: Civil Procedure",
@@ -54,7 +58,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0106/html",
           "pages": "109-119",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Mauro Cappelletti（主编）：《国际比较法百科全书》第十六卷：民事诉讼法"
         },
         {
           "title": "Lucas F. Flöther: Handbuch zum Konzerninsolvenzrecht",
@@ -62,7 +67,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0107/html",
           "pages": "120-121",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Lucas F. Flöther：《康采恩破产法手册》"
         },
         {
           "title": "Claudia M. Mordasini-Rohner: Gerichtliche Fragepflicht und Untersuchungsmaxime nach der Schweizerischen Zivilprozessordnung",
@@ -70,7 +76,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0108/html",
           "pages": "121-125",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Claudia M. Mordasini-Rohner：《瑞士民事诉讼法下的法院询问义务与职权探知主义》"
         },
         {
           "title": "Hannes Wais: Der Europäische Erfüllungsgerichtsstand für Dienstleistungsverträge – Zur Auslegung des Art. 5 Nr. 1 lit. b 2. Spiegelstrich EuGVO",
@@ -78,7 +85,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0109/html",
           "pages": "125-132",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Hannes Wais：《服务合同的欧洲履行地管辖——论〈布鲁塞尔条例〉第5条第1款b项第二目之解释》"
         }
       ]
     },
@@ -96,7 +104,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0202/html",
           "pages": "133-152",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "作为法律概念与规制问题的主张负担"
         },
         {
           "title": "Recht auf Beweis und Beibringungsgrundsatz im Zivilprozess",
@@ -104,7 +113,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0203/html",
           "pages": "153-186",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "民事诉讼中的证明权与当事人提出原则"
         },
         {
           "title": "Die Europäisierung des Zwangsvollstreckungsrechts im Bereich der vorläufigen Kontenpfändung",
@@ -112,7 +122,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0204/html",
           "pages": "187-218",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "临时账户扣押领域的强制执行法欧洲化"
         },
         {
           "title": "Negative Feststellungsklage bei unberechtigter Abmahnung",
@@ -120,7 +131,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0205/html",
           "pages": "219-234",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "不当警告函情形下的消极确认之诉"
         },
         {
           "title": "Die Bindung des Berufungsgerichts an unrichtige erstinstanzliche Tatsachenfeststellungen",
@@ -128,7 +140,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0206/html",
           "pages": "235-246",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "上诉法院对一审错误事实认定的受拘束性"
         },
         {
           "title": "Ben Findeisen: Verschulden in der Zwangsvollstreckung",
@@ -136,7 +149,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0207/html",
           "pages": "247-251",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Ben Findeisen：《强制执行中的过错》"
         },
         {
           "title": "Rupprecht Podszun: Wirtschaftsordnung durch Zivilgerichte. Evolution und Legitimation der Rechtsprechung in deregulierten Branchen",
@@ -144,7 +158,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0208/html",
           "pages": "251-255",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Rupprecht Podszun：《通过民事法院的经济秩序——去管制行业司法裁判的演进与正当性》"
         },
         {
           "title": "Friedrich Stein/Martin Jonas: Kommentar zur Zivilprozessordnung",
@@ -152,7 +167,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0209/html",
           "pages": "256-257",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Friedrich Stein / Martin Jonas：《民事诉讼法评注》"
         },
         {
           "title": "Nicolas Gut: Die unbezifferte Forderungsklage nach der Schweizerischen Zivilprozessordnung",
@@ -160,7 +176,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0210/html",
           "pages": "257-262",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Nicolas Gut：《瑞士民事诉讼法下的未确定数额金钱给付之诉》"
         }
       ]
     },
@@ -178,7 +195,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0302/html",
           "pages": "263-294",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "鉴定人在德国民事诉讼中的作用"
         },
         {
           "title": "Der Erfüllungsort im Sinne des § 29 ZPO",
@@ -186,7 +204,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0303/html",
           "pages": "295-326",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "《民事诉讼法》第29条意义上的履行地"
         },
         {
           "title": "AGB-Inhaltskontrolle von Schiedsklauseln in Athletenvereinbarungen",
@@ -194,7 +213,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0304/html",
           "pages": "327-346",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "运动员协议中仲裁条款的格式条款内容控制"
         },
         {
           "title": "Grundsätze des Vollstreckungsverfahrens – Prinzipienbildung und Maximendenken im Zwangsvollstreckungsrecht",
@@ -202,7 +222,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0305/html",
           "pages": "347-382",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "执行程序的基本原则——强制执行法中的原则建构与最大化思维"
         },
         {
           "title": "Mark Schweizer: Beweiswürdigung und Beweismaß – Rationalität und Intuition",
@@ -210,7 +231,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0306/html",
           "pages": "383-386",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Mark Schweizer：《证据评价与证明标准——理性与直觉》"
         },
         {
           "title": "Neil Andrews: On Civil Processes. Vol. I Court Proceedings, Vol. II Arbitration & Mediation",
@@ -218,7 +240,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0307/html",
           "pages": "386-389",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Neil Andrews：《论民事程序》（第一卷 诉讼程序，第二卷 仲裁与调解）"
         },
         {
           "title": "Zöller: Zivilprozessordnung. Kommentar",
@@ -226,7 +249,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0308/html",
           "pages": "389-390",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Zöller：《民事诉讼法 评注》"
         }
       ]
     },
@@ -244,7 +268,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0402/html",
           "pages": "393-416",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "民事诉讼中的武器平等"
         },
         {
           "title": "Waffengleichheit im Zivilprozess – Diskussionsbericht",
@@ -252,7 +277,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0403/html",
           "pages": "417-420",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "民事诉讼中的武器平等——讨论报告"
         },
         {
           "title": "Der elektronische Zivilprozess – Nutzen oder Schaden",
@@ -260,7 +286,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0404/html",
           "pages": "421-456",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "电子民事诉讼——裨益抑或损害"
         },
         {
           "title": "Der elektronische Zivilprozess – Diskussionsbericht",
@@ -268,7 +295,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0405/html",
           "pages": "457-460",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "电子民事诉讼——讨论报告"
         },
         {
           "title": "Das lex fori-Prinzip und Alternativen",
@@ -276,7 +304,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0406/html",
           "pages": "461-500",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "法院地法原则及其替代方案"
         },
         {
           "title": "Lex fori-Prinzip – Diskussionsbericht",
@@ -284,7 +313,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0407/html",
           "pages": "501-504",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "法院地法原则——讨论报告"
         },
         {
           "title": "Rezensionen",
@@ -292,7 +322,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0408/html",
           "pages": "505-522",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "书评"
         }
       ]
     },
@@ -310,7 +341,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0102/html",
           "pages": "3-60",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "现行德国强制执行法——是法律观念变迁的结果，还是一以贯之的延续？"
         },
         {
           "title": "Die neue Schweizerische Zivilprozessordnung – ein Zukunftsmodell?",
@@ -318,7 +350,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0103/html",
           "pages": "61-86",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "新瑞士民事诉讼法——未来之范本？"
         },
         {
           "title": "Schweizerische Zivilprozessordnung – Diskussionsbericht",
@@ -326,7 +359,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0104/html",
           "pages": "87-90",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "瑞士民事诉讼法——讨论报告"
         },
         {
           "title": "Der gesetzliche Richter – Verfassungsprinzip oder Ermessensfrage?",
@@ -334,7 +368,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0105/html",
           "pages": "91-120",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "法定法官——宪法原则抑或裁量问题？"
         },
         {
           "title": "Stefan Smid: Zivilgerichtliche Verfahren. Grundlagen des Zivilprozesses und der Freiwilligen Gerichtsbarkeit. Ein Studienbuch",
@@ -342,7 +377,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0106/html",
           "pages": "121-126",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Stefan Smid：《民事法院程序——民事诉讼与家事非讼程序基础 教材》"
         },
         {
           "title": "Claude Schrank: Das Schlichtungsverfahren nach der Schweizerischen Zivilprozessordnung (ZPO)",
@@ -350,7 +386,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0107/html",
           "pages": "126-131",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Claude Schrank：《瑞士民事诉讼法下的调解程序》"
         },
         {
           "title": "Sisi Liu: Die Entwicklung der gütlichen Streitbeilegung in China im Lichte der deutschen Erfahrung bezüglich des Prozessvergleichs",
@@ -358,7 +395,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0108/html",
           "pages": "131-134",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Sisi Liu：《德国诉讼和解经验视野下中国诉讼外纠纷解决的演进》"
         }
       ]
     },
@@ -376,7 +414,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0202/html",
           "pages": "137-180",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "法定法官——宪法原则抑或裁量问题？（第二部分）"
         },
         {
           "title": "Der gesetzliche Richter – Diskussionsbericht",
@@ -384,7 +423,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0203/html",
           "pages": "181-184",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "法定法官——讨论报告"
         },
         {
           "title": "Zum Leerlauf von § 325 II ZPO im Spagat zwischen Verfahrensrecht und materiellem Recht",
@@ -392,7 +432,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0204/html",
           "pages": "185-202",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "论《民事诉讼法》第325条第二款在程序法与实体法之间的空转"
         },
         {
           "title": "Gerichtsurteile als Gegenstand von Feststellungsklagen",
@@ -400,7 +441,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0205/html",
           "pages": "203-228",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "作为确认之诉客体的法院判决"
         },
         {
           "title": "Rügelose Einlassung außerhalb der Hauptverhandlung?",
@@ -408,7 +450,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0206/html",
           "pages": "229-246",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "主庭审之外的无保留应诉？"
         },
         {
           "title": "Wem gehört das deutsche Zwangsvollstreckungsrecht?",
@@ -416,7 +459,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0207/html",
           "pages": "247-256",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "德国强制执行法属于谁？"
         },
         {
           "title": "Schuschke/Walker: Vollstreckung und Vorläufiger Rechtsschutz nach dem achten und elften Buch der ZPO einschließlich der europarechtlichen Regelungen",
@@ -424,7 +468,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0208/html",
           "pages": "257-261",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Schuschke / Walker：《依民事诉讼法第八编与第十一编的强制执行与临时权利保护（含欧盟法规范）》"
         },
         {
           "title": "Assy: Injustice in Person. The Right to Self-Representation",
@@ -432,7 +477,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0209/html",
           "pages": "261-264",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Assy：《亲身的不公——自我代表权》"
         },
         {
           "title": "Prinz von Sachsen Gessaphe: Zwangsvollstreckungsrecht",
@@ -440,7 +486,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0210/html",
           "pages": "264-266",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Prinz von Sachsen Gessaphe：《强制执行法》"
         }
       ]
     },
@@ -458,7 +505,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0303/html",
           "pages": "271-302",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "论《民法典》第407条第2款之解释：诉讼债权于系属前让与时对债务人的保护与既判力扩张"
         },
         {
           "title": "Der soziale Pfändungsschutz bei Geldforderungen – Entwicklungslinien und mögliche Alternativen",
@@ -466,7 +514,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0304/html",
           "pages": "303-316",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "金钱债权中的社会性扣押保护——发展脉络与可能的替代方案"
         },
         {
           "title": "Verfahrenskonkurrenzen von Unterhalts- und Sozialhilfeansprüchen bei der Leistung und im Regress",
@@ -474,7 +523,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0305/html",
           "pages": "317-344",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "扶养请求权与社会救助请求权在给付与追偿中的程序竞合"
         },
         {
           "title": "Die Einrede der Verjährung der Hauptschuld im Bürgschaftsprozess",
@@ -482,7 +532,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0306/html",
           "pages": "345-356",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "保证诉讼中对主债务时效届满的抗辩"
         },
         {
           "title": "Prozessuale Fragen des Zahlungsdienstevertrags",
@@ -490,7 +541,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0307/html",
           "pages": "357-374",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "支付服务合同的程序法问题"
         },
         {
           "title": "Die erste EuGH-Entscheidung zur aktuellen EuGVVO – ein Meilenstein der Prozessrechtswissenschaft",
@@ -498,7 +550,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0308/html",
           "pages": "375-392",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "欧盟法院就现行《布鲁塞尔条例》的首个判决——诉讼法学的里程碑"
         }
       ]
     },
@@ -516,7 +569,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300402/html",
           "pages": "403-438",
           "section": "",
-          "type": "article"
+          "type": "article",
+          "title_zh": "意定诉讼担当与实体法上的行使授权"
         },
         {
           "title": "Unionsrechtsschutz und res judicata im Zivilprozess",
@@ -524,7 +578,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300403/html",
           "pages": "439-478",
           "section": "",
-          "type": "article"
+          "type": "article",
+          "title_zh": "民事诉讼中的欧盟法保护与既判事项"
         },
         {
           "title": "Zur Einschränkung des Streitgegenstandes durch die materiell- rechtliche Verselbstständigung von Lebensvorgängen",
@@ -532,7 +587,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300404/html",
           "pages": "479-488",
           "section": "",
-          "type": "article"
+          "type": "article",
+          "title_zh": "论生活事实的实体法独立化对诉讼标的之限缩"
         },
         {
           "title": "Überprüfung zivilrichterlicher Ermessensentscheidungen im Beschwerdeverfahren",
@@ -540,7 +596,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300405/html",
           "pages": "489-498",
           "section": "",
-          "type": "article"
+          "type": "article",
+          "title_zh": "抗告程序中对民事法官裁量决定的审查"
         },
         {
           "title": "Nochmals: Das geltende deutsche Zwangsvollstreckungsrecht – Ergebnis eines Wandels der Rechtsanschauung oder einer ungebrochenen Kontinuität?",
@@ -548,7 +605,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300406/html",
           "pages": "499-510",
           "section": "",
-          "type": "article"
+          "type": "article",
+          "title_zh": "再论：现行德国强制执行法——是法律观念变迁的结果，还是一以贯之的延续？"
         },
         {
           "title": "Jan Felix Hoffmann: Prioritätsgrundsatz und Gläubigergleichbehandlung. (",
@@ -556,7 +614,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300407/html",
           "pages": "511-519",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Jan Felix Hoffmann：《优先原则与债权人平等待遇》"
         },
         {
           "title": "Daniel Effer-Uhe/Elisa Hoven/Simon Kempny/Luna Rösinger [Hrsg.]: Einheit der Prozessrechtswissenschaft?",
@@ -564,7 +623,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300408/html",
           "pages": "520-532",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Daniel Effer-Uhe / Elisa Hoven / Simon Kempny / Luna Rösinger（主编）：《诉讼法学的统一？》"
         }
       ]
     },
@@ -582,7 +642,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310102/html",
           "pages": "3-24",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "诉讼原则、诉讼基本权与民事诉讼法制的宪教化"
         },
         {
           "title": "Der Sachverständigenbeweis im österreichischen Zivilprozess",
@@ -590,7 +651,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310103/html",
           "pages": "25-52",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "奥地利民事诉讼中的鉴定证据"
         },
         {
           "title": "Sachverständige im Zivilprozess – Diskussionsbericht",
@@ -598,7 +660,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310104/html",
           "pages": "53-56",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "民事诉讼中的鉴定人——讨论报告"
         },
         {
           "title": "Wissenschaft und Beweiswürdigung",
@@ -606,7 +669,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310105/html",
           "pages": "57-70",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "科学与证据评价"
         },
         {
           "title": "Die Auswirkungen der Brüssel I-Reform auf die Zuständigkeit für einstweiligen Rechtsschutz gemäß. Art. 35 Brüssel Ia-VO",
@@ -614,7 +678,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310106/html",
           "pages": "71-92",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "《布鲁塞尔条例一》改革对依第35条之临时权利保护管辖的影响"
         },
         {
           "title": "Rechtskrafterstreckung bei gesetzlicher Prozessstandschaft: Korrekturbedarf an einer etablierten Rechtslage",
@@ -622,7 +687,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310107/html",
           "pages": "93-126",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "法定诉讼担当时既判力的扩张：对既定法律状态的修正需求"
         }
       ]
     },
@@ -640,7 +706,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310202/html",
           "pages": "143-182",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "让与或转让诉讼标的物时法定诉讼担当之难题——兼论《民事诉讼法》第265、266条与第325条之协调"
         },
         {
           "title": "Grenzüberschreitender Bezug in der justiziellen Zusammenarbeit in Zivilsachen",
@@ -648,7 +715,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310203/html",
           "pages": "183-224",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "民事司法合作中的跨境联系"
         },
         {
           "title": "Schiedsspruch ultra partes? – Die subjektive Rechtskrafterstreckung anhand von Parteiautonomie und rechtlichem Gehör",
@@ -656,7 +724,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310204/html",
           "pages": "225-260",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "超越当事人的仲裁裁决？——基于当事人自治与听审权的主观既判力扩张"
         },
         {
           "title": "Christian Gomille: Informationsproblem und Wahrheitspflicht. Ein Aufklärungsmodell für den Zivilprozess",
@@ -664,7 +733,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310205/html",
           "pages": "261-264",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Christian Gomille：《信息问题与真实义务——一个民事诉讼的阐明模式》"
         },
         {
           "title": "Florian Bartels: Insolvenzanfechtung und Leistungen Dritter",
@@ -672,7 +742,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310206/html",
           "pages": "264-271",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Florian Bartels：《破产撤销与第三人给付》"
         },
         {
           "title": "Alexandra Lahav: In Praise of Litigation",
@@ -680,7 +751,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310207/html",
           "pages": "272-274",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Alexandra Lahav：《为诉讼辩护》"
         }
       ]
     },
@@ -698,7 +770,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310302/html",
           "pages": "277-316",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "民事诉讼法中的体系建构"
         },
         {
           "title": "Realität und Reform des Zivilprozesses im Spiegel der Justiz-Statistik",
@@ -706,7 +779,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310303/html",
           "pages": "317-352",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "司法统计折射下的民事诉讼现实与改革"
         },
         {
           "title": "Konfliktermöglichung durch überindividuellen Rechtsschutz: Funktion und Dogmatik der Verbandsklage",
@@ -714,7 +788,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310304/html",
           "pages": "353-372",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "通过超个人权利保护实现的冲突可诉性：团体诉讼的功能与法理"
         },
         {
           "title": "Zur Struktur und Dogmatik der Anerkennung ausländischer Gerichtsentscheidungen",
@@ -722,7 +797,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310305/html",
           "pages": "373-398",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "论外国法院判决承认的结构与法理"
         },
         {
           "title": "Sigrid Lorz: Ausländische Staaten vor deutschen Zivilgerichten",
@@ -730,7 +806,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310306/html",
           "pages": "399-402",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Sigrid Lorz：《德国民事法院前的外国国家》"
         },
         {
           "title": "Peter G. Mayr (Hrsg.): Handbuch des europäischen Zivilverfahrensrechts",
@@ -738,7 +815,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310307/html",
           "pages": "402-405",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Peter G. Mayr（主编）：《欧洲民事诉讼法手册》"
         },
         {
           "title": "Jörg Risse/Matthias Morawietz (Hrsg.): Prozessrisikoanalyse. Erfolgsaussichten vor Gericht bestimmen",
@@ -746,7 +824,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310308/html",
           "pages": "405-410",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Jörg Risse / Matthias Morawietz（主编）：《诉讼风险分析——确定诉讼中的成功前景》"
         }
       ]
     },
@@ -764,7 +843,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310402/html",
           "pages": "413-456",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "资本市场法诉讼中的证据问题"
         },
         {
           "title": "Die Offenlegung von Beweismitteln nach Umsetzung der Kartellschadensersatzrichtlinie im deutschen und spanischen Recht",
@@ -772,7 +852,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310403/html",
           "pages": "457-480",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "卡特尔损害赔偿指令转化后德国法与西班牙法中的证据开示"
         },
         {
           "title": "Laienrichter im Zivil- und Arbeitsgerichtsprozess",
@@ -780,7 +861,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310404/html",
           "pages": "481-512",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "民事与劳动法院程序中的参审员"
         },
         {
           "title": "Kryptowährungen in Zwangsvollstreckung und Insolvenz am Beispiel des Bitcoin",
@@ -788,7 +870,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310405/html",
           "pages": "513-532",
           "section": "Abhandlungen",
-          "type": "article"
+          "type": "article",
+          "title_zh": "以比特币为例的加密货币在强制执行与破产中的处理"
         },
         {
           "title": "Beatrice Stapf: Die Entwicklung der Rechtskraftlehre im französischen und spanischen Recht",
@@ -796,7 +879,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310406/html",
           "pages": "533-538",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Beatrice Stapf：《法国法与西班牙法上既判力学说的演进》"
         },
         {
           "title": "Hans-Jürgen Ahrens: Der Wettbewerbsprozess",
@@ -804,7 +888,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310407/html",
           "pages": "539-542",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Hans-Jürgen Ahrens：《竞争诉讼》"
         },
         {
           "title": "Roland Broemel/Paul Krell/Olaf Muthorst/Jens Prütting (Hrsg.): Prozessrecht in nationaler, europäischer und globaler Perspektive",
@@ -812,7 +897,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310408/html",
           "pages": "542-544",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Roland Broemel / Paul Krell / Olaf Muthorst / Jens Prütting（主编）：《国家、欧洲与全球视野下的程序法》"
         },
         {
           "title": "Johannes Landbrecht/Simon Gabriel (Hrsg.): Konfliktmanagement im internationalen Rechtsverkehr.",
@@ -820,7 +906,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310409/html",
           "pages": "545-546",
           "section": "Rezensionen",
-          "type": "review"
+          "type": "review",
+          "title_zh": "Johannes Landbrecht / Simon Gabriel（主编）：《国际法律交往中的冲突管理》"
         }
       ]
     },
@@ -838,7 +925,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0211/html",
           "pages": "199-234",
           "section": "VII. Gemeineuropäisches Verfahrensrecht",
-          "type": "article"
+          "type": "article",
+          "title_zh": "民事诉讼消费者保护的界限"
         },
         {
           "title": "Die Vollstreckungswiderspruchsklage im chinesischen Zivilprozessrecht",
@@ -846,7 +934,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0212/html",
           "pages": "237-258",
           "section": "Zweiter Teil Andere Staaten",
-          "type": "article"
+          "type": "article",
+          "title_zh": "中国民事诉讼法中的执行异议之诉"
         },
         {
           "title": "Le pouvoir normatif du juge – la motivation des décisions et le précédents à force obligatoire, d’après le nouveau Code de Procédure Civile (2015)",
@@ -854,7 +943,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0213/html",
           "pages": "259-288",
           "section": "IX. Südamerika",
-          "type": "article"
+          "type": "article",
+          "title_zh": "法官的规范创制权——基于新《民事诉讼法》（2015）的判决说理与具强制力的先例"
         },
         {
           "title": "Vollstreckungsverfahren im Widerstreit zwischen Effizienz und Grundrechten: Einige Anmerkungen zu den jüngsten Reformen des brasilianischen Zivilprozessrechts",
@@ -862,7 +952,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0214/html",
           "pages": "289-304",
           "section": "IX. Südamerika",
-          "type": "article"
+          "type": "article",
+          "title_zh": "效率与基本权冲突中的执行程序：兼评巴西民事诉讼法近期改革"
         },
         {
           "title": "Die Gruppenklage in der türkischen Zivilprozessordnung – zugleich eine Besprechung eines Urteils des obersten Gerichtshofes vom 10. Mai 2013",
@@ -870,7 +961,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0215/html",
           "pages": "305-320",
           "section": "X. Türkei",
-          "type": "article"
+          "type": "article",
+          "title_zh": "土耳其民事诉讼法中的群体诉讼——兼评最高上诉法院2013年5月10日判决"
         },
         {
           "title": "Einseitige, insbesondere testamentarische Schiedsklauseln nach der (geplanten) Reform zur Internationalen Schiedsgerichtsbarkeit",
@@ -878,7 +970,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0216/html",
           "pages": "323-352",
           "section": "Dritter Teil Schiedsgerichtsbarkeit",
-          "type": "article"
+          "type": "article",
+          "title_zh": "（规划中的）国际仲裁改革后的单方——尤其为遗嘱性——仲裁条款"
         }
       ]
     },
@@ -896,7 +989,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220102/html",
           "pages": "3-28",
           "section": "Erster Teil. Europäische Union",
-          "type": "article"
+          "type": "article",
+          "title_zh": "一、英格兰：先例与普通法规则创制"
         },
         {
           "title": "II. Frankreich. Unscharfe Konturen und Widersprüche in der französischen Rechtskraftlehre",
@@ -904,7 +998,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220103/html",
           "pages": "29-76",
           "section": "Erster Teil. Europäische Union",
-          "type": "article"
+          "type": "article",
+          "title_zh": "二、法国：法国既判力学说中模糊的轮廓与矛盾"
         },
         {
           "title": "III. Italien. Recent trends in enforcing US punitive damages awards in Italy",
@@ -912,7 +1007,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220104/html",
           "pages": "77-92",
           "section": "Erster Teil. Europäische Union",
-          "type": "article"
+          "type": "article",
+          "title_zh": "三、意大利：美国惩罚性赔偿判决在意大利执行的最新趋势"
         },
         {
           "title": "IV. Österreich. Präventive Restrukturierung und Aussetzung der Insolvenzantragspflicht nach dem Vorschlag der Europäischen Kommission",
@@ -920,7 +1016,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220105/html",
           "pages": "93-104",
           "section": "Erster Teil. Europäische Union",
-          "type": "article"
+          "type": "article",
+          "title_zh": "四、奥地利：依欧盟委员会提案的预防性重组与破产申请义务的停止"
         },
         {
           "title": "IV. Österreich. Schiedsgerichtsbarkeit und Handelsvertreterrecht – eine riskante Kombination?",
@@ -928,7 +1025,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220106/html",
           "pages": "105-128",
           "section": "Erster Teil. Europäische Union",
-          "type": "article"
+          "type": "article",
+          "title_zh": "四、奥地利：仲裁与商事代理权法——一种危险的结合？"
         },
         {
           "title": "V. Griechenland. “Actio ad exhibendum” for the protection of the right to proof according to Greek law and the focus of the recent European legislation (Directive 2014/104/EU, Regulation (EU) 679/2016)",
@@ -936,7 +1034,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220107/html",
           "pages": "129-136",
           "section": "Erster Teil. Europäische Union",
-          "type": "article"
+          "type": "article",
+          "title_zh": "五、希腊：依希腊法保护证明权的“出示之诉”及近期欧洲立法焦点（第2014/104/EU号指令、第(EU)679/2016号条例）"
         },
         {
           "title": "VI. Slowenien. Das slowenische Gesetz über Sammelklagen",
@@ -944,7 +1043,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220108/html",
           "pages": "137-186",
           "section": "Erster Teil. Europäische Union",
-          "type": "article"
+          "type": "article",
+          "title_zh": "六、斯洛文尼亚：斯洛文尼亚集体诉讼法"
         },
         {
           "title": "VII. Tschechien. Das gesetzliche Vorhaben der neuen ZPO in der Tschechischen Republik",
@@ -952,7 +1052,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220109/html",
           "pages": "187-212",
           "section": "Erster Teil. Europäische Union",
-          "type": "article"
+          "type": "article",
+          "title_zh": "七、捷克：捷克共和国新民事诉讼法立法草案"
         },
         {
           "title": "VIII. Gemeineuropäisches Verfahrensrecht . Grenzüberschreitende Bindungswirkung von Prozessurteilen im europäischen Justizraum",
@@ -960,7 +1061,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220110/html",
           "pages": "213-224",
           "section": "Erster Teil. Europäische Union",
-          "type": "article"
+          "type": "article",
+          "title_zh": "八、共同欧洲程序法：欧洲司法空间中诉讼判决的跨境拘束力"
         },
         {
           "title": "VIII. Gemeineuropäisches Verfahrensrecht. Die internationale Durchsetzung der europäischen Datenschutzregeln vor deutschen Zivilgerichten durch Verbände",
@@ -968,7 +1070,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220111/html",
           "pages": "225-254",
           "section": "Erster Teil. Europäische Union",
-          "type": "article"
+          "type": "article",
+          "title_zh": "八、共同欧洲程序法：欧洲数据保护规则经团体在德国民事法院的国际执行"
         },
         {
           "title": "VIII. Gemeineuropäisches Verfahrensrecht. Die Aufrechnung bei anderweitiger internationaler Gerichtszuständigkeit durch Gerichtsstandsvereinbarung",
@@ -976,7 +1079,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220112/html",
           "pages": "255-266",
           "section": "Erster Teil. Europäische Union",
-          "type": "article"
+          "type": "article",
+          "title_zh": "八、共同欧洲程序法：依协议管辖在他处具有国际管辖权时的抵销"
         },
         {
           "title": "IX. USA. Multiple Sources of Procedural Change in America",
@@ -984,7 +1088,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220113/html",
           "pages": "269-284",
           "section": "Zweiter Teil. Andere Staaten",
-          "type": "article"
+          "type": "article",
+          "title_zh": "九、美国：美国程序变革的多重来源"
         },
         {
           "title": "X. Schweiz. Substanziierung im Zivilprozess",
@@ -992,7 +1097,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220114/html",
           "pages": "285-314",
           "section": "Zweiter Teil. Andere Staaten",
-          "type": "article"
+          "type": "article",
+          "title_zh": "十、瑞士：民事诉讼中的具体化"
         },
         {
           "title": "XI. Ostasien. Die Vollstreckung von Schiedssprüchen in China",
@@ -1000,7 +1106,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220115/html",
           "pages": "315-338",
           "section": "Zweiter Teil. Andere Staaten",
-          "type": "article"
+          "type": "article",
+          "title_zh": "十一、东亚：仲裁裁决在中国的执行"
         },
         {
           "title": "XI. Ostasien. Japan’s Recent Approach to The Hague Child Abduction Convention and Its Procedural Issues",
@@ -1008,7 +1115,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220116/html",
           "pages": "339-358",
           "section": "Zweiter Teil. Andere Staaten",
-          "type": "article"
+          "type": "article",
+          "title_zh": "十一、东亚：日本近期关于《海牙诱拐儿童公约》的立场及其程序问题"
         },
         {
           "title": "Verbraucherschutz in der Schiedsgerichtsbarkeit – Schutzmängel im deutschen Prozessrecht",
@@ -1016,7 +1124,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220117/html",
           "pages": "361-384",
           "section": "Dritter Teil. Schiedsgerichtsbarkeit",
-          "type": "article"
+          "type": "article",
+          "title_zh": "仲裁中的消费者保护——德国程序法中的保护缺陷"
         },
         {
           "title": "Rechtsverwirklichung als Primärzweck des Zivilprozesses",
@@ -1024,7 +1133,8 @@
           "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220118/html",
           "pages": "387-400",
           "section": "Vierter Teil. Prozessrechtsvergleichung",
-          "type": "article"
+          "type": "article",
+          "title_zh": "权利实现作为民事诉讼的首要目的"
         }
       ]
     }
