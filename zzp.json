@@ -917,71 +917,8 @@
       "year": 2016,
       "special": true,
       "url": "https://www.degruyterbrill.com/journal/key/zzp/21/2/html",
-      "count": 6,
-      "articles": [
-        {
-          "title": "Die Grenzen zivilprozessualen Verbraucherschutzes",
-          "authors": "David Paulus",
-          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0211/html",
-          "pages": "199-234",
-          "section": "VII. Gemeineuropäisches Verfahrensrecht",
-          "type": "article",
-          "title_zh": "民事诉讼消费者保护的界限"
-        },
-        {
-          "title": "Die Vollstreckungswiderspruchsklage im chinesischen Zivilprozessrecht",
-          "authors": "Yuanshi Bu",
-          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0212/html",
-          "pages": "237-258",
-          "section": "Zweiter Teil Andere Staaten",
-          "type": "article",
-          "title_zh": "中国民事诉讼法中的执行异议之诉"
-        },
-        {
-          "title": "Le pouvoir normatif du juge – la motivation des décisions et le précédents à force obligatoire, d’après le nouveau Code de Procédure Civile (2015)",
-          "authors": "Teresa Arruda Alvim",
-          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0213/html",
-          "pages": "259-288",
-          "section": "IX. Südamerika",
-          "type": "article",
-          "title_zh": "法官的规范创制权——基于新《民事诉讼法》（2015）的判决说理与具强制力的先例"
-        },
-        {
-          "title": "Vollstreckungsverfahren im Widerstreit zwischen Effizienz und Grundrechten: Einige Anmerkungen zu den jüngsten Reformen des brasilianischen Zivilprozessrechts",
-          "authors": "Antonio Cabral",
-          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0214/html",
-          "pages": "289-304",
-          "section": "IX. Südamerika",
-          "type": "article",
-          "title_zh": "效率与基本权冲突中的执行程序：兼评巴西民事诉讼法近期改革"
-        },
-        {
-          "title": "Die Gruppenklage in der türkischen Zivilprozessordnung – zugleich eine Besprechung eines Urteils des obersten Gerichtshofes vom 10. Mai 2013",
-          "authors": "Özden Özkaya-Ferendeci",
-          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0215/html",
-          "pages": "305-320",
-          "section": "X. Türkei",
-          "type": "article",
-          "title_zh": "土耳其民事诉讼法中的群体诉讼——兼评最高上诉法院2013年5月10日判决"
-        },
-        {
-          "title": "Einseitige, insbesondere testamentarische Schiedsklauseln nach der (geplanten) Reform zur Internationalen Schiedsgerichtsbarkeit",
-          "authors": "Ulrich Haas, Jeffrey Brosi",
-          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0216/html",
-          "pages": "323-352",
-          "section": "Dritter Teil Schiedsgerichtsbarkeit",
-          "type": "article",
-          "title_zh": "（规划中的）国际仲裁改革后的单方——尤其为遗嘱性——仲裁条款"
-        }
-      ]
-    },
-    {
-      "vol": 22,
-      "issue": 1,
-      "year": 2017,
-      "special": true,
-      "url": "https://www.degruyterbrill.com/journal/key/zzp/22/1/html",
-      "count": 17,
+      "count": 23,
+      "merged": true,
       "articles": [
         {
           "title": "I. England. Precedents and Common Law Rule-Making",
@@ -990,6 +927,7 @@
           "pages": "3-28",
           "section": "Erster Teil. Europäische Union",
           "type": "article",
+          "src": "SH22",
           "title_zh": "一、英格兰：先例与普通法规则创制"
         },
         {
@@ -999,6 +937,7 @@
           "pages": "29-76",
           "section": "Erster Teil. Europäische Union",
           "type": "article",
+          "src": "SH22",
           "title_zh": "二、法国：法国既判力学说中模糊的轮廓与矛盾"
         },
         {
@@ -1008,6 +947,7 @@
           "pages": "77-92",
           "section": "Erster Teil. Europäische Union",
           "type": "article",
+          "src": "SH22",
           "title_zh": "三、意大利：美国惩罚性赔偿判决在意大利执行的最新趋势"
         },
         {
@@ -1017,6 +957,7 @@
           "pages": "93-104",
           "section": "Erster Teil. Europäische Union",
           "type": "article",
+          "src": "SH22",
           "title_zh": "四、奥地利：依欧盟委员会提案的预防性重组与破产申请义务的停止"
         },
         {
@@ -1026,6 +967,7 @@
           "pages": "105-128",
           "section": "Erster Teil. Europäische Union",
           "type": "article",
+          "src": "SH22",
           "title_zh": "四、奥地利：仲裁与商事代理权法——一种危险的结合？"
         },
         {
@@ -1035,6 +977,7 @@
           "pages": "129-136",
           "section": "Erster Teil. Europäische Union",
           "type": "article",
+          "src": "SH22",
           "title_zh": "五、希腊：依希腊法保护证明权的“出示之诉”及近期欧洲立法焦点（第2014/104/EU号指令、第(EU)679/2016号条例）"
         },
         {
@@ -1044,6 +987,7 @@
           "pages": "137-186",
           "section": "Erster Teil. Europäische Union",
           "type": "article",
+          "src": "SH22",
           "title_zh": "六、斯洛文尼亚：斯洛文尼亚集体诉讼法"
         },
         {
@@ -1053,7 +997,18 @@
           "pages": "187-212",
           "section": "Erster Teil. Europäische Union",
           "type": "article",
+          "src": "SH22",
           "title_zh": "七、捷克：捷克共和国新民事诉讼法立法草案"
+        },
+        {
+          "title": "Die Grenzen zivilprozessualen Verbraucherschutzes",
+          "authors": "David Paulus",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0211/html",
+          "pages": "199-234",
+          "section": "VII. Gemeineuropäisches Verfahrensrecht",
+          "type": "article",
+          "src": "SH21",
+          "title_zh": "民事诉讼消费者保护的界限"
         },
         {
           "title": "VIII. Gemeineuropäisches Verfahrensrecht . Grenzüberschreitende Bindungswirkung von Prozessurteilen im europäischen Justizraum",
@@ -1062,6 +1017,7 @@
           "pages": "213-224",
           "section": "Erster Teil. Europäische Union",
           "type": "article",
+          "src": "SH22",
           "title_zh": "八、共同欧洲程序法：欧洲司法空间中诉讼判决的跨境拘束力"
         },
         {
@@ -1071,6 +1027,7 @@
           "pages": "225-254",
           "section": "Erster Teil. Europäische Union",
           "type": "article",
+          "src": "SH22",
           "title_zh": "八、共同欧洲程序法：欧洲数据保护规则经团体在德国民事法院的国际执行"
         },
         {
@@ -1080,6 +1037,7 @@
           "pages": "255-266",
           "section": "Erster Teil. Europäische Union",
           "type": "article",
+          "src": "SH22",
           "title_zh": "八、共同欧洲程序法：依协议管辖在他处具有国际管辖权时的抵销"
         },
         {
@@ -1089,6 +1047,7 @@
           "pages": "269-284",
           "section": "Zweiter Teil. Andere Staaten",
           "type": "article",
+          "src": "SH22",
           "title_zh": "九、美国：美国程序变革的多重来源"
         },
         {
@@ -1098,7 +1057,18 @@
           "pages": "285-314",
           "section": "Zweiter Teil. Andere Staaten",
           "type": "article",
+          "src": "SH22",
           "title_zh": "十、瑞士：民事诉讼中的具体化"
+        },
+        {
+          "title": "Die Vollstreckungswiderspruchsklage im chinesischen Zivilprozessrecht",
+          "authors": "Yuanshi Bu",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0212/html",
+          "pages": "237-258",
+          "section": "Zweiter Teil Andere Staaten",
+          "type": "article",
+          "src": "SH21",
+          "title_zh": "中国民事诉讼法中的执行异议之诉"
         },
         {
           "title": "XI. Ostasien. Die Vollstreckung von Schiedssprüchen in China",
@@ -1107,6 +1077,7 @@
           "pages": "315-338",
           "section": "Zweiter Teil. Andere Staaten",
           "type": "article",
+          "src": "SH22",
           "title_zh": "十一、东亚：仲裁裁决在中国的执行"
         },
         {
@@ -1116,7 +1087,48 @@
           "pages": "339-358",
           "section": "Zweiter Teil. Andere Staaten",
           "type": "article",
+          "src": "SH22",
           "title_zh": "十一、东亚：日本近期关于《海牙诱拐儿童公约》的立场及其程序问题"
+        },
+        {
+          "title": "Le pouvoir normatif du juge – la motivation des décisions et le précédents à force obligatoire, d’après le nouveau Code de Procédure Civile (2015)",
+          "authors": "Teresa Arruda Alvim",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0213/html",
+          "pages": "259-288",
+          "section": "IX. Südamerika",
+          "type": "article",
+          "src": "SH21",
+          "title_zh": "法官的规范创制权——基于新《民事诉讼法》（2015）的判决说理与具强制力的先例"
+        },
+        {
+          "title": "Vollstreckungsverfahren im Widerstreit zwischen Effizienz und Grundrechten: Einige Anmerkungen zu den jüngsten Reformen des brasilianischen Zivilprozessrechts",
+          "authors": "Antonio Cabral",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0214/html",
+          "pages": "289-304",
+          "section": "IX. Südamerika",
+          "type": "article",
+          "src": "SH21",
+          "title_zh": "效率与基本权冲突中的执行程序：兼评巴西民事诉讼法近期改革"
+        },
+        {
+          "title": "Die Gruppenklage in der türkischen Zivilprozessordnung – zugleich eine Besprechung eines Urteils des obersten Gerichtshofes vom 10. Mai 2013",
+          "authors": "Özden Özkaya-Ferendeci",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0215/html",
+          "pages": "305-320",
+          "section": "X. Türkei",
+          "type": "article",
+          "src": "SH21",
+          "title_zh": "土耳其民事诉讼法中的群体诉讼——兼评最高上诉法院2013年5月10日判决"
+        },
+        {
+          "title": "Einseitige, insbesondere testamentarische Schiedsklauseln nach der (geplanten) Reform zur Internationalen Schiedsgerichtsbarkeit",
+          "authors": "Ulrich Haas, Jeffrey Brosi",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0216/html",
+          "pages": "323-352",
+          "section": "Dritter Teil Schiedsgerichtsbarkeit",
+          "type": "article",
+          "src": "SH21",
+          "title_zh": "（规划中的）国际仲裁改革后的单方——尤其为遗嘱性——仲裁条款"
         },
         {
           "title": "Verbraucherschutz in der Schiedsgerichtsbarkeit – Schutzmängel im deutschen Prozessrecht",
@@ -1125,6 +1137,7 @@
           "pages": "361-384",
           "section": "Dritter Teil. Schiedsgerichtsbarkeit",
           "type": "article",
+          "src": "SH22",
           "title_zh": "仲裁中的消费者保护——德国程序法中的保护缺陷"
         },
         {
@@ -1134,6 +1147,7 @@
           "pages": "387-400",
           "section": "Vierter Teil. Prozessrechtsvergleichung",
           "type": "article",
+          "src": "SH22",
           "title_zh": "权利实现作为民事诉讼的首要目的"
         }
       ]
