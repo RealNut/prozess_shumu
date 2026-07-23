@@ -1,0 +1,1032 @@
+{
+  "journal": {
+    "name": "Zeitschrift für Zivilprozess",
+    "abbr": "ZZP",
+    "publisher": "Wolters Kluwer Deutschland",
+    "url": "https://www.degruyterbrill.com/journal/key/zzp/html",
+    "years": "2016–2018"
+  },
+  "total_articles": 110,
+  "issues": [
+    {
+      "vol": 129,
+      "issue": 1,
+      "year": 2016,
+      "special": false,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/129/1/html",
+      "count": 8,
+      "articles": [
+        {
+          "title": "Die Zukunft der Ziviljustiz",
+          "authors": "Herbert Roth",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0102/html",
+          "pages": "3-24",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Zum Verzicht auf die Streitgegenstandslehre im Sinne einer Rückbesinnung auf die materiellrechtlichen und prozessualen Ausgangsfragen",
+          "authors": "Jürgen Stamm",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0103/html",
+          "pages": "25-56",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Das Vortragsverwertungsverbot im Zivilprozess und im FamFG-Verfahren",
+          "authors": "Christoph Andreas Weber",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0104/html",
+          "pages": "57-88",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Das Prinzip der Rechtskraft und seine Mythen",
+          "authors": "Jordi Nieva-Fenoll",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0105/html",
+          "pages": "89-108",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Mauro Cappelletti (Chief Editor): International Encyclopedia of Comparative Law, Volume XVI: Civil Procedure",
+          "authors": "Christoph A. Kern",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0106/html",
+          "pages": "109-119",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Lucas F. Flöther: Handbuch zum Konzerninsolvenzrecht",
+          "authors": "Anne Deike Riewe",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0107/html",
+          "pages": "120-121",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Claudia M. Mordasini-Rohner: Gerichtliche Fragepflicht und Untersuchungsmaxime nach der Schweizerischen Zivilprozessordnung",
+          "authors": "Madeleine Tolani",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0108/html",
+          "pages": "121-125",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Hannes Wais: Der Europäische Erfüllungsgerichtsstand für Dienstleistungsverträge – Zur Auslegung des Art. 5 Nr. 1 lit. b 2. Spiegelstrich EuGVO",
+          "authors": "Markus Würdinger, Silja Collet",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0109/html",
+          "pages": "125-132",
+          "section": "Rezensionen",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "vol": 129,
+      "issue": 2,
+      "year": 2016,
+      "special": false,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/129/2/html",
+      "count": 9,
+      "articles": [
+        {
+          "title": "Die Klagelast als Rechtsfigur und Regelungsproblem",
+          "authors": "Wolfgang Hau",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0202/html",
+          "pages": "133-152",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Recht auf Beweis und Beibringungsgrundsatz im Zivilprozess",
+          "authors": "Julia Caroline Scherpe",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0203/html",
+          "pages": "153-186",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Die Europäisierung des Zwangsvollstreckungsrechts im Bereich der vorläufigen Kontenpfändung",
+          "authors": "Jan D. Lüttringhaus",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0204/html",
+          "pages": "187-218",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Negative Feststellungsklage bei unberechtigter Abmahnung",
+          "authors": "Bernhard Ulrici",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0205/html",
+          "pages": "219-234",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Die Bindung des Berufungsgerichts an unrichtige erstinstanzliche Tatsachenfeststellungen",
+          "authors": "David Ullenboom",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0206/html",
+          "pages": "235-246",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Ben Findeisen: Verschulden in der Zwangsvollstreckung",
+          "authors": "Eberhard Schilken",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0207/html",
+          "pages": "247-251",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Rupprecht Podszun: Wirtschaftsordnung durch Zivilgerichte. Evolution und Legitimation der Rechtsprechung in deregulierten Branchen",
+          "authors": "Hans-Jürgen Ahrens",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0208/html",
+          "pages": "251-255",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Friedrich Stein/Martin Jonas: Kommentar zur Zivilprozessordnung",
+          "authors": "Roderich C. Thümmel",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0209/html",
+          "pages": "256-257",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Nicolas Gut: Die unbezifferte Forderungsklage nach der Schweizerischen Zivilprozessordnung",
+          "authors": "Florian Eichel",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0210/html",
+          "pages": "257-262",
+          "section": "Rezensionen",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "vol": 129,
+      "issue": 3,
+      "year": 2016,
+      "special": false,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/129/3/html",
+      "count": 7,
+      "articles": [
+        {
+          "title": "Die Rolle des Sachverständigen im deutschen Zivilprozess",
+          "authors": "Caroline Meller-Hannich",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0302/html",
+          "pages": "263-294",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Der Erfüllungsort im Sinne des § 29 ZPO",
+          "authors": "Markus Fehrenbach",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0303/html",
+          "pages": "295-326",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "AGB-Inhaltskontrolle von Schiedsklauseln in Athletenvereinbarungen",
+          "authors": "Florian Eichel",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0304/html",
+          "pages": "327-346",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Grundsätze des Vollstreckungsverfahrens – Prinzipienbildung und Maximendenken im Zwangsvollstreckungsrecht",
+          "authors": "Matthias Wendland",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0305/html",
+          "pages": "347-382",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Mark Schweizer: Beweiswürdigung und Beweismaß – Rationalität und Intuition",
+          "authors": "Hans-Jürgen Ahrens",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0306/html",
+          "pages": "383-386",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Neil Andrews: On Civil Processes. Vol. I Court Proceedings, Vol. II Arbitration & Mediation",
+          "authors": "Alexander Bruns",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0307/html",
+          "pages": "386-389",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Zöller: Zivilprozessordnung. Kommentar",
+          "authors": "Walther Siede",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0308/html",
+          "pages": "389-390",
+          "section": "Rezensionen",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "vol": 129,
+      "issue": 4,
+      "year": 2016,
+      "special": false,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/129/4/html",
+      "count": 7,
+      "articles": [
+        {
+          "title": "Waffengleichheit im Zivilprozess",
+          "authors": "Haimo Schack",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0402/html",
+          "pages": "393-416",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Waffengleichheit im Zivilprozess – Diskussionsbericht",
+          "authors": "Nassim Eslami, Björn Steinrötter",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0403/html",
+          "pages": "417-420",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Der elektronische Zivilprozess – Nutzen oder Schaden",
+          "authors": "Nicola Preuß",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0404/html",
+          "pages": "421-456",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Der elektronische Zivilprozess – Diskussionsbericht",
+          "authors": "Nassim Eslami, Björn Steinrötter",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0405/html",
+          "pages": "457-460",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Das lex fori-Prinzip und Alternativen",
+          "authors": "Moritz Brinkmann",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0406/html",
+          "pages": "461-500",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Lex fori-Prinzip – Diskussionsbericht",
+          "authors": "Nassim Eslami, Björn Steinrötter",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0407/html",
+          "pages": "501-504",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Rezensionen",
+          "authors": "Andreas Piekenbrock, Reinhard Greger, Haimo Schack, Maximilian Seibl",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0408/html",
+          "pages": "505-522",
+          "section": "Abhandlungen",
+          "type": "article"
+        }
+      ]
+    },
+    {
+      "vol": 130,
+      "issue": 1,
+      "year": 2017,
+      "special": false,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/130/1/html",
+      "count": 7,
+      "articles": [
+        {
+          "title": "Das geltende deutsche Zwangsvollstreckungsrecht – Ergebnis eines Wandels der Rechtsanschauung oder einer ungebrochenen Kontinuität?",
+          "authors": "Hans Friedhelm Gaul",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0102/html",
+          "pages": "3-60",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Die neue Schweizerische Zivilprozessordnung – ein Zukunftsmodell?",
+          "authors": "Thomas Sutter-Somm",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0103/html",
+          "pages": "61-86",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Schweizerische Zivilprozessordnung – Diskussionsbericht",
+          "authors": "Nassim Eslami, Björn Steinrötter",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0104/html",
+          "pages": "87-90",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Der gesetzliche Richter – Verfassungsprinzip oder Ermessensfrage?",
+          "authors": "Christoph A. Kern",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0105/html",
+          "pages": "91-120",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Stefan Smid: Zivilgerichtliche Verfahren. Grundlagen des Zivilprozesses und der Freiwilligen Gerichtsbarkeit. Ein Studienbuch",
+          "authors": "Herbert Roth",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0106/html",
+          "pages": "121-126",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Claude Schrank: Das Schlichtungsverfahren nach der Schweizerischen Zivilprozessordnung (ZPO)",
+          "authors": "Ulrich Haas, Zdravka Bozic",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0107/html",
+          "pages": "126-131",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Sisi Liu: Die Entwicklung der gütlichen Streitbeilegung in China im Lichte der deutschen Erfahrung bezüglich des Prozessvergleichs",
+          "authors": "Martin Fries",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0108/html",
+          "pages": "131-134",
+          "section": "Rezensionen",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "vol": 130,
+      "issue": 2,
+      "year": 2017,
+      "special": false,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/130/2/html",
+      "count": 9,
+      "articles": [
+        {
+          "title": "Der gesetzliche Richter – Verfassungsprinzip oder Ermessensfrage? – Teil II",
+          "authors": "Christoph A. Kern",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0202/html",
+          "pages": "137-180",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Der gesetzliche Richter – Diskussionsbericht",
+          "authors": "Nassim Eslami, Björn Steinrötter",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0203/html",
+          "pages": "181-184",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Zum Leerlauf von § 325 II ZPO im Spagat zwischen Verfahrensrecht und materiellem Recht",
+          "authors": "Jürgen Stamm",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0204/html",
+          "pages": "185-202",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Gerichtsurteile als Gegenstand von Feststellungsklagen",
+          "authors": "Florian Loyal",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0205/html",
+          "pages": "203-228",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Rügelose Einlassung außerhalb der Hauptverhandlung?",
+          "authors": "Patrick Meier",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0206/html",
+          "pages": "229-246",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Wem gehört das deutsche Zwangsvollstreckungsrecht?",
+          "authors": "Wolfgang Marotzke",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0207/html",
+          "pages": "247-256",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Schuschke/Walker: Vollstreckung und Vorläufiger Rechtsschutz nach dem achten und elften Buch der ZPO einschließlich der europarechtlichen Regelungen",
+          "authors": "Jürgen Stamm",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0208/html",
+          "pages": "257-261",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Assy: Injustice in Person. The Right to Self-Representation",
+          "authors": "Peter Gottwald",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0209/html",
+          "pages": "261-264",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Prinz von Sachsen Gessaphe: Zwangsvollstreckungsrecht",
+          "authors": "Caroline Meller-Hannich",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0210/html",
+          "pages": "264-266",
+          "section": "Rezensionen",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "vol": 130,
+      "issue": 3,
+      "year": 2017,
+      "special": false,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/130/3/html",
+      "count": 6,
+      "articles": [
+        {
+          "title": "Zur Auslegung des § 407 Abs. 2 BGB: Schuldnerschutz und Rechtskrafterstreckung bei Abtretung der eingeklagten Forderung vor Rechtshängigkeit",
+          "authors": "Eberhard Schilken",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0303/html",
+          "pages": "271-302",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Der soziale Pfändungsschutz bei Geldforderungen – Entwicklungslinien und mögliche Alternativen",
+          "authors": "Caroline Meller-Hannich",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0304/html",
+          "pages": "303-316",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Verfahrenskonkurrenzen von Unterhalts- und Sozialhilfeansprüchen bei der Leistung und im Regress",
+          "authors": "Ekkehard Becker-Eberhard",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0305/html",
+          "pages": "317-344",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Die Einrede der Verjährung der Hauptschuld im Bürgschaftsprozess",
+          "authors": "Moritz Brinkmann",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0306/html",
+          "pages": "345-356",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Prozessuale Fragen des Zahlungsdienstevertrags",
+          "authors": "Lutz Haertlein",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0307/html",
+          "pages": "357-374",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Die erste EuGH-Entscheidung zur aktuellen EuGVVO – ein Meilenstein der Prozessrechtswissenschaft",
+          "authors": "Panajotta Lakkis",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-0308/html",
+          "pages": "375-392",
+          "section": "Abhandlungen",
+          "type": "article"
+        }
+      ]
+    },
+    {
+      "vol": 130,
+      "issue": 4,
+      "year": 2017,
+      "special": false,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/130/4/html",
+      "count": 7,
+      "articles": [
+        {
+          "title": "Gewillkürte Prozessstandschaft und materiell-rechtliche Ausübungsermächtigung",
+          "authors": "Jan Felix Hoffmann",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300402/html",
+          "pages": "403-438",
+          "section": "",
+          "type": "article"
+        },
+        {
+          "title": "Unionsrechtsschutz und res judicata im Zivilprozess",
+          "authors": "Björn Laukemann",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300403/html",
+          "pages": "439-478",
+          "section": "",
+          "type": "article"
+        },
+        {
+          "title": "Zur Einschränkung des Streitgegenstandes durch die materiell- rechtliche Verselbstständigung von Lebensvorgängen",
+          "authors": "Elisabeth Christine Robra",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300404/html",
+          "pages": "479-488",
+          "section": "",
+          "type": "article"
+        },
+        {
+          "title": "Überprüfung zivilrichterlicher Ermessensentscheidungen im Beschwerdeverfahren",
+          "authors": "Martin Frank",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300405/html",
+          "pages": "489-498",
+          "section": "",
+          "type": "article"
+        },
+        {
+          "title": "Nochmals: Das geltende deutsche Zwangsvollstreckungsrecht – Ergebnis eines Wandels der Rechtsanschauung oder einer ungebrochenen Kontinuität?",
+          "authors": "Hans Friedhelm Gaul",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300406/html",
+          "pages": "499-510",
+          "section": "",
+          "type": "article"
+        },
+        {
+          "title": "Jan Felix Hoffmann: Prioritätsgrundsatz und Gläubigergleichbehandlung. (",
+          "authors": "Ulrich Foerste",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300407/html",
+          "pages": "511-519",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Daniel Effer-Uhe/Elisa Hoven/Simon Kempny/Luna Rösinger [Hrsg.]: Einheit der Prozessrechtswissenschaft?",
+          "authors": "Bernhard Ulrici",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-1300408/html",
+          "pages": "520-532",
+          "section": "Rezensionen",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "vol": 131,
+      "issue": 1,
+      "year": 2018,
+      "special": false,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/131/1/html",
+      "count": 6,
+      "articles": [
+        {
+          "title": "Prozessmaximen, Prozessgrundrechte und die Konstitutionalisierung des Zivilprozessrechts",
+          "authors": "Herbert Roth",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310102/html",
+          "pages": "3-24",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Der Sachverständigenbeweis im österreichischen Zivilprozess",
+          "authors": "Martin Spitzer",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310103/html",
+          "pages": "25-52",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Sachverständige im Zivilprozess – Diskussionsbericht",
+          "authors": "Nassim Eslami, Björn Steinrötter",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310104/html",
+          "pages": "53-56",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Wissenschaft und Beweiswürdigung",
+          "authors": "Jordi Nieva-Fenoll",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310105/html",
+          "pages": "57-70",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Die Auswirkungen der Brüssel I-Reform auf die Zuständigkeit für einstweiligen Rechtsschutz gemäß. Art. 35 Brüssel Ia-VO",
+          "authors": "Florian Eichel",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310106/html",
+          "pages": "71-92",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Rechtskrafterstreckung bei gesetzlicher Prozessstandschaft: Korrekturbedarf an einer etablierten Rechtslage",
+          "authors": "Peter Georg Picht",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310107/html",
+          "pages": "93-126",
+          "section": "Abhandlungen",
+          "type": "article"
+        }
+      ]
+    },
+    {
+      "vol": 131,
+      "issue": 2,
+      "year": 2018,
+      "special": false,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/131/2/html",
+      "count": 6,
+      "articles": [
+        {
+          "title": "Das Mysterium der gesetzlichen Prozessstandschaft bei Abtretung oder Veräußerung der streitbefangenen Sache – Ein Beitrag zur Harmonisierung der §§ 265, 266 ZPO mit § 325 ZPO",
+          "authors": "Jürgen Stamm",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310202/html",
+          "pages": "143-182",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Grenzüberschreitender Bezug in der justiziellen Zusammenarbeit in Zivilsachen",
+          "authors": "Rolf Wagner",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310203/html",
+          "pages": "183-224",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Schiedsspruch ultra partes? – Die subjektive Rechtskrafterstreckung anhand von Parteiautonomie und rechtlichem Gehör",
+          "authors": "Maximilian Pika",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310204/html",
+          "pages": "225-260",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Christian Gomille: Informationsproblem und Wahrheitspflicht. Ein Aufklärungsmodell für den Zivilprozess",
+          "authors": "Hans-Jürgen Ahrens",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310205/html",
+          "pages": "261-264",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Florian Bartels: Insolvenzanfechtung und Leistungen Dritter",
+          "authors": "Fabian Klinck",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310206/html",
+          "pages": "264-271",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Alexandra Lahav: In Praise of Litigation",
+          "authors": "Wolfgang Hau",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310207/html",
+          "pages": "272-274",
+          "section": "Rezensionen",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "vol": 131,
+      "issue": 3,
+      "year": 2018,
+      "special": false,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/131/3/html",
+      "count": 7,
+      "articles": [
+        {
+          "title": "Systembildung im Zivilprozessrecht",
+          "authors": "Johann Braun",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310302/html",
+          "pages": "277-316",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Realität und Reform des Zivilprozesses im Spiegel der Justiz-Statistik",
+          "authors": "Reinhard Greger",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310303/html",
+          "pages": "317-352",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Konfliktermöglichung durch überindividuellen Rechtsschutz: Funktion und Dogmatik der Verbandsklage",
+          "authors": "Roman Guski",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310304/html",
+          "pages": "353-372",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Zur Struktur und Dogmatik der Anerkennung ausländischer Gerichtsentscheidungen",
+          "authors": "Florian Loyal",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310305/html",
+          "pages": "373-398",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Sigrid Lorz: Ausländische Staaten vor deutschen Zivilgerichten",
+          "authors": "Haimo Schack",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310306/html",
+          "pages": "399-402",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Peter G. Mayr (Hrsg.): Handbuch des europäischen Zivilverfahrensrechts",
+          "authors": "Thomas Rauscher",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310307/html",
+          "pages": "402-405",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Jörg Risse/Matthias Morawietz (Hrsg.): Prozessrisikoanalyse. Erfolgsaussichten vor Gericht bestimmen",
+          "authors": "Gerhard H. Wächter",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310308/html",
+          "pages": "405-410",
+          "section": "Rezensionen",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "vol": 131,
+      "issue": 4,
+      "year": 2018,
+      "special": false,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/131/4/html",
+      "count": 8,
+      "articles": [
+        {
+          "title": "Beweisfragen bei kapitalmarktrechtlichen Prozessen",
+          "authors": "Andreas Piekenbrock",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310402/html",
+          "pages": "413-456",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Die Offenlegung von Beweismitteln nach Umsetzung der Kartellschadensersatzrichtlinie im deutschen und spanischen Recht",
+          "authors": "Franziska Weber",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310403/html",
+          "pages": "457-480",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Laienrichter im Zivil- und Arbeitsgerichtsprozess",
+          "authors": "Alexander Stöhr",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310404/html",
+          "pages": "481-512",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Kryptowährungen in Zwangsvollstreckung und Insolvenz am Beispiel des Bitcoin",
+          "authors": "Daniel Effer-Uhe",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310405/html",
+          "pages": "513-532",
+          "section": "Abhandlungen",
+          "type": "article"
+        },
+        {
+          "title": "Beatrice Stapf: Die Entwicklung der Rechtskraftlehre im französischen und spanischen Recht",
+          "authors": "Frédérique Ferrand",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310406/html",
+          "pages": "533-538",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Hans-Jürgen Ahrens: Der Wettbewerbsprozess",
+          "authors": "Jörg Fritzsche",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310407/html",
+          "pages": "539-542",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Roland Broemel/Paul Krell/Olaf Muthorst/Jens Prütting (Hrsg.): Prozessrecht in nationaler, europäischer und globaler Perspektive",
+          "authors": "Wolfgang Hau",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310408/html",
+          "pages": "542-544",
+          "section": "Rezensionen",
+          "type": "review"
+        },
+        {
+          "title": "Johannes Landbrecht/Simon Gabriel (Hrsg.): Konfliktmanagement im internationalen Rechtsverkehr.",
+          "authors": "Martin Fries",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2018-1310409/html",
+          "pages": "545-546",
+          "section": "Rezensionen",
+          "type": "review"
+        }
+      ]
+    },
+    {
+      "vol": 21,
+      "issue": 2,
+      "year": 2016,
+      "special": true,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/21/2/html",
+      "count": 6,
+      "articles": [
+        {
+          "title": "Die Grenzen zivilprozessualen Verbraucherschutzes",
+          "authors": "David Paulus",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0211/html",
+          "pages": "199-234",
+          "section": "VII. Gemeineuropäisches Verfahrensrecht",
+          "type": "article"
+        },
+        {
+          "title": "Die Vollstreckungswiderspruchsklage im chinesischen Zivilprozessrecht",
+          "authors": "Yuanshi Bu",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0212/html",
+          "pages": "237-258",
+          "section": "Zweiter Teil Andere Staaten",
+          "type": "article"
+        },
+        {
+          "title": "Le pouvoir normatif du juge – la motivation des décisions et le précédents à force obligatoire, d’après le nouveau Code de Procédure Civile (2015)",
+          "authors": "Teresa Arruda Alvim",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0213/html",
+          "pages": "259-288",
+          "section": "IX. Südamerika",
+          "type": "article"
+        },
+        {
+          "title": "Vollstreckungsverfahren im Widerstreit zwischen Effizienz und Grundrechten: Einige Anmerkungen zu den jüngsten Reformen des brasilianischen Zivilprozessrechts",
+          "authors": "Antonio Cabral",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0214/html",
+          "pages": "289-304",
+          "section": "IX. Südamerika",
+          "type": "article"
+        },
+        {
+          "title": "Die Gruppenklage in der türkischen Zivilprozessordnung – zugleich eine Besprechung eines Urteils des obersten Gerichtshofes vom 10. Mai 2013",
+          "authors": "Özden Özkaya-Ferendeci",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0215/html",
+          "pages": "305-320",
+          "section": "X. Türkei",
+          "type": "article"
+        },
+        {
+          "title": "Einseitige, insbesondere testamentarische Schiedsklauseln nach der (geplanten) Reform zur Internationalen Schiedsgerichtsbarkeit",
+          "authors": "Ulrich Haas, Jeffrey Brosi",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2016-0216/html",
+          "pages": "323-352",
+          "section": "Dritter Teil Schiedsgerichtsbarkeit",
+          "type": "article"
+        }
+      ]
+    },
+    {
+      "vol": 22,
+      "issue": 1,
+      "year": 2017,
+      "special": true,
+      "url": "https://www.degruyterbrill.com/journal/key/zzp/22/1/html",
+      "count": 17,
+      "articles": [
+        {
+          "title": "I. England. Precedents and Common Law Rule-Making",
+          "authors": "Neil Andrews",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220102/html",
+          "pages": "3-28",
+          "section": "Erster Teil. Europäische Union",
+          "type": "article"
+        },
+        {
+          "title": "II. Frankreich. Unscharfe Konturen und Widersprüche in der französischen Rechtskraftlehre",
+          "authors": "Frédérique Ferrand",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220103/html",
+          "pages": "29-76",
+          "section": "Erster Teil. Europäische Union",
+          "type": "article"
+        },
+        {
+          "title": "III. Italien. Recent trends in enforcing US punitive damages awards in Italy",
+          "authors": "Elena D’Alessandro",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220104/html",
+          "pages": "77-92",
+          "section": "Erster Teil. Europäische Union",
+          "type": "article"
+        },
+        {
+          "title": "IV. Österreich. Präventive Restrukturierung und Aussetzung der Insolvenzantragspflicht nach dem Vorschlag der Europäischen Kommission",
+          "authors": "Hubertus Schumacher",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220105/html",
+          "pages": "93-104",
+          "section": "Erster Teil. Europäische Union",
+          "type": "article"
+        },
+        {
+          "title": "IV. Österreich. Schiedsgerichtsbarkeit und Handelsvertreterrecht – eine riskante Kombination?",
+          "authors": "Katharina Plavec",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220106/html",
+          "pages": "105-128",
+          "section": "Erster Teil. Europäische Union",
+          "type": "article"
+        },
+        {
+          "title": "V. Griechenland. “Actio ad exhibendum” for the protection of the right to proof according to Greek law and the focus of the recent European legislation (Directive 2014/104/EU, Regulation (EU) 679/2016)",
+          "authors": "Dimitris Maniotis",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220107/html",
+          "pages": "129-136",
+          "section": "Erster Teil. Europäische Union",
+          "type": "article"
+        },
+        {
+          "title": "VI. Slowenien. Das slowenische Gesetz über Sammelklagen",
+          "authors": "Jorg Sladič",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220108/html",
+          "pages": "137-186",
+          "section": "Erster Teil. Europäische Union",
+          "type": "article"
+        },
+        {
+          "title": "VII. Tschechien. Das gesetzliche Vorhaben der neuen ZPO in der Tschechischen Republik",
+          "authors": "Eva Dobrovolná",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220109/html",
+          "pages": "187-212",
+          "section": "Erster Teil. Europäische Union",
+          "type": "article"
+        },
+        {
+          "title": "VIII. Gemeineuropäisches Verfahrensrecht . Grenzüberschreitende Bindungswirkung von Prozessurteilen im europäischen Justizraum",
+          "authors": "Dimitrios Tsikrikas",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220110/html",
+          "pages": "213-224",
+          "section": "Erster Teil. Europäische Union",
+          "type": "article"
+        },
+        {
+          "title": "VIII. Gemeineuropäisches Verfahrensrecht. Die internationale Durchsetzung der europäischen Datenschutzregeln vor deutschen Zivilgerichten durch Verbände",
+          "authors": "Florian Jotzo",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220111/html",
+          "pages": "225-254",
+          "section": "Erster Teil. Europäische Union",
+          "type": "article"
+        },
+        {
+          "title": "VIII. Gemeineuropäisches Verfahrensrecht. Die Aufrechnung bei anderweitiger internationaler Gerichtszuständigkeit durch Gerichtsstandsvereinbarung",
+          "authors": "Jean Mohamed",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220112/html",
+          "pages": "255-266",
+          "section": "Erster Teil. Europäische Union",
+          "type": "article"
+        },
+        {
+          "title": "IX. USA. Multiple Sources of Procedural Change in America",
+          "authors": "Richard Marcus",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220113/html",
+          "pages": "269-284",
+          "section": "Zweiter Teil. Andere Staaten",
+          "type": "article"
+        },
+        {
+          "title": "X. Schweiz. Substanziierung im Zivilprozess",
+          "authors": "Ulrich Haas",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220114/html",
+          "pages": "285-314",
+          "section": "Zweiter Teil. Andere Staaten",
+          "type": "article"
+        },
+        {
+          "title": "XI. Ostasien. Die Vollstreckung von Schiedssprüchen in China",
+          "authors": "Yuanshi Bu",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220115/html",
+          "pages": "315-338",
+          "section": "Zweiter Teil. Andere Staaten",
+          "type": "article"
+        },
+        {
+          "title": "XI. Ostasien. Japan’s Recent Approach to The Hague Child Abduction Convention and Its Procedural Issues",
+          "authors": "Masako Murakami",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220116/html",
+          "pages": "339-358",
+          "section": "Zweiter Teil. Andere Staaten",
+          "type": "article"
+        },
+        {
+          "title": "Verbraucherschutz in der Schiedsgerichtsbarkeit – Schutzmängel im deutschen Prozessrecht",
+          "authors": "Leon Marcel Kahl",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220117/html",
+          "pages": "361-384",
+          "section": "Dritter Teil. Schiedsgerichtsbarkeit",
+          "type": "article"
+        },
+        {
+          "title": "Rechtsverwirklichung als Primärzweck des Zivilprozesses",
+          "authors": "Alexander Bruns",
+          "url": "https://www.degruyterbrill.com/document/doi/10.1515/zzp-2017-220118/html",
+          "pages": "387-400",
+          "section": "Vierter Teil. Prozessrechtsvergleichung",
+          "type": "article"
+        }
+      ]
+    }
+  ]
+}
