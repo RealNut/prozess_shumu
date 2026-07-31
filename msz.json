@@ -9,7 +9,7 @@
   "year_min": 2001,
   "year_max": 2026,
   "total_issues": 26,
-  "with_toc_detailed": 18,
+  "with_toc_detailed": 20,
   "issues": [
     {
       "number": 47,
@@ -17,7 +17,7 @@
       "pages": 292,
       "price": "Ａ５判・292ページ・3,630円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02481-0",
-      "article_count": 0,
+      "article_count": 4,
       "sections": []
     },
     {
@@ -26,7 +26,7 @@
       "pages": 300,
       "price": "Ａ５判・300ページ・3,630円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02555-8",
-      "article_count": 0,
+      "article_count": 4,
       "sections": []
     },
     {
