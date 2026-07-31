@@ -9,78 +9,78 @@
   "year_min": 2001,
   "year_max": 2026,
   "total_issues": 26,
-  "with_toc": 17,
+  "with_toc_detailed": 18,
   "issues": [
     {
       "number": 47,
       "year": 2001,
-      "published": "2001年3月",
       "pages": 292,
       "price": "Ａ５判・292ページ・3,630円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02481-0",
+      "article_count": 0,
       "sections": []
     },
     {
       "number": 48,
       "year": 2002,
-      "published": "2002年3月",
       "pages": 300,
       "price": "Ａ５判・300ページ・3,630円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02555-8",
+      "article_count": 0,
       "sections": []
     },
     {
       "number": 49,
       "year": 2003,
-      "published": "2003年3月",
       "pages": 270,
       "price": "Ａ５判・270ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02637-6",
+      "article_count": 51,
       "sections": []
     },
     {
       "number": 50,
       "year": 2004,
-      "published": "2004年3月",
       "pages": 316,
       "price": "Ａ５判・316ページ・3,630円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02717-8",
+      "article_count": 4,
       "sections": []
     },
     {
       "number": 51,
       "year": 2005,
-      "published": "2005年3月",
       "pages": 236,
       "price": "Ａ５判・236ページ・2,860円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02803-4",
+      "article_count": 8,
       "sections": []
     },
     {
       "number": 52,
       "year": 2006,
-      "published": "2006年3月",
       "pages": 220,
       "price": "Ａ５判・220ページ・2,750円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02933-2",
+      "article_count": 11,
       "sections": []
     },
     {
       "number": 53,
       "year": 2007,
-      "published": "2007年3月",
       "pages": 260,
       "price": "Ａ５判・260ページ・3,080円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03006-1",
+      "article_count": 9,
       "sections": []
     },
     {
       "number": 54,
       "year": 2008,
-      "published": "2008年3月",
       "pages": 250,
       "price": "Ａ５判・250ページ・2,970円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03076-4",
+      "article_count": 6,
       "sections": [
         {
           "cat": "論説",
@@ -103,19 +103,19 @@
     {
       "number": 55,
       "year": 2009,
-      "published": "2009年3月",
       "pages": 275,
       "price": "Ａ５判・275ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03149-5",
+      "article_count": 9,
       "sections": []
     },
     {
       "number": 56,
       "year": 2010,
-      "published": "2010年3月",
       "pages": 272,
       "price": "Ａ５判・272ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03238-6",
+      "article_count": 18,
       "sections": [
         {
           "cat": "論説",
@@ -142,10 +142,10 @@
     {
       "number": 57,
       "year": 2011,
-      "published": "2011年3月",
       "pages": 270,
       "price": "Ａ５判・270ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03318-5",
+      "article_count": 13,
       "sections": [
         {
           "cat": "論説",
@@ -172,10 +172,10 @@
     {
       "number": 58,
       "year": 2012,
-      "published": "2012年4月",
       "pages": 214,
       "price": "Ａ５判・214ページ・2,860円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03405-2",
+      "article_count": 9,
       "sections": [
         {
           "cat": "論説",
@@ -190,10 +190,10 @@
     {
       "number": 59,
       "year": 2013,
-      "published": "2013年3月",
       "pages": 308,
       "price": "Ａ５判・308ページ・3,630円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03480-9",
+      "article_count": 10,
       "sections": [
         {
           "cat": "論説",
@@ -212,19 +212,19 @@
     {
       "number": 60,
       "year": 2014,
-      "published": "2014年3月",
       "pages": 250,
       "price": "Ａ５判・250ページ・3,190円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03583-7",
+      "article_count": 9,
       "sections": []
     },
     {
       "number": 61,
       "year": 2015,
-      "published": "2015年3月",
       "pages": 246,
       "price": "Ａ５判・246ページ・3,190円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03663-6",
+      "article_count": 9,
       "sections": [
         {
           "cat": "論説",
@@ -243,10 +243,10 @@
     {
       "number": 62,
       "year": 2016,
-      "published": "2016年3月",
       "pages": 220,
       "price": "Ａ５判・220ページ・3,190円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03748-0",
+      "article_count": 8,
       "sections": [
         {
           "cat": "論説",
@@ -265,10 +265,10 @@
     {
       "number": 63,
       "year": 2017,
-      "published": "2017年3月",
       "pages": 320,
       "price": "Ａ５判・320ページ・3,850円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03838-8",
+      "article_count": 8,
       "sections": [
         {
           "cat": "論説",
@@ -295,10 +295,10 @@
     {
       "number": 64,
       "year": 2018,
-      "published": "2018年3月",
       "pages": 222,
       "price": "Ａ５判・222ページ・3,190円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03919-4",
+      "article_count": 9,
       "sections": [
         {
           "cat": "論説",
@@ -321,10 +321,10 @@
     {
       "number": 65,
       "year": 2019,
-      "published": "2019年3月",
       "pages": 246,
       "price": "Ａ５判・246ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04008-4",
+      "article_count": 9,
       "sections": [
         {
           "cat": "論説",
@@ -347,10 +347,10 @@
     {
       "number": 66,
       "year": 2020,
-      "published": "2020年4月",
       "pages": 246,
       "price": "Ａ５判・246ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04071-8",
+      "article_count": 9,
       "sections": [
         {
           "cat": "論説",
@@ -373,10 +373,10 @@
     {
       "number": 67,
       "year": 2021,
-      "published": "2021年4月",
       "pages": 198,
       "price": "Ａ５判・198ページ・3,080円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04149-4",
+      "article_count": 0,
       "sections": [
         {
           "cat": "論説",
@@ -403,10 +403,10 @@
     {
       "number": 68,
       "year": 2022,
-      "published": "2022年3月",
       "pages": 306,
       "price": "Ａ５判・306ページ・3,630円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04207-1",
+      "article_count": 0,
       "sections": [
         {
           "cat": "論説",
@@ -433,10 +433,10 @@
     {
       "number": 69,
       "year": 2023,
-      "published": "2023年3月",
       "pages": 200,
       "price": "Ａ５判・200ページ・3,080円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04264-4",
+      "article_count": 0,
       "sections": [
         {
           "cat": "論説",
@@ -459,10 +459,10 @@
     {
       "number": 70,
       "year": 2024,
-      "published": "2024年4月",
       "pages": 240,
       "price": "Ａ５判・240ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04336-8",
+      "article_count": 0,
       "sections": [
         {
           "cat": "論説",
@@ -485,10 +485,10 @@
     {
       "number": 71,
       "year": 2025,
-      "published": "2025年4月",
       "pages": 278,
       "price": "Ａ５判・278ページ・3,740円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04401-3",
+      "article_count": 0,
       "sections": [
         {
           "cat": "論説",
@@ -519,10 +519,10 @@
     {
       "number": 72,
       "year": 2026,
-      "published": "2026年3月",
       "pages": 232,
       "price": "Ａ５判・232ページ・3,410円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04454-9",
+      "article_count": 0,
       "sections": [
         {
           "cat": "論説",
