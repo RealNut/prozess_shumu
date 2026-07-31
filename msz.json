@@ -1,0 +1,546 @@
+{
+  "journal": {
+    "name": "民事訴訟雑誌",
+    "name_zh": "日本民事诉讼法杂志",
+    "publisher": "法律文化社",
+    "editor": "日本民事訴訟法学会",
+    "url": "https://www.hou-bun.com/08gakkaishi/08_01.html"
+  },
+  "year_min": 2001,
+  "year_max": 2026,
+  "total_issues": 26,
+  "with_toc": 17,
+  "issues": [
+    {
+      "number": 47,
+      "year": 2001,
+      "published": "2001年3月",
+      "pages": 292,
+      "price": "Ａ５判・292ページ・3,630円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02481-0",
+      "sections": []
+    },
+    {
+      "number": 48,
+      "year": 2002,
+      "published": "2002年3月",
+      "pages": 300,
+      "price": "Ａ５判・300ページ・3,630円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02555-8",
+      "sections": []
+    },
+    {
+      "number": 49,
+      "year": 2003,
+      "published": "2003年3月",
+      "pages": 270,
+      "price": "Ａ５判・270ページ・3,300円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02637-6",
+      "sections": []
+    },
+    {
+      "number": 50,
+      "year": 2004,
+      "published": "2004年3月",
+      "pages": 316,
+      "price": "Ａ５判・316ページ・3,630円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02717-8",
+      "sections": []
+    },
+    {
+      "number": 51,
+      "year": 2005,
+      "published": "2005年3月",
+      "pages": 236,
+      "price": "Ａ５判・236ページ・2,860円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02803-4",
+      "sections": []
+    },
+    {
+      "number": 52,
+      "year": 2006,
+      "published": "2006年3月",
+      "pages": 220,
+      "price": "Ａ５判・220ページ・2,750円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02933-2",
+      "sections": []
+    },
+    {
+      "number": 53,
+      "year": 2007,
+      "published": "2007年3月",
+      "pages": 260,
+      "price": "Ａ５判・260ページ・3,080円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03006-1",
+      "sections": []
+    },
+    {
+      "number": 54,
+      "year": 2008,
+      "published": "2008年3月",
+      "pages": 250,
+      "price": "Ａ５判・250ページ・2,970円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03076-4",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "田頭章一（上智大）、笠井正俊（京都大）他、"
+        },
+        {
+          "cat": "シンポジウム",
+          "text": "民事裁判における情報の開示・保護（司会：上原敏夫、報告：春日偉知郎・田邊誠、片山英二、山本和彦）、"
+        },
+        {
+          "cat": "研究報告",
+          "text": "４本、"
+        },
+        {
+          "cat": "紹介",
+          "text": "４本などを収載。<br><br><a href=/10tyosya/ISBN978-4-589-03076-4.pdf target=_blank><img src=/image/share/btn_profile.gif border=0></a>"
+        }
+      ]
+    },
+    {
+      "number": 55,
+      "year": 2009,
+      "published": "2009年3月",
+      "pages": 275,
+      "price": "Ａ５判・275ページ・3,300円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03149-5",
+      "sections": []
+    },
+    {
+      "number": 56,
+      "year": 2010,
+      "published": "2010年3月",
+      "pages": 272,
+      "price": "Ａ５判・272ページ・3,300円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03238-6",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "佐藤鉄男／長谷部由起子／坂田宏／八木一洋"
+        },
+        {
+          "cat": "シンポジウム：倒産法と契約",
+          "text": "〔司会〕加藤哲夫〔報告〕田頭章一／水元宏典／山本和彦〔コメント〕岡正晶。その他"
+        },
+        {
+          "cat": "研究報告",
+          "text": ""
+        },
+        {
+          "cat": "紹介",
+          "text": ""
+        },
+        {
+          "cat": "海外学界事情",
+          "text": "等を収載。<br><br><a href=/10tyosya/03238-6_t.pdf target=_blank><img src=/image/share/btn_profile.gif border=0></a>"
+        }
+      ]
+    },
+    {
+      "number": 57,
+      "year": 2011,
+      "published": "2011年3月",
+      "pages": 270,
+      "price": "Ａ５判・270ページ・3,300円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03318-5",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "大村雅彦／酒井一／菊池洋一"
+        },
+        {
+          "cat": "シンポジウム：民事裁判における審理原則の再検討",
+          "text": "〔司会〕本間靖規〔報告〕本間靖規／畑瑞穂／高田昌宏／越山和広。その他"
+        },
+        {
+          "cat": "研究報告",
+          "text": ""
+        },
+        {
+          "cat": "紹介",
+          "text": ""
+        },
+        {
+          "cat": "海外学会事情",
+          "text": "等を収載。"
+        }
+      ]
+    },
+    {
+      "number": 58,
+      "year": 2012,
+      "published": "2012年4月",
+      "pages": 214,
+      "price": "Ａ５判・214ページ・2,860円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03405-2",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "宇野 聡／我妻 学／福井章代<br>"
+        },
+        {
+          "cat": "シンポジウム：消費者集合訴訟制度の可能性と課題",
+          "text": "〔司会〕大村雅彦 〔報告〕笠井正俊／八田卓也／原 強　　その他を収載。<br><br><a href=/10tyosya/03405-2_t.pdf target=_blank><img src=/image/share/btn_profile.gif border=0></a>"
+        }
+      ]
+    },
+    {
+      "number": 59,
+      "year": 2013,
+      "published": "2013年3月",
+      "pages": 308,
+      "price": "Ａ５判・308ページ・3,630円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03480-9",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "小林秀之／高田昌宏／飯村敏明"
+        },
+        {
+          "cat": "講演",
+          "text": "エルベ・クローズ（町村泰貴／大濱しのぶ 訳）"
+        },
+        {
+          "cat": "シンポジウム：民事訴訟法の今後の改正課題",
+          "text": "〔司会〕三木浩一〔報告〕垣内秀介／坂田宏／三木浩一／杉山悦子　ほか。<br><br><a href=/10tyosya/03480-9_t.pdf target=_blank><img src=/image/share/btn_profile.gif border=0></a>"
+        }
+      ]
+    },
+    {
+      "number": 60,
+      "year": 2014,
+      "published": "2014年3月",
+      "pages": 250,
+      "price": "Ａ５判・250ページ・3,190円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03583-7",
+      "sections": []
+    },
+    {
+      "number": 61,
+      "year": 2015,
+      "published": "2015年3月",
+      "pages": 246,
+      "price": "Ａ５判・246ページ・3,190円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03663-6",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "加藤哲夫／大橋眞弓／園尾隆司<br>"
+        },
+        {
+          "cat": "シンポジウム：倒産手続の担い手―その役割と考え方",
+          "text": "佐藤鉄男ほか<br>"
+        },
+        {
+          "cat": "研究報告",
+          "text": "酒井博行／園田賢治／林　潤／福本知行　その他"
+        }
+      ]
+    },
+    {
+      "number": 62,
+      "year": 2016,
+      "published": "2016年3月",
+      "pages": 220,
+      "price": "Ａ５判・220ページ・3,190円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03748-0",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "佐野裕志／内山衛次／大竹たかし<br>"
+        },
+        {
+          "cat": "シンポジウム：当事者論の現代的課題",
+          "text": "山本弘ほか<br>"
+        },
+        {
+          "cat": "研究報告",
+          "text": "杉本和士／金春／矢尾渉／清水宏　その他"
+        }
+      ]
+    },
+    {
+      "number": 63,
+      "year": 2017,
+      "published": "2017年3月",
+      "pages": 320,
+      "price": "Ａ５判・320ページ・3,850円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03838-8",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "原強／松村和�ｺ／太田晃詳<br>"
+        },
+        {
+          "cat": "講演",
+          "text": "アレクサンダー・ブルンス（越山和広訳）<br>"
+        },
+        {
+          "cat": "シンポジウム",
+          "text": "民事訴訟への隣接諸科学の応用―和解、心証形成、事実認定を契機に<br>"
+        },
+        {
+          "cat": "研究報告",
+          "text": ""
+        },
+        {
+          "cat": "紹介",
+          "text": "ほか"
+        }
+      ]
+    },
+    {
+      "number": 64,
+      "year": 2018,
+      "published": "2018年3月",
+      "pages": 222,
+      "price": "Ａ５判・222ページ・3,190円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03919-4",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "高田裕成／町村泰貴／小林明彦"
+        },
+        {
+          "cat": "シンポジウム",
+          "text": "倒産法と優先順位（司会：松下淳一、報告：近藤隆司／倉部真由美／藤本利一）"
+        },
+        {
+          "cat": "研究報告",
+          "text": ""
+        },
+        {
+          "cat": "紹介",
+          "text": "ほか"
+        }
+      ]
+    },
+    {
+      "number": 65,
+      "year": 2019,
+      "published": "2019年3月",
+      "pages": 246,
+      "price": "Ａ５判・246ページ・3,300円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04008-4",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "堤龍弥／畑瑞穂／矢尾和子"
+        },
+        {
+          "cat": "シンポジウム",
+          "text": "強制執行法制の改正問題（司会:笠井正俊、報告:青木哲／内山衛次／大濱しのぶ）"
+        },
+        {
+          "cat": "研究報告",
+          "text": ""
+        },
+        {
+          "cat": "紹介",
+          "text": "ほか"
+        }
+      ]
+    },
+    {
+      "number": 66,
+      "year": 2020,
+      "published": "2020年4月",
+      "pages": 246,
+      "price": "Ａ５判・246ページ・3,300円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04071-8",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "菅原郁夫／岡田幸宏／村田渉"
+        },
+        {
+          "cat": "シンポジウム",
+          "text": "司会：長谷部由紀子／報告：越山和広／名津井吉裕／菱田雄郷"
+        },
+        {
+          "cat": "研究報告",
+          "text": ""
+        },
+        {
+          "cat": "紹介",
+          "text": "ほか"
+        }
+      ]
+    },
+    {
+      "number": 67,
+      "year": 2021,
+      "published": "2021年4月",
+      "pages": 198,
+      "price": "Ａ５判・198ページ・3,080円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04149-4",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "日比野泰久／間渕清史／石丸将利<br>"
+        },
+        {
+          "cat": "シンポジウム",
+          "text": "民事訴訟における審理ルールの多様化(司会：坂田宏、報告：畑瑞穂／大渕真喜子／酒井博行)<br>"
+        },
+        {
+          "cat": "研究報告",
+          "text": ""
+        },
+        {
+          "cat": "紹介",
+          "text": ""
+        },
+        {
+          "cat": "追悼文",
+          "text": "ほか。"
+        }
+      ]
+    },
+    {
+      "number": 68,
+      "year": 2022,
+      "published": "2022年3月",
+      "pages": 306,
+      "price": "Ａ５判・306ページ・3,630円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04207-1",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "中山幸二／越山和広／村田一広<br>"
+        },
+        {
+          "cat": "講演",
+          "text": "スコット・ドッドソン／八田卓也訳<br>"
+        },
+        {
+          "cat": "シンポジウム",
+          "text": "倒産法の立法論的検討（司会：山本和彦、報告：山本研／木元宏典／高田賢治／垣内秀介、コメンテーター：小林信明／谷口安史／藤澤治奈）<br>"
+        },
+        {
+          "cat": "研究報告",
+          "text": ""
+        },
+        {
+          "cat": "紹介",
+          "text": "ほか。"
+        }
+      ]
+    },
+    {
+      "number": 69,
+      "year": 2023,
+      "published": "2023年3月",
+      "pages": 200,
+      "price": "Ａ５判・200ページ・3,080円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04264-4",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "堀野　出／山本　研／森　健二"
+        },
+        {
+          "cat": "シンポジウム",
+          "text": "民事裁判官の権限行使をめぐる規律のありかた（司会：��田昌宏、報告：鶴田　滋／内海博俊／杉山悦子）"
+        },
+        {
+          "cat": "研究報告",
+          "text": ""
+        },
+        {
+          "cat": "紹介",
+          "text": "ほか"
+        }
+      ]
+    },
+    {
+      "number": 70,
+      "year": 2024,
+      "published": "2024年4月",
+      "pages": 240,
+      "price": "Ａ５判・240ページ・3,300円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04336-8",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "山田　文／内田義厚"
+        },
+        {
+          "cat": "シンポジウム",
+          "text": "民事裁判IT化と手続法の課題（司会：町村泰貴、報告：上田竹志／垣内秀介／櫻庭信之／町村泰貴）"
+        },
+        {
+          "cat": "研究報告",
+          "text": ""
+        },
+        {
+          "cat": "紹介",
+          "text": "ほか"
+        }
+      ]
+    },
+    {
+      "number": 71,
+      "year": 2025,
+      "published": "2025年4月",
+      "pages": 278,
+      "price": "Ａ５判・278ページ・3,740円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04401-3",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "大濱しのぶ／安達栄司／桃崎　剛"
+        },
+        {
+          "cat": "講演",
+          "text": "エィダン・シュウ"
+        },
+        {
+          "cat": "シンポジウム",
+          "text": "人事訴訟・家事事件手続の諸問題（司会：畑　瑞穂、報告：安西明子／八田卓也／村上　正）"
+        },
+        {
+          "cat": "研究報告",
+          "text": ""
+        },
+        {
+          "cat": "第10回日韓民事訴訟法共同大会",
+          "text": ""
+        },
+        {
+          "cat": "紹介",
+          "text": "ほか"
+        }
+      ]
+    },
+    {
+      "number": 72,
+      "year": 2026,
+      "published": "2026年3月",
+      "pages": 232,
+      "price": "Ａ５判・232ページ・3,410円（税込）",
+      "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04454-9",
+      "sections": [
+        {
+          "cat": "論説",
+          "text": "勅使川原和彦／吉垣　実／一場康宏"
+        },
+        {
+          "cat": "シンポジウム",
+          "text": "担保法改正と倒産法理論（司会：山本　研、報告：北島典子、青木　哲、菱田雄郷、杉本純子、コメント：中井康之、水津太郎）"
+        },
+        {
+          "cat": "研究報告",
+          "text": ""
+        },
+        {
+          "cat": "紹介",
+          "text": "ほか"
+        }
+      ]
+    }
+  ]
+}
