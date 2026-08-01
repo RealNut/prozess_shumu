@@ -18,6 +18,7 @@
       "price": "Ａ５判・292ページ・3,630円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02481-0",
       "article_count": 4,
+      "has_overview": false,
       "sections": []
     },
     {
@@ -27,6 +28,7 @@
       "price": "Ａ５判・300ページ・3,630円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02555-8",
       "article_count": 4,
+      "has_overview": false,
       "sections": []
     },
     {
@@ -36,6 +38,7 @@
       "price": "Ａ５判・270ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02637-6",
       "article_count": 9,
+      "has_overview": false,
       "sections": []
     },
     {
@@ -45,6 +48,7 @@
       "price": "Ａ５判・316ページ・3,630円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02717-8",
       "article_count": 3,
+      "has_overview": false,
       "sections": []
     },
     {
@@ -54,6 +58,7 @@
       "price": "Ａ５判・236ページ・2,860円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02803-4",
       "article_count": 8,
+      "has_overview": false,
       "sections": []
     },
     {
@@ -63,6 +68,7 @@
       "price": "Ａ５判・220ページ・2,750円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN4-589-02933-2",
       "article_count": 11,
+      "has_overview": false,
       "sections": []
     },
     {
@@ -72,6 +78,7 @@
       "price": "Ａ５判・260ページ・3,080円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03006-1",
       "article_count": 9,
+      "has_overview": false,
       "sections": []
     },
     {
@@ -81,6 +88,7 @@
       "price": "Ａ５判・250ページ・2,970円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03076-4",
       "article_count": 6,
+      "has_overview": false,
       "sections": [
         {
           "cat": "論説",
@@ -107,6 +115,7 @@
       "price": "Ａ５判・275ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03149-5",
       "article_count": 8,
+      "has_overview": false,
       "sections": []
     },
     {
@@ -116,6 +125,7 @@
       "price": "Ａ５判・272ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03238-6",
       "article_count": 15,
+      "has_overview": false,
       "sections": [
         {
           "cat": "論説",
@@ -146,6 +156,7 @@
       "price": "Ａ５判・270ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03318-5",
       "article_count": 10,
+      "has_overview": false,
       "sections": [
         {
           "cat": "論説",
@@ -176,6 +187,7 @@
       "price": "Ａ５判・214ページ・2,860円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03405-2",
       "article_count": 9,
+      "has_overview": false,
       "sections": [
         {
           "cat": "論説",
@@ -194,6 +206,7 @@
       "price": "Ａ５判・308ページ・3,630円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03480-9",
       "article_count": 9,
+      "has_overview": false,
       "sections": [
         {
           "cat": "論説",
@@ -216,6 +229,7 @@
       "price": "Ａ５判・250ページ・3,190円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03583-7",
       "article_count": 9,
+      "has_overview": false,
       "sections": []
     },
     {
@@ -225,6 +239,7 @@
       "price": "Ａ５判・246ページ・3,190円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03663-6",
       "article_count": 9,
+      "has_overview": false,
       "sections": [
         {
           "cat": "論説",
@@ -247,6 +262,7 @@
       "price": "Ａ５判・220ページ・3,190円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03748-0",
       "article_count": 8,
+      "has_overview": false,
       "sections": [
         {
           "cat": "論説",
@@ -269,6 +285,7 @@
       "price": "Ａ５判・320ページ・3,850円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03838-8",
       "article_count": 7,
+      "has_overview": false,
       "sections": [
         {
           "cat": "論説",
@@ -299,6 +316,7 @@
       "price": "Ａ５判・222ページ・3,190円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-03919-4",
       "article_count": 9,
+      "has_overview": false,
       "sections": [
         {
           "cat": "論説",
@@ -325,6 +343,7 @@
       "price": "Ａ５判・246ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04008-4",
       "article_count": 9,
+      "has_overview": false,
       "sections": [
         {
           "cat": "論説",
@@ -351,6 +370,7 @@
       "price": "Ａ５判・246ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04071-8",
       "article_count": 9,
+      "has_overview": false,
       "sections": [
         {
           "cat": "論説",
@@ -377,6 +397,7 @@
       "price": "Ａ５判・198ページ・3,080円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04149-4",
       "article_count": 0,
+      "has_overview": true,
       "sections": [
         {
           "cat": "論説",
@@ -407,6 +428,7 @@
       "price": "Ａ５判・306ページ・3,630円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04207-1",
       "article_count": 0,
+      "has_overview": true,
       "sections": [
         {
           "cat": "論説",
@@ -437,6 +459,7 @@
       "price": "Ａ５判・200ページ・3,080円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04264-4",
       "article_count": 0,
+      "has_overview": true,
       "sections": [
         {
           "cat": "論説",
@@ -463,6 +486,7 @@
       "price": "Ａ５判・240ページ・3,300円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04336-8",
       "article_count": 0,
+      "has_overview": true,
       "sections": [
         {
           "cat": "論説",
@@ -489,6 +513,7 @@
       "price": "Ａ５判・278ページ・3,740円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04401-3",
       "article_count": 0,
+      "has_overview": true,
       "sections": [
         {
           "cat": "論説",
@@ -523,6 +548,7 @@
       "price": "Ａ５判・232ページ・3,410円（税込）",
       "url": "https://www.hou-bun.com/cgi-bin/search/detail.cgi?c=ISBN978-4-589-04454-9",
       "article_count": 0,
+      "has_overview": true,
       "sections": [
         {
           "cat": "論説",
